@@ -2,14 +2,34 @@
   "title": "Weil positivity on finite windows across L-functions: certified windows, a pre-registered decay law, and an unconditional bound for Dirichlet L-functions",
   "upload_type": "publication",
   "publication_type": "report",
-  "version": "1.0.0",
-  "creators": [{"name": "Elston, Zac"}],
+  "version": "1.0.1",
+  "creators": [
+    {
+      "name": "Elston, Zac"
+    }
+  ],
   "description": "<p>For an L-function and x &gt; 1, let &lambda;<sub>s</sub>(x) be the smallest value of Weil's quadratic form on unit-norm test functions supported in a window of length log x, in the even or odd sector. The Riemann hypothesis for that L-function is equivalent to &lambda;<sub>s</sub>(x) &ge; 0 for every x.</p><p>This record contains a technical report with the code and data behind it. The report gives:</p><ul><li><strong>Certified windows.</strong> Arb-certified lower bounds for &zeta; on windows of support 2.38, 2.6 and 2.99 in both sectors, and certified two-sided brackets for functions without an Euler product.</li><li><strong>An empirical decay law.</strong> Pre-registered tests, with their failures reported, support &lambda; &asymp; e<sup>&minus;2dT*</sup>, T* = 2&pi;(x/Q)<sup>1/d</sup>, across degrees 1&ndash;3. Its conductor collapse discriminates against Zhu's Landau&ndash;Widom law transposed to Dirichlet L-functions.</li><li><strong>A matched pair.</strong> The window minimum of the primitive R&eacute;dei L-function of (5, 29) is indistinguishable from that of L(&chi;<sub>5</sub>)L(&chi;<sub>29</sub>), which has the same invariants.</li><li><strong>Dirichlet characters.</strong> An unconditional upper bound for real primitive Dirichlet L-functions, with a Hermite rate proved for all x. It extends to characters and to each sector the bounds Mori proved for &zeta;.</li></ul><p>Nothing here proves or disproves the Riemann hypothesis.</p>",
   "license": "cc-by-4.0",
-  "keywords": ["Riemann hypothesis", "Weil positivity", "explicit formula", "L-functions", "Dirichlet L-functions", "interval arithmetic", "experimental mathematics"],
-  "related_identifiers": [
-    {"identifier": "https://github.com/zacharyelston/weil-windows", "relation": "isSupplementTo", "scheme": "url"},
-    {"identifier": "https://zacharyelston.github.io/weil-windows/", "relation": "isSupplementedBy", "scheme": "url"}
+  "keywords": [
+    "Riemann hypothesis",
+    "Weil positivity",
+    "explicit formula",
+    "L-functions",
+    "Dirichlet L-functions",
+    "interval arithmetic",
+    "experimental mathematics"
   ],
-  "notes": "Code (scripts/, docker/) is under the MIT License; text, report and data (docs/, data/) under CC BY 4.0. AI assistance: computation, derivations, code and drafting were carried out with AI assistance (Claude Opus 5.5, with some work by Claude Fable 5.1, Anthropic). Independent review and audit were done by GPT Astra and GPT Sol 6.1 and by separate Claude agents. The author is responsible for all content. Unrefereed."
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/zacharyelston/weil-windows",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://zacharyelston.github.io/weil-windows/",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Version 1.0.1 changes only the interactive visual (docs/viz/zero_torus.html): its layer guide now says the natural candidate for a positive lower bound is a tempered Euler product, one whose local factors obey the Ramanujan bound, and gives the octonion lattice zeta zeta(s)zeta(s-3) as an Euler product with no zeros on its center line. The report is unchanged from 1.0.0. Code (scripts/, docker/) is under the MIT License; text, report and data (docs/, data/) under CC BY 4.0. AI assistance: computation, derivations, code and drafting were carried out with AI assistance (Claude Opus 5.5, with some work by Claude Fable 5.1, Anthropic). Independent review and audit were done by GPT Astra and GPT Sol 6.1 and by separate Claude agents. The author is responsible for all content. Unrefereed."
 }

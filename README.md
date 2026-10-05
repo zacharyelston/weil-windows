@@ -1,6 +1,6 @@
 # Weil positivity on finite windows across L-functions
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23163864.svg)](https://doi.org/10.5281/zenodo.23163864)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23163863.svg)](https://doi.org/10.5281/zenodo.23163863)
 
 Code, data and documentation for the technical report **"Weil positivity on finite windows across L-functions: certified windows, a pre-registered decay law, and an unconditional bound for Dirichlet L-functions"** (Zac Elston, version 1, October 2026). The report is in [`docs/report/weil_windows_report_v1.pdf`](docs/report/weil_windows_report_v1.pdf), with its LaTeX source alongside.
 
@@ -86,6 +86,6 @@ Code (`scripts/`, `docker/`) is under the MIT License. Text, report and data (`d
 
 ## Citation
 
-Zac Elston, *Weil positivity on finite windows across L-functions: certified windows, a pre-registered decay law, and an unconditional bound for Dirichlet L-functions*, technical report v1.0.0, Zenodo (2026), [doi:10.5281/zenodo.23163864](https://doi.org/10.5281/zenodo.23163864).
+Zac Elston, *Weil positivity on finite windows across L-functions: certified windows, a pre-registered decay law, and an unconditional bound for Dirichlet L-functions*, technical report, Zenodo (2026), [doi:10.5281/zenodo.23163863](https://doi.org/10.5281/zenodo.23163863).
 
-To cite whichever version is latest, use the concept DOI [10.5281/zenodo.23163863](https://doi.org/10.5281/zenodo.23163863). See also [`CITATION.cff`](CITATION.cff).
+That is the concept DOI; it resolves to the latest version. Each release has its own DOI as well; see [`CHANGELOG.md`](CHANGELOG.md) and [`CITATION.cff`](CITATION.cff).
