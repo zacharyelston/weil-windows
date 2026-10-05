@@ -4,6 +4,8 @@ Each release on GitHub is archived on Zenodo with its own DOI. The concept DOI [
 
 ## 1.1.0 (2026-10-05)
 
+DOI [10.5281/zenodo.23174403](https://doi.org/10.5281/zenodo.23174403).
+
 - **Report version 1.1** (`docs/report/weil_windows_report_v1.pdf`): citations and priority statements corrected after a second literature review. No number, table or claim of fact changed.
   - **Added:** Joubert (depth law −ln λ ≈ 11·D_max for ζ, real characters and elliptic curves, which precedes our decay law; zero deletion; certified sub-Euler-product violations), Elder (ζ prolate ladder; the comparison with Zhu out to x = 54.6, made before ours), Lee (certified prime deletion; the prime-power edge law), Kastoris, Kim et al., Senke (a restricted-access certificate claimed at support 2.406), reescalder/rh-lab, Kramarenko-Byrd, and Alpöge–Furman.
   - **Updated:** Mori's second and third papers now cite their revised versions.
