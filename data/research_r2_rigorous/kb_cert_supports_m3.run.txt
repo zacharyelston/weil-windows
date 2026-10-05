@@ -1,0 +1,10 @@
+2026-10-03 14:08:18 | r2 certify kb | START  pid=86757 total=8 log=logs/r2-certify-kb-20261003-140818.log args={'construction': 'kb', 'd': '1', 'xq': '2', 'zeta_supports': True, 'dbeta': '0,2,4', 'm': 3, 'prec': 256, 'workers': 3, 'json': 'data/research_r2_rigorous/kb_cert_supports_m3.json'}
+2026-10-03 14:08:53 | r2 certify kb | STATUS 1/8 (12.5%)  elapsed 34s  eta 4m01s  | D=1 x=[10.8049028639313 +/ even: B_cert <= 2.37388326755e-41 (R2 float None) sym0=True (34.3s)
+2026-10-03 14:09:10 | r2 certify kb | STATUS 2/8 (25.0%)  elapsed 51s  eta 2m35s  | D=1 x=[4.95303242439511 +/ even: B_cert <= 1.16264089930e-12 (R2 float None) sym0=True (51.7s)
+2026-10-03 14:09:14 | r2 certify kb | STATUS 3/8 (37.5%)  elapsed 55s  eta 1m32s  | D=1 x=[4.95303242439511 +/ odd: B_cert <= 2.48032846578e-10 (R2 float None) sym0=True (55.2s)
+2026-10-03 14:09:28 | r2 certify kb | STATUS 4/8 (50.0%)  elapsed 1m09s  eta 1m09s  | D=1 x=[10.8049028639313 +/ odd: B_cert <= 2.90493400260e-38 (R2 float None) sym0=True (35.2s)
+2026-10-03 14:09:40 | r2 certify kb | STATUS 5/8 (62.5%)  elapsed 1m22s  eta 49s  | D=1 x=[13.4637380350017 +/ even: B_cert <= 7.34966064297e-55 (R2 float None) sym0=True (30.3s)
+2026-10-03 14:09:45 | r2 certify kb | STATUS 6/8 (75.0%)  elapsed 1m27s  eta 29s  | D=1 x=[13.4637380350017 +/ odd: B_cert <= 1.41615087601e-51 (R2 float None) sym0=True (31.7s)
+2026-10-03 14:09:57 | r2 certify kb | STATUS 7/8 (87.5%)  elapsed 1m39s  eta 14s  | D=1 x=[19.8856824915647 +/ even: B_cert <= 3.17696143902e-88 (R2 float None) sym0=True (29.6s)
+2026-10-03 14:10:10 | r2 certify kb | STATUS 8/8 (100.0%)  elapsed 1m51s  eta 0s  | D=1 x=[19.8856824915647 +/ odd: B_cert <= 1.36009474643e-84 (R2 float None) sym0=True (29.2s)
+2026-10-03 14:10:10 | r2 certify kb | DONE   8/8 in 1m51s

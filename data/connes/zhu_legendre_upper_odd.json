@@ -1,0 +1,132 @@
+{
+  "sector": "odd",
+  "nmodes": 200,
+  "te": 4000,
+  "dps": 45,
+  "nodes": 32737,
+  "U_00": "0.1078651656882534168433556",
+  "sup_eps_beyond_TE": "2.60417e-9",
+  "blocks": [
+    {
+      "nmodes": 10,
+      "max_degree": 19,
+      "lambda_U": "9.7289427395470047062e-11",
+      "residual": "1.19e-25",
+      "tail_mass_beyond_TE": "1.734e-13",
+      "overshoot_bound": "4.515e-22"
+    },
+    {
+      "nmodes": 20,
+      "max_degree": 39,
+      "lambda_U": "1.8169150115121090766e-14",
+      "residual": "1.25e-30",
+      "tail_mass_beyond_TE": "2.031e-17",
+      "overshoot_bound": "5.289e-26"
+    },
+    {
+      "nmodes": 30,
+      "max_degree": 59,
+      "lambda_U": "1.6340890649404144084e-14",
+      "residual": "1.24e-30",
+      "tail_mass_beyond_TE": "1.835e-17",
+      "overshoot_bound": "4.779e-26"
+    },
+    {
+      "nmodes": 40,
+      "max_degree": 79,
+      "lambda_U": "1.5934614416399501927e-14",
+      "residual": "1.17e-30",
+      "tail_mass_beyond_TE": "1.816e-17",
+      "overshoot_bound": "4.73e-26"
+    },
+    {
+      "nmodes": 50,
+      "max_degree": 99,
+      "lambda_U": "1.577697141433503354e-14",
+      "residual": "1.16e-30",
+      "tail_mass_beyond_TE": "1.696e-17",
+      "overshoot_bound": "4.416e-26"
+    },
+    {
+      "nmodes": 60,
+      "max_degree": 119,
+      "lambda_U": "1.5662678981979983432e-14",
+      "residual": "1.15e-30",
+      "tail_mass_beyond_TE": "1.731e-17",
+      "overshoot_bound": "4.508e-26"
+    },
+    {
+      "nmodes": 70,
+      "max_degree": 139,
+      "lambda_U": "1.5604619295910527308e-14",
+      "residual": "1.13e-30",
+      "tail_mass_beyond_TE": "1.72e-17",
+      "overshoot_bound": "4.479e-26"
+    },
+    {
+      "nmodes": 80,
+      "max_degree": 159,
+      "lambda_U": "1.5577268579895502573e-14",
+      "residual": "1.13e-30",
+      "tail_mass_beyond_TE": "1.702e-17",
+      "overshoot_bound": "4.432e-26"
+    },
+    {
+      "nmodes": 90,
+      "max_degree": 179,
+      "lambda_U": "1.5560178847334154859e-14",
+      "residual": "1.13e-30",
+      "tail_mass_beyond_TE": "1.741e-17",
+      "overshoot_bound": "4.535e-26"
+    },
+    {
+      "nmodes": 100,
+      "max_degree": 199,
+      "lambda_U": "1.5540959974165334425e-14",
+      "residual": "1.13e-30",
+      "tail_mass_beyond_TE": "1.737e-17",
+      "overshoot_bound": "4.523e-26"
+    },
+    {
+      "nmodes": 120,
+      "max_degree": 239,
+      "lambda_U": "1.5525598374939229174e-14",
+      "residual": "1.12e-30",
+      "tail_mass_beyond_TE": "1.726e-17",
+      "overshoot_bound": "4.495e-26"
+    },
+    {
+      "nmodes": 140,
+      "max_degree": 279,
+      "lambda_U": "1.5510478294786712685e-14",
+      "residual": "1.12e-30",
+      "tail_mass_beyond_TE": "1.728e-17",
+      "overshoot_bound": "4.5e-26"
+    },
+    {
+      "nmodes": 160,
+      "max_degree": 319,
+      "lambda_U": "1.5501588732314369781e-14",
+      "residual": "1.12e-30",
+      "tail_mass_beyond_TE": "1.724e-17",
+      "overshoot_bound": "4.491e-26"
+    },
+    {
+      "nmodes": 180,
+      "max_degree": 359,
+      "lambda_U": "1.5496236065675657155e-14",
+      "residual": "1.12e-30",
+      "tail_mass_beyond_TE": "1.725e-17",
+      "overshoot_bound": "4.492e-26"
+    },
+    {
+      "nmodes": 200,
+      "max_degree": 399,
+      "lambda_U": "1.5491613493679871899e-14",
+      "residual": "1.12e-30",
+      "tail_mass_beyond_TE": "1.723e-17",
+      "overshoot_bound": "4.487e-26"
+    }
+  ],
+  "elapsed_s": 164.5
+}

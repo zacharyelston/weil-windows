@@ -1,0 +1,10 @@
+PARI stack size set to 4000000000 bytes, maximum size set to 4000006144
+G0 PASS {'galoisidentify': [8, 3], 'conductor': 145, 'vga': [0, 0], 'lfuncheckfeq_bits': -131.0, 'a5': -1, 'a29': -1, 'central_order': 0} mismatches 0 reciprocity 25 / 25 published [-1, -1, -1]
+proxy: positive control fired | good G1 True 2099 max|D| 0.035 | default found 2005 max|D| 73.913 | G2 max residual 0.0004691018513111045 tau 0.0014073055539333135
+L(chi_5): G1 True 904 max|D| 0.026
+L(chi_29): G1 True 1183 max|D| 0.028
+L(rho) 38 digits: G1 True 2087 max|D| 0.011
+L(rho) 57 digits: G1 True 2087 max|D| 0.011
+G2 {'max_residual': 0.00046248391053956006, 'tau': 0.0014073055539333135, 'pass': True, 'residual_quantiles': [9.140132172313908e-05, 0.00029988683797799176, 0.00036452039046785956, 0.0004083032418478183, 0.0004377965289449892]}
+G3 readout True max dev 0.08171337026135017 | negative control agreements 0 / 18
+wrote data/borromean/step1.json

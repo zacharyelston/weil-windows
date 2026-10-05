@@ -1,0 +1,44 @@
+{
+  "status": "M2 proved for bounded-split exact envelope expressions; M1 and rate unproved",
+  "stop_reason": "No explicit uniform normalized, pole-cancelled lattice remainder established from read sources",
+  "half_integer_e_plus_polynomials": {
+    "2": [
+      "1",
+      "-3",
+      "3"
+    ],
+    "3": [
+      "1",
+      "-6",
+      "15",
+      "-15"
+    ]
+  },
+  "formal_W1": [
+    "-15/8",
+    "1/4",
+    "-1/8"
+  ],
+  "formal_F1": [
+    "-2",
+    "1/2",
+    "-1/8"
+  ],
+  "formal_difference": [
+    "1/8",
+    "-1/4",
+    "0"
+  ],
+  "formal_a_zeta_minus_limit": "1/8",
+  "scalar_bounds": {
+    "I2_upper": 1,
+    "I7half_lower": "2/5",
+    "a_upper": 10,
+    "single_G_upper": "7e10",
+    "J_upper": "3e12",
+    "edge_upper": "5e5",
+    "count_K_factor": 5,
+    "stieltjes_factor": 4,
+    "conditional_p": 24
+  }
+}

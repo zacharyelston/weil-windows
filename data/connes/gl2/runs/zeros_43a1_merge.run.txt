@@ -1,0 +1,11 @@
+2026-10-02 09:46:18 | gl2 zeros-merge 43a1 | START  pid=42186 total=None log=logs/gl2-zeros-merge-43a1-20261002-094618.log args={'cmd': 'zeros-merge', 'curve': '43a1', 'parts': '<repo>/.claude/worktrees/agent-a6f1432289c541306/data/connes/gl2/zeros_43a1_chunk_0_140.json,<repo>/.claude/worktrees/agent-a6f1432289c541306/data/connes/gl2/zeros_43a1_chunk_140_182.json,<repo>/.claude/worktrees/agent-a6f1432289c541306/data/connes/gl2/zeros_43a1_chunk_182_214.json,<repo>/.claude/worktrees/agent-a6f1432289c541306/data/connes/gl2/zeros_43a1_chunk_214_240.json', 'count_at': '40,80,120,160,200,240', 'json': '<repo>/.claude/worktrees/agent-a6f1432289c541306/data/connes/gl2/zeros_43a1.json'}
+2026-10-02 09:46:18 | gl2 zeros-merge 43a1 | INFO   removed 1 duplicate zero(s) at chunk boundaries
+2026-10-02 09:46:18 | gl2 zeros-merge 43a1 | RESULT 43a1: merged 4 chunks → 345 zeros in (0, 240.0]; first ['4.494720274', '6.828717446', '7.864423202', '9.206795358']
+2026-10-02 09:46:19 | gl2 zeros-merge 43a1 | RESULT 43a1: central zero: Z(2e-4)/Z(1e-4) = 2.000000037 (2 for a simple zero, 8 for a triple); Z'(0) ≈ 0.34352398
+2026-10-02 09:46:34 | gl2 zeros-merge 43a1 | RESULT 43a1: (θ + arg L)/π at T = 40.146975: 35.5; found 35 zeros in (0, T], so m0 = 2·(35.5 − 35) = 1.0 → OK (max |Δarg| per step 0.07)
+2026-10-02 09:46:59 | gl2 zeros-merge 43a1 | RESULT 43a1: (θ + arg L)/π at T = 80.264162: 87.5; found 87 zeros in (0, T], so m0 = 2·(87.5 − 87) = 1.0 → OK (max |Δarg| per step 0.092)
+2026-10-02 09:47:38 | gl2 zeros-merge 43a1 | RESULT 43a1: (θ + arg L)/π at T = 119.88449: 146.5; found 146 zeros in (0, T], so m0 = 2·(146.5 − 146) = 1.0 → OK (max |Δarg| per step 0.012)
+2026-10-02 09:48:34 | gl2 zeros-merge 43a1 | RESULT 43a1: (θ + arg L)/π at T = 159.89607: 209.5; found 209 zeros in (0, T], so m0 = 2·(209.5 − 209) = 1.0 → OK (max |Δarg| per step 0.062)
+2026-10-02 09:49:56 | gl2 zeros-merge 43a1 | RESULT 43a1: (θ + arg L)/π at T = 199.9498: 276.5; found 276 zeros in (0, T], so m0 = 2·(276.5 − 276) = 1.0 → OK (max |Δarg| per step 0.11)
+2026-10-02 09:51:51 | gl2 zeros-merge 43a1 | RESULT 43a1: (θ + arg L)/π at T = 240.0: 345.5; found 345 zeros in (0, T], so m0 = 2·(345.5 − 345) = 1.0 → OK (max |Δarg| per step 0.37)
+2026-10-02 09:51:51 | gl2 zeros-merge 43a1 | DONE   0/0 in 5m32s

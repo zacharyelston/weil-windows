@@ -1,0 +1,122 @@
+[
+ {
+  "object": "11a1",
+  "level": 11,
+  "weight": 2,
+  "eps": 1,
+  "measured_ln_odd_over_even": "10.461",
+  "prolate_predicted": "11.71"
+ },
+ {
+  "object": "37a1",
+  "level": 37,
+  "weight": 2,
+  "eps": -1,
+  "measured_ln_odd_over_even": "-9.7064",
+  "prolate_predicted": "-11.71"
+ },
+ {
+  "object": "g4",
+  "level": 5,
+  "weight": 4,
+  "eps": 1,
+  "measured_ln_odd_over_even": "10.083",
+  "prolate_predicted": "10.992"
+ },
+ {
+  "object": "g6",
+  "level": 3,
+  "weight": 6,
+  "eps": 1,
+  "measured_ln_odd_over_even": "9.9636",
+  "prolate_predicted": "10.562"
+ },
+ {
+  "object": "g8",
+  "level": 2,
+  "weight": 8,
+  "eps": 1,
+  "measured_ln_odd_over_even": "9.8695",
+  "prolate_predicted": "10.248"
+ },
+ {
+  "object": "14a1",
+  "level": 14,
+  "weight": 2,
+  "eps": 1,
+  "measured_ln_odd_over_even": "10.548",
+  "prolate_predicted": "11.71"
+ },
+ {
+  "object": "17a1",
+  "level": 17,
+  "weight": 2,
+  "eps": 1,
+  "measured_ln_odd_over_even": "10.715",
+  "prolate_predicted": "11.71"
+ },
+ {
+  "object": "43a1",
+  "level": 43,
+  "weight": 2,
+  "eps": -1,
+  "measured_ln_odd_over_even": "-9.8641",
+  "prolate_predicted": "-11.71"
+ },
+ {
+  "object": "53a1",
+  "level": 53,
+  "weight": 2,
+  "eps": -1,
+  "measured_ln_odd_over_even": "-9.9237",
+  "prolate_predicted": "-11.71"
+ },
+ {
+  "object": "delta",
+  "level": 1,
+  "weight": 12,
+  "eps": 1,
+  "measured_ln_odd_over_even": "9.449",
+  "prolate_predicted": "9.7903"
+ },
+ {
+  "object": "f16",
+  "level": 1,
+  "weight": 16,
+  "eps": 1,
+  "measured_ln_odd_over_even": "9.953",
+  "prolate_predicted": "9.4481"
+ },
+ {
+  "object": "f18",
+  "level": 1,
+  "weight": 18,
+  "eps": -1,
+  "measured_ln_odd_over_even": "-8.5103",
+  "prolate_predicted": "-9.3022"
+ },
+ {
+  "object": "f20",
+  "level": 1,
+  "weight": 20,
+  "eps": 1,
+  "measured_ln_odd_over_even": "9.8248",
+  "prolate_predicted": "9.1683"
+ },
+ {
+  "object": "f22",
+  "level": 1,
+  "weight": 22,
+  "eps": -1,
+  "measured_ln_odd_over_even": "-8.7819",
+  "prolate_predicted": "-9.0438"
+ },
+ {
+  "object": "f26",
+  "level": 1,
+  "weight": 26,
+  "eps": -1,
+  "measured_ln_odd_over_even": "-8.8263",
+  "prolate_predicted": "-8.8167"
+ }
+]

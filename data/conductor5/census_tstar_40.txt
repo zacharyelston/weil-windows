@@ -1,0 +1,2 @@
+F_t, t = 0.05529219744: γ ∈ [0.5, 40.0]: argument principle 16; on the line 16; off-line pairs 0 → 16
+  real zeros in (0, 1): ['0.25', '0.75']

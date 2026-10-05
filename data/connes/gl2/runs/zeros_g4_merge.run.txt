@@ -1,0 +1,10 @@
+2026-10-02 05:58:21 | gl2 zeros-merge g4 | START  pid=94722 total=None log=logs/gl2-zeros-merge-g4-20261002-055821.log args={'cmd': 'zeros-merge', 'curve': 'g4', 'parts': 'data/connes/gl2/zeros_g4_chunk_0_182.json,data/connes/gl2/zeros_g4_chunk_182_240.json', 'count_at': '40,80,120,160,200,240', 'json': 'data/connes/gl2/zeros_g4.json'}
+2026-10-02 05:58:21 | gl2 zeros-merge g4 | INFO   removed 1 duplicate zero(s) at chunk boundaries
+2026-10-02 05:58:21 | gl2 zeros-merge g4 | RESULT g4: merged 2 chunks → 264 zeros in (0, 240.0]; first ['7.803685993', '9.41501646', '11.52156568', '14.42700262']
+2026-10-02 05:58:30 | gl2 zeros-merge g4 | RESULT g4: (θ + arg L)/π at T = 40.040119: 22.0; found 22 zeros in (0, T] → OK (max |Δarg| per step 0.022)
+2026-10-02 05:58:45 | gl2 zeros-merge g4 | RESULT g4: (θ + arg L)/π at T = 79.766995: 60.0; found 60 zeros in (0, T] → OK (max |Δarg| per step 0.062)
+2026-10-02 05:59:07 | gl2 zeros-merge g4 | RESULT g4: (θ + arg L)/π at T = 119.82978: 106.0; found 106 zeros in (0, T] → OK (max |Δarg| per step 0.034)
+2026-10-02 05:59:38 | gl2 zeros-merge g4 | RESULT g4: (θ + arg L)/π at T = 159.58176: 155.0; found 155 zeros in (0, T] → OK (max |Δarg| per step 0.017)
+2026-10-02 06:00:24 | gl2 zeros-merge g4 | RESULT g4: (θ + arg L)/π at T = 200.19135: 209.0; found 209 zeros in (0, T] → OK (max |Δarg| per step 0.016)
+2026-10-02 06:01:41 | gl2 zeros-merge g4 | RESULT g4: (θ + arg L)/π at T = 240.0: 264.0; found 264 zeros in (0, T] → OK (max |Δarg| per step 0.32)
+2026-10-02 06:01:41 | gl2 zeros-merge g4 | DONE   0/0 in 3m20s

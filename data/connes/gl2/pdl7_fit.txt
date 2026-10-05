@@ -1,0 +1,33 @@
+7a [9k] f16  even: α/4π =  2.1249  γ =   23.98  β =   31.031  max resid  0.265;  linear α/4π = 1.4674  → in [1.7, 2.3]
+7a [5k] f16  even: α/4π =  2.1246  γ =   24.03  β =    30.99  max resid  0.267;  linear α/4π = 1.4657  → in [1.7, 2.3]
+index f16  even: flattest n = 19 (metric 0.109; runner-up 18: 0.361)
+7a [9k] f16  odd : α/4π =   2.549  γ =   44.16  β =   31.747  max resid   0.09;  linear α/4π = 1.3381  → in kill-free band
+7a [5k] f16  odd : α/4π =  2.5581  γ =   44.48  β =   31.773  max resid 0.0829;  linear α/4π = 1.3385  → in kill-free band
+index f16  odd : flattest n = 22 (metric 0.122; runner-up 21: 0.348)
+7a [9k] f18  even: α/4π =  2.3991  γ =   42.66  β =   29.957  max resid  0.446;  linear α/4π = 1.2295  → in kill-free band
+7a [5k] f18  even: α/4π =  2.3957  γ =   42.59  β =   29.915  max resid  0.444;  linear α/4π = 1.2279  → in kill-free band
+index f18  even: flattest n = 26 (metric 0.201; runner-up 25: 0.269)
+7a [9k] f18  odd : α/4π =  2.1142  γ =   26.97  β =   31.192  max resid  0.302;  linear α/4π = 1.3747  → in [1.7, 2.3]
+7a [5k] f18  odd : α/4π =  2.1168  γ =   27.04  β =   31.234  max resid  0.307;  linear α/4π = 1.3753  → in [1.7, 2.3]
+index f18  odd : flattest n = 22 (metric 0.221; runner-up 21: 0.249)
+7a [9k] f20  even: α/4π =  2.4991  γ =   44.21  β =    30.22  max resid  0.275;  linear α/4π = 1.2871  → in kill-free band
+7a [5k] f20  even: α/4π =  2.4917  γ =   44.01  β =   30.175  max resid  0.278;  linear α/4π = 1.2851  → in kill-free band
+index f20  even: flattest n = 24 (metric 0.194; runner-up 23: 0.276)
+7a [9k] f20  odd : α/4π =  2.9147  γ =   66.72  β =     27.3  max resid  0.504;  linear α/4π = 1.0853  → KILL
+7a [5k] f20  odd : α/4π =  2.9222  γ =   67.02  β =   27.286  max resid  0.505;  linear α/4π = 1.0846  → KILL
+index f20  odd : flattest n = 29 (metric 0.184; runner-up 30: 0.286)
+7a [9k] f22  even: α/4π =  3.1624  γ =   80.43  β =   23.947  max resid  0.333;  linear α/4π = 0.95719  → KILL
+7a [5k] f22  even: α/4π =  3.1574  γ =   80.29  β =   23.915  max resid  0.332;  linear α/4π = 0.95588  → KILL
+index f22  even: flattest n = 33 (metric 0.0302; runner-up 34: 0.44)
+7a [9k] f22  odd : α/4π =  2.5246  γ =    49.4  β =   28.743  max resid  0.221;  linear α/4π = 1.17  → in kill-free band
+7a [5k] f22  odd : α/4π =  2.5353  γ =   49.81  β =   28.741  max resid  0.223;  linear α/4π = 1.1697  → in kill-free band
+index f22  odd : flattest n = 28 (metric 0.171; runner-up 27: 0.299)
+7a [9k] f26  even: α/4π =  3.1154  γ =   89.23  β =   16.704  max resid  0.393;  linear α/4π = 0.66873  → KILL
+7a [5k] f26  even: α/4π =  3.1111  γ =   89.11  β =   16.682  max resid  0.393;  linear α/4π = 0.66782  → KILL
+index f26  even: flattest n = 40 (metric 2.22; runner-up 39: 2.69)
+7a [9k] f26  odd : α/4π =  2.9481  γ =   73.71  β =   23.472  max resid  0.288;  linear α/4π = 0.92716  → KILL
+7a [5k] f26  odd : α/4π =  2.9524  γ =    73.9  β =   23.445  max resid  0.287;  linear α/4π = 0.9261  → KILL
+index f26  odd : flattest n = 35 (metric 0.0651; runner-up 34: 0.405)
+P-DL7a: KILLED (α/4π 2.114–3.162)
+P-DL7b: n_even = {12: 14, 16: 19, 18: 26, 20: 24, 22: 33, 26: 40}; fit a = 1.881, b = -9.746, max resid 3.88 → KILLED
+P-DL7c: offsets n_odd − n_even = {16: 3, 18: -4, 20: 5, 22: -5, 26: -5} (Δ, k = 12, for reference: 2) → KILLED

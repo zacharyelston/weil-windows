@@ -1,0 +1,114 @@
+[
+ {
+  "D": -20,
+  "parity": "even",
+  "slope_linear_over_4pi": "0.975133",
+  "slope_log_over_4pi": "0.99612",
+  "gamma": "1.36435",
+  "beta": "7.42023"
+ },
+ {
+  "D": -20,
+  "parity": "odd",
+  "slope_linear_over_4pi": "0.940984",
+  "slope_log_over_4pi": "0.995966",
+  "gamma": "3.57444",
+  "beta": "13.3696"
+ },
+ {
+  "D": -7,
+  "parity": "even",
+  "slope_linear_over_4pi": "0.967876",
+  "slope_log_over_4pi": "0.987278",
+  "gamma": "1.26134",
+  "beta": "6.90304"
+ },
+ {
+  "D": -7,
+  "parity": "odd",
+  "slope_linear_over_4pi": "0.940408",
+  "slope_log_over_4pi": "0.983944",
+  "gamma": "2.83029",
+  "beta": "13.1615"
+ },
+ {
+  "D": -4,
+  "parity": "even",
+  "slope_linear_over_4pi": "0.974634",
+  "slope_log_over_4pi": "1.00268",
+  "gamma": "1.8231",
+  "beta": "7.99822"
+ },
+ {
+  "D": -4,
+  "parity": "odd",
+  "slope_linear_over_4pi": "0.943083",
+  "slope_log_over_4pi": "0.997621",
+  "gamma": "3.54563",
+  "beta": "13.3493"
+ },
+ {
+  "D": -3,
+  "parity": "even",
+  "slope_linear_over_4pi": "0.974378",
+  "slope_log_over_4pi": "1.00406",
+  "gamma": "1.92958",
+  "beta": "8.31312"
+ },
+ {
+  "D": -3,
+  "parity": "odd",
+  "slope_linear_over_4pi": "0.940082",
+  "slope_log_over_4pi": "1.00014",
+  "gamma": "3.90471",
+  "beta": "12.9183"
+ },
+ {
+  "D": 1,
+  "parity": "even",
+  "slope_linear_over_4pi": "0.920319",
+  "slope_log_over_4pi": "1.00217",
+  "gamma": "5.32114",
+  "beta": "15.2444"
+ },
+ {
+  "D": 1,
+  "parity": "odd",
+  "slope_linear_over_4pi": "0.885174",
+  "slope_log_over_4pi": "1.01699",
+  "gamma": "8.56967",
+  "beta": "17.9331"
+ },
+ {
+  "D": 5,
+  "parity": "even",
+  "slope_linear_over_4pi": "0.994253",
+  "slope_log_over_4pi": "0.993982",
+  "gamma": "-0.0176153",
+  "beta": "6.10416"
+ },
+ {
+  "D": 5,
+  "parity": "odd",
+  "slope_linear_over_4pi": "0.961517",
+  "slope_log_over_4pi": "0.987051",
+  "gamma": "1.65997",
+  "beta": "11.3887"
+ },
+ {
+  "D": 8,
+  "parity": "even",
+  "slope_linear_over_4pi": "0.989332",
+  "slope_log_over_4pi": "0.998672",
+  "gamma": "0.607222",
+  "beta": "4.83606"
+ },
+ {
+  "D": 8,
+  "parity": "odd",
+  "slope_linear_over_4pi": "0.958256",
+  "slope_log_over_4pi": "0.993953",
+  "gamma": "2.32073",
+  "beta": "10.6601"
+ }
+]

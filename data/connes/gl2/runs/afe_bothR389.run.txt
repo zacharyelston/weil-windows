@@ -1,0 +1,5 @@
+2026-10-03 11:17:56 | gl2 afe-both | START  pid=59705 total=None log=logs/gl2-afe-both-20261003-111756.log args={'cmd': 'afe-both', 'objects': '389a1', 'npts': 5, 'seed': 20261002, 'json': 'data/connes/gl2/afe_bothR389.json'}
+2026-10-03 11:18:18 | gl2 afe-both | RESULT 389a1 ε = +1: split rel 5.6e-46–1.6e-40;  Λ(k − w) vs εΛ(w): rel 1.3e-45–7.3e-41
+2026-10-03 11:18:39 | gl2 afe-both | RESULT 389a1 ε = -1: split rel 0.22–1.4;  Λ(k − w) vs εΛ(w): rel 0.33–4.7
+2026-10-03 11:19:05 | gl2 afe-both | RESULT 389a1: ε = +1 (the other sign fails);  AFE vs Dirichlet series: ['1.18e-19', '2.31e-17'];  L(½) = ['-2.15208211689e-41', '-1.45180916422e-41'];  L'(½) = ['-4.30299616129e-25', '-4.30291920123e-25']  → analytic rank 2
+2026-10-03 11:19:05 | gl2 afe-both | DONE   0/0 in 1m09s

@@ -1,0 +1,8 @@
+2026-10-03 11:58:14 | gl2 scan6 389a1 | START  pid=18230 total=2 log=logs/gl2-scan6-389a1-20261003-115814.log args={'cmd': 'scan6', 'obj': '389a1', 'v': '3.5', 'f1': 5.0, 'f2': 9.0, 'nmin': 24, 'acb_max': 120, 'resume': False, 'method': 'inv+full', 'json': 'data/connes/gl2/scanR389_v3.5.json'}
+2026-10-03 11:58:40 | gl2 scan6 389a1 | INFO   v=3.5 x=4765.25 even N_basis=304: λ = 6.94679230527e-33 stable at dps 97 (26s)
+2026-10-03 11:59:38 | gl2 scan6 389a1 | INFO   v=3.5 x=4765.25 even N_basis=541: λ = 6.45626943097e-33 stable at dps 97 (59s)
+2026-10-03 11:59:38 | gl2 scan6 389a1 | STATUS 1/2 (50.0%)  elapsed 1m24s  eta 1m24s  | v=3.5 x=4765.25 even: N=304: 6.9467923e-33  N=541: 6.4562694e-33  ln(λ1/λ2) = 0.0732  (dps 97, 97)
+2026-10-03 11:59:58 | gl2 scan6 389a1 | INFO   v=3.5 x=4765.25 odd N_basis=304: λ = 1.26010943761e-36 stable at dps 97 (19s)
+2026-10-03 12:00:43 | gl2 scan6 389a1 | INFO   v=3.5 x=4765.25 odd N_basis=541: λ = 1.19011907261e-36 stable at dps 97 (46s)
+2026-10-03 12:00:43 | gl2 scan6 389a1 | STATUS 2/2 (100.0%)  elapsed 2m29s  eta 0s  | v=3.5 x=4765.25 odd: N=304: 1.2601094e-36  N=541: 1.1901191e-36  ln(λ1/λ2) = 0.0571  (dps 97, 97)
+2026-10-03 12:00:43 | gl2 scan6 389a1 | DONE   2/2 in 2m29s

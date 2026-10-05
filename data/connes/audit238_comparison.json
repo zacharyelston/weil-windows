@@ -1,0 +1,46 @@
+{
+  "claim_commit": "6a1bccd",
+  "audit_base": "2d3310d",
+  "branch": "audit/certificate-238",
+  "evidence_labels": [
+    "re-derived",
+    "recomputed independently",
+    "reproduced with the authors code"
+  ],
+  "mu_independent": "[3.4661590842079800092756837108161355993278437435858850180834610888565060725405273 +/- 3.57e-80]",
+  "m_containment_count": 10,
+  "bessel_containment_count": 10,
+  "independent_lambda450": "[6.8131346965052117807629553807246379998022459279448209643777272e-48 +/- 2.02e-110]",
+  "author_lambda450": "6.81313469666455e-48",
+  "author_lambda680": "6.81313469666455e-48",
+  "relative_difference450": "[2.33869175249170566573190747022e-11 +/- 6.17e-42]",
+  "relative_difference680": "[2.33869175249170566573190747022e-11 +/- 6.17e-42]",
+  "author450_seconds": 1041,
+  "author680_seconds": 1658,
+  "independent450_seconds": 590,
+  "corrected_fresh_even_lower": "[6.81311646959512013593691016860463146894273324553182191172289502917275453989842704268130307e-48 +/- 2.97e-138]",
+  "recorded_odd_corrected_lower": "[3.91966861609542219729628936108020242209690427818555631183875394615922152289877817196203237e-44 +/- 4.03e-135]",
+  "author450_residual_check": {
+    "reported": "[2.96379757056345930644845567305135572138997358047134205599317290648731239810161801378159333261469037768758547437570738404e-118 +/- 5.40e-238]",
+    "correct_exact_residual": "[2.95097491191222620864208884594348368874125612989163320463678950297808753927168004520031484027275856778778576949150404642e-118 +/- 4.95e-238]",
+    "shift_lower": "[6.8131278835298528788999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999940991967527123918141e-48 +/- 2.38e-188]",
+    "reported_minus_correct": "[1.282265865123309780636682710787203264871745057970885135638340350922485882993796858127849234193180989979970488420333762e-120 +/- 3.53e-238]"
+  },
+  "source_sha256": {
+    "scripts/audit238_assembly.py": "4a2eae8d6b1e728873878c2c38f87cf1c4731403222871da9699772d2307504d",
+    "scripts/audit238_author450.py": "6a5b83612763c2638b4e78681af09ec68af1807768b60d8fa5b10cca7ea3678e",
+    "scripts/audit238_bookkeeping.py": "a7424980bc7c399598c78641385f93840ff26b3ee4c07320780e02eb14ba7cb0",
+    "scripts/audit238_compare.py": "e32a7d3cadfd58c12ed4f58879ba59991e36984fffb04bbe43034a1623779df8",
+    "scripts/audit238_components.py": "824a6b9b58a12b84b1e9839e7dd6a2926c71458af1512b1431032b3434d741ac",
+    "scripts/audit238_verify_debits.py": "4c47183eaef6b6c0737eb93275071ba1eabe9c73d8f4c093057a2fb93b66c3f4",
+    "scripts/grid_certificate_rigorous.py": "cb178df63c18c92faf73d02ace5480e79bc641d7634a64d55edc23b712b61b40",
+    "scripts/grid_norm.py": "d63663a4f07ef058e44655db94c9dcbc17ece121ffe7aaf999a937d900d93dae"
+  },
+  "verdict": "verified with corrections",
+  "limitations": [
+    "Independent 450 assembly is numerical; shared MPFR/FLINT arithmetic libraries.",
+    "Odd sector source output was audited but not freshly rerun.",
+    "Original raw implementation has two rigor defects; independent Schur and residual debit repair them.",
+    "One-worker raw bound differs in its final decimal; sharper quadrature norm recovers the original constant."
+  ]
+}

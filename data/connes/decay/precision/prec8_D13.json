@@ -1,0 +1,24 @@
+[
+ {
+  "D": 13,
+  "xq": "10.0",
+  "parity": "even",
+  "n2": 446,
+  "dps": 121,
+  "dps_recheck": 161,
+  "lambda_saved": "1.11316337484487e-52",
+  "lambda_recheck": "1.11316337484487e-52",
+  "rel_change": "2.363e-15"
+ },
+ {
+  "D": 13,
+  "xq": "10.0",
+  "parity": "odd",
+  "n2": 446,
+  "dps": 121,
+  "dps_recheck": 161,
+  "lambda_saved": "5.67361054138649e-48",
+  "lambda_recheck": "5.67361054138649e-48",
+  "rel_change": "3.515e-16"
+ }
+]

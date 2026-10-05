@@ -1,0 +1,224 @@
+2026-10-02 05:28:41 | gl2 zeros g4 | START  pid=89243 total=None log=logs/gl2-zeros-g4-20261002-052841.log args={'cmd': 'zeros', 'curve': 'g4', 'tmax': 182.0, 'step': '0.05', 'count_at': '20,40,60,80,100,120', 'json': 'data/connes/gl2/zeros_g4_chunk_0_182.json', 'tmin': 0.0, 'chunk': True}
+2026-10-02 05:28:47 | gl2 zeros g4 | STATUS   inner 5/182 (2.7%)  elapsed 5s  | zeros of L(g4)
+2026-10-02 05:28:51 | gl2 zeros g4 | INFO   zero 1: 7.80368599340441
+2026-10-02 05:28:55 | gl2 zeros g4 | INFO   zero 2: 9.41501645982875
+2026-10-02 05:28:55 | gl2 zeros g4 | STATUS   inner 10/182 (5.5%)  elapsed 14s  | zeros of L(g4)
+2026-10-02 05:28:59 | gl2 zeros g4 | INFO   zero 3: 11.52156568136
+2026-10-02 05:29:05 | gl2 zeros g4 | INFO   zero 4: 14.4270026209654
+2026-10-02 05:29:06 | gl2 zeros g4 | STATUS   inner 15/182 (8.2%)  elapsed 24s  | zeros of L(g4)
+2026-10-02 05:29:09 | gl2 zeros g4 | INFO   zero 5: 16.4920209676631
+2026-10-02 05:29:13 | gl2 zeros g4 | INFO   zero 6: 17.809360020112
+2026-10-02 05:29:17 | gl2 zeros g4 | INFO   zero 7: 19.3940608594603
+2026-10-02 05:29:18 | gl2 zeros g4 | STATUS   inner 20/182 (11.0%)  elapsed 36s  | zeros of L(g4)
+2026-10-02 05:29:19 | gl2 zeros g4 | INFO   zero 8: 20.2425363846019
+2026-10-02 05:29:25 | gl2 zeros g4 | INFO   zero 9: 22.51370164113
+2026-10-02 05:29:31 | gl2 zeros g4 | INFO   zero 10: 24.5371993043405
+2026-10-02 05:29:32 | gl2 zeros g4 | STATUS   inner 25/182 (13.7%)  elapsed 50s  | zeros of L(g4)
+2026-10-02 05:29:34 | gl2 zeros g4 | INFO   zero 11: 25.817254569434
+2026-10-02 05:29:38 | gl2 zeros g4 | INFO   zero 12: 26.9540837986657
+2026-10-02 05:29:41 | gl2 zeros g4 | INFO   zero 13: 27.911812454459
+2026-10-02 05:29:46 | gl2 zeros g4 | INFO   zero 14: 29.2031999467046
+2026-10-02 05:29:48 | gl2 zeros g4 | STATUS   inner 30/182 (16.5%)  elapsed 1m06s  | zeros of L(g4)
+2026-10-02 05:29:51 | gl2 zeros g4 | INFO   zero 15: 30.8361934609735
+2026-10-02 05:29:56 | gl2 zeros g4 | INFO   zero 16: 32.1490899455113
+2026-10-02 05:30:02 | gl2 zeros g4 | INFO   zero 17: 34.0299269062972
+2026-10-02 05:30:06 | gl2 zeros g4 | INFO   zero 18: 34.9766777634599
+2026-10-02 05:30:06 | gl2 zeros g4 | STATUS   inner 35/182 (19.2%)  elapsed 1m24s  | zeros of L(g4)
+2026-10-02 05:30:10 | gl2 zeros g4 | INFO   zero 19: 36.0869756943434
+2026-10-02 05:30:14 | gl2 zeros g4 | INFO   zero 20: 37.1567630275556
+2026-10-02 05:30:18 | gl2 zeros g4 | INFO   zero 21: 37.8853587756083
+2026-10-02 05:30:24 | gl2 zeros g4 | INFO   zero 22: 39.3036040990805
+2026-10-02 05:30:26 | gl2 zeros g4 | STATUS   inner 40/182 (22.0%)  elapsed 1m44s  | zeros of L(g4)
+2026-10-02 05:30:29 | gl2 zeros g4 | INFO   zero 23: 40.7766338000753
+2026-10-02 05:30:36 | gl2 zeros g4 | INFO   zero 24: 42.4580938400039
+2026-10-02 05:30:40 | gl2 zeros g4 | INFO   zero 25: 43.4845431816214
+2026-10-02 05:30:44 | gl2 zeros g4 | INFO   zero 26: 44.1314488057078
+2026-10-02 05:30:46 | gl2 zeros g4 | STATUS   inner 45/182 (24.7%)  elapsed 2m05s  | zeros of L(g4)
+2026-10-02 05:30:50 | gl2 zeros g4 | INFO   zero 27: 45.7170949749737
+2026-10-02 05:30:53 | gl2 zeros g4 | INFO   zero 28: 46.1258851472819
+2026-10-02 05:30:59 | gl2 zeros g4 | INFO   zero 29: 47.3840362672565
+2026-10-02 05:31:04 | gl2 zeros g4 | INFO   zero 30: 48.4360135104894
+2026-10-02 05:31:10 | gl2 zeros g4 | INFO   zero 31: 49.7985198348384
+2026-10-02 05:31:10 | gl2 zeros g4 | STATUS   inner 50/182 (27.5%)  elapsed 2m29s  | zeros of L(g4)
+2026-10-02 05:31:16 | gl2 zeros g4 | INFO   zero 32: 51.1734238541049
+2026-10-02 05:31:22 | gl2 zeros g4 | INFO   zero 33: 52.2869222201654
+2026-10-02 05:31:28 | gl2 zeros g4 | INFO   zero 34: 53.5791999612629
+2026-10-02 05:31:32 | gl2 zeros g4 | INFO   zero 35: 54.1522312045536
+2026-10-02 05:31:36 | gl2 zeros g4 | INFO   zero 36: 54.8479773111729
+2026-10-02 05:31:37 | gl2 zeros g4 | STATUS   inner 55/182 (30.2%)  elapsed 2m55s  | zeros of L(g4)
+2026-10-02 05:31:43 | gl2 zeros g4 | INFO   zero 37: 56.1204844275938
+2026-10-02 05:31:47 | gl2 zeros g4 | INFO   zero 38: 56.7579043403916
+2026-10-02 05:31:55 | gl2 zeros g4 | INFO   zero 39: 58.4504291393643
+2026-10-02 05:32:01 | gl2 zeros g4 | INFO   zero 40: 59.3752175526544
+2026-10-02 05:32:03 | gl2 zeros g4 | STATUS   inner 60/182 (33.0%)  elapsed 3m22s  | zeros of L(g4)
+2026-10-02 05:32:08 | gl2 zeros g4 | INFO   zero 41: 60.7122525398541
+2026-10-02 05:32:14 | gl2 zeros g4 | INFO   zero 42: 61.6807440927264
+2026-10-02 05:32:20 | gl2 zeros g4 | INFO   zero 43: 62.650330879098
+2026-10-02 05:32:25 | gl2 zeros g4 | INFO   zero 44: 63.378894526209
+2026-10-02 05:32:31 | gl2 zeros g4 | INFO   zero 45: 64.2798791762851
+2026-10-02 05:32:34 | gl2 zeros g4 | STATUS   inner 65/182 (35.7%)  elapsed 3m52s  | zeros of L(g4)
+2026-10-02 05:32:38 | gl2 zeros g4 | INFO   zero 46: 65.4044895251185
+2026-10-02 05:32:43 | gl2 zeros g4 | INFO   zero 47: 66.0137427838012
+2026-10-02 05:32:50 | gl2 zeros g4 | INFO   zero 48: 67.1508413933193
+2026-10-02 05:32:59 | gl2 zeros g4 | INFO   zero 49: 68.6094386561002
+2026-10-02 05:33:06 | gl2 zeros g4 | INFO   zero 50: 69.7140217884298
+2026-10-02 05:33:07 | gl2 zeros g4 | STATUS   inner 70/182 (38.5%)  elapsed 4m25s  | zeros of L(g4)
+2026-10-02 05:33:13 | gl2 zeros g4 | INFO   zero 51: 70.7763248520461
+2026-10-02 05:33:19 | gl2 zeros g4 | INFO   zero 52: 71.5672439988151
+2026-10-02 05:33:23 | gl2 zeros g4 | INFO   zero 53: 72.1606366108653
+2026-10-02 05:33:30 | gl2 zeros g4 | INFO   zero 54: 73.2388371620877
+2026-10-02 05:33:36 | gl2 zeros g4 | INFO   zero 55: 74.0504480262723
+2026-10-02 05:33:42 | gl2 zeros g4 | INFO   zero 56: 74.7651934261652
+2026-10-02 05:33:43 | gl2 zeros g4 | STATUS   inner 75/182 (41.2%)  elapsed 5m01s  | zeros of L(g4)
+2026-10-02 05:33:50 | gl2 zeros g4 | INFO   zero 57: 76.0923469856736
+2026-10-02 05:33:58 | gl2 zeros g4 | INFO   zero 58: 77.2317289010253
+2026-10-02 05:34:04 | gl2 zeros g4 | INFO   zero 59: 78.0804389147391
+2026-10-02 05:34:13 | gl2 zeros g4 | INFO   zero 60: 79.3455060673406
+2026-10-02 05:34:16 | gl2 zeros g4 | STATUS   inner 80/182 (44.0%)  elapsed 5m34s  | zeros of L(g4)
+2026-10-02 05:34:19 | gl2 zeros g4 | INFO   zero 61: 80.1884843448433
+2026-10-02 05:34:26 | gl2 zeros g4 | INFO   zero 62: 80.9121337092915
+2026-10-02 05:34:34 | gl2 zeros g4 | INFO   zero 63: 82.0835371089155
+2026-10-02 05:34:39 | gl2 zeros g4 | INFO   zero 64: 82.5152119117009
+2026-10-02 05:34:45 | gl2 zeros g4 | INFO   zero 65: 83.1986161551341
+2026-10-02 05:34:53 | gl2 zeros g4 | INFO   zero 66: 84.2680348495062
+2026-10-02 05:34:57 | gl2 zeros g4 | STATUS   inner 85/182 (46.7%)  elapsed 6m15s  | zeros of L(g4)
+2026-10-02 05:35:02 | gl2 zeros g4 | INFO   zero 67: 85.6210448110832
+2026-10-02 05:35:08 | gl2 zeros g4 | INFO   zero 68: 86.2175753440956
+2026-10-02 05:35:20 | gl2 zeros g4 | INFO   zero 69: 87.9000434720265
+2026-10-02 05:35:26 | gl2 zeros g4 | INFO   zero 70: 88.4664769976679
+2026-10-02 05:35:33 | gl2 zeros g4 | INFO   zero 71: 89.3457245068607
+2026-10-02 05:35:37 | gl2 zeros g4 | STATUS   inner 90/182 (49.5%)  elapsed 6m55s  | zeros of L(g4)
+2026-10-02 05:35:40 | gl2 zeros g4 | INFO   zero 72: 90.1292346290425
+2026-10-02 05:35:48 | gl2 zeros g4 | INFO   zero 73: 90.8843012181113
+2026-10-02 05:35:55 | gl2 zeros g4 | INFO   zero 74: 91.6640478412728
+2026-10-02 05:36:05 | gl2 zeros g4 | INFO   zero 75: 92.7115768736999
+2026-10-02 05:36:11 | gl2 zeros g4 | INFO   zero 76: 93.3185754077698
+2026-10-02 05:36:21 | gl2 zeros g4 | INFO   zero 77: 94.596889630003
+2026-10-02 05:36:24 | gl2 zeros g4 | STATUS   inner 95/182 (52.2%)  elapsed 7m42s  | zeros of L(g4)
+2026-10-02 05:36:29 | gl2 zeros g4 | INFO   zero 78: 95.2939158707569
+2026-10-02 05:36:40 | gl2 zeros g4 | INFO   zero 79: 96.6103436880169
+2026-10-02 05:36:49 | gl2 zeros g4 | INFO   zero 80: 97.7273466124473
+2026-10-02 05:36:55 | gl2 zeros g4 | INFO   zero 81: 98.1958288398166
+2026-10-02 05:37:03 | gl2 zeros g4 | INFO   zero 82: 99.157092547356
+2026-10-02 05:37:11 | gl2 zeros g4 | INFO   zero 83: 99.907255479844
+2026-10-02 05:37:11 | gl2 zeros g4 | STATUS   inner 100/182 (54.9%)  elapsed 8m29s  | zeros of L(g4)
+2026-10-02 05:37:19 | gl2 zeros g4 | INFO   zero 84: 100.814973583242
+2026-10-02 05:37:24 | gl2 zeros g4 | INFO   zero 85: 101.114002122184
+2026-10-02 05:37:34 | gl2 zeros g4 | INFO   zero 86: 102.25437436138
+2026-10-02 05:37:44 | gl2 zeros g4 | INFO   zero 87: 103.205525440744
+2026-10-02 05:37:54 | gl2 zeros g4 | INFO   zero 88: 104.356635967412
+2026-10-02 05:37:58 | gl2 zeros g4 | STATUS   inner 105/182 (57.7%)  elapsed 9m16s  | zeros of L(g4)
+2026-10-02 05:38:05 | gl2 zeros g4 | INFO   zero 89: 105.559214990989
+2026-10-02 05:38:11 | gl2 zeros g4 | INFO   zero 90: 105.992695893334
+2026-10-02 05:38:21 | gl2 zeros g4 | INFO   zero 91: 107.058726171948
+2026-10-02 05:38:31 | gl2 zeros g4 | INFO   zero 92: 108.095077018961
+2026-10-02 05:38:37 | gl2 zeros g4 | INFO   zero 93: 108.430433044817
+2026-10-02 05:38:47 | gl2 zeros g4 | INFO   zero 94: 109.440100160254
+2026-10-02 05:38:51 | gl2 zeros g4 | STATUS   inner 110/182 (60.4%)  elapsed 10m09s  | zeros of L(g4)
+2026-10-02 05:38:55 | gl2 zeros g4 | INFO   zero 95: 110.067378428831
+2026-10-02 05:39:04 | gl2 zeros g4 | INFO   zero 96: 110.993209899724
+2026-10-02 05:39:13 | gl2 zeros g4 | INFO   zero 97: 111.736862125567
+2026-10-02 05:39:23 | gl2 zeros g4 | INFO   zero 98: 112.679163114829
+2026-10-02 05:39:35 | gl2 zeros g4 | INFO   zero 99: 113.92265836226
+2026-10-02 05:39:44 | gl2 zeros g4 | INFO   zero 100: 114.562163380162
+2026-10-02 05:39:47 | gl2 zeros g4 | STATUS   inner 115/182 (63.2%)  elapsed 11m05s  | zeros of L(g4)
+2026-10-02 05:39:57 | gl2 zeros g4 | INFO   zero 101: 115.955409784658
+2026-10-02 05:40:05 | gl2 zeros g4 | INFO   zero 102: 116.42361102764
+2026-10-02 05:40:17 | gl2 zeros g4 | INFO   zero 103: 117.410089621976
+2026-10-02 05:40:22 | gl2 zeros g4 | INFO   zero 104: 117.628045281275
+2026-10-02 05:40:34 | gl2 zeros g4 | INFO   zero 105: 118.607753859837
+2026-10-02 05:40:45 | gl2 zeros g4 | INFO   zero 106: 119.41353619708
+2026-10-02 05:40:49 | gl2 zeros g4 | STATUS   inner 120/182 (65.9%)  elapsed 12m08s  | zeros of L(g4)
+2026-10-02 05:40:55 | gl2 zeros g4 | INFO   zero 107: 120.246014089381
+2026-10-02 05:41:06 | gl2 zeros g4 | INFO   zero 108: 121.020561017555
+2026-10-02 05:41:20 | gl2 zeros g4 | INFO   zero 109: 122.349272393388
+2026-10-02 05:41:28 | gl2 zeros g4 | INFO   zero 110: 122.771851405931
+2026-10-02 05:41:44 | gl2 zeros g4 | INFO   zero 111: 124.262792827974
+2026-10-02 05:41:51 | gl2 zeros g4 | INFO   zero 112: 124.69961772073
+2026-10-02 05:41:54 | gl2 zeros g4 | STATUS   inner 125/182 (68.7%)  elapsed 13m12s  | zeros of L(g4)
+2026-10-02 05:42:03 | gl2 zeros g4 | INFO   zero 113: 125.605767887611
+2026-10-02 05:42:12 | gl2 zeros g4 | INFO   zero 114: 126.308026600911
+2026-10-02 05:42:25 | gl2 zeros g4 | INFO   zero 115: 127.28900379174
+2026-10-02 05:42:32 | gl2 zeros g4 | INFO   zero 116: 127.692646939313
+2026-10-02 05:42:44 | gl2 zeros g4 | INFO   zero 117: 128.642070574078
+2026-10-02 05:42:53 | gl2 zeros g4 | INFO   zero 118: 129.198975886644
+2026-10-02 05:43:04 | gl2 zeros g4 | INFO   zero 119: 129.999692507794
+2026-10-02 05:43:04 | gl2 zeros g4 | STATUS   inner 130/182 (71.4%)  elapsed 14m22s  | zeros of L(g4)
+2026-10-02 05:43:21 | gl2 zeros g4 | INFO   zero 120: 131.318242614559
+2026-10-02 05:43:31 | gl2 zeros g4 | INFO   zero 121: 132.049251353865
+2026-10-02 05:43:45 | gl2 zeros g4 | INFO   zero 122: 133.114400514803
+2026-10-02 05:43:58 | gl2 zeros g4 | INFO   zero 123: 134.034237643775
+2026-10-02 05:44:07 | gl2 zeros g4 | INFO   zero 124: 134.607350739372
+2026-10-02 05:44:10 | gl2 zeros g4 | STATUS   inner 135/182 (74.2%)  elapsed 15m29s  | zeros of L(g4)
+2026-10-02 05:44:17 | gl2 zeros g4 | INFO   zero 125: 135.214210453882
+2026-10-02 05:44:30 | gl2 zeros g4 | INFO   zero 126: 136.06863095425
+2026-10-02 05:44:43 | gl2 zeros g4 | INFO   zero 127: 136.907240075534
+2026-10-02 05:44:51 | gl2 zeros g4 | INFO   zero 128: 137.448962052477
+2026-10-02 05:45:01 | gl2 zeros g4 | INFO   zero 129: 138.018726887739
+2026-10-02 05:45:18 | gl2 zeros g4 | INFO   zero 130: 139.383969967155
+2026-10-02 05:45:23 | gl2 zeros g4 | STATUS   inner 140/182 (76.9%)  elapsed 16m42s  | zeros of L(g4)
+2026-10-02 05:45:30 | gl2 zeros g4 | INFO   zero 131: 140.199241450255
+2026-10-02 05:45:38 | gl2 zeros g4 | INFO   zero 132: 140.625563825641
+2026-10-02 05:45:56 | gl2 zeros g4 | INFO   zero 133: 141.970797267717
+2026-10-02 05:46:08 | gl2 zeros g4 | INFO   zero 134: 142.790836676627
+2026-10-02 05:46:21 | gl2 zeros g4 | INFO   zero 135: 143.584651330768
+2026-10-02 05:46:32 | gl2 zeros g4 | INFO   zero 136: 144.2202605004
+2026-10-02 05:46:39 | gl2 zeros g4 | STATUS   inner 145/182 (79.7%)  elapsed 17m57s  | zeros of L(g4)
+2026-10-02 05:46:44 | gl2 zeros g4 | INFO   zero 137: 145.050206752813
+2026-10-02 05:46:53 | gl2 zeros g4 | INFO   zero 138: 145.549462284213
+2026-10-02 05:47:05 | gl2 zeros g4 | INFO   zero 139: 146.340771160161
+2026-10-02 05:47:15 | gl2 zeros g4 | INFO   zero 140: 146.916714947558
+2026-10-02 05:47:30 | gl2 zeros g4 | INFO   zero 141: 147.941820801377
+2026-10-02 05:47:42 | gl2 zeros g4 | INFO   zero 142: 148.671105721016
+2026-10-02 05:47:57 | gl2 zeros g4 | INFO   zero 143: 149.750499533324
+2026-10-02 05:47:59 | gl2 zeros g4 | STATUS   inner 150/182 (82.4%)  elapsed 19m18s  | zeros of L(g4)
+2026-10-02 05:48:11 | gl2 zeros g4 | INFO   zero 144: 150.640202102443
+2026-10-02 05:48:26 | gl2 zeros g4 | INFO   zero 145: 151.662383043633
+2026-10-02 05:48:36 | gl2 zeros g4 | INFO   zero 146: 152.163955229864
+2026-10-02 05:48:49 | gl2 zeros g4 | INFO   zero 147: 152.903156236651
+2026-10-02 05:49:00 | gl2 zeros g4 | INFO   zero 148: 153.64395716869
+2026-10-02 05:49:14 | gl2 zeros g4 | INFO   zero 149: 154.42262601096
+2026-10-02 05:49:24 | gl2 zeros g4 | INFO   zero 150: 154.936334953393
+2026-10-02 05:49:25 | gl2 zeros g4 | STATUS   inner 155/182 (85.2%)  elapsed 20m43s  | zeros of L(g4)
+2026-10-02 05:49:41 | gl2 zeros g4 | INFO   zero 151: 156.009252056685
+2026-10-02 05:49:51 | gl2 zeros g4 | INFO   zero 152: 156.461229371778
+2026-10-02 05:50:04 | gl2 zeros g4 | INFO   zero 153: 157.172424420015
+2026-10-02 05:50:21 | gl2 zeros g4 | INFO   zero 154: 158.304231079885
+2026-10-02 05:50:35 | gl2 zeros g4 | INFO   zero 155: 159.116831319417
+2026-10-02 05:50:50 | gl2 zeros g4 | INFO   zero 156: 160.046692845511
+2026-10-02 05:50:50 | gl2 zeros g4 | STATUS   inner 160/182 (87.9%)  elapsed 22m08s  | zeros of L(g4)
+2026-10-02 05:51:07 | gl2 zeros g4 | INFO   zero 157: 161.04142456772
+2026-10-02 05:51:17 | gl2 zeros g4 | INFO   zero 158: 161.416764707883
+2026-10-02 05:51:36 | gl2 zeros g4 | INFO   zero 159: 162.599549355852
+2026-10-02 05:51:46 | gl2 zeros g4 | INFO   zero 160: 162.93508938211
+2026-10-02 05:51:59 | gl2 zeros g4 | INFO   zero 161: 163.648240374651
+2026-10-02 05:52:12 | gl2 zeros g4 | INFO   zero 162: 164.211776795054
+2026-10-02 05:52:27 | gl2 zeros g4 | INFO   zero 163: 164.964789290902
+2026-10-02 05:52:27 | gl2 zeros g4 | STATUS   inner 165/182 (90.7%)  elapsed 23m45s  | zeros of L(g4)
+2026-10-02 05:52:44 | gl2 zeros g4 | INFO   zero 164: 165.936704312458
+2026-10-02 05:52:57 | gl2 zeros g4 | INFO   zero 165: 166.588377491818
+2026-10-02 05:53:17 | gl2 zeros g4 | INFO   zero 166: 167.767625333762
+2026-10-02 05:53:30 | gl2 zeros g4 | INFO   zero 167: 168.398758742508
+2026-10-02 05:53:49 | gl2 zeros g4 | INFO   zero 168: 169.425329017421
+2026-10-02 05:53:59 | gl2 zeros g4 | INFO   zero 169: 169.835883602781
+2026-10-02 05:54:02 | gl2 zeros g4 | STATUS   inner 170/182 (93.4%)  elapsed 25m20s  | zeros of L(g4)
+2026-10-02 05:54:22 | gl2 zeros g4 | INFO   zero 170: 171.121722330589
+2026-10-02 05:54:32 | gl2 zeros g4 | INFO   zero 171: 171.5493987877
+2026-10-02 05:54:45 | gl2 zeros g4 | INFO   zero 172: 171.984519991983
+2026-10-02 05:55:01 | gl2 zeros g4 | INFO   zero 173: 172.88396599543
+2026-10-02 05:55:17 | gl2 zeros g4 | INFO   zero 174: 173.696332682136
+2026-10-02 05:55:31 | gl2 zeros g4 | INFO   zero 175: 174.310343181873
+2026-10-02 05:55:43 | gl2 zeros g4 | INFO   zero 176: 174.745401683828
+2026-10-02 05:55:47 | gl2 zeros g4 | STATUS   inner 175/182 (96.2%)  elapsed 27m05s  | zeros of L(g4)
+2026-10-02 05:56:07 | gl2 zeros g4 | INFO   zero 177: 176.08824672027
+2026-10-02 05:56:19 | gl2 zeros g4 | INFO   zero 178: 176.510384194298
+2026-10-02 05:56:40 | gl2 zeros g4 | INFO   zero 179: 177.600341001351
+2026-10-02 05:57:03 | gl2 zeros g4 | INFO   zero 180: 178.677609912077
+2026-10-02 05:57:17 | gl2 zeros g4 | INFO   zero 181: 179.366182906076
+2026-10-02 05:57:29 | gl2 zeros g4 | INFO   zero 182: 179.925922157522
+2026-10-02 05:57:30 | gl2 zeros g4 | STATUS   inner 180/182 (98.9%)  elapsed 28m48s  | zeros of L(g4)
+2026-10-02 05:57:41 | gl2 zeros g4 | INFO   zero 183: 180.509970619822
+2026-10-02 05:57:55 | gl2 zeros g4 | INFO   zero 184: 181.205672034651
+2026-10-02 05:58:10 | gl2 zeros g4 | INFO   zero 185: 182.012675891949
+2026-10-02 05:58:10 | gl2 zeros g4 | RESULT g4: 185 zeros in (0, 182.0] with step 0.05; first ['7.803685993', '9.41501646', '11.52156568', '14.42700262']
+2026-10-02 05:58:10 | gl2 zeros g4 | DONE   0/0 in 29m29s

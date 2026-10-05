@@ -1,0 +1,315 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=1.4em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newcommand{\tagC}{\textbf{[C]}}
+\newcommand{\tagD}{\textbf{[D]}}
+\newcommand{\tagE}{\textbf{[E]}}
+\newcommand{\tagN}{\textbf{[N]}}
+\newcommand{\tagL}{\textbf{[L]}}
+
+\title{Weil positivity on finite windows across $L$-functions:\\
+certified windows, a pre-registered decay law,\\
+and an unconditional bound for Dirichlet $L$-functions}
+\author{Zac Elston\thanks{Independent researcher. AI assistance is described in the statement at the end of this report.}}
+\date{Technical report, version~1 (draft), October 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+For an $L$-function and $x>1$, let $\lambda_s(x)$ be the smallest value of Weil's quadratic form on unit-norm test functions supported in a window of length $\log x$, in the even ($s=0$) or odd ($s=1$) sector. The (generalized) Riemann hypothesis for that $L$-function is equivalent to $\lambda_s(x)\ge 0$ for every $x$. Each result below carries a status label.
+
+\textbf{Certified windows.} Arb-certified lower bounds for $\zeta$ hold on windows of support $2a=2.38$, $2.6$ and $2.99$, in both sectors, with $\lambda\ge 3.501\cdot10^{-96}$ at $2a=2.99$. Certified two-sided brackets cover functions without an Euler product.
+
+\textbf{Empirical decay law.} Pre-registered tests, with their failures reported, support $\lambda\approx e^{-2dT^*}$ with $T^*=2\pi(x/Q)^{1/d}$. The tests cover degrees~1--3, primitive and product $L$-functions, and holomorphic and Maass type. At fixed $x/q$ the Dirichlet minima agree to within about one nat across conductors $3$--$20$. A literal transposition of Zhu's Landau--Widom law predicts a $77$-nat spread there.
+
+\textbf{A matched pair.} The window minimum of the primitive Rédei $L$-function of $(5,29)$ agrees with that of $L(s,\chi_5)L(s,\chi_{29})$, which has the same invariants, to within $0.47$ nats. The Borromean (Rédei-symbol) data that separate the two are read off the zeros.
+
+\textbf{Dirichlet characters.} For real primitive characters there is an unconditional upper bound on $\lambda_s$, with a Hermite rate $c^{d+1}e^{-c}$ proved for all $x$. It extends to characters, and to each sector separately, the bounds Mori proved for $\zeta$.
+
+None of this bears on the Riemann hypothesis directly. Upper bounds also hold for functions with off-line zeros, and certificates exist only for finitely many windows.
+\end{abstract}
+
+\section{Introduction and status of claims}
+
+Weil's criterion states that the Riemann hypothesis for $\zeta$ is equivalent to the positivity of a quadratic form on test functions \cite{weil52,bombieri00,yoshida92}. Restricting the test functions to a bounded window gives finitely many conditions at each size, with a margin $\lambda_s(x)$ that can be studied numerically. Positivity on the smallest windows, where no prime enters, is a theorem \cite{cc21}. Its spectral structure has been studied through prolate operators \cite{cc23,ccm24,ccm25,connes26}. Since mid-2026 several groups have produced computer-assisted certificates and explicit bounds:
+\begin{itemize}
+\item Zhu's finite reduction and certificate at support $1.6$, with a conjectured Landau--Widom law \cite{zhu26};
+\item Liu's certificates at $2.0$ and $2.125$ \cite{liu26};
+\item the zeta-lab certificate at $2.38$ in the even sector \cite{zetalab258};
+\item Arda's conditional separation of $\zeta_{\mathbb Q(\sqrt{-5})}$ from an Epstein zeta \cite{arda631};
+\item Mori's upper bounds for $\zeta$, including the rate $e^{-4\pi x}$ \cite{mori26a,mori26b,mori26c,mori26d}.
+\end{itemize}
+This report was written after a literature review of 4 October 2026. It claims priority only where none of this work overlaps; \S\ref{sec:related} lists what is ours.
+
+\paragraph{Status labels.}
+\begin{itemize}
+\item \tagC{} certified by interval (Arb) arithmetic, for the stated finite set of parameters.
+\item \tagD{} derived: a proof is given in the referenced repository documents. It has been reviewed by AI agents, not yet by an external human referee.
+\item \tagE{} empirical: an outcome of a pre-registered test, committed before the data existed.
+\item \tagN{} numerical: multiprecision floating point in finite bases. These are Rayleigh--Ritz upper bounds unless stated otherwise.
+\item \tagL{} literature.
+\end{itemize}
+
+\paragraph{What is not claimed.} Nothing here proves or disproves the Riemann hypothesis. Finite certificates do not extend to all windows. The decay law is empirical. Upper bounds on $\lambda$ hold equally for functions with zeros off the critical line, such as the Davenport--Heilbronn function.
+
+\section{Setting}
+Fix an $L$-function of degree $d$ and conductor $Q$, and a window $[-a,a]$ with $L=2a=\log x$. For a test function $f$ supported in the window, with transform $F(z)=\int f(u)e^{izu}\,du$, the zeros side of the explicit formula is
+\[
+Q(f)=\sum_\rho F(\gamma_\rho)F(-\gamma_\rho),\qquad \gamma_\rho=-i(\rho-\tfrac12),
+\]
+summed over all nontrivial zeros with multiplicity. The arithmetic side (primes, gamma factors and poles) computes the same quantity. Under the Riemann hypothesis for this function the sum equals $2\sum_{\gamma>0}|F(\gamma)|^2+m_0|F(0)|^2$, where $m_0$ is the order at $s=\tfrac12$. We write $\lambda_s(x)=\inf Q(f)/\|f\|_2^2$ over $f$ of parity $s$ supported in the window.
+
+Finite bases of cosines or sines on the window give Rayleigh--Ritz values $\lambda_N\ge\lambda_s(x)$, which decrease to it. Throughout, $T^*=2\pi(x/Q)^{1/d}$ is the height at which the density of zeros reaches the window's own density $L/2\pi$, and $c=d\,T^*$. For degree~1, $c=2\pi x/q$.
+
+\section{Certified windows \tagC}\label{sec:cert}
+
+\begin{table}[h]
+\centering\small
+\begin{tabular}{@{}llllp{3.0cm}@{}}
+\toprule
+$2a$ ($x$) & even sector & odd sector & upper bound (even) & status\\
+\midrule
+1.6 (4.95) & $1.0277\cdot10^{-17}$ & $9.118\cdot10^{-15}$ & $1.63\cdot10^{-17}$ & Zhu's, re-executed and audited\\
+2.38 (10.80) & $6.81311646960\cdot10^{-48}$ & $3.91966861609\cdot10^{-44}$ & $1.14\cdot10^{-47}$ & audited\\
+2.6 (13.46) & $5.76344479222\cdot10^{-62}$ & $5.36011304048\cdot10^{-58}$ & $1.04\cdot10^{-61}$ & regression-tested\\
+2.99 (19.89) & $3.50114217641\cdot10^{-96}$ & $8.25626494001\cdot10^{-92}$ & $6.27\cdot10^{-96}$ & regression-tested\\
+\bottomrule
+\end{tabular}
+\caption{Certified lower bounds $Q(f)\ge c\,\|f\|^2$ for $\zeta$, for every $f$ of the given parity supported in $[-a,a]$. The bound for complex $f$ is the minimum over the two sectors. The upper bounds are finite-basis Rayleigh--Ritz values \tagN.}\label{tab:cert}
+\end{table}
+
+\paragraph{Method.} The certificates follow Zhu's finite reduction \cite{zhu26}, with three additions:
+\begin{itemize}
+\item a window-compressed bound on the prime comb, by a Schur test (Liu uses a weighted Schur bound of the same kind \cite{liu26});
+\item a Kaiser high-pass split of the frequency range;
+\item an exact integer residual for the Cholesky factorization.
+\end{itemize}
+All enclosures use Arb through python-flint~0.9.0.
+
+\paragraph{Audit status.} The 1.6 and 2.38 certificates were audited independently. The 2.6 and 2.99 runs use code that was regression-tested to give bit-identical 2.38 results, but they have not yet had a second audit. The last digits of a certified value depend deterministically on the number of workers.
+
+\paragraph{Prior art.} Liu certified 2.0 and 2.125 \cite{liu26}. zeta-lab certified 2.38 in the even sector, with $Q\ge5.7179\cdot10^{-48}$, on 28 September 2026 \cite{zetalab258}. New here: 2.6 and 2.99 in both sectors, and 2.38 for complex $f$ with the constant above.
+
+\paragraph{Controls without an Euler product.} Table~\ref{tab:controls} gives certified two-sided brackets for the first failure of positivity. At $2a=2.99$, $\zeta_K=\zeta\cdot L(\cdot,\chi_{-20})$, the Dedekind zeta of $K=\mathbb Q(\sqrt{-5})$, is certified positive in both sectors. Its partner $Z_1$, the Epstein zeta of $x^2+5y^2$, has the same completed functional equation and pole, and is certified negative by an explicit witness. Arda reported a conditional certificate for the same pair \cite{arda631}, and zeta-lab tightened the Davenport--Heilbronn crossing to $x\ge30.617$ \cite{zetalab253}.
+
+\begin{table}[h]
+\centering\small
+\begin{tabular}{@{}p{3.6cm}p{6.6cm}p{3.6cm}@{}}
+\toprule
+function & certified positive (both sectors) & certified negative witness\\
+\midrule
+$F_{t^*}$ (no Euler product) & $x=5.31217$: $Q\ge1.1666\cdot10^{-3}\|f\|^2$ & $x=5.36250$\\
+Davenport--Heilbronn & $x=10.80490$: $Q\ge1.0441\cdot10^{-8}\|f\|^2$ & $x=30.74497$\\
+$Z_1$ (Epstein, $x^2+5y^2$) & $x=15.79984$: $Q\ge0.049235\|f\|^2$ & $x=19.84390$\\
+$\zeta_K$, $K=\mathbb Q(\sqrt{-5})$ & $x=19.886$: $Q\ge4.749\cdot10^{-3}\|f\|^2$ (even), $Q\ge0.5987\|f\|^2$ (odd) & none\\
+\bottomrule
+\end{tabular}
+\caption{Certified brackets for the controls. For $\zeta_K$ the finite-basis upper bound is $4.834\cdot10^{-3}$, so $4.749\cdot10^{-3}\le\lambda_{\rm even}\le4.834\cdot10^{-3}$.}\label{tab:controls}
+\end{table}
+
+\section{An empirical decay law \tagE}\label{sec:decay}
+
+\paragraph{Statement.} Past a transition, the window minimum behaves as
+\[
+\lambda_s(x)\approx e^{-2d\,T^*+O(\log T^*)},\qquad T^*=2\pi\,(x/Q)^{1/d}.
+\]
+Writing $v=(x/Q)^{1/d}$ and fitting $\ln\lambda=-\alpha v+\gamma\ln v+\beta$, the law predicts $\alpha/4\pi=d$.
+
+\paragraph{The registered tests.} Each test below was committed, with its predictions and kill criteria, before its data existed. Table~\ref{tab:tests} lists every outcome, failures included. All values are finite-basis upper bounds that are stable in precision \tagN, with convergence between bases of size about $5k$ and $9k$ reported per test.
+\begin{itemize}
+\item \textbf{Degree 1:} 13 functions, $\zeta$ and real characters with $|D|\le20$.
+\item \textbf{Degree 2:} products of characters; ten elliptic curves, including the rank-2 curve 389a1; six level-1 eigenforms of weight 12--26; one Maass-type Artin $L$-function (\S\ref{sec:redei}).
+\item \textbf{Degree 3:} products.
+\end{itemize}
+
+\begin{table}[h]
+\centering\small
+\begin{tabular}{@{}p{1.6cm}p{6.6cm}p{6.4cm}@{}}
+\toprule
+test & prediction & outcome\\
+\midrule
+P1 & antiperiodic (``720$^\circ$'') basis converges faster & failed: about 1.2 modes of reach, same limit\\
+P-DL1 & $e^{-4\pi x/q}$ for 6 characters & rate confirmed with a log term ($\alpha/4\pi$ 0.984--1.004); strict linear form failed in odd sectors\\
+P-DL2 & prolate index ratio bounded to $x/q=16$ & holds; index 12/12\\
+P-DL3 & products: worst factor's floor vs.\ product zero count & worst-factor hypothesis killed\\
+P-DL4 & primitive GL(2): three scalings & ``neither'' as registered: right variable, rate doubled ($e^{-4T^*}$)\\
+P-DL5 & degree-2 products, $\alpha/4\pi\in[1.7,2.3]$ & holds: 1.79--2.29\\
+P-DL6 & 15a1, 19a1, $\Delta$: rate; index rule & rate holds (2.10--2.17); index partly missed\\
+P-DL7 & level 1, $k=16$--26, on $v\le4$ & all killed (grid pre-asymptotic)\\
+P-DL8 & six fresh characters & holds: index 11/12, $\alpha/4\pi$ 0.984--1.026\\
+P-DL9 & level 1, $k=12$--26, $v=6$--10; sector order $=\varepsilon$ & holds: 1.85--2.07; 35/35\\
+P-DL10 & degree-3 products, $\alpha/4\pi\approx3$ & holds: 2.74--3.20\\
+P-DL11 & GL(2) index $n=k+\delta(\varepsilon,s)$ & rate and sector order hold; index missed (level offset)\\
+P-DL12 & offsets on four fresh curves & holds: 8/8; $\alpha/4\pi$ 1.88--2.06; 20/20\\
+P-ST & square torus (Euler) vs.\ $Z_1$ (non-Euler) & holds: $\alpha/4\pi$ 2.06/2.13; $Z_1$ negative from $x\approx19.9$\\
+P-R389 & rank 2 (389a1, $\varepsilon=+1$, $m_0=2$): order follows $m_0$ & holds: odd below even at 5/5 points\\
+B-2 & Rédei $L(\rho)$ vs.\ $L(\chi_5)L(\chi_{29})$ (\S\ref{sec:redei}) & holds: rate 2.000/1.996; matched within 0.47 nats\\
+\bottomrule
+\end{tabular}
+\caption{Pre-registered tests and outcomes. Full registrations, data and commit times are in the repository (\texttt{docs/DECAY\_LAW.md}, \texttt{docs/GL2\_DECAY.md}, \texttt{docs/BORROMEAN.md}).}\label{tab:tests}
+\end{table}
+
+\paragraph{Structure.}
+\begin{itemize}
+\item \textbf{Degree-1 index.} The minimum tracks a generalized prolate leakage $\ell_n(c)$ with $n=\kappa+2s+4\cdot(\text{pole})$ \tagE.
+\item \textbf{GL(2) index.} It tracks the weight, with per-class offsets confirmed out of sample (P-DL12).
+\item \textbf{Sector order.} It is consistent with the central multiplicity $m_0$ controlling it: odd below even when $m_0>0$. This held at 80/80 points on ranks 0--1 and on the rank-2 curve 389a1. That curve contradicts a rule based on the root number alone. We state it as a conjecture.
+\item \textbf{Euler blindness.} The Davenport--Heilbronn function sits inside the odd-character band until positivity fails abruptly.
+\end{itemize}
+
+\paragraph{Comparison with Zhu's law.} Zhu conjectures $-\ln\lambda^*\approx2\pi^2N(T^*)/\ln N(T^*)$ for $\zeta$, where $N$ counts zeros below the same height $T^*$ \cite{zhu26}. He asks for the analogous experiment for Dirichlet $L$-functions (his open problem~(iv)).
+\begin{itemize}
+\item \textbf{$\zeta$ alone cannot separate the laws.} Our $\zeta$ fit, made on $x\le19.9$, reproduces Zhu's independently computed upper bounds out to $x=54.6$ within $0.5$ nats (Table~\ref{tab:zhu}a).
+\item \textbf{Characters separate them.} For $L(s,\chi)$, $N(T^*)=(x/q)(\ln x-1)$ grows with $q$ at fixed $x/q$, so Zhu's law transposed literally does not collapse in $x/q$. Our minima do collapse (Table~\ref{tab:zhu}b).
+\item \textbf{So do matched curve pairs.} For the same-class pairs 14a1/17a1 and 43a1/53a1 at $v=10$, the transposed law predicts gaps of $7.2$ and $7.5$ nats; we observe at most $0.69$.
+\end{itemize}
+The caveat is that these are converged finite-basis upper bounds \tagN. The conclusion rests on their convergence, which is empirical.
+
+\begin{table}[h]
+\centering\small
+\begin{tabular}{@{}lcccc@{\qquad}lccc@{}}
+\toprule
+\multicolumn{5}{c}{(a) $\zeta$, even sector: $-\ln\lambda$} & \multicolumn{4}{c}{(b) odd characters, $x/q=10$: $-\ln\lambda$}\\
+$x$ & 16.44 & 24.53 & 36.60 & 54.60 & $q$ & even & odd & Zhu transposed\\
+\midrule
+Zhu, certified upper bound & 176.65 & 276.46 & 426.22 & 650.47 & 3 & 113.5 & 103.7 & 149\\
+this work, fit on $x\le19.9$ & 176.95 & 276.50 & 426.00 & 650.00 & 4 & 113.8 & 103.9 & 161\\
+ & & & & & 7 & 114.6 & 104.1 & 184\\
+ & & & & & 20 & 114.7 & 103.6 & 226\\
+\bottomrule
+\end{tabular}
+\caption{(a) Agreement on $\zeta$. (b) The conductor collapse in degree~1 against Zhu's law transposed literally to $L(s,\chi_D)$, $D=-3,-4,-7,-20$.}\label{tab:zhu}
+\end{table}
+
+\paragraph{A heuristic reading.} Count the zeros that a window of type $L/2$ could accommodate below $T^*$ but that the $L$-function does not supply. This deficit is $N_{\rm def}=d\,T^*/2\pi$, which does not depend on $q$, and $\lambda\approx e^{-4\pi N_{\rm def}}$ reproduces the law. This is a heuristic, not a derivation. As $x$ varies, $\ln\lambda$ shows no jumps of $4\pi$ when individual zeros cross $T^*$. A direct test, deleting zeros from the exact form, has been proposed but not run.
+
+\section{The Rédei $L$-function and a matched pair}\label{sec:redei}
+
+For primes $p_1,p_2\equiv1\bmod4$ with $(p_1/p_2)=1$, let $R$ be the Rédei field: the unique $D_4$ octic containing $\mathbb Q(\sqrt{p_1},\sqrt{p_2})$ and ramified only at $p_1$ and $p_2$ \cite{redei39}. Let $\rho$ be the 2-dimensional irreducible representation of $\operatorname{Gal}(R/\mathbb Q)$. Its traces are:
+\begin{itemize}
+\item $a_p=0$ when $p$ is linked to $p_1$ or $p_2$ (some Legendre symbol is $-1$);
+\item $a_p=2\,[p_1,p_2,p]$ otherwise, where $[\cdot]$ is Rédei's triple symbol, Morishita's mod-2 triple linking number \cite{morishita}. Borromean triples are those with symbol $-1$.
+\end{itemize}
+Since $\det\rho=\chi_{p_1p_2}$ is even, $L(s,\rho)$ is of Maass type, with $\Gamma_{\mathbb R}(s)^2$. The weight-one case treated in \cite{amano13} is the imaginary one. For $(5,29)$, PARI~2.17.2 gives conductor 145, root number $+1$ and the field polynomial
+\[
+x^8-2x^7-12x^6+26x^5+17x^4-36x^3-5x^2+11x-1.
+\]
+
+\paragraph{Step 1 (pipeline gates) \tagN.} There are 2087 zeros up to height 1000, identical at 38 and 57 digits. They are complete by the argument principle at heights 100 and 200 and by Turing's method throughout, with a positive control that fires. The explicit formula holds to $4.6\cdot10^{-4}$. Landau's formula reads every coefficient at an unlinked prime $p\le1000$ to within $0.082$. The Borromean partners of $(5,29)$ below 1000 are $181,241,349,401,661,701,761$, and each reads $\approx-2$; on the zeros of $L(\chi_5)L(\chi_{29})$ the same primes read $+2$. This readout is decided in advance by the explicit formula. Frobenius bias in $D_4$ extensions is studied in \cite{bailleul21}.
+
+\paragraph{Step 2 (the matched pair) \tagE.} Compare $A=L(s,\rho)$ with $B=L(s,\chi_5)L(s,\chi_{29})$. Both have degree 2, $N=145$, $\Gamma_{\mathbb R}(s)^2$, $\varepsilon=+1$ and $m_0=0$. All three registered predictions held:
+\begin{itemize}
+\item \textbf{Rate:} $\alpha/4\pi=2.000$ (even) and $1.996$ (odd) for $A$.
+\item \textbf{Sector order:} odd above even at all 10 points, for both objects.
+\item \textbf{Matching:} the fitted indices differ by $0.41$ and $0.15$, and $|\ln\lambda_A-\ln\lambda_B|\le0.47$ at every point, for $v=\sqrt{x/145}\in\{6,\dots,10\}$.
+\end{itemize}
+This is within the spread of same-class elliptic curves, which also differ in conductor. So the window minimum sees the invariants, not primitivity, while the triple-linking data that separate $A$ from $B$ are visible on the zeros.
+
+The first scan of step~2 was void and is archived. Coefficients stored in double precision put a $10^{-17}$ noise floor under eigenvalues near $10^{-64}$. It was caught by negative eigenvalues, fixed, gated by production-path checks with a positive control, and rerun with the registration unchanged.
+
+\section{An unconditional upper bound for degree 1}\label{sec:r2}
+
+Let $\chi$ be a real primitive character of conductor $q$, or $\chi=1$ for $\zeta$. Connes' E-map produces test functions whose transform is $F_\psi(z)=q^{(1/2+iz)/2}L(\tfrac12+iz,\chi)M_\psi(z)$. On the strip $-\tfrac12-\delta<\operatorname{Im}z<\tfrac12$ it is given by the ordinary Mellin integral; this strip is narrower than first stated, after review. So $F_\psi$ vanishes at every nontrivial zero, on the line or off it.
+
+\begin{theorem}[\tagD]\label{thm:emap}
+For admissible $\psi$ with window part $f_{\rm win}$, $Q(f_{\rm win})=\sigma\sum_\rho F_{\rm out}(\gamma_\rho)^2$, summed over all zeros with multiplicity.
+\end{theorem}
+
+\begin{theorem}[\tagD]\label{thm:bound}
+If $|F_{\rm out}(t)|\le\min(B,A/|t|)$ throughout the critical strip, then
+\[
+\lambda_s(x)\le\frac{2A^2}{\|f_{\rm win}\|^2}\int_{A/B}^\infty N(t)\,t^{-3}\,dt,
+\]
+for any upper bound $N(t)$ on the zero count that is valid on $[A/B,\infty)$. It uses only $0<\operatorname{Re}\rho<1$.
+\end{theorem}
+
+For $L(s,\chi)$ the count comes from Bennett--Martin--O'Bryant--Rechnitzer \cite{bmor}, and for $\zeta$ from Bellotti--Wong \cite{bw}. The $\sum\operatorname{Re}(1/\rho)$ device of \cite{mori26a} avoids explicit counts.
+\begin{itemize}
+\item \textbf{Theorem C \tagC.} The bound is evaluated in Arb on two grids, and for $\zeta$ at the four certified supports, in both sectors. The Hermite grid has 286 points covering $\zeta$ and twelve characters. The Kaiser--Bessel grid has 84 points covering $\zeta$ and six characters.
+\item \textbf{Consistency.} At every support the certified bound lies above the certified lower bound of \S\ref{sec:cert}, 16/16.
+\end{itemize}
+
+\begin{proposition}[\tagD+\tagC]
+For each object and sector, $\lambda_s(x)\le K_H\,c^{d+1}e^{-c}$ for all $x\ge2q$, with $c=2\pi x/q$, $d$ the degree of the Hermite trial, and certified constants $K_H$.
+\end{proposition}
+
+\begin{conjecture}
+With Kaiser--Bessel trials, $\lambda_s(x)\le C\,c^p e^{-2c}$ for all $x\ge x_0$.
+\end{conjecture}
+
+The out-of-band estimate (M2) is proved and audited. The norm lower bound (M1) is open; the certified norms decay polynomially with no exponential loss \tagN. For $\zeta$ the rate $e^{-4\pi x}$ was proved by Mori \cite{mori26a,mori26b}. Adapting his norm argument should settle the character and per-sector cases. Our $\zeta$ results are independent confirmations; the extension to characters and to separate sectors is new.
+
+\section{What finite windows cannot see}\label{sec:r1}
+An off-line quadruple $\tfrac12\pm\delta\pm i\gamma_0$ enters $Q$ as a rank-2 form of signature $(+,-)$, namely $T(f)=4(|\hat f_c(\gamma_0)|^2-|\hat f_s(\gamma_0)|^2)$ with $f_c=f\cosh\delta u$ and $f_s=f\sinh\delta u$ \tagD.
+
+Excluding such a quadruple from a finite window is therefore a consistency test. Under the hypothesis that all other zeros lie on the line, the quadruple is excluded when $R_4=4c^{\mathsf T}(Q_N+4ss^{\mathsf T})^{-1}c>1$. The certified constant plays no role. On the computed envelope, supports up to $2a=4.0$ reach heights at most about $7\cdot10^9$, far below the height $3\cdot10^{12}$ to which RH is verified. This is a forecast \tagN, not a theorem, and it is why larger certificates are not pursued here.
+
+\section{Methods and reproducibility}
+\begin{itemize}
+\item \textbf{Pre-registration.} Every test in Table~\ref{tab:tests} was committed with its predictions, gates and kill criteria before its data existed. Commit hashes and times are recorded.
+\item \textbf{Gates.} Gates compare quantities enclosed from opposite sides and carry positive controls that must fire. A gate that cannot fail is not reported as evidence.
+\item \textbf{Claims manifest.} \texttt{scripts/decay\_claims\_check.py} regenerates every decay-law number quoted in the repository from committed data (161/161 at this version).
+\item \textbf{Environment.} Python 3.14, python-flint~0.9.0, mpmath~1.4.1, gmpy2~2.3.1, and cypari2~2.2.4 with PARI~2.17.2, in a pinned Docker image.
+\item \textbf{Code and data.} A tagged snapshot of the repository accompanies this report.
+\end{itemize}
+
+\section{Related work and what is new}\label{sec:related}
+\begin{itemize}
+\item \textbf{Certificates.} Liu (2.0, 2.125) and zeta-lab (2.38, even sector) preceded this work. New: 2.6 and 2.99 in both sectors, and 2.38 for complex $f$.
+\item \textbf{Controls.} Arda (conditional) and zeta-lab preceded this work. New: unconditional (given stated lemmas) Arb brackets in both sectors.
+\item \textbf{Upper bounds.} Mori's work covers $\zeta$, with the same strip-only argument and the rates. New: real characters, and each sector separately.
+\item \textbf{Decay law.} Zhu's conjecture covers $\zeta$ only, and Connes treats a prolate quantity. New: the law across degrees, conductors and types, and the conductor collapse that separates it from Zhu's law transposed.
+\item \textbf{Matched pair.} New.
+\item \textbf{Exclusion analysis.} New as a formulation.
+\end{itemize}
+All of the parallel work cited is recent and unrefereed, and much of it, like this report, is AI-assisted.
+
+\section{Open problems}
+\begin{itemize}
+\item A certified two-sided bracket for one Dirichlet character and one elliptic curve.
+\item Pushing one object to $x/q\ge30$ or $v\ge15$.
+\item Prove Conjecture~R for characters (M1).
+\item A conditional lower bound with the sharp rate. Such a bound under RH would make the decay law's rate a theorem up to constants.
+\item The bridge between the log-window prolate parameter $L\,T^*/2$ and $c=d\,T^*$.
+\end{itemize}
+
+\section*{AI assistance and responsibility}
+Computation, derivations, code and drafting were carried out with AI assistance: Claude Opus~5.5, with some work by Claude Fable~5.1 (Anthropic). Independent review and audit were done by GPT Astra and GPT Sol~6.1, and by separate Claude agents working read-only. Every pre-registration, gate, review and correction is in the repository history. The author is responsible for all content.
+
+\begin{thebibliography}{99}
+\bibitem{weil52} A.~Weil, Sur les ``formules explicites'' de la théorie des nombres premiers, Comm.\ Sém.\ Math.\ Univ.\ Lund (1952) 252--265.
+\bibitem{yoshida92} H.~Yoshida, On Hermitian forms attached to zeta functions, Adv.\ Stud.\ Pure Math.\ 21 (1992).
+\bibitem{bombieri00} E.~Bombieri, Remarks on Weil's quadratic functional in the theory of prime numbers I, Rend.\ Mat.\ Acc.\ Lincei 11 (2000) 183--233.
+\bibitem{cc21} A.~Connes, C.~Consani, Weil positivity and trace formula, the archimedean place, Selecta Math.\ 27 (2021), arXiv:2006.13771.
+\bibitem{cc23} A.~Connes, C.~Consani, Spectral triples and $\zeta$-cycles, Enseign.\ Math.\ 69 (2023) 93--148, arXiv:2106.01715.
+\bibitem{ccm24} A.~Connes, C.~Consani, H.~Moscovici, Zeta zeros and prolate wave operators, Ann.\ Funct.\ Anal.\ 15 (2024), arXiv:2310.18423.
+\bibitem{ccm25} A.~Connes, C.~Consani, H.~Moscovici, Zeta spectral triples, arXiv:2511.22755.
+\bibitem{connes26} A.~Connes, The Riemann hypothesis: past, present and a letter through time, arXiv:2602.04022.
+\bibitem{zhu26} X.~Zhu, Weil positivity in compact windows: a finite reduction, certified two-sided bounds, and a Landau--Widom decay law, arXiv:2608.24827v2 (2026).
+\bibitem{liu26} V.~Liu, Certified Weil positivity beyond the unit window, manuscript and reproduction materials, github.com/luciferyu666/certified-weil-positivity (2026).
+\bibitem{zetalab258} zeta-lab, Weil window positivity at support 2.38, pull request \#258, github.com/teal-sea/zeta-lab (28 Sep 2026).
+\bibitem{zetalab253} zeta-lab, Weil propagation numerics, pull request \#253 (25 Sep 2026).
+\bibitem{arda631} Arda, Counterfeit ladder: $\zeta_K$ vs.\ Epstein window separation, pull request \#631, github.com/DrMurphyIsIn/Arda (25 Sep 2026).
+\bibitem{mori26a} R.~Mori, Unconditional doubly exponential upper bounds for the bottom of windowed Weil quadratic forms, Zenodo, doi:10.5281/zenodo.23059298 (30 Sep 2026; v3 1 Oct).
+\bibitem{mori26b} R.~Mori, The Weil quadratic form of the Connes--Consani--Moscovici prolate vector, and a $\mu^8$ upper bound for windowed Weil forms, Zenodo 23092542 (2 Oct 2026).
+\bibitem{mori26c} R.~Mori, An endpoint-smoothed prolate vector and a $\mu^{9/2}(\log\mu)^4$ upper bound, Zenodo 23119609 (3 Oct 2026).
+\bibitem{mori26d} R.~Mori, A conditional lower bound for windowed Weil forms from sampling on the zeros of $\zeta$, Zenodo 23134085 (4 Oct 2026).
+\bibitem{bmor} M.~Bennett, G.~Martin, K.~O'Bryant, A.~Rechnitzer, Counting zeros of Dirichlet $L$-functions, arXiv:2005.02989.
+\bibitem{bw} C.~Bellotti, P.-J.~Wong, arXiv:2412.15470v2.
+\bibitem{redei39} L.~Rédei, Ein neues zahlentheoretisches Symbol mit Anwendungen auf die Theorie der quadratischen Zahlkörper, J.\ reine angew.\ Math.\ 180 (1939) 1--43.
+\bibitem{morishita} M.~Morishita, Knots and Primes, Springer (2012).
+\bibitem{amano13} F.~Amano, H.~Kodani, M.~Morishita, T.~Ogasawara, T.~Sakamoto, T.~Yoshida, Rédei's triple symbols and modular forms, Tokyo J.\ Math.\ 36 (2013) 405--427.
+\bibitem{bailleul21} A.~Bailleul, Chebyshev's bias in dihedral and generalized quaternion Galois groups, Algebra Number Theory 15 (2021) 999--1041.
+\end{thebibliography}
+\end{document}

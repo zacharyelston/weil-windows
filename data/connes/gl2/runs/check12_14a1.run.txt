@@ -1,0 +1,13 @@
+2026-10-02 07:51:28 | gl2 check | START  pid=12795 total=None log=logs/gl2-check-20261002-075128.log args={'cmd': 'check', 'curves': '14a1', 'x': '13,60', 'gate': False, 'gate7': True, 'zeros_tag': '', 'json': '<repo>/.claude/worktrees/agent-a6f1432289c541306/data/connes/gl2/check12_14a1.json'}
+2026-10-02 07:52:31 | gl2 check | RESULT 14a1 x=13 odd c=[0, 1, 0, 0, 0, 0]: cᵀQc = 1.75964253777;  2Σ_{γ≤240.0} F(γ)² = 1.75963972908;  Q − Σ = 2.81e-6 (rel 1.6e-6);  expected tail 3.04e-6;  rel after tail 1.33e-7
+2026-10-02 07:53:30 | gl2 check | RESULT 14a1 x=13 odd c=[0, 0, 0, 1, 0, 0]: cᵀQc = 3.3439779657;  2Σ_{γ≤240.0} F(γ)² = 3.34396671454;  Q − Σ = 1.13e-5 (rel 3.36e-6);  expected tail 1.22e-5;  rel after tail 2.79e-7
+2026-10-02 07:54:38 | gl2 check | RESULT 14a1 x=13 odd c=[0, 1, -1, 0, 0, 0]: cᵀQc = 3.42212131882;  2Σ_{γ≤240.0} F(γ)² = 3.42210375809;  Q − Σ = 1.76e-5 (rel 5.13e-6);  expected tail 1.9e-5;  rel after tail 4.26e-7
+2026-10-02 07:56:04 | gl2 check | RESULT 14a1 x=13 even c=[0, 1, 1, 0, 0, 0, 0]: cᵀQc = 1.1558426374;  2Σ_{γ≤240.0} F(γ)² = 1.15584263702;  Q − Σ = 3.83e-10 (rel 3.32e-10);  expected tail 4.17e-10;  rel after tail 2.89e-11
+2026-10-02 07:57:40 | gl2 check | RESULT 14a1 x=13 even c=[0, 0, 1, 0, -1, 0, 0]: cᵀQc = 5.86317822371;  2Σ_{γ≤240.0} F(γ)² = 5.86317821756;  Q − Σ = 6.15e-9 (rel 1.05e-9);  expected tail 6.69e-9;  rel after tail 9.15e-11
+2026-10-02 07:59:00 | gl2 check | RESULT 14a1 x=60 odd c=[0, 1, 0, 0, 0, 0]: cᵀQc = 0.0738041986749;  2Σ_{γ≤240.0} F(γ)² = 0.0738034403238;  Q − Σ = 7.58e-7 (rel 1.03e-5);  expected tail 7.5e-7;  rel after tail 1.19e-7
+2026-10-02 08:00:19 | gl2 check | RESULT 14a1 x=60 odd c=[0, 0, 0, 1, 0, 0]: cᵀQc = 2.92074830772;  2Σ_{γ≤240.0} F(γ)² = 2.92074527256;  Q − Σ = 3.04e-6 (rel 1.04e-6);  expected tail 3.0e-6;  rel after tail 1.2e-8
+2026-10-02 08:02:04 | gl2 check | RESULT 14a1 x=60 odd c=[0, 1, -1, 0, 0, 0]: cᵀQc = 1.25107687995;  2Σ_{γ≤240.0} F(γ)² = 1.25107213957;  Q − Σ = 4.74e-6 (rel 3.79e-6);  expected tail 4.69e-6;  rel after tail 4.38e-8
+2026-10-02 08:03:52 | gl2 check | RESULT 14a1 x=60 even c=[0, 1, 1, 0, 0, 0, 0]: cᵀQc = 0.0133327508984;  2Σ_{γ≤240.0} F(γ)² = 0.0133327508573;  Q − Σ = 4.11e-11 (rel 3.08e-9);  expected tail 4.04e-11;  rel after tail 5.4e-11
+2026-10-02 08:05:58 | gl2 check | RESULT 14a1 x=60 even c=[0, 0, 1, 0, -1, 0, 0]: cᵀQc = 4.00336447478;  2Σ_{γ≤240.0} F(γ)² = 4.00336447412;  Q − Σ = 6.58e-10 (rel 1.64e-10);  expected tail 6.47e-10;  rel after tail 2.88e-12
+2026-10-02 08:05:58 | gl2 check | RESULT P-DL7 gate 14a1 (x = 13, T = 240.0): max |Q − Σ| = 1.76e-5, (Q − Σ)/tail = ['0.923', '0.923', '0.923', '0.92', '0.92'] → PASS
+2026-10-02 08:05:58 | gl2 check | DONE   0/0 in 14m29s

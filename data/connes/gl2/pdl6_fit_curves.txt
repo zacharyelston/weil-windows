@@ -1,0 +1,13 @@
+6a [9k] 15a1  even: α/4π =  2.1384  γ =   6.325  β =   13.226  max resid  0.133;  linear α/4π = 1.927  → in [1.7, 2.3]
+6a [5k] 15a1  even: α/4π =   2.146  γ =   6.582  β =   13.304  max resid  0.138;  linear α/4π = 1.926  → in [1.7, 2.3]
+6b 15a1  even: flattest n = 1 (metric 0.154; runner-up 2: 0.405), predicted 2 (metric 0.405) → off by -1;  R(flattest) = ['226.8', '380.5', '519.8', '417.3', '443.9']
+6a [9k] 15a1  odd : α/4π =  2.1606  γ =   9.393  β =   18.788  max resid  0.163;  linear α/4π = 1.8467  → in [1.7, 2.3]
+6a [5k] 15a1  odd : α/4π =  2.1582  γ =   9.306  β =   18.807  max resid  0.167;  linear α/4π = 1.8472  → in [1.7, 2.3]
+6b 15a1  odd : flattest n = 3 (metric 0.239; runner-up 4: 0.321), predicted 4 (metric 0.321) → off by -1;  R(flattest) = ['34.05', '80.48', '96.82', '87.69', '102.2']
+6a [9k] 19a1  even: α/4π =  2.1339  γ =   5.895  β =   12.864  max resid  0.112;  linear α/4π = 1.9369  → in [1.7, 2.3]
+6a [5k] 19a1  even: α/4π =  2.1404  γ =   6.134  β =    12.92  max resid  0.107;  linear α/4π = 1.9354  → in [1.7, 2.3]
+6b 19a1  even: flattest n = 1 (metric 0.0636; runner-up 0: 0.496), predicted 2 (metric 0.623) → off by -1;  R(flattest) = ['141.7', '235.2', '261.9', '219.6', '220.7']
+6a [9k] 19a1  odd : α/4π =  2.1572  γ =   9.512  β =   18.071  max resid 0.0551;  linear α/4π = 1.8392  → in [1.7, 2.3]
+6a [5k] 19a1  odd : α/4π =  2.1546  γ =   9.427  β =   18.083  max resid 0.0548;  linear α/4π = 1.8396  → in [1.7, 2.3]
+6b 19a1  odd : flattest n = 4 (metric 0.196; runner-up 3: 0.364), predicted 4 (metric 0.196) → off by 0;  R(flattest) = ['0.5191', '0.8349', '0.8855', '0.9167', '0.6863']
+P-DL6a: HOLDS (α/4π range 2.134–2.161);  P-DL6b: NOT KILLED, prediction partly missed (1/6 exact, all within ±1: True)

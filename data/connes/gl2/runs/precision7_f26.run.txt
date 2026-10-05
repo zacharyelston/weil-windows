@@ -1,0 +1,15 @@
+2026-10-02 04:07:43 | gl2 precision f26 | START  pid=75385 total=10 log=logs/gl2-precision-f26-20261002-040743.log args={'cmd': 'precision', 'curve': 'f26', 'extra': 80, 'file': 'data/connes/gl2/scan7_f26.json', 'out': 'data/connes/gl2/precision7_f26.json'}
+WARN inverse iteration not converged in 40 steps (n = 58, dps 152); returning NaN
+2026-10-02 04:07:45 | gl2 precision f26 | STATUS 1/10 (10.0%)  elapsed 2s  eta 20s  | f26 v=2.0 even N=57: dps 72 → 152: 1.41490045959 → 1.41490045959  rel 8.78e-16
+WARN inverse iteration not converged in 40 steps (n = 57, dps 152); returning NaN
+2026-10-02 04:07:48 | gl2 precision f26 | STATUS 2/10 (20.0%)  elapsed 4s  eta 17s  | f26 v=2.0 odd N=57: dps 72 → 152: 1.4271156787 → 1.4271156787  rel 2.36e-15
+WARN inverse iteration not converged in 40 steps (n = 91, dps 160); returning NaN
+2026-10-02 04:07:52 | gl2 precision f26 | STATUS 3/10 (30.0%)  elapsed 9s  eta 21s  | f26 v=2.5 even N=90: dps 80 → 160: 1.31439420705 → 1.31439420705  rel 1.25e-15
+2026-10-02 04:07:55 | gl2 precision f26 | STATUS 4/10 (40.0%)  elapsed 11s  eta 17s  | f26 v=2.5 odd N=90: dps 80 → 160: 0.266920118225 → 0.266920118225  rel 1.44e-15
+2026-10-02 04:07:59 | gl2 precision f26 | STATUS 5/10 (50.0%)  elapsed 16s  eta 16s  | f26 v=3.0 even N=126: dps 89 → 169: 0.0985000744604 → 0.0985000744604  rel 1.09e-17
+2026-10-02 04:08:03 | gl2 precision f26 | STATUS 6/10 (60.0%)  elapsed 19s  eta 12s  | f26 v=3.0 odd N=126: dps 89 → 169: 0.00111926479289 → 0.00111926479289  rel 3.14e-15
+2026-10-02 04:08:07 | gl2 precision f26 | STATUS 7/10 (70.0%)  elapsed 24s  eta 10s  | f26 v=3.5 even N=165: dps 97 → 177: 0.000165222937696 → 0.000165222937696  rel 1.66e-15
+2026-10-02 04:08:12 | gl2 precision f26 | STATUS 8/10 (80.0%)  elapsed 29s  eta 7s  | f26 v=3.5 odd N=165: dps 97 → 177: 7.7917223454e-7 → 7.7917223454e-7  rel 5.25e-16
+2026-10-02 04:08:19 | gl2 precision f26 | STATUS 9/10 (90.0%)  elapsed 35s  eta 3s  | f26 v=4.0 even N=207: dps 105 → 185: 9.48604923575e-8 → 9.48604923575e-8  rel 2.83e-16
+2026-10-02 04:08:25 | gl2 precision f26 | STATUS 10/10 (100.0%)  elapsed 42s  eta 0s  | f26 v=4.0 odd N=207: dps 105 → 185: 1.87011627164e-10 → 1.87011627164e-10  rel 2.08e-15
+2026-10-02 04:08:25 | gl2 precision f26 | DONE   10/10 in 42s

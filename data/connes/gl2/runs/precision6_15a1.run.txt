@@ -1,0 +1,12 @@
+2026-10-02 02:18:32 | gl2 precision 15a1 | START  pid=54682 total=10 log=logs/gl2-precision-15a1-20261002-021832.log args={'cmd': 'precision', 'curve': '15a1', 'extra': 80, 'file': 'data/connes/gl2/scan6_15a1.json', 'out': 'data/connes/gl2/precision6_15a1.json'}
+2026-10-02 02:18:34 | gl2 precision 15a1 | STATUS 1/10 (10.0%)  elapsed 2s  eta 19s  | 15a1 v=1.5 even N=103: dps 64 → 144: 2.23226144695e-11 → 2.23226144695e-11  rel 1.33e-15
+2026-10-02 02:18:36 | gl2 precision 15a1 | STATUS 2/10 (20.0%)  elapsed 4s  eta 17s  | 15a1 v=1.5 odd N=103: dps 64 → 144: 1.27019079884e-8 → 1.27019079884e-8  rel 2.73e-15
+2026-10-02 02:18:40 | gl2 precision 15a1 | STATUS 3/10 (30.0%)  elapsed 8s  eta 19s  | 15a1 v=2.0 even N=155: dps 72 → 152: 2.01081371786e-16 → 2.01081371786e-16  rel 1.09e-15
+2026-10-02 02:18:44 | gl2 precision 15a1 | STATUS 4/10 (40.0%)  elapsed 12s  eta 18s  | 15a1 v=2.0 odd N=155: dps 72 → 152: 2.86575393203e-13 → 2.86575393203e-13  rel 9.11e-16
+2026-10-02 02:18:50 | gl2 precision 15a1 | STATUS 5/10 (50.0%)  elapsed 18s  eta 18s  | 15a1 v=2.5 even N=212: dps 80 → 160: 1.33874079862e-21 → 1.33874079862e-21  rel 1.35e-15
+2026-10-02 02:18:57 | gl2 precision 15a1 | STATUS 6/10 (60.0%)  elapsed 25s  eta 16s  | 15a1 v=2.5 odd N=212: dps 80 → 160: 2.62541814532e-18 → 2.62541814532e-18  rel 1.57e-15
+2026-10-02 02:19:07 | gl2 precision 15a1 | STATUS 7/10 (70.0%)  elapsed 35s  eta 15s  | 15a1 v=3.0 even N=272: dps 89 → 169: 4.92750958874e-27 → 4.92750958874e-27  rel 8.46e-16
+2026-10-02 02:19:17 | gl2 precision 15a1 | STATUS 8/10 (80.0%)  elapsed 45s  eta 11s  | 15a1 v=3.0 odd N=272: dps 89 → 169: 1.56971191878e-23 → 1.56971191878e-23  rel 3.07e-15
+2026-10-02 02:19:32 | gl2 precision 15a1 | STATUS 9/10 (90.0%)  elapsed 1m00s  eta 6s  | 15a1 v=3.5 even N=336: dps 97 → 177: 2.30343993731e-32 → 2.30343993731e-32  rel 1.63e-15
+2026-10-02 02:19:48 | gl2 precision 15a1 | STATUS 10/10 (100.0%)  elapsed 1m15s  eta 0s  | 15a1 v=3.5 odd N=336: dps 97 → 177: 1.09445851048e-28 → 1.09445851048e-28  rel 2.34e-15
+2026-10-02 02:19:48 | gl2 precision 15a1 | DONE   10/10 in 1m15s

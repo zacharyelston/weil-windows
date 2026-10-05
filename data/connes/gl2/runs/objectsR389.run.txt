@@ -1,0 +1,5 @@
+2026-10-03 11:17:56 | gl2 objects6 | START  pid=59704 total=None log=logs/gl2-objects6-20261003-111756.log args={'cmd': 'objects6', 'objects': '389a1', 'pmax': 2000, 'nmax': 2000, 'naive': 300, 'cong': 1000, 'lognmax': 500, 'json': 'data/connes/gl2/objectsR389.json'}
+2026-10-03 11:17:56 | gl2 objects6 | RESULT 389a1 [0, 1, 1, -2, 0]: Δ = 389 = 389^1, c4 = 112 (prime to N: True), j = 3611.64010283 → conductor 389: True;  a_p at p | N: {389: 1} (split multiplicative);  gcd of #Ẽ(F_p) over good p ≤ 2000: 1 (odd p: 1);  Hasse: True
+2026-10-03 11:17:56 | gl2 objects6 | RESULT 389a1 a_p, p ≤ 50: a_2=-2, a_3=-2, a_5=-3, a_7=-5, a_11=-4, a_13=-3, a_17=-6, a_19=5, a_23=-4, a_29=-6, a_31=4, a_37=-8, a_41=-3, a_43=12, a_47=-2
+2026-10-03 11:17:56 | gl2 objects6 | RESULT 389a1: Euler terms vs Dirichlet log-derivative for n ≤ 500: max |Δ| on prime powers 3.45e-31, max |c_n| off prime powers 1.82e-29
+2026-10-03 11:17:56 | gl2 objects6 | DONE   0/0 in 0s

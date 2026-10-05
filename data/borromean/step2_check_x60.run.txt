@@ -1,0 +1,11 @@
+rho        x=60  odd  c=[0, 1, 0, 0, 0, 0]: Q−Σ =   1.526e-8  tail    1.54e-8  ratio  0.9907  (not gating)
+rho        x=60  odd  c=[0, 0, 0, 1, 0, 0]: Q−Σ =   6.104e-8  tail   6.162e-8  ratio  0.9907  (not gating)
+rho        x=60  odd  c=[0, 1, -1, 0, 0, 0]: Q−Σ =   9.537e-8  tail   9.627e-8  ratio  0.9907  (not gating)
+rho        x=60  even c=[0, 1, 1, 0, 0, 0, 0]: Q−Σ =  4.797e-14  tail  4.813e-14  ratio  0.9967  (not gating)
+rho        x=60  even c=[0, 0, 1, 0, -1, 0, 0]: Q−Σ =  7.596e-13  tail  7.701e-13  ratio  0.9864  (not gating)
+chi5chi29  x=60  odd  c=[0, 1, 0, 0, 0, 0]: Q−Σ =   1.556e-8  tail    1.54e-8  ratio    1.01  (not gating)
+chi5chi29  x=60  odd  c=[0, 0, 0, 1, 0, 0]: Q−Σ =   6.226e-8  tail   6.162e-8  ratio    1.01  (not gating)
+chi5chi29  x=60  odd  c=[0, 1, -1, 0, 0, 0]: Q−Σ =   9.727e-8  tail   9.627e-8  ratio    1.01  (not gating)
+chi5chi29  x=60  even c=[0, 1, 1, 0, 0, 0, 0]: Q−Σ =  4.841e-14  tail  4.813e-14  ratio   1.006  (not gating)
+chi5chi29  x=60  even c=[0, 0, 1, 0, -1, 0, 0]: Q−Σ =  7.817e-13  tail  7.701e-13  ratio   1.015  (not gating)
+check gate: PASS

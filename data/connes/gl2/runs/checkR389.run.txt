@@ -1,0 +1,7 @@
+2026-10-03 11:55:32 | gl2 check | START  pid=65152 total=None log=logs/gl2-check-20261003-115532.log args={'cmd': 'check', 'curves': '389a1', 'x': '13', 'gate': False, 'gate7': False, 'zeros_tag': '', 'json': 'data/connes/gl2/checkR389.json'}
+2026-10-03 11:55:55 | gl2 check | RESULT 389a1 x=13 odd c=[0, 1, 0, 0, 0, 0]: cᵀQc = 4.17784780386;  2Σ_{γ≤120.0} F(γ)² = 4.17782028233;  Q − Σ = 2.75e-5 (rel 6.59e-6);  expected tail 2.88e-5;  rel after tail 3.13e-7
+2026-10-03 11:56:19 | gl2 check | RESULT 389a1 x=13 odd c=[0, 0, 0, 1, 0, 0]: cᵀQc = 7.1925545167;  2Σ_{γ≤120.0} F(γ)² = 7.19244378137;  Q − Σ = 0.000111 (rel 1.54e-5);  expected tail 0.000116;  rel after tail 7.31e-7
+2026-10-03 11:56:47 | gl2 check | RESULT 389a1 x=13 odd c=[0, 1, -1, 0, 0, 0]: cᵀQc = 10.3459265022;  2Σ_{γ≤120.0} F(γ)² = 10.3457542399;  Q − Σ = 0.000172 (rel 1.67e-5);  expected tail 0.00018;  rel after tail 7.91e-7
+2026-10-03 11:57:22 | gl2 check | RESULT 389a1 x=13 even c=[0, 1, 1, 0, 0, 0, 0]: cᵀQc = 7.99008536049;  2Σ_{γ≤120.0} F(γ)² = 7.99008534536;  Q − Σ = 1.51e-8 (rel 1.89e-9);  expected tail 1.59e-8;  rel after tail 9.4e-11
+2026-10-03 11:57:57 | gl2 check | RESULT 389a1 x=13 even c=[0, 0, 1, 0, -1, 0, 0]: cᵀQc = 11.7121857513;  2Σ_{γ≤120.0} F(γ)² = 11.7121855071;  Q − Σ = 2.44e-7 (rel 2.08e-8);  expected tail 2.56e-7;  rel after tail 1.04e-9
+2026-10-03 11:57:57 | gl2 check | DONE   0/0 in 2m24s

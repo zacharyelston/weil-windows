@@ -1,0 +1,10 @@
+2026-10-03 11:46:59 | gl2 zeros-merge 389a1 | START  pid=64027 total=None log=logs/gl2-zeros-merge-389a1-20261003-114659.log args={'cmd': 'zeros-merge', 'curve': '389a1', 'parts': 'data/connes/gl2/zeros_389a1_chunk_0_50.json,data/connes/gl2/zeros_389a1_chunk_50_80.json,data/connes/gl2/zeros_389a1_chunk_80_102.json,data/connes/gl2/zeros_389a1_chunk_102_120.json', 'count_at': '20,40,60,80,100,120', 'json': 'data/connes/gl2/zeros_389a1.json'}
+2026-10-03 11:46:59 | gl2 zeros-merge 389a1 | RESULT 389a1: merged 4 chunks → 188 zeros in (0, 120.0]; first ['2.876099071', '4.416896084', '5.793402634', '6.985966653']
+2026-10-03 11:47:00 | gl2 zeros-merge 389a1 | RESULT 389a1: central zero: Z(2e-4)/Z(1e-4) = 4.00000005 (2^m0 = 4 expected: 2 for a simple zero, 4 for a double, 8 for a triple)
+2026-10-03 11:47:36 | gl2 zeros-merge 389a1 | RESULT 389a1: (θ + arg L)/π at T = 20.154486: 21.0; found 20 zeros in (0, T], so m0 = 2·(21.0 − 20) = 2.0 → OK (max |Δarg| per step 0.14)
+2026-10-03 11:48:27 | gl2 zeros-merge 389a1 | RESULT 389a1: (θ + arg L)/π at T = 40.430566: 50.0; found 49 zeros in (0, T], so m0 = 2·(50.0 − 49) = 2.0 → OK (max |Δarg| per step 0.077)
+2026-10-03 11:49:32 | gl2 zeros-merge 389a1 | RESULT 389a1: (θ + arg L)/π at T = 59.971139: 81.0; found 80 zeros in (0, T], so m0 = 2·(81.0 − 80) = 2.0 → OK (max |Δarg| per step 0.021)
+2026-10-03 11:50:55 | gl2 zeros-merge 389a1 | RESULT 389a1: (θ + arg L)/π at T = 79.972527: 115.0; found 114 zeros in (0, T], so m0 = 2·(115.0 − 114) = 2.0 → OK (max |Δarg| per step 0.11)
+2026-10-03 11:52:43 | gl2 zeros-merge 389a1 | RESULT 389a1: (θ + arg L)/π at T = 99.742712: 151.0; found 150 zeros in (0, T], so m0 = 2·(151.0 − 150) = 2.0 → OK (max |Δarg| per step 0.057)
+2026-10-03 11:54:57 | gl2 zeros-merge 389a1 | RESULT 389a1: (θ + arg L)/π at T = 120.0: 189.0; found 188 zeros in (0, T], so m0 = 2·(189.0 − 188) = 2.0 → OK (max |Δarg| per step 0.24)
+2026-10-03 11:54:57 | gl2 zeros-merge 389a1 | DONE   0/0 in 7m58s

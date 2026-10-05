@@ -1,0 +1,36 @@
+11a1 even [9k*] A' v = x/N       : α/4π =  0.21049  γ =  -12.92  β =  -7.8486  max resid    0.518  → killed
+11a1 even [9k*] C' v = x/sqrt(N) : α/4π = 0.063465  γ =  -12.92  β =   7.6411  max resid    0.518  → killed
+11a1 even [9k*] B' v = sqrt(x/N) : α/4π =   2.0057  γ =   2.512  β =   12.584  max resid    0.272  → killed
+11a1 even [5k*] A' v = x/N       : α/4π =  0.21044  γ =  -12.93  β =  -7.7803  max resid    0.523  → killed
+11a1 even [5k*] C' v = x/sqrt(N) : α/4π = 0.063451  γ =  -12.93  β =    7.723  max resid    0.523  → killed
+11a1 even [5k*] B' v = sqrt(x/N) : α/4π =   2.0053  γ =   2.485  β =   12.648  max resid    0.279  → killed
+11a1 odd  [9k*] A' v = x/N       : α/4π =  0.20102  γ =  -12.34  β =   -2.312  max resid    0.599  → killed
+11a1 odd  [9k*] C' v = x/sqrt(N) : α/4π = 0.060608  γ =  -12.34  β =   12.483  max resid    0.599  → killed
+11a1 odd  [9k*] B' v = sqrt(x/N) : α/4π =   1.9155  γ =   2.399  β =   17.202  max resid     0.47  → killed
+11a1 odd  [5k*] A' v = x/N       : α/4π =   0.2009  γ =  -12.36  β =  -2.2724  max resid    0.605  → killed
+11a1 odd  [5k*] C' v = x/sqrt(N) : α/4π = 0.060573  γ =  -12.36  β =   12.544  max resid    0.605  → killed
+11a1 odd  [5k*] B' v = sqrt(x/N) : α/4π =   1.9145  γ =    2.35  β =   17.231  max resid    0.474  → killed
+37b1 even [9k*] A' v = x/N       : α/4π =   0.2048  γ =  -13.32  β =  -9.0662  max resid    0.442  → killed
+37b1 even [9k*] C' v = x/sqrt(N) : α/4π = 0.033668  γ =  -13.32  β =   14.982  max resid    0.442  → killed
+37b1 even [9k*] B' v = sqrt(x/N) : α/4π =   1.9531  γ =  0.9922  β =   10.825  max resid     0.19  → killed
+37b1 even [5k*] A' v = x/N       : α/4π =  0.20499  γ =  -13.32  β =  -8.9892  max resid    0.449  → killed
+37b1 even [5k*] C' v = x/sqrt(N) : α/4π =   0.0337  γ =  -13.32  β =   15.066  max resid    0.449  → killed
+37b1 even [5k*] B' v = sqrt(x/N) : α/4π =    1.955  γ =   1.013  β =   10.921  max resid    0.197  → killed
+37b1 odd  [9k*] A' v = x/N       : α/4π =  0.20893  γ =  -12.06  β =  -2.7506  max resid    0.415  → killed
+37b1 odd  [9k*] C' v = x/sqrt(N) : α/4π = 0.034347  γ =  -12.06  β =   19.023  max resid    0.415  → killed
+37b1 odd  [9k*] B' v = sqrt(x/N) : α/4π =   1.9913  γ =   4.037  β =   17.534  max resid     0.16  → killed
+37b1 odd  [5k*] A' v = x/N       : α/4π =  0.20844  γ =  -12.12  β =  -2.6638  max resid    0.408  → killed
+37b1 odd  [5k*] C' v = x/sqrt(N) : α/4π = 0.034268  γ =  -12.12  β =   19.217  max resid    0.408  → killed
+37b1 odd  [5k*] B' v = sqrt(x/N) : α/4π =   1.9866  γ =   3.848  β =   17.573  max resid    0.154  → killed
+prolate 11a1 even A' (killed): flattest n = 9 (|ln R(12)/R(2)| = 59.3; 4 vs 12: n = 9), R = ['4.908e-13', '7.132e-11', '1.461e-6', '1.085', '2.864e+13']
+prolate 11a1 even C' (killed): flattest n = 9 (|ln R(12)/R(2)| = 350.0; 4 vs 12: n = 9), R = ['1.072e+8', '3.01e+35', '1.192e+65', '1.709e+96', '1.684e+160']
+prolate 11a1 even B' (killed): flattest n = 0 (|ln R(12)/R(2)| = 24.0; 4 vs 12: n = 0), R = ['0.001072', '1.815e-6', '5.463e-9', '8.257e-11', '4.039e-14']
+prolate 11a1 odd  A' (killed): flattest n = 9 (|ln R(12)/R(2)| = 61.5; 4 vs 12: n = 9), R = ['2.343e-10', '7.063e-8', '0.001759', '2781.0', '1.244e+17']
+prolate 11a1 odd  C' (killed): flattest n = 9 (|ln R(12)/R(2)| = 353.0; 4 vs 12: n = 9), R = ['5.117e+10', '2.981e+38', '1.434e+68', '4.38e+99', '7.311e+163']
+prolate 11a1 odd  B' (killed): flattest n = 0 (|ln R(12)/R(2)| = 21.8; 4 vs 12: n = 0), R = ['0.5116', '0.001798', '6.576e-6', '2.116e-7', '1.754e-10']
+prolate 37b1 even A' (killed): flattest n = 9 (|ln R(12)/R(2)| = 59.4; 4 vs 12: n = 9), R = ['1.274e-13', '1.496e-11', '4.092e-7', '0.2021', '7.734e+12']
+prolate 37b1 even C' (killed): flattest n = 9 (|ln R(12)/R(2)| = 698.0; 4 vs 12: n = 9), R = ['1.363e+35', '4.816e+92', '3.965e+152', '5.892e+213', '2.041e+338']
+prolate 37b1 even B' (killed): flattest n = 0 (|ln R(12)/R(2)| = 24.0; 4 vs 12: n = 0), R = ['0.0002782', '3.807e-7', '1.53e-9', '1.538e-11', '1.091e-14']
+prolate 37b1 odd  A' (killed): flattest n = 9 (|ln R(12)/R(2)| = 61.1; 4 vs 12: n = 9), R = ['1.535e-10', '3.752e-8', '0.001599', '1033.0', '5.206e+16']
+prolate 37b1 odd  C' (killed): flattest n = 9 (|ln R(12)/R(2)| = 700.0; 4 vs 12: n = 9), R = ['1.642e+38', '1.208e+96', '1.549e+156', '3.01e+217', '1.374e+342']
+prolate 37b1 odd  B' (killed): flattest n = 0 (|ln R(12)/R(2)| = 22.2; 4 vs 12: n = 0), R = ['0.3352', '0.0009548', '5.975e-6', '7.858e-8', '7.342e-11']

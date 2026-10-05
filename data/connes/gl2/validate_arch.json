@@ -1,0 +1,110 @@
+{
+ "rows": [
+  {
+   "x": "13",
+   "parity": "even",
+   "n": 30,
+   "dps": 100,
+   "max_entry": "2.8851",
+   "V1_mu0_vs_zeta": "7.14e-102",
+   "V2_mu1_log5_vs_dh": "8.57e-101",
+   "zeta_with_primes": "1.57e-100",
+   "chi5_vs_zeros_side": "7.86e-101",
+   "chi-4_vs_zeros_side": "1.71e-100",
+   "pass": true
+  },
+  {
+   "x": "13",
+   "parity": "odd",
+   "n": 30,
+   "dps": 100,
+   "max_entry": "2.4509",
+   "V1_mu0_vs_zeta": "3.57e-102",
+   "V2_mu1_log5_vs_dh": "8.57e-101",
+   "zeta_with_primes": "1.57e-100",
+   "chi5_vs_zeros_side": "7.86e-101",
+   "chi-4_vs_zeros_side": "1.71e-100",
+   "pass": true
+  },
+  {
+   "x": "22",
+   "parity": "even",
+   "n": 30,
+   "dps": 100,
+   "max_entry": "3.1422",
+   "V1_mu0_vs_zeta": "7.14e-102",
+   "V2_mu1_log5_vs_dh": "1.14e-100",
+   "zeta_with_primes": "2.0e-100",
+   "chi5_vs_zeros_side": "3.57e-100",
+   "chi-4_vs_zeros_side": "1.86e-100",
+   "pass": true
+  },
+  {
+   "x": "22",
+   "parity": "odd",
+   "n": 30,
+   "dps": 100,
+   "max_entry": "2.2643",
+   "V1_mu0_vs_zeta": "7.14e-102",
+   "V2_mu1_log5_vs_dh": "1.14e-100",
+   "zeta_with_primes": "2.0e-100",
+   "chi5_vs_zeros_side": "3.57e-100",
+   "chi-4_vs_zeros_side": "1.86e-100",
+   "pass": true
+  },
+  {
+   "x": "132",
+   "parity": "even",
+   "n": 30,
+   "dps": 100,
+   "max_entry": "3.7538",
+   "V1_mu0_vs_zeta": "8.93e-103",
+   "V2_mu1_log5_vs_dh": "5.71e-101",
+   "zeta_with_primes": "1.71e-100",
+   "chi5_vs_zeros_side": "3.43e-100",
+   "chi-4_vs_zeros_side": "3.57e-100",
+   "pass": true
+  },
+  {
+   "x": "132",
+   "parity": "odd",
+   "n": 30,
+   "dps": 100,
+   "max_entry": "2.0365",
+   "V1_mu0_vs_zeta": "3.57e-102",
+   "V2_mu1_log5_vs_dh": "5.71e-101",
+   "zeta_with_primes": "1.71e-100",
+   "chi5_vs_zeros_side": "3.43e-100",
+   "chi-4_vs_zeros_side": "3.57e-100",
+   "pass": true
+  },
+  {
+   "x": "444",
+   "parity": "even",
+   "n": 30,
+   "dps": 100,
+   "max_entry": "4.0239",
+   "V1_mu0_vs_zeta": "4.29e-101",
+   "V2_mu1_log5_vs_dh": "8.57e-101",
+   "zeta_with_primes": "3.0e-100",
+   "chi5_vs_zeros_side": "4.29e-100",
+   "chi-4_vs_zeros_side": "3.71e-100",
+   "pass": true
+  },
+  {
+   "x": "444",
+   "parity": "odd",
+   "n": 30,
+   "dps": 100,
+   "max_entry": "2.3797",
+   "V1_mu0_vs_zeta": "5.71e-101",
+   "V2_mu1_log5_vs_dh": "8.57e-101",
+   "zeta_with_primes": "3.0e-100",
+   "chi5_vs_zeros_side": "4.29e-100",
+   "chi-4_vs_zeros_side": "3.71e-100",
+   "pass": true
+  }
+ ],
+ "pass": true,
+ "tolerance": "1.0e-90"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "R-REG-INITIAL",
+  "status": "M1 and final rate are unproved targets; constants fixed before gates",
+  "x0_over_q": 2,
+  "C1_over_sqrt_q": 1000000000000000,
+  "p1": 8,
+  "C2": "10^12 exp(4 pi q)",
+  "p2": 8,
+  "C": "20 * 10^42 * q * (1 + log(3q)) * exp(4 + 4 pi q)",
+  "p": 24,
+  "a_over_c": 10,
+  "split_over_c": 100,
+  "hank_coefficient_sum_upper": 10000,
+  "cap_weight_upper": 6,
+  "envelope_single_upper": "7 * 10^10 * c^5",
+  "term_coefficient_sum_upper": "41 c",
+  "J_upper": "3 * 10^12 * c^6",
+  "edge_upper": "5 * 10^5 * sqrt(q) * c^(7/2)",
+  "count_K": "5 * (1 + log(3q))",
+  "fixed_hank_checks": {
+    "2": {
+      "sum": "7",
+      "hank100_over_cap": "30909/2000000000"
+    },
+    "3": {
+      "sum": "37",
+      "hank100_over_cap": "4458363/4000000000000"
+    },
+    "4": {
+      "sum": "266",
+      "hank100_over_cap": "4175410869/40000000000000000"
+    },
+    "5": {
+      "sum": "2431",
+      "hank100_over_cap": "4827145046031/400000000000000000000"
+    }
+  },
+  "formal_even_difference": {
+    "constant": "1/8",
+    "r": "-1/4",
+    "zeta_minus_a_limit": "1/8"
+  },
+  "sheet_fit_range": [
+    3.45,
+    11.5
+  ],
+  "proof_constants": {
+    "beta_min": 10,
+    "I_seven_half_polynomial_lower": "2/5",
+    "split_cap_endpoint": 100,
+    "p_max": 4,
+    "k_min": 2,
+    "k_max": 5
+  }
+}

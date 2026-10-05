@@ -1,0 +1,133 @@
+{
+ "note": "R2 upper bounds B at the four certified supports, against rh2's certified lower bounds (docs/CERTIFICATE_238.md). B >= cert is the check that can fail; computed 2026-10-03 after external review of the R2 brief.",
+ "rows": [
+  {
+   "construction": "hermite",
+   "parity": "even",
+   "x": "4.953032424",
+   "bound": "1.61318244929e-7",
+   "certified_lower_bound": 1.0277e-17,
+   "bound_over_cert": 15697017118.711687
+  },
+  {
+   "construction": "hermite",
+   "parity": "odd",
+   "x": "4.953032424",
+   "bound": "1.16556373091e-5",
+   "certified_lower_bound": 9.118e-15,
+   "bound_over_cert": 1278310738.0017548
+  },
+  {
+   "construction": "hermite",
+   "parity": "even",
+   "x": "10.80490286",
+   "bound": "5.32265866557e-22",
+   "certified_lower_bound": 6.81311646951e-48,
+   "bound_over_cert": 7.812369991603573e+25
+  },
+  {
+   "construction": "hermite",
+   "parity": "odd",
+   "x": "10.80490286",
+   "bound": "2.13854884796e-19",
+   "certified_lower_bound": 3.919668616e-44,
+   "bound_over_cert": 5.455942982604425e+24
+  },
+  {
+   "construction": "hermite",
+   "parity": "even",
+   "x": "13.46373804",
+   "bound": "7.66224556346e-29",
+   "certified_lower_bound": 5.76344479222e-62,
+   "bound_over_cert": 1.3294558791997396e+33
+  },
+  {
+   "construction": "hermite",
+   "parity": "odd",
+   "x": "13.46373804",
+   "bound": "4.89723589781e-26",
+   "certified_lower_bound": 5.36011304048e-58,
+   "bound_over_cert": 9.136441453427727e+31
+  },
+  {
+   "construction": "hermite",
+   "parity": "even",
+   "x": "19.88568249",
+   "bound": "1.22619658233e-45",
+   "certified_lower_bound": 3.50114217641e-96,
+   "bound_over_cert": 3.5022758875428393e+50
+  },
+  {
+   "construction": "hermite",
+   "parity": "odd",
+   "x": "19.88568249",
+   "bound": "1.76339657786e-42",
+   "certified_lower_bound": 8.25626494001e-92,
+   "bound_over_cert": 2.1358284777351928e+49
+  },
+  {
+   "construction": "kb",
+   "parity": "even",
+   "x": "4.953032424",
+   "bound": "3.201847847e-13",
+   "certified_lower_bound": 1.0277e-17,
+   "bound_over_cert": 31155.471898413933
+  },
+  {
+   "construction": "kb",
+   "parity": "odd",
+   "x": "4.953032424",
+   "bound": "1.013714268e-10",
+   "certified_lower_bound": 9.118e-15,
+   "bound_over_cert": 11117.726124150033
+  },
+  {
+   "construction": "kb",
+   "parity": "even",
+   "x": "10.80490286",
+   "bound": "4.597264883e-42",
+   "certified_lower_bound": 6.81311646951e-48,
+   "bound_over_cert": 674766.8124526625
+  },
+  {
+   "construction": "kb",
+   "parity": "odd",
+   "x": "10.80490286",
+   "bound": "6.035898758e-39",
+   "certified_lower_bound": 3.919668616e-44,
+   "bound_over_cert": 153990.02694670655
+  },
+  {
+   "construction": "kb",
+   "parity": "even",
+   "x": "13.46373804",
+   "bound": "1.001528668e-55",
+   "certified_lower_bound": 5.76344479222e-62,
+   "bound_over_cert": 1737725.7943928791
+  },
+  {
+   "construction": "kb",
+   "parity": "odd",
+   "x": "13.46373804",
+   "bound": "2.040140815e-52",
+   "certified_lower_bound": 5.36011304048e-58,
+   "bound_over_cert": 380615.25934111734
+  },
+  {
+   "construction": "kb",
+   "parity": "even",
+   "x": "19.88568249",
+   "bound": "2.984671478e-89",
+   "certified_lower_bound": 3.50114217641e-96,
+   "bound_over_cert": 8524850.827567423
+  },
+  {
+   "construction": "kb",
+   "parity": "odd",
+   "x": "19.88568249",
+   "bound": "1.288114079e-85",
+   "certified_lower_bound": 8.25626494001e-92,
+   "bound_over_cert": 1560165.6298089193
+  }
+ ]
+}

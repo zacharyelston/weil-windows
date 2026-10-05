@@ -1,0 +1,485 @@
+PASS  A1                     shift 0 reproduces build_form exactly (max |Δ|, even and odd)
+      stated: 0, 0
+      data:   0, 0
+PASS  A2a                    antiperiodic even diagonal checks: range of rel diff
+      stated: 4.5e-07, 4.8e-05
+      data:   4.51e-07, 4.76e-05
+PASS  A2b                    antiperiodic odd b0+b1 off-diagonal checks (x = 5, 13)
+      stated: 1.6e-08, 5.3e-09
+      data:   1.55e-08, 5.3e-09
+PASS  A2c                    antiperiodic even b1−2b2+b3 checks (x = 5, 13)
+      stated: 2.5e-06, 1.3e-05
+      data:   2.46e-06, 1.29e-05
+PASS  A2d                    periodic odd controls: range of rel diff
+      stated: 1e-06, 2e-05
+      data:   1.01e-06, 1.98e-05
+PASS  A3[0.8,even]           ratio table row a = 0.8 even
+      stated: 0.91, 1.03, 0.94, 0.96, 1.01, 1.04, 1.06
+      data:   0.914666, 1.02763, 0.938425, 0.956641, 1.01363, 1.03588, 1.06471
+PASS  A3[0.8,odd]            ratio table row a = 0.8 odd
+      stated: 1, 1.08, 1.12, 1.06, 0.98, 0.96, 1.16
+      data:   0.995949, 1.08433, 1.12399, 1.05757, 0.983332, 0.962689, 1.15919
+PASS  A3[1.0,even]           ratio table row a = 1.0 even
+      stated: 1.34, 0.98, 1.03, 0.96, 1, 0.95, 1.2
+      data:   1.33566, 0.976197, 1.02894, 0.955815, 1.00028, 0.95123, 1.20487
+PASS  A3[1.0,odd]            ratio table row a = 1.0 odd
+      stated: 1.23, 0.99, 1.04, 1.01, 1.01, 1.06, 1.31
+      data:   1.23281, 0.991342, 1.04248, 1.00514, 1.01411, 1.0558, 1.30657
+PASS  A3[1.19,even]          ratio table row a = 1.19 even
+      stated: 0.34, 0.66, 1.1, 1.03, 0.95, 0.98, 2.28
+      data:   0.336933, 0.662117, 1.1006, 1.02933, 0.946252, 0.98281, 2.27633
+PASS  A3[1.19,odd]           ratio table row a = 1.19 odd
+      stated: 0.4, 0.76, 1.15, 1.03, 0.99, 1.02, 2.35
+      data:   0.399566, 0.759933, 1.15261, 1.02729, 0.994682, 1.0206, 2.35419
+PASS  A3[1.3,even]           ratio table row a = 1.3 even
+      stated: 0.32, 0.7, 0.62, 0.79, 0.99, 1, 1600
+      data:   0.324662, 0.701231, 0.616403, 0.789531, 0.993198, 0.995896, 1557.72
+PASS  A3[1.3,odd]            ratio table row a = 1.3 odd
+      stated: 0.32, 0.78, 0.63, 0.82, 1.03, 0.98, 850
+      data:   0.318097, 0.777249, 0.627139, 0.81896, 1.03292, 0.976668, 849.357
+PASS  A3[1.495,even]         ratio table row a = 1.495 even
+      stated: 0.25, 0.19, 0.81, 0.21, 0.69, 1, 1.8e+21
+      data:   0.249599, 0.19451, 0.807788, 0.206979, 0.693358, 1.00459, 1.8195e+21
+PASS  A3[1.495,odd]          ratio table row a = 1.495 odd
+      stated: 0.29, 0.21, 0.87, 0.21, 0.72, 1.03, 4.3e+20
+      data:   0.288118, 0.208663, 0.868874, 0.210426, 0.719323, 1.03012, 4.2976e+20
+PASS  A4                     a = 1.495 even, periodic: decades per mode between N = 48 and 64
+      stated: 0.58
+      data:   0.584471
+PASS  A4b                    factor 4.8 at N = 64 (anti vs periodic) is worth ≈ 1.2 modes
+      stated: 1.2
+      data:   1.16557
+PASS  A5                     sweep size: 5 a × 6 N × 2 sectors × 2 bases runs
+      stated: 120
+      data:   120
+PASS  Z1[even]               ζ fit even: α, γ, β, max resid
+      stated: 12.5556, 4.99, 15.55, 0.035
+      data:   12.5556, 4.98719, 15.5505, 0.0348715
+PASS  Z1b[even]              ζ fit even: α/4π
+      stated: 0.99915
+      data:   0.999145
+PASS  Z1[odd]                ζ fit odd: α, γ, β, max resid
+      stated: 12.549, 7.2, 18.85, 0.04
+      data:   12.5487, 7.20304, 18.8458, 0.0398211
+PASS  Z1b[odd]               ζ fit odd: α/4π
+      stated: 0.99859
+      data:   0.998592
+PASS  Z2                     λ_odd/λ_even ∝ x^p
+      stated: 2.29
+      data:   2.28913
+PASS  V1                     L(χ) odd-sector zero checks: count, min, max rel diff (6 characters × 3)
+      stated: 18, 3.9e-06, 0.0005
+      data:   18, 3.93e-06, 0.000499
+PASS  V2                     L(χ) even-sector zero checks: count, min, max rel diff (6 characters × 2)
+      stated: 12, 1.4e-09, 4.3e-07
+      data:   12, 1.38e-09, 4.29e-07
+PASS  C0                     convergence |ln(λ_5k*/λ_9k*)| max over all scan points
+      stated: 0.17
+      data:   0.16932
+PASS  C1[1]                  P-DL1 table row D = 1
+      stated: 0.92, 1.002, 5.32, 0.885, 1.017, 8.57
+      data:   0.920319, 1.00217, 5.32114, 0.885174, 1.01699, 8.56967
+PASS  C1[5]                  P-DL1 table row D = 5
+      stated: 0.994, 0.994, -0.02, 0.962, 0.987, 1.66
+      data:   0.994253, 0.993982, -0.0176153, 0.961517, 0.987051, 1.65997
+PASS  C1[8]                  P-DL1 table row D = 8
+      stated: 0.989, 0.999, 0.61, 0.958, 0.994, 2.32
+      data:   0.989332, 0.998672, 0.607222, 0.958256, 0.993953, 2.32073
+PASS  C1[-3]                 P-DL1 table row D = -3
+      stated: 0.974, 1.004, 1.93, 0.94, 1, 3.9
+      data:   0.974378, 1.00406, 1.92958, 0.940082, 1.00014, 3.90471
+PASS  C1[-4]                 P-DL1 table row D = -4
+      stated: 0.975, 1.003, 1.82, 0.943, 0.998, 3.55
+      data:   0.974634, 1.00268, 1.8231, 0.943083, 0.997621, 3.54563
+PASS  C1[-7]                 P-DL1 table row D = -7
+      stated: 0.968, 0.987, 1.26, 0.94, 0.984, 2.83
+      data:   0.967876, 0.987278, 1.26134, 0.940408, 0.983944, 2.83029
+PASS  C1[-20]                P-DL1 table row D = -20
+      stated: 0.975, 0.996, 1.36, 0.941, 0.996, 3.57
+      data:   0.975133, 0.99612, 1.36435, 0.940984, 0.995966, 3.57444
+PASS  C2[even χ,even,2]      class band ln λ + 4π x/q, even χ even at x/q = 2
+      stated: 5.3, 5.7
+      data:   5.26334, 5.65657
+PASS  C2[even χ,even,5]      class band ln λ + 4π x/q, even χ even at x/q = 5
+      stated: 5.8, 6.6
+      data:   5.83829, 6.64042
+PASS  C2[even χ,even,10]     class band ln λ + 4π x/q, even χ even at x/q = 10
+      stated: 6.3, 6.9
+      data:   6.33164, 6.9031
+PASS  C2[even χ,odd,2]       class band ln λ + 4π x/q, even χ odd at x/q = 2
+      stated: 12.2, 12.4
+      data:   12.161, 12.3961
+PASS  C2[even χ,odd,5]       class band ln λ + 4π x/q, even χ odd at x/q = 5
+      stated: 14.7, 14.9
+      data:   14.7241, 14.926
+PASS  C2[even χ,odd,10]      class band ln λ + 4π x/q, even χ odd at x/q = 10
+      stated: 16.8, 16.9
+      data:   16.7602, 16.9116
+PASS  C2[odd χ,even,2]       class band ln λ + 4π x/q, odd χ even at x/q = 2
+      stated: 8.3, 9.3
+      data:   8.28623, 9.28977
+PASS  C2[odd χ,even,5]       class band ln λ + 4π x/q, odd χ even at x/q = 5
+      stated: 9.8, 11.2
+      data:   9.81572, 11.2051
+PASS  C2[odd χ,even,10]      class band ln λ + 4π x/q, odd χ even at x/q = 10
+      stated: 11, 12.2
+      data:   10.9615, 12.2099
+PASS  C2[odd χ,odd,2]        class band ln λ + 4π x/q, odd χ odd at x/q = 2
+      stated: 15.1, 15.9
+      data:   15.1215, 15.9414
+PASS  C2[odd χ,odd,5]        class band ln λ + 4π x/q, odd χ odd at x/q = 5
+      stated: 18.9, 19.3
+      data:   18.9219, 19.3391
+PASS  C2[odd χ,odd,10]       class band ln λ + 4π x/q, odd χ odd at x/q = 10
+      stated: 21.5, 22.1
+      data:   21.5149, 22.0517
+PASS  C2[ζ,even]             ζ ln λ + 4π x at x = 2, 5, 10 (even)
+      stated: 18.5, 23.7, 27.1
+      data:   18.5164, 23.7387, 27.1071
+PASS  C2[ζ,odd]              ζ ln λ + 4π x at x = 2, 5, 10 (odd)
+      stated: 22.6, 30.7, 35.6
+      data:   22.6079, 30.6536, 35.6059
+PASS  C3                     ζ above even χ at equal x/q: e^{13} to e^{21} (range of the ln gap at x/q = 2 and 10)
+      stated: 12.9, 20.8
+      data:   12.8599, 20.7755
+PASS  P1[5]                  λ/ℓ_n first → last (x/q = 2 → 10), D = 5
+      stated: 23, 35, 3.8, 6.2
+      data:   22.7723, 35.423, 3.80857, 6.22866
+PASS  P2[5]                  flattest prolate index (even, odd), D = 5
+      stated: 0, 2
+      data:   0, 2
+PASS  P1[8]                  λ/ℓ_n first → last (x/q = 2 → 10), D = 8
+      stated: 15, 20, 3, 5.4
+      data:   15.3684, 20.0033, 3.01085, 5.35369
+PASS  P2[8]                  flattest prolate index (even, odd), D = 8
+      stated: 0, 2
+      data:   0, 2
+PASS  P1[-3]                 λ/ℓ_n first → last (x/q = 2 → 10), D = -3
+      stated: 8.6, 14, 2.7, 5.6
+      data:   8.57007, 14.2146, 2.73188, 5.55324
+PASS  P2[-3]                 flattest prolate index (even, odd), D = -3
+      stated: 1, 3
+      data:   1, 3
+PASS  P1[-4]                 λ/ℓ_n first → last (x/q = 2 → 10), D = -4
+      stated: 6.7, 9.8, 2.7, 4.6
+      data:   6.68901, 9.84374, 2.72418, 4.58077
+PASS  P2[-4]                 flattest prolate index (even, odd), D = -4
+      stated: 1, 3
+      data:   1, 3
+PASS  P1[-7]                 λ/ℓ_n first → last (x/q = 2 → 10), D = -7
+      stated: 3.1, 4.6, 1.7, 3.7
+      data:   3.14162, 4.61527, 1.73475, 3.71065
+PASS  P2[-7]                 flattest prolate index (even, odd), D = -7
+      stated: 1, 3
+      data:   1, 3
+PASS  P1[-20]                λ/ℓ_n first → last (x/q = 2 → 10), D = -20
+      stated: 3.3, 4.1, 3.9, 6.4
+      data:   3.31883, 4.0789, 3.93828, 6.34699
+PASS  P2[-20]                flattest prolate index (even, odd), D = -20
+      stated: 1, 3
+      data:   1, 3
+PASS  P1[1]                  λ/ℓ_n first → last (x/q = 2 → 10), D = 1
+      stated: 2.1, 7.9, 0.37, 4.6
+      data:   2.05774, 7.92334, 0.365426, 4.61818
+PASS  P2[1]                  flattest prolate index (even, odd), D = 1
+      stated: 5, 7
+      data:   5, 7
+PASS  D1[even,2]             DH λ_min even at x/q = 2
+      stated: 8.58e-08
+      data:   8.58165e-08
+PASS  D1[even,3]             DH λ_min even at x/q = 3
+      stated: 4.42e-13
+      data:   4.42234e-13
+PASS  D1[even,4]             DH λ_min even at x/q = 4
+      stated: 4.21e-18
+      data:   4.20723e-18
+PASS  D1[even,5]             DH λ_min even at x/q = 5
+      stated: 1.42e-23
+      data:   1.41754e-23
+PASS  D1[even,6]             DH λ_min even at x/q = 6
+      stated: 9.39e-29
+      data:   9.38518e-29
+PASS  D1[even,6.25]          DH λ_min even at x/q = 6.25
+      stated: -8.33e-30
+      data:   -8.33306e-30
+PASS  D1[even,6.5]           DH λ_min even at x/q = 6.5
+      stated: -1.9e-23
+      data:   -1.89693e-23
+PASS  D1[odd,2]              DH λ_min odd at x/q = 2
+      stated: 6.25e-05
+      data:   6.25096e-05
+PASS  D1[odd,3]              DH λ_min odd at x/q = 3
+      stated: 1.23e-09
+      data:   1.23244e-09
+PASS  D1[odd,4]              DH λ_min odd at x/q = 4
+      stated: 1.35e-14
+      data:   1.35244e-14
+PASS  D1[odd,5]              DH λ_min odd at x/q = 5
+      stated: 1.02e-19
+      data:   1.02019e-19
+PASS  D1[odd,6]              DH λ_min odd at x/q = 6
+      stated: 6.21e-25
+      data:   6.21323e-25
+PASS  D1[odd,6.25]           DH λ_min odd at x/q = 6.25
+      stated: 4.56e-27
+      data:   4.56477e-27
+PASS  D1[odd,6.5]            DH λ_min odd at x/q = 6.5
+      stated: -2.98e-26
+      data:   -2.97986e-26
+PASS  D2                     DH inside the odd-χ band at all 10 (sector, x/q ≤ 6) points
+      stated: 10
+      data:   10
+PASS  T1[even]               λ(ζ_K)/λ(L(χ−20)) at a = 1.1, 1.3, 1.495 (even, N = 96)
+      stated: 1.03, 1.09, 1.28
+      data:   1.03108, 1.08968, 1.28366
+PASS  T2[even]               λ(ζ_H)/λ(ζ_K) at a = 1.1, 1.3, 1.495 (even, N = 96)
+      stated: 1.19, 2.48, 9.99
+      data:   1.19451, 2.47717, 9.99102
+PASS  T1[odd]                λ(ζ_K)/λ(L(χ−20)) at a = 1.1, 1.3, 1.495 (odd, N = 96)
+      stated: 1, 1.03, 1.07
+      data:   1.00105, 1.03425, 1.06886
+PASS  T2[odd]                λ(ζ_H)/λ(ζ_K) at a = 1.1, 1.3, 1.495 (odd, N = 96)
+      stated: 1.21, 1.54, 3.02
+      data:   1.2142, 1.53749, 3.02408
+PASS  T3                     ζ + L(χ−20) matches control_normalisation's ζ_K (max entry difference ≤ 1e-59)
+      stated: 1
+      data:   1
+PASS  T4                     control boosts at e^{2.99} even: cover, (−7,13), (−4,−3), (5,8), (−3,8), χ−4 alone, χ5 alone
+      stated: 9.9, 23.1, 9.5, 6.6, 2.95, 7.7, 5.1
+      data:   9.928, 23.09, 9.458, 6.647, 2.95, 7.697, 5.117
+PASS  Q1                     P-DL2: R/R(10) range over x/q = 12, 14, 16, all 12 cases
+      stated: 0.79, 1.2
+      data:   0.790316, 1.1989
+PASS  Q2                     P-DL2: flattest index (3 vs 16) ≠ assigned, out of 12
+      stated: 0
+      data:   0
+PASS  Q3                     P-DL2 extension convergence: point count, max |ln(λ_5k*/λ_9k*)|
+      stated: 36, 0.144
+      data:   36, 0.144467
+PASS  Q4                     P-DL2 extension: points precision-rechecked at +40 digits, and all stable to < 1e-13
+      stated: 36, 1
+      data:   36, 1
+PASS  R1[1_-20]              P-DL3 1_-20: min ρ over sectors at x/q_max = 2 and at 8
+      stated: 1.54, 1e+18
+      data:   1.54133, 1.01112e+18
+PASS  R1[-3_-4]              P-DL3 -3_-4: min ρ over sectors at x/q_max = 2 and at 8
+      stated: 285, 6.9e+24
+      data:   284.501, 6.91169e+24
+PASS  R1[5_8]                P-DL3 5_8: min ρ over sectors at x/q_max = 2 and at 8
+      stated: 2200, 2e+28
+      data:   2220.03, 1.97358e+28
+PASS  R2[1_-20,even]         P-DL5 log-corrected α/4π, 1_-20 even
+      stated: 2.08
+      data:   2.07979
+PASS  R2[1_-20,odd]          P-DL5 log-corrected α/4π, 1_-20 odd
+      stated: 2.288
+      data:   2.28761
+PASS  R2[-3_-4,even]         P-DL5 log-corrected α/4π, -3_-4 even
+      stated: 2.182
+      data:   2.18214
+PASS  R2[-3_-4,odd]          P-DL5 log-corrected α/4π, -3_-4 odd
+      stated: 1.788
+      data:   1.78754
+PASS  R2[5_8,even]           P-DL5 log-corrected α/4π, 5_8 even
+      stated: 2.04
+      data:   2.04015
+PASS  R2[5_8,odd]            P-DL5 log-corrected α/4π, 5_8 odd
+      stated: 2.052
+      data:   2.05185
+PASS  R3                     P-DL5 convergence max |Δ ln λ| (≤ 0.20 stated, ≤ 0.3 required)
+      stated: 0.2
+      data:   0.199711
+PASS  G1[11a1,even]          P-DL4 11a1 even: α/4π for A′ (x/N) and B′ (√(x/N))
+      stated: 0.2105, 2.006
+      data:   0.21049, 2.00567
+PASS  G1[11a1,odd]           P-DL4 11a1 odd: α/4π for A′ (x/N) and B′ (√(x/N))
+      stated: 0.201, 1.916
+      data:   0.201015, 1.9155
+PASS  G1[37b1,even]          P-DL4 37b1 even: α/4π for A′ (x/N) and B′ (√(x/N))
+      stated: 0.2048, 1.953
+      data:   0.204796, 1.95309
+PASS  G1[37b1,odd]           P-DL4 37b1 odd: α/4π for A′ (x/N) and B′ (√(x/N))
+      stated: 0.2089, 1.991
+      data:   0.208925, 1.99133
+PASS  G2[15a1,even]          P-DL6a 15a1 even: log-corrected α/4π
+      stated: 2.138
+      data:   2.13843
+PASS  G2[15a1,odd]           P-DL6a 15a1 odd: log-corrected α/4π
+      stated: 2.161
+      data:   2.16059
+PASS  G2[19a1,even]          P-DL6a 19a1 even: log-corrected α/4π
+      stated: 2.134
+      data:   2.13389
+PASS  G2[19a1,odd]           P-DL6a 19a1 odd: log-corrected α/4π
+      stated: 2.157
+      data:   2.15716
+PASS  G2[delta,even]         P-DL6a delta even: log-corrected α/4π
+      stated: 2.102
+      data:   2.10208
+PASS  G2[delta,odd]          P-DL6a delta odd: log-corrected α/4π
+      stated: 2.169
+      data:   2.16847
+PASS  G3[15a1,even]          P-DL6b 15a1 even: flattest n (c = 4πv, metric v5 vs v2)
+      stated: 1
+      data:   1
+PASS  G3[15a1,odd]           P-DL6b 15a1 odd: flattest n (c = 4πv, metric v5 vs v2)
+      stated: 3
+      data:   3
+PASS  G3[19a1,even]          P-DL6b 19a1 even: flattest n (c = 4πv, metric v5 vs v2)
+      stated: 1
+      data:   1
+PASS  G3[19a1,odd]           P-DL6b 19a1 odd: flattest n (c = 4πv, metric v5 vs v2)
+      stated: 4
+      data:   4
+PASS  G3[delta,even]         P-DL6b delta even: flattest n (c = 4πv, metric v5 vs v2)
+      stated: 14
+      data:   14
+PASS  G3[delta,odd]          P-DL6b delta odd: flattest n (c = 4πv, metric v5 vs v2)
+      stated: 16
+      data:   16
+PASS  E1                     P-DL8: index hits out of 12, and α/4π range
+      stated: 11, 0.984, 1.026
+      data:   11, 0.983527, 1.02616
+PASS  E2                     P-DL8 gates: forms passed, and worst absolute error
+      stated: 6, 9.9e-05
+      data:   6, 9.93e-05
+PASS  E3                     P-DL8 convergence max |Δ ln λ|
+      stated: 0.156
+      data:   0.15636
+PASS  H1                     P-DL9 level-1: α/4π range over 12 cases, and ε-rule mismatches over 30 points
+      stated: 1.952, 2.074, 0
+      data:   1.95183, 2.07418, 0
+PASS  H1b                    P-DL9 37a1: α/4π (even, odd) and points with λ_odd < λ_even (of 5)
+      stated: 1.889, 1.85, 5
+      data:   1.88941, 1.85026, 5
+PASS  H2                     P-DL10 degree 3: log-corrected α/4π range over 6 cases
+      stated: 2.743, 3.203
+      data:   2.74295, 3.20296
+PASS  K1                     P-DL11a α/4π range over 10 cases
+      stated: 1.95, 2.062
+      data:   1.94988, 2.06203
+PASS  K2                     P-DL11 post hoc: ε = +1 level-N offsets, even range and odd range
+      stated: -0.71, -0.59, 1.62, 1.88
+      data:   -0.71181, -0.59093, 1.6203, 1.8782
+PASS  K4                     P-DL11 post hoc: 37a1 offsets (even, odd)
+      stated: 1.32, -0.67
+      data:   1.3244, -0.67351
+PASS  K3                     P-DL11b within ±1.2 (of 10), off by > 2
+      stated: 0, 1
+      data:   0, 1
+PASS  P12                    P-DL12: index cases within ±0.5 (of 8); α/4π range
+      stated: 8, 1.881, 2.06
+      data:   8, 1.8813, 2.05998
+PASS  P12b                   P-DL12 convergence: points, max |Δ ln λ|
+      stated: 40, 0.067
+      data:   40, 0.0674571
+PASS  ST1                    P-ST1: Z_sq min over 14 points > 0; Z1 even sign flips between 13.46 and 19.89; odd between 19.89 and 24.53
+      stated: 1, 1, 1
+      data:   1, 1, 1
+PASS  ST2                    P-ST2: Z_sq log-corrected α/4π (even, odd) in v = √(x/4)
+      stated: 2.061, 2.133
+      data:   2.06066, 2.13279
+PASS  ST3                    P-ST3: Z_sq odd > even at every support (count of 7)
+      stated: 7
+      data:   7
+PASS  ST4                    P-ST Z_sq convergence max |ln(λ64/λ96)|
+      stated: 0.074
+      data:   0.0737133
+PASS  R2a                    R2: points tabulated and max Ritz/bound ratio (consistency only, NOT a validation: both are upper bounds)
+      stated: 334, 0.0293
+      data:   334, 0.0293171
+PASS  R2b                    R2 validation: bounds above the certified lower bound at the certified supports (count, violations)
+      stated: 16, 0
+      data:   16, 0
+PASS  R389a                  P-R389: points with odd below even (of 5), and ln(λ_odd/λ_even) range
+      stated: 5, -8.755, -7.381
+      data:   5, -8.75455, -7.38138
+PASS  R389b                  P-R389 rate: log-corrected α/4π (even, odd)
+      stated: 1.953, 1.937
+      data:   1.95345, 1.93706
+PASS  R2C1                   R2 Theorem C validation (a): trial RQ ≤ B_cert (cases, failures)
+      stated: 386, 0
+      data:   386, 0
+PASS  R2C2                   R2 Theorem C validation (b): B_cert ≥ certified value at the four supports (cases, failures)
+      stated: 16, 0
+      data:   16, 0
+PASS  L1                     ζ at e^{2.99}: even N = 180, N = 140, odd N = 180
+      stated: 6.27e-96, 8.27e-96, 1.48e-91
+      data:   6.26579e-96, 8.26671e-96, 1.4793e-91
+PASS  L2                     even N = 180 upper bound is below the literal leading term of Zhu's form, 2.26e-95 (0.59% in −ln λ; not an exclusion)
+      stated: 1
+      data:   1
+PASS  L2b                    −ln λ gap to Zhu's leading term at e^{2.99}, in % (review round 1)
+      stated: 0.59
+      data:   0.58865
+PASS  L3                     odd N = 180 is inside the kill window [3, 25]e-92 and above the bracket [5.7, 13]e-92
+      stated: 1
+      data:   1
+PASS  DOC[DECAY_LAW.md]      doc contains: α = 12.5556 (α/4π = 0.99915), γ = 4.99, β = 15.55, max residual 0.035
+      stated: 1
+      data:   1
+PASS  DOC[DECAY_LAW.md]      doc contains: α = 12.549 (α/4π = 0.99859), γ = 7.20, β = 18.85, max residual 0.040
+      stated: 1
+      data:   1
+PASS  DOC[DECAY_LAW.md]      doc contains: x^{2.29}
+      stated: 1
+      data:   1
+PASS  DOC[DECAY_LAW.md]      doc contains: relative error 3.9e-6 to 5.0e-4
+      stated: 1
+      data:   1
+PASS  DOC[DECAY_LAW.md]      doc contains: relative error 1.4e-9 to 4.3e-7
+      stated: 1
+      data:   1
+PASS  DOC[DECAY_LAW.md]      doc contains: |ln(λ_5k*/λ_9k*)| ≤ 0.17
+      stated: 1
+      data:   1
+PASS  DOC[DECAY_LAW.md]      doc contains: | 1 (ζ) | 1 | even + pole | 0.920 | 1.002 | 5.32 | 0.885 | 1.017 | 8.5
+      stated: 1
+      data:   1
+PASS  DOC[DECAY_LAW.md]      doc contains: | −20 | 20 | odd | 0.975 | 0.996 | 1.36 | 0.941 | 0.996 | 3.57 |
+      stated: 1
+      data:   1
+PASS  DOC[DECAY_LAW.md]      doc contains: e^{13} (x/q = 2) to e^{21} (x/q = 10)
+      stated: 1
+      data:   1
+PASS  DOC[DECAY_LAW.md]      doc contains: | 6.25 | 31.25 | **−8.33e-30** |
+      stated: 1
+      data:   1
+PASS  DOC[DECAY_LAW.md]      doc contains: | 6.5 | 32.5 | **−1.90e-23** | — | | **−2.98e-26** |
+      stated: 1
+      data:   1
+PASS  DOC[ANTIPERIODIC.md]   doc contains: all 120 runs
+      stated: 1
+      data:   1
+PASS  DOC[ANTIPERIODIC.md]   doc contains: | 1.495 | even | 0.25 | 0.19 | 0.81 | 0.21 | 0.69 | 1.00 | 1.8e21 |
+      stated: 1
+      data:   1
+PASS  DOC[ANTIPERIODIC.md]   doc contains: periodic odd controls: 1e-6 to 2e-5
+      stated: 1
+      data:   1
+PASS  DOC[LIT_TANGENTS.md]   doc contains: The N = 180 upper bound is 1.48·10⁻⁹¹
+      stated: 1
+      data:   1
+PASS  DOC[LIT_TANGENTS.md]   doc contains: **not** an exclusion of the conjecture
+      stated: 1
+      data:   1
+PASS  DOC[DECAY_LAW.md]      doc contains: and R runs from 1.55 to 38.5
+      stated: 1
+      data:   1
+PASS  DOC[DECAY_LAW.md]      doc contains: up to N = 838 (D = −20, x/q = 16)
+      stated: 1
+      data:   1
+PASS  DOC[DECAY_LAW.md]      doc contains: λ falls from 1e-14–1.5e-9 to 3e-85–1e-77
+      stated: 1
+      data:   1
+PASS  DOC[DECAY_LAW.md]      doc contains: Every R/R(10) lies in [0.79, 1.20]
+      stated: 1
+      data:   1
+PASS  DOC[DECAY_LAW.md]      doc contains: sign(ln λ_odd/λ_even) = ε at all 35 grid points
+      stated: 1
+      data:   1
+PASS  DOC[LIT_TANGENTS.md]   doc contains: λ(ζ_H)/λ(ζ_K) = 1.19, 2.48, **9.99** (even) and 1.21, 1.54, **3.02** (
+      stated: 1
+      data:   1
+
+161/161 claims match the committed data

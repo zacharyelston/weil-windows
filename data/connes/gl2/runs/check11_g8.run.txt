@@ -1,0 +1,8 @@
+2026-10-02 06:09:02 | gl2 check | START  pid=96659 total=None log=logs/gl2-check-20261002-060902.log args={'cmd': 'check', 'curves': 'g8', 'x': '13', 'gate': False, 'gate7': True, 'zeros_tag': '', 'json': 'data/connes/gl2/check11_g8.json'}
+2026-10-02 06:09:56 | gl2 check | RESULT g8 x=13 odd c=[0, 1, 0, 0, 0, 0]: cᵀQc = 0.0786831434182;  2Σ_{γ≤240.0} F(γ)² = 0.0786806270702;  Q − Σ = 2.52e-6 (rel 3.2e-5);  expected tail 2.48e-6;  rel after tail 4.23e-7
+2026-10-02 06:10:54 | gl2 check | RESULT g8 x=13 odd c=[0, 0, 0, 1, 0, 0]: cᵀQc = 1.10420685962;  2Σ_{γ≤240.0} F(γ)² = 1.10419677958;  Q − Σ = 1.01e-5 (rel 9.13e-6);  expected tail 9.95e-6;  rel after tail 1.21e-7
+2026-10-02 06:12:00 | gl2 check | RESULT g8 x=13 odd c=[0, 1, -1, 0, 0, 0]: cᵀQc = 2.17742558118;  2Σ_{γ≤240.0} F(γ)² = 2.17740984828;  Q − Σ = 1.57e-5 (rel 7.23e-6);  expected tail 1.55e-5;  rel after tail 9.55e-8
+2026-10-02 06:13:15 | gl2 check | RESULT g8 x=13 even c=[0, 1, 1, 0, 0, 0, 0]: cᵀQc = 0.0167092163537;  2Σ_{γ≤240.0} F(γ)² = 0.0167092160109;  Q − Σ = 3.43e-10 (rel 2.05e-8);  expected tail 3.38e-10;  rel after tail 2.65e-10
+2026-10-02 06:14:36 | gl2 check | RESULT g8 x=13 even c=[0, 0, 1, 0, -1, 0, 0]: cᵀQc = 1.52405174077;  2Σ_{γ≤240.0} F(γ)² = 1.52405173527;  Q − Σ = 5.5e-9 (rel 3.61e-9);  expected tail 5.43e-9;  rel after tail 4.66e-11
+2026-10-02 06:14:36 | gl2 check | RESULT P-DL7 gate g8 (x = 13, T = 240.0): max |Q − Σ| = 1.57e-5, (Q − Σ)/tail = ['1.01', '1.01', '1.01', '1.01', '1.01'] → PASS
+2026-10-02 06:14:36 | gl2 check | DONE   0/0 in 5m33s

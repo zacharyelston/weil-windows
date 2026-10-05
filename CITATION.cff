@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the technical report."
+title: "Weil positivity on finite windows across L-functions: certified windows, a pre-registered decay law, and an unconditional bound for Dirichlet L-functions"
+type: report
+authors:
+  - family-names: Elston
+    given-names: Zac
+version: "1.0"
+date-released: 2026-10-05
+license: [MIT, CC-BY-4.0]
+keywords: [Riemann hypothesis, Weil positivity, explicit formula, L-functions, interval arithmetic, Dirichlet L-functions]

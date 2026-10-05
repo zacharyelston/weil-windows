@@ -1,0 +1,10 @@
+2026-10-02 00:40:23 | product 1,-20 | START  pid=56479 total=8 log=logs/product-1-20-20261002-004023.log args={'cmd': 'product', 'factors': '1,-20', 'xq': '2,4,6,8', 'f1': 5, 'f2': 9, 'nmin': 24, 'json': 'data/connes/decay/product_1_-20.json'}
+2026-10-02 00:40:34 | product 1,-20 | STATUS 1/8 (12.5%)  elapsed 10s  eta 1m16s  | x/q_max=2 x=40.0 even: N=74 λ(product)=1.44266e-7 λ(L(χ-20))=5.09899e-8  ρ=2.8293  (N=44: ρ=2.7096; dps {'product': 56, 'worst': 56})
+2026-10-02 00:40:45 | product 1,-20 | STATUS 2/8 (25.0%)  elapsed 21s  eta 1m05s  | x/q_max=2 x=40.0 odd: N=74 λ(product)=0.00015709 λ(L(χ-20))=0.000101919  ρ=1.5413  (N=44: ρ=1.5458; dps {'product': 56, 'worst': 56})
+2026-10-02 00:41:18 | product 1,-20 | STATUS 3/8 (37.5%)  elapsed 54s  eta 1m31s  | x/q_max=4 x=80.0 even: N=165 λ(product)=9.59676e-13 λ(L(χ-20))=1.94551e-18  ρ=4.9328e+5  (N=95: ρ=4.7639e+5; dps {'product': 72, 'worst': 72})
+2026-10-02 00:41:51 | product 1,-20 | STATUS 4/8 (50.0%)  elapsed 1m28s  eta 1m28s  | x/q_max=4 x=80.0 odd: N=165 λ(product)=3.21089e-9 λ(L(χ-20))=1.83606e-14  ρ=1.7488e+5  (N=95: ρ=1.7257e+5; dps {'product': 72, 'worst': 72})
+2026-10-02 00:43:06 | product 1,-20 | STATUS 5/8 (62.5%)  elapsed 2m43s  eta 1m37s  | x/q_max=6 x=120.0 even: N=266 λ(product)=4.30309e-17 λ(L(χ-20))=5.05174e-29  ρ=8.518e+11  (N=151: ρ=8.4902e+11; dps {'product': 89, 'worst': 89})
+2026-10-02 00:44:21 | product 1,-20 | STATUS 6/8 (75.0%)  elapsed 3m58s  eta 1m19s  | x/q_max=6 x=120.0 odd: N=266 λ(product)=1.16498e-13 λ(L(χ-20))=8.98488e-25  ρ=1.2966e+11  (N=151: ρ=1.1572e+11; dps {'product': 89, 'worst': 89})
+2026-10-02 00:46:32 | product 1,-20 | STATUS 7/8 (87.5%)  elapsed 6m09s  eta 52s  | x/q_max=8 x=160.0 even: N=373 λ(product)=8.35609e-21 λ(L(χ-20))=9.16367e-40  ρ=9.1187e+18  (N=211: ρ=8.2667e+18; dps {'product': 105, 'worst': 105})
+2026-10-02 00:48:47 | product 1,-20 | STATUS 8/8 (100.0%)  elapsed 8m24s  eta 0s  | x/q_max=8 x=160.0 odd: N=373 λ(product)=3.69608e-17 λ(L(χ-20))=3.65542e-35  ρ=1.0111e+18  (N=211: ρ=9.1942e+17; dps {'product': 105, 'worst': 105})
+2026-10-02 00:48:47 | product 1,-20 | DONE   8/8 in 8m24s

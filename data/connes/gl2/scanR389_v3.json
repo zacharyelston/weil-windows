@@ -1,0 +1,42 @@
+[
+ {
+  "obj": "389a1",
+  "N": 389,
+  "weight": 2,
+  "v": "3.0",
+  "x": "3501.0",
+  "parity": "even",
+  "k": 48.964823525727994,
+  "n1": 252,
+  "lambda_n1": "1.52610598735954e-27",
+  "dps_n1": 89,
+  "n2": 448,
+  "lambda_n2": "1.42426990844978e-27",
+  "dps_n2": 89,
+  "ln_l1_over_l2": "0.06906",
+  "secs": 59.0,
+  "method": "inv+full",
+  "full_eigensolver_fallbacks_n1": 0,
+  "full_eigensolver_fallbacks_n2": 0
+ },
+ {
+  "obj": "389a1",
+  "N": 389,
+  "weight": 2,
+  "v": "3.0",
+  "x": "3501.0",
+  "parity": "odd",
+  "k": 48.964823525727994,
+  "n1": 252,
+  "lambda_n1": "4.85927777630675e-31",
+  "dps_n1": 89,
+  "n2": 448,
+  "lambda_n2": "4.66954890134066e-31",
+  "dps_n2": 89,
+  "ln_l1_over_l2": "0.0398273",
+  "secs": 47.1,
+  "method": "inv+full",
+  "full_eigensolver_fallbacks_n1": 0,
+  "full_eigensolver_fallbacks_n2": 0
+ }
+]

@@ -1,0 +1,11 @@
+2026-10-01 20:47:13 | zhu window a=1.495 | START  pid=98426 total=4 log=logs/zhu-window-a-1-495-20261001-204713.log args={'a': '1.495', 'n': '140,180', 'dps': 260, 'json': None}
+2026-10-01 20:47:13 | zhu window a=1.495 | INFO   x = e^(2a) = 19.885682491564726876; prime powers ≤ x: [2, 4, 8, 16, 3, 9, 5, 7, 11, 13, 17, 19]
+2026-10-01 20:47:20 | zhu window a=1.495 | RESULT N=140 even: eps0=8.26670699051e-96 eps1=2.04539e-87
+2026-10-01 20:47:20 | zhu window a=1.495 | STATUS 1/4 (25.0%)  elapsed 7s  eta 22s  | N=140 even
+2026-10-01 20:47:28 | zhu window a=1.495 | RESULT N=140 odd: eps0=1.79051464108e-91 eps1=1.66379e-83
+2026-10-01 20:47:28 | zhu window a=1.495 | STATUS 2/4 (50.0%)  elapsed 15s  eta 15s  | N=140 odd
+2026-10-01 20:47:42 | zhu window a=1.495 | RESULT N=180 even: eps0=6.26578516781e-96 eps1=1.79405e-87
+2026-10-01 20:47:42 | zhu window a=1.495 | STATUS 3/4 (75.0%)  elapsed 29s  eta 9s  | N=180 even
+2026-10-01 20:47:55 | zhu window a=1.495 | RESULT N=180 odd: eps0=1.47929992461e-91 eps1=1.39846e-83
+2026-10-01 20:47:55 | zhu window a=1.495 | STATUS 4/4 (100.0%)  elapsed 42s  eta 0s  | N=180 odd
+2026-10-01 20:47:55 | zhu window a=1.495 | DONE   4/4 in 42s

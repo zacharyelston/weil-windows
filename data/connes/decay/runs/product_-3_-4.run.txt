@@ -1,0 +1,10 @@
+2026-10-02 00:40:23 | product -3,-4 | START  pid=56483 total=8 log=logs/product-3-4-20261002-004023.log args={'cmd': 'product', 'factors': '-3,-4', 'xq': '2,4,6,8', 'f1': 5, 'f2': 9, 'nmin': 24, 'json': 'data/connes/decay/product_-3_-4.json'}
+2026-10-02 00:40:35 | product -3,-4 | STATUS 1/8 (12.5%)  elapsed 11s  eta 1m23s  | x/q_max=2 x=8.0 even: N=45 λ(product)=0.000164981 λ(L(χ-4))=1.02769e-7  ρ=1605.4  (N=28: ρ=1519.8; dps {'product': 56, 'worst': 56})
+2026-10-02 00:40:47 | product -3,-4 | STATUS 2/8 (25.0%)  elapsed 23s  eta 1m11s  | x/q_max=2 x=8.0 odd: N=45 λ(product)=0.020057 λ(L(χ-4))=7.0499e-5  ρ=284.5  (N=28: ρ=276.2; dps {'product': 56, 'worst': 56})
+2026-10-02 00:41:17 | product -3,-4 | STATUS 3/8 (37.5%)  elapsed 54s  eta 1m31s  | x/q_max=4 x=16.0 even: N=107 λ(product)=7.85717e-8 λ(L(χ-4))=5.13631e-18  ρ=1.5297e+10  (N=63: ρ=1.3963e+10; dps {'product': 72, 'worst': 72})
+2026-10-02 00:41:48 | product -3,-4 | STATUS 4/8 (50.0%)  elapsed 1m25s  eta 1m25s  | x/q_max=4 x=16.0 odd: N=107 λ(product)=2.52919e-5 λ(L(χ-4))=1.33785e-14  ρ=1.8905e+9  (N=63: ρ=1.9106e+9; dps {'product': 72, 'worst': 72})
+2026-10-02 00:43:12 | product -3,-4 | STATUS 5/8 (62.5%)  elapsed 2m49s  eta 1m41s  | x/q_max=6 x=24.0 even: N=179 λ(product)=1.09876e-10 λ(L(χ-4))=1.15603e-28  ρ=9.5046e+17  (N=103: ρ=9.1862e+17; dps {'product': 89, 'worst': 89})
+2026-10-02 00:44:36 | product -3,-4 | STATUS 6/8 (75.0%)  elapsed 4m13s  eta 1m24s  | x/q_max=6 x=24.0 odd: N=179 λ(product)=7.40536e-8 λ(L(χ-4))=8.35046e-25  ρ=8.8682e+16  (N=103: ρ=8.0325e+16; dps {'product': 89, 'worst': 89})
+2026-10-02 00:46:59 | product -3,-4 | STATUS 7/8 (87.5%)  elapsed 6m36s  eta 56s  | x/q_max=8 x=32.0 even: N=257 λ(product)=2.03763e-13 λ(L(χ-4))=2.16475e-39  ρ=9.4128e+25  (N=146: ρ=8.6048e+25; dps {'product': 105, 'worst': 105})
+2026-10-02 00:49:21 | product -3,-4 | STATUS 8/8 (100.0%)  elapsed 8m58s  eta 0s  | x/q_max=8 x=32.0 odd: N=257 λ(product)=1.88915e-10 λ(L(χ-4))=2.73327e-35  ρ=6.9117e+24  (N=146: ρ=6.3711e+24; dps {'product': 105, 'worst': 105})
+2026-10-02 00:49:21 | product -3,-4 | DONE   8/8 in 8m58s

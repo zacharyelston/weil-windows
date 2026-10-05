@@ -1,0 +1,12 @@
+2026-10-02 01:16:55 | gl2 precision 11a1 | START  pid=44200 total=10 log=logs/gl2-precision-11a1-20261002-011655.log args={'cmd': 'precision', 'curve': '11a1', 'extra': 80}
+2026-10-02 01:16:56 | gl2 precision 11a1 | STATUS 1/10 (10.0%)  elapsed 1s  eta 11s  | 11a1 x/N=2.0 even N=63: dps 56 → 136: 2.16800877549e-10 → 2.16800877549e-10  rel 8.41e-16
+2026-10-02 01:16:57 | gl2 precision 11a1 | STATUS 2/10 (20.0%)  elapsed 2s  eta 10s  | 11a1 x/N=2.0 odd N=63: dps 56 → 136: 1.03472012122e-7 → 1.03472012122e-7  rel 2.71e-15
+2026-10-02 01:17:01 | gl2 precision 11a1 | STATUS 3/10 (30.0%)  elapsed 6s  eta 14s  | 11a1 x/N=4.0 even N=144: dps 72 → 152: 2.77418543277e-16 → 2.77418543277e-16  rel 8.62e-16
+2026-10-02 01:17:04 | gl2 precision 11a1 | STATUS 4/10 (40.0%)  elapsed 9s  eta 14s  | 11a1 x/N=4.0 odd N=144: dps 72 → 152: 2.74719519812e-13 → 2.74719519812e-13  rel 7.29e-16
+2026-10-02 01:17:12 | gl2 precision 11a1 | STATUS 5/10 (50.0%)  elapsed 17s  eta 17s  | 11a1 x/N=6.0 even N=234: dps 89 → 169: 3.25497735604e-21 → 3.25497735604e-21  rel 9.96e-17
+2026-10-02 01:17:20 | gl2 precision 11a1 | STATUS 6/10 (60.0%)  elapsed 25s  eta 16s  | 11a1 x/N=6.0 odd N=234: dps 89 → 169: 3.91836823476e-18 → 3.91836823476e-18  rel 1.96e-17
+2026-10-02 01:17:35 | gl2 precision 11a1 | STATUS 7/10 (70.0%)  elapsed 40s  eta 17s  | 11a1 x/N=8.0 even N=330: dps 105 → 185: 4.5198648371e-25 → 4.5198648371e-25  rel 3.46e-16
+2026-10-02 01:17:49 | gl2 precision 11a1 | STATUS 8/10 (80.0%)  elapsed 54s  eta 13s  | 11a1 x/N=8.0 odd N=330: dps 105 → 185: 1.15825795056e-21 → 1.15825795056e-21  rel 4.13e-15
+2026-10-02 01:18:30 | gl2 precision 11a1 | STATUS 9/10 (90.0%)  elapsed 1m34s  eta 10s  | 11a1 x/N=12.0 even N=535: dps 138 → 218: 8.30694962249e-32 → 8.30694962249e-32  rel 1.47e-16
+2026-10-02 01:19:12 | gl2 precision 11a1 | STATUS 10/10 (100.0%)  elapsed 2m16s  eta 0s  | 11a1 x/N=12.0 odd N=535: dps 138 → 218: 3.60762037943e-28 → 3.60762037943e-28  rel 7.05e-17
+2026-10-02 01:19:12 | gl2 precision 11a1 | DONE   10/10 in 2m16s

@@ -1,0 +1,6 @@
+rho        x=13  odd  c=[0, 1, 0, 0, 0, 0]: Q−Σ =   6.274e-8  tail   6.275e-8  ratio  0.9998  PASS
+rho        x=13  odd  c=[0, 0, 0, 1, 0, 0]: Q−Σ =    2.51e-7  tail    2.51e-7  ratio  0.9998  PASS
+rho        x=13  odd  c=[0, 1, -1, 0, 0, 0]: Q−Σ =   3.922e-7  tail   3.922e-7  ratio  0.9998  PASS
+rho        x=13  even c=[0, 1, 1, 0, 0, 0, 0]: Q−Σ =  5.013e-13  tail  5.002e-13  ratio   1.002  PASS
+rho        x=13  even c=[0, 0, 1, 0, -1, 0, 0]: Q−Σ =  8.002e-12  tail  8.004e-12  ratio  0.9997  PASS
+rho        x=60  odd  c=[0, 1, 0, 0, 0, 0]: Q−Σ =   1.526e-8  tail    1.54e-8  ratio  0.9907  (not gating)

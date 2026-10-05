@@ -1,0 +1,10 @@
+9a [9k] 37a1  even: α/4π =  1.8894  γ =  0.3429  β =   17.092  max resid   0.15;  linear α/4π = 1.88  → in [1.7, 2.3]
+9a [5k] 37a1  even: α/4π =  1.9001  γ =  0.7261  β =    17.14  max resid  0.151;  linear α/4π = 1.8802  → in [1.7, 2.3]
+9a [9k] 37a1  odd : α/4π =  1.8503  γ =   -3.37  β =   12.588  max resid  0.141;  linear α/4π = 1.9427  → in [1.7, 2.3]
+9a [5k] 37a1  odd : α/4π =  1.8418  γ =  -3.641  β =   12.582  max resid  0.138;  linear α/4π = 1.9416  → in [1.7, 2.3]
+9b 37a1  ε = -1 v = 2.0 : ln(λ_odd/λ_even) =  -6.112  sign -1  match
+9b 37a1  ε = -1 v = 2.5 : ln(λ_odd/λ_even) =  -6.697  sign -1  match
+9b 37a1  ε = -1 v = 3.0 : ln(λ_odd/λ_even) =  -6.893  sign -1  match
+9b 37a1  ε = -1 v = 3.5 : ln(λ_odd/λ_even) =  -7.724  sign -1  match
+9b 37a1  ε = -1 v = 4.0 : ln(λ_odd/λ_even) =  -7.567  sign -1  match
+P-DL9a (37a1): HOLDS (α/4π 1.85–1.889);  P-DL9b: HOLDS (5/5 grid points match)

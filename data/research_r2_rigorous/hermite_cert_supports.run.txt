@@ -1,0 +1,10 @@
+2026-10-03 13:08:08 | r2 certify hermite | START  pid=76484 total=8 log=logs/r2-certify-hermite-20261003-130808.log args={'construction': 'hermite', 'd': '1', 'xq': '2', 'zeta_supports': True, 'dbeta': '0,2', 'm': 2, 'prec': 256, 'workers': 1, 'json': 'data/research_r2_rigorous/hermite_cert_supports.json'}
+2026-10-03 13:08:08 | r2 certify hermite | STATUS 1/8 (12.5%)  elapsed 0s  eta 1s  | D=1 x=[4.95303242439511 +/ even: B_cert <= 1.65657345998e-7 (R2 float None) sym0=True (0.0s)
+2026-10-03 13:08:08 | r2 certify hermite | STATUS 2/8 (25.0%)  elapsed 0s  eta 0s  | D=1 x=[4.95303242439511 +/ odd: B_cert <= 1.19973350532e-5 (R2 float None) sym0=True (0.0s)
+2026-10-03 13:08:08 | r2 certify hermite | STATUS 3/8 (37.5%)  elapsed 0s  eta 0s  | D=1 x=[10.8049028639313 +/ even: B_cert <= 5.38073654029e-22 (R2 float None) sym0=True (0.0s)
+2026-10-03 13:08:08 | r2 certify hermite | STATUS 4/8 (50.0%)  elapsed 0s  eta 0s  | D=1 x=[10.8049028639313 +/ odd: B_cert <= 2.16271732300e-19 (R2 float None) sym0=True (0.0s)
+2026-10-03 13:08:08 | r2 certify hermite | STATUS 5/8 (62.5%)  elapsed 0s  eta 0s  | D=1 x=[13.4637380350017 +/ even: B_cert <= 7.72755688930e-29 (R2 float None) sym0=True (0.0s)
+2026-10-03 13:08:08 | r2 certify hermite | STATUS 6/8 (75.0%)  elapsed 0s  eta 0s  | D=1 x=[13.4637380350017 +/ odd: B_cert <= 4.94014454267e-26 (R2 float None) sym0=True (0.0s)
+2026-10-03 13:08:08 | r2 certify hermite | STATUS 7/8 (87.5%)  elapsed 0s  eta 0s  | D=1 x=[19.8856824915647 +/ even: B_cert <= 1.23298742476e-45 (R2 float None) sym0=True (0.0s)
+2026-10-03 13:08:08 | r2 certify hermite | STATUS 8/8 (100.0%)  elapsed 0s  eta 0s  | D=1 x=[19.8856824915647 +/ odd: B_cert <= 1.77334044364e-42 (R2 float None) sym0=True (0.0s)
+2026-10-03 13:08:08 | r2 certify hermite | DONE   8/8 in 0s

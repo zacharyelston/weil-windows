@@ -1,0 +1,173 @@
+{
+ "9a": [
+  {
+   "obj": "37a1",
+   "eps": -1,
+   "parity": "even",
+   "basis": "9k",
+   "v": [
+    "2.0",
+    "2.5",
+    "3.0",
+    "3.5",
+    "4.0"
+   ],
+   "alpha_over_4pi": "1.88941",
+   "gamma": "0.342938",
+   "beta": "17.0922",
+   "max_resid": "0.1499",
+   "linear_alpha_over_4pi": "1.88001",
+   "linear_max_resid": "0.1537",
+   "status": "in [1.7, 2.3]",
+   "conv_ln_l1_l2": [
+    "0.0461457",
+    "0.0595147",
+    "0.0679022",
+    "0.0592795",
+    "0.040486"
+   ]
+  },
+  {
+   "obj": "37a1",
+   "eps": -1,
+   "parity": "odd",
+   "basis": "9k",
+   "v": [
+    "2.0",
+    "2.5",
+    "3.0",
+    "3.5",
+    "4.0"
+   ],
+   "alpha_over_4pi": "1.85026",
+   "gamma": "-3.37007",
+   "beta": "12.5884",
+   "max_resid": "0.141",
+   "linear_alpha_over_4pi": "1.94266",
+   "linear_max_resid": "0.1783",
+   "status": "in [1.7, 2.3]",
+   "conv_ln_l1_l2": [
+    "0.0181907",
+    "0.012515",
+    "0.0115027",
+    "0.0292985",
+    "0.0421551"
+   ]
+  }
+ ],
+ "9a_5k": [
+  {
+   "obj": "37a1",
+   "eps": -1,
+   "parity": "even",
+   "basis": "5k",
+   "v": [
+    "2.0",
+    "2.5",
+    "3.0",
+    "3.5",
+    "4.0"
+   ],
+   "alpha_over_4pi": "1.9001",
+   "gamma": "0.726117",
+   "beta": "17.1401",
+   "max_resid": "0.1514",
+   "linear_alpha_over_4pi": "1.88019",
+   "linear_max_resid": "0.1595",
+   "status": "in [1.7, 2.3]",
+   "conv_ln_l1_l2": [
+    "0.0461457",
+    "0.0595147",
+    "0.0679022",
+    "0.0592795",
+    "0.040486"
+   ]
+  },
+  {
+   "obj": "37a1",
+   "eps": -1,
+   "parity": "odd",
+   "basis": "5k",
+   "v": [
+    "2.0",
+    "2.5",
+    "3.0",
+    "3.5",
+    "4.0"
+   ],
+   "alpha_over_4pi": "1.84179",
+   "gamma": "-3.64126",
+   "beta": "12.582",
+   "max_resid": "0.1379",
+   "linear_alpha_over_4pi": "1.94163",
+   "linear_max_resid": "0.1782",
+   "status": "in [1.7, 2.3]",
+   "conv_ln_l1_l2": [
+    "0.0181907",
+    "0.012515",
+    "0.0115027",
+    "0.0292985",
+    "0.0421551"
+   ]
+  }
+ ],
+ "9b": [
+  {
+   "obj": "37a1",
+   "eps": -1,
+   "v": "2.0",
+   "ln_odd_over_even": "-6.11217",
+   "sign": -1,
+   "match": true,
+   "both_below_1e-6": true,
+   "lambda_even": "8.14759e-14",
+   "lambda_odd": "1.80529e-16"
+  },
+  {
+   "obj": "37a1",
+   "eps": -1,
+   "v": "2.5",
+   "ln_odd_over_even": "-6.69721",
+   "sign": -1,
+   "match": true,
+   "both_below_1e-6": true,
+   "lambda_even": "5.95515e-19",
+   "lambda_odd": "7.35076e-22"
+  },
+  {
+   "obj": "37a1",
+   "eps": -1,
+   "v": "3.0",
+   "ln_odd_over_even": "-6.8929",
+   "sign": -1,
+   "match": true,
+   "both_below_1e-6": true,
+   "lambda_even": "4.10609e-24",
+   "lambda_odd": "4.16755e-27"
+  },
+  {
+   "obj": "37a1",
+   "eps": -1,
+   "v": "3.5",
+   "ln_odd_over_even": "-7.7244",
+   "sign": -1,
+   "match": true,
+   "both_below_1e-6": true,
+   "lambda_even": "3.84263e-29",
+   "lambda_odd": "1.69811e-32"
+  },
+  {
+   "obj": "37a1",
+   "eps": -1,
+   "v": "4.0",
+   "ln_odd_over_even": "-7.56697",
+   "sign": -1,
+   "match": true,
+   "both_below_1e-6": true,
+   "lambda_even": "2.26884e-34",
+   "lambda_odd": "1.17357e-37"
+  }
+ ],
+ "verdict_9a": "HOLDS",
+ "verdict_9b": "HOLDS"
+}

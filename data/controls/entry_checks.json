@@ -1,0 +1,69 @@
+[
+  {
+    "json": "data/controls/cert_zeta_even_a0.8.json",
+    "A00_certificate": null,
+    "A00_independent": "[0.07239918286510134215292546 +/- 2.73e-27]",
+    "Q_T0_uspace": "[0.080274054959269611214 +/- 3.09e-22]",
+    "Q_minus_A00": "[0.00787487 +/- 2.10e-9]",
+    "asymptotic_gap": "[0.007842 +/- 3.08e-7]"
+  },
+  {
+    "json": "data/controls/cert_zeta_odd_a0.8.json",
+    "A00_certificate": null,
+    "A00_independent": "[0.07646883888855778311626775 +/- 4.94e-27]"
+  },
+  {
+    "json": "data/controls/certs/cert_ftstar_odd_a0.835_T400.json",
+    "A00_certificate": "[0.5416431736254707638248449 +/- 9.06e-27]",
+    "A00_independent": "[0.5416431736254707638248449 +/- 9.06e-27]",
+    "difference": "[9.0559e-27 +/- 3.50e-32]"
+  },
+  {
+    "json": "data/controls/certs/cert_ftstar_even_a1.09_T400.json",
+    "A00_certificate": "[4.635641104522450864974460 +/- 2.42e-25]",
+    "A00_independent": "[4.635641104522450864974460 +/- 2.42e-25]",
+    "difference": "[-2.4122e-25 +/- 1.39e-31]",
+    "Q_T0_uspace": "[4.6400574704973530591 +/- 2.57e-20]",
+    "Q_minus_A00": "[0.00441637 +/- 4.03e-9]",
+    "asymptotic_gap": "[0.004420 +/- 2.07e-7]"
+  },
+  {
+    "json": "data/controls/certs/cert_dh_even_a1.19_T400.json",
+    "A00_certificate": "[0.1453530762883209125361411 +/- 4.73e-26]",
+    "A00_independent": "[0.1453530762883209125361411 +/- 4.73e-26]",
+    "difference": "[-4.7223e-26 +/- 2.26e-31]",
+    "Q_T0_uspace": "[0.14977391415786313459 +/- 1.54e-21]",
+    "Q_minus_A00": "[0.00442084 +/- 2.14e-9]",
+    "asymptotic_gap": "[0.004424 +/- 3.39e-7]"
+  },
+  {
+    "json": "data/controls/certs/cert_dh_odd_a1.19_T400.json",
+    "A00_certificate": "[0.5488568670117806942094311 +/- 3.47e-26]",
+    "A00_independent": "[0.5488568670117806942094311 +/- 3.47e-26]",
+    "difference": "[-3.4660e-26 +/- 2.05e-31]"
+  },
+  {
+    "json": "data/controls/certs/cert_z1_even_a1.31_T400.json",
+    "A00_certificate": "[1.513364705273114530134427 +/- 1.02e-25]",
+    "A00_independent": "[1.513364705273114530134427 +/- 1.02e-25]",
+    "difference": "[-1.0134e-25 +/- 4.09e-30]",
+    "Q_T0_uspace": "[1.5207479100385601590 +/- 3.17e-20]",
+    "Q_minus_A00": "[0.00738320 +/- 4.77e-9]",
+    "asymptotic_gap": "[0.007378 +/- 3.50e-7]"
+  },
+  {
+    "json": "data/controls/certs/cert_z1_odd_a1.31_T400.json",
+    "A00_certificate": "[3.649594591756581745933240 +/- 6.09e-26]",
+    "A00_independent": "[3.649594591756581745933240 +/- 6.09e-26]",
+    "difference": "[6.0803e-26 +/- 7.69e-32]"
+  },
+  {
+    "json": "data/controls/certs/cert_z1_even_a1.38_T1000.json",
+    "A00_certificate": "[1.348348215937420086720944 +/- 4.15e-25]",
+    "A00_independent": "[1.348348215937420086720944 +/- 4.15e-25]",
+    "difference": "[-4.1478e-25 +/- 1.11e-30]",
+    "Q_T0_uspace": "[1.3517994572780161722 +/- 1.30e-20]",
+    "Q_minus_A00": "[0.00345124 +/- 1.35e-9]",
+    "asymptotic_gap": "[0.003452 +/- 3.87e-7]"
+  }
+]

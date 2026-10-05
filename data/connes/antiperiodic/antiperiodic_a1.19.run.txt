@@ -1,0 +1,30 @@
+2026-10-01 21:59:56 | antiperiodic sweep | START  pid=48894 total=24 log=logs/antiperiodic-sweep-20261001-215956.log args={'cmd': 'sweep', 'a': '1.19', 'n': '16,32,48,64,100,140', 'dps': 120, 'dps_high': 220, 'json': 'data/connes/antiperiodic/sweep_a1.19.json'}
+2026-10-01 21:59:56 | antiperiodic sweep | STATUS 1/24 (4.2%)  elapsed 0s  eta 4s  | a=1.19 even periodic N=16 λ=1.30578e-32 (0s)
+2026-10-01 21:59:56 | antiperiodic sweep | STATUS 2/24 (8.3%)  elapsed 0s  eta 6s  | a=1.19 even periodic N=32 λ=6.60015e-44 (0s)
+2026-10-01 21:59:57 | antiperiodic sweep | STATUS 3/24 (12.5%)  elapsed 1s  eta 9s  | a=1.19 even periodic N=48 λ=2.13431e-47 (1s)
+2026-10-01 21:59:58 | antiperiodic sweep | STATUS 4/24 (16.7%)  elapsed 2s  eta 12s  | a=1.19 even periodic N=64 λ=1.32318e-47 (1s)
+2026-10-01 22:00:01 | antiperiodic sweep | STATUS 5/24 (20.8%)  elapsed 5s  eta 19s  | a=1.19 even periodic N=100 λ=1.13937e-47 (3s)
+2026-10-01 22:00:07 | antiperiodic sweep | STATUS 6/24 (25.0%)  elapsed 11s  eta 33s  | a=1.19 even periodic N=140 λ=1.03194e-47 (6s)
+2026-10-01 22:00:07 | antiperiodic sweep | RESULT a=1.19 even periodic     N=16:1.30578e-32  N=32:6.60015e-44  N=48:2.13431e-47  N=64:1.32318e-47  N=100:1.13937e-47  N=140:1.03194e-47
+2026-10-01 22:00:07 | antiperiodic sweep | STATUS 7/24 (29.2%)  elapsed 11s  eta 27s  | a=1.19 even antiperiodic N=16 λ=4.39959e-33 (0s)
+2026-10-01 22:00:07 | antiperiodic sweep | STATUS 8/24 (33.3%)  elapsed 11s  eta 23s  | a=1.19 even antiperiodic N=32 λ=4.37007e-44 (0s)
+2026-10-01 22:00:08 | antiperiodic sweep | STATUS 9/24 (37.5%)  elapsed 12s  eta 20s  | a=1.19 even antiperiodic N=48 λ=2.34903e-47 (1s)
+2026-10-01 22:00:09 | antiperiodic sweep | STATUS 10/24 (41.7%)  elapsed 13s  eta 19s  | a=1.19 even antiperiodic N=64 λ=1.36199e-47 (1s)
+2026-10-01 22:00:12 | antiperiodic sweep | STATUS 11/24 (45.8%)  elapsed 16s  eta 19s  | a=1.19 even antiperiodic N=100 λ=1.07813e-47 (3s)
+2026-10-01 22:00:18 | antiperiodic sweep | STATUS 12/24 (50.0%)  elapsed 22s  eta 22s  | a=1.19 even antiperiodic N=140 λ=1.0142e-47 (6s)
+2026-10-01 22:00:18 | antiperiodic sweep | RESULT a=1.19 even antiperiodic N=16:4.39959e-33  N=32:4.37007e-44  N=48:2.34903e-47  N=64:1.36199e-47  N=100:1.07813e-47  N=140:1.0142e-47
+2026-10-01 22:00:18 | antiperiodic sweep | STATUS 13/24 (54.2%)  elapsed 22s  eta 19s  | a=1.19 odd periodic N=16 λ=1.33154e-29 (0s)
+2026-10-01 22:00:19 | antiperiodic sweep | STATUS 14/24 (58.3%)  elapsed 23s  eta 16s  | a=1.19 odd periodic N=32 λ=1.71787e-40 (0s)
+2026-10-01 22:00:19 | antiperiodic sweep | STATUS 15/24 (62.5%)  elapsed 23s  eta 14s  | a=1.19 odd periodic N=48 λ=1.1522e-43 (1s)
+2026-10-01 22:00:21 | antiperiodic sweep | STATUS 16/24 (66.7%)  elapsed 25s  eta 12s  | a=1.19 odd periodic N=64 λ=8.06055e-44 (1s)
+2026-10-01 22:00:23 | antiperiodic sweep | STATUS 17/24 (70.8%)  elapsed 27s  eta 11s  | a=1.19 odd periodic N=100 λ=6.37075e-44 (3s)
+2026-10-01 22:00:30 | antiperiodic sweep | STATUS 18/24 (75.0%)  elapsed 34s  eta 11s  | a=1.19 odd periodic N=140 λ=5.64114e-44 (6s)
+2026-10-01 22:00:30 | antiperiodic sweep | RESULT a=1.19 odd  periodic     N=16:1.33154e-29  N=32:1.71787e-40  N=48:1.1522e-43  N=64:8.06055e-44  N=100:6.37075e-44  N=140:5.64114e-44
+2026-10-01 22:00:30 | antiperiodic sweep | STATUS 19/24 (79.2%)  elapsed 34s  eta 9s  | a=1.19 odd antiperiodic N=16 λ=5.32039e-30 (0s)
+2026-10-01 22:00:30 | antiperiodic sweep | STATUS 20/24 (83.3%)  elapsed 34s  eta 6s  | a=1.19 odd antiperiodic N=32 λ=1.30546e-40 (0s)
+2026-10-01 22:00:31 | antiperiodic sweep | STATUS 21/24 (87.5%)  elapsed 35s  eta 5s  | a=1.19 odd antiperiodic N=48 λ=1.32803e-43 (1s)
+2026-10-01 22:00:32 | antiperiodic sweep | STATUS 22/24 (91.7%)  elapsed 36s  eta 3s  | a=1.19 odd antiperiodic N=64 λ=8.28054e-44 (1s)
+2026-10-01 22:00:35 | antiperiodic sweep | STATUS 23/24 (95.8%)  elapsed 39s  eta 1s  | a=1.19 odd antiperiodic N=100 λ=6.33687e-44 (3s)
+2026-10-01 22:00:41 | antiperiodic sweep | STATUS 24/24 (100.0%)  elapsed 45s  eta 0s  | a=1.19 odd antiperiodic N=140 λ=5.75734e-44 (6s)
+2026-10-01 22:00:41 | antiperiodic sweep | RESULT a=1.19 odd  antiperiodic N=16:5.32039e-30  N=32:1.30546e-40  N=48:1.32803e-43  N=64:8.28054e-44  N=100:6.33687e-44  N=140:5.75734e-44
+2026-10-01 22:00:41 | antiperiodic sweep | DONE   24/24 in 45s

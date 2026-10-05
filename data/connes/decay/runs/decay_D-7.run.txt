@@ -1,0 +1,16 @@
+2026-10-01 22:18:24 | decay law scan | START  pid=49628 total=14 log=logs/decay-law-scan-20261001-221824.log args={'cmd': 'scan', 'd': '-7', 'xq': '2,3,4,5,6,7,8', 'f1': 1.5, 'f2': 2.5, 'nmin': 24, 'json': 'data/connes/decay/scan_D-7.json'}
+2026-10-01 22:18:26 | decay law scan | STATUS 1/14 (7.1%)  elapsed 2s  eta 28s  | D=-7 x/q=2.0 x=14.0 even N=24:5.6933277e-8 N=24:5.6933277e-8 (1s, dps 56)
+2026-10-01 22:18:28 | decay law scan | STATUS 2/14 (14.3%)  elapsed 4s  eta 26s  | D=-7 x/q=2.0 x=14.0 odd N=24:4.9752751e-5 N=24:4.9752751e-5 (1s, dps 56)
+2026-10-01 22:18:31 | decay law scan | STATUS 3/14 (21.4%)  elapsed 6s  eta 25s  | D=-7 x/q=3.0 x=21.0 even N=24:4.5704681e-13 N=30:4.318176e-13 (1s, dps 64)
+2026-10-01 22:18:33 | decay law scan | STATUS 4/14 (28.6%)  elapsed 9s  eta 23s  | D=-7 x/q=3.0 x=21.0 odd N=24:1.3502392e-9 N=30:1.246231e-9 (1s, dps 64)
+2026-10-01 22:18:37 | decay law scan | STATUS 5/14 (35.7%)  elapsed 12s  eta 23s  | D=-7 x/q=4.0 x=28.0 even N=27:3.3851347e-18 N=41:1.421673e-18 (2s, dps 72)
+2026-10-01 22:18:40 | decay law scan | STATUS 6/14 (42.9%)  elapsed 16s  eta 21s  | D=-7 x/q=4.0 x=28.0 odd N=27:1.8379207e-14 N=41:7.2837012e-15 (2s, dps 72)
+2026-10-01 22:18:47 | decay law scan | STATUS 7/14 (50.0%)  elapsed 23s  eta 23s  | D=-7 x/q=5.0 x=35.0 even N=34:2.2423847e-23 N=52:1.511258e-23 (4s, dps 80)
+2026-10-01 22:18:54 | decay law scan | STATUS 8/14 (57.1%)  elapsed 30s  eta 22s  | D=-7 x/q=5.0 x=35.0 odd N=34:1.5836863e-19 N=52:1.2370987e-19 (4s, dps 80)
+2026-10-01 22:19:03 | decay law scan | STATUS 9/14 (64.3%)  elapsed 38s  eta 21s  | D=-7 x/q=6.0 x=42.0 even N=41:1.4002459e-28 N=64:7.3157898e-29 (5s, dps 89)
+2026-10-01 22:19:11 | decay law scan | STATUS 10/14 (71.4%)  elapsed 47s  eta 18s  | D=-7 x/q=6.0 x=42.0 odd N=41:1.4617426e-24 N=64:8.1681046e-25 (5s, dps 89)
+2026-10-01 22:19:22 | decay law scan | STATUS 11/14 (78.6%)  elapsed 57s  eta 15s  | D=-7 x/q=7.0 x=49.0 even N=48:9.2524235e-34 N=76:2.9122337e-34 (7s, dps 97)
+2026-10-01 22:19:32 | decay law scan | STATUS 12/14 (85.7%)  elapsed 1m08s  eta 11s  | D=-7 x/q=7.0 x=49.0 odd N=48:1.2785489e-29 N=76:5.0499015e-30 (7s, dps 97)
+2026-10-01 22:19:44 | decay law scan | STATUS 13/14 (92.9%)  elapsed 1m20s  eta 6s  | D=-7 x/q=8.0 x=56.0 even N=56:5.6420122e-39 N=88:1.4146835e-39 (7s, dps 105)
+2026-10-01 22:19:54 | decay law scan | STATUS 14/14 (100.0%)  elapsed 1m30s  eta 0s  | D=-7 x/q=8.0 x=56.0 odd N=56:9.1781808e-35 N=88:2.6334061e-35 (6s, dps 105)
+2026-10-01 22:19:54 | decay law scan | DONE   14/14 in 1m30s

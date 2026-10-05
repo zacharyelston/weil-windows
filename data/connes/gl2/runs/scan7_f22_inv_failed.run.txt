@@ -1,0 +1,32 @@
+2026-10-02 03:44:44 | gl2 scan6 f22 | START  pid=71264 total=10 log=logs/gl2-scan6-f22-20261002-034444.log args={'cmd': 'scan6', 'obj': 'f22', 'v': '2,2.5,3,3.5,4', 'f1': 5.0, 'f2': 9.0, 'nmin': 24, 'acb_max': 120, 'resume': False, 'json': 'data/connes/gl2/scan7_f22.json'}
+WARN inverse iteration not converged in 40 steps (n = 36, dps 72); returning NaN
+WARN inverse iteration not converged in 40 steps (n = 36, dps 112); returning NaN
+WARN inverse iteration not converged in 40 steps (n = 36, dps 152); returning NaN
+WARN inverse iteration not converged in 40 steps (n = 36, dps 192); returning NaN
+WARN inverse iteration not converged in 40 steps (n = 36, dps 232); returning NaN
+WARN inverse iteration not converged in 40 steps (n = 36, dps 272); returning NaN
+WARN inverse iteration not converged in 40 steps (n = 36, dps 312); returning NaN
+WARN inverse iteration not converged in 40 steps (n = 36, dps 352); returning NaN
+WARN inverse iteration not converged in 40 steps (n = 36, dps 392); returning NaN
+WARN inverse iteration not converged in 40 steps (n = 36, dps 432); returning NaN
+WARN inverse iteration not converged in 40 steps (n = 36, dps 472); returning NaN
+WARN inverse iteration not converged in 40 steps (n = 36, dps 512); returning NaN
+WARN inverse iteration not converged in 40 steps (n = 36, dps 552); returning NaN
+WARN inverse iteration not converged in 40 steps (n = 36, dps 592); returning NaN
+Traceback (most recent call last):
+  File "<repo>/.claude/worktrees/agent-a6f1432289c541306/scripts/gl2_form_mp.py", line 1603, in <module>
+    main()
+    ~~~~^^
+  File "<repo>/.claude/worktrees/agent-a6f1432289c541306/scripts/gl2_form_mp.py", line 1597, in main
+    {"validate": cmd_validate, "curves": cmd_curves, "afe": cmd_afe, "zeros": cmd_zeros, "check": cmd_check, "scan": cmd_scan,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     "fit": cmd_fit, "precision": cmd_precision, "posthoc": cmd_posthoc, "objects6": cmd_objects6, "scan6": cmd_scan6,
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     "fit6": cmd_fit6, "objects7": cmd_objects7, "fit7": cmd_fit7, "central7": cmd_central7}[args.cmd](args)
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "<repo>/.claude/worktrees/agent-a6f1432289c541306/scripts/gl2_form_mp.py", line 1104, in cmd_scan6
+    lam, at = dl.stable_lams(build, dps0, method=lam_min_inv_checked)
+              ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/.claude/worktrees/agent-a6f1432289c541306/scripts/decay_law_mp.py", line 253, in stable_lams
+    raise RuntimeError(f"eigenvalues not stable by {maxdps} digits: {sorted(set(mats) - set(acc))}")
+RuntimeError: eigenvalues not stable by 600 digits: ['L']

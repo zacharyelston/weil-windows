@@ -1,0 +1,6 @@
+x = 7: ε₀ = 7.53973e-28;  ‖k_odd‖/‖k‖ = 1.087e-14;  sin²∠(k_even, θ_x) = 3.40436e-8  (within basis: 3.40436e-8; outside span: 5.696e-29)
+    QW(P k)/‖P k‖² = 9.71995e-28   (nodes 2120, 72s)
+    |zero(k̂_λ) − γ_j|: 1:6.03e-15  2:6.8e-14  3:4.35e-12
+x = 13: ε₀ = 3.19162e-59;  ‖k_odd‖/‖k‖ = 2.152e-30;  sin²∠(k_even, θ_x) = 4.15445e-9  (within basis: 4.15445e-9; outside span: 4.594e-60)
+    QW(P k)/‖P k‖² = 4.5559e-59   (nodes 3120, 110s)
+    |zero(k̂_λ) − γ_j|: 1:2.39e-30  2:5.32e-29  3:1.28e-27

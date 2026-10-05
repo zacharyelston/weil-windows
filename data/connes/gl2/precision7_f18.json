@@ -1,0 +1,112 @@
+[
+ {
+  "curve": "f18",
+  "v": "2.0",
+  "parity": "even",
+  "n2": 57,
+  "dps": 72,
+  "dps_recheck": 152,
+  "lambda_saved": "0.39149621128297",
+  "lambda_recheck": "0.39149621128297",
+  "rel_change": "8.118e-17"
+ },
+ {
+  "curve": "f18",
+  "v": "2.0",
+  "parity": "odd",
+  "n2": 57,
+  "dps": 72,
+  "dps_recheck": 152,
+  "lambda_saved": "0.0345858760485732",
+  "lambda_recheck": "0.0345858760485732",
+  "rel_change": "1.335e-15"
+ },
+ {
+  "curve": "f18",
+  "v": "2.5",
+  "parity": "even",
+  "n2": 90,
+  "dps": 80,
+  "dps_recheck": 160,
+  "lambda_saved": "0.0027921040608895",
+  "lambda_recheck": "0.0027921040608895",
+  "rel_change": "1.439e-15"
+ },
+ {
+  "curve": "f18",
+  "v": "2.5",
+  "parity": "odd",
+  "n2": 90,
+  "dps": 80,
+  "dps_recheck": 160,
+  "lambda_saved": "3.67484512623352e-5",
+  "lambda_recheck": "3.67484512623352e-5",
+  "rel_change": "6.394e-16"
+ },
+ {
+  "curve": "f18",
+  "v": "3.0",
+  "parity": "even",
+  "n2": 126,
+  "dps": 89,
+  "dps_recheck": 169,
+  "lambda_saved": "9.72906246015001e-7",
+  "lambda_recheck": "9.72906246015001e-7",
+  "rel_change": "6.445e-17"
+ },
+ {
+  "curve": "f18",
+  "v": "3.0",
+  "parity": "odd",
+  "n2": 126,
+  "dps": 89,
+  "dps_recheck": 169,
+  "lambda_saved": "5.57643714186958e-9",
+  "lambda_recheck": "5.57643714186958e-9",
+  "rel_change": "1.532e-16"
+ },
+ {
+  "curve": "f18",
+  "v": "3.5",
+  "parity": "even",
+  "n2": 165,
+  "dps": 97,
+  "dps_recheck": 177,
+  "lambda_saved": "1.95192836253881e-10",
+  "lambda_recheck": "1.95192836253881e-10",
+  "rel_change": "1.921e-16"
+ },
+ {
+  "curve": "f18",
+  "v": "3.5",
+  "parity": "odd",
+  "n2": 165,
+  "dps": 97,
+  "dps_recheck": 177,
+  "lambda_saved": "5.65459263965953e-13",
+  "lambda_recheck": "5.65459263965953e-13",
+  "rel_change": "6.874e-16"
+ },
+ {
+  "curve": "f18",
+  "v": "4.0",
+  "parity": "even",
+  "n2": 207,
+  "dps": 105,
+  "dps_recheck": 185,
+  "lambda_saved": "2.48459563381063e-14",
+  "lambda_recheck": "2.48459563381063e-14",
+  "rel_change": "2.005e-15"
+ },
+ {
+  "curve": "f18",
+  "v": "4.0",
+  "parity": "odd",
+  "n2": 207,
+  "dps": 105,
+  "dps_recheck": 185,
+  "lambda_saved": "4.89361490874343e-17",
+  "lambda_recheck": "4.89361490874343e-17",
+  "rel_change": "3.619e-16"
+ }
+]

@@ -1,0 +1,191 @@
+{
+ "f16": {
+  "k": 16,
+  "eps": 1,
+  "a_1_10": [
+   1,
+   216,
+   -3348,
+   13888,
+   52110,
+   -723168,
+   2822456,
+   -4078080,
+   -3139803,
+   11255760
+  ],
+  "a2_hand": 216,
+  "a2_ok": true,
+  "eisenstein_c1": 240,
+  "direct_eisenstein_mismatches": 0,
+  "hecke_mismatches": 0,
+  "hecke_nmax": 2000,
+  "deligne_ok": true,
+  "bernoulli_numerator": 3617,
+  "congruence_primes": [
+   3617
+  ],
+  "congruence_failures": {
+   "3617": 0
+  },
+  "cong_nmax": 1000,
+  "logderiv_dev_primepowers": "1.48e-31",
+  "logderiv_max_off_primepowers": "3.16e-30",
+  "mus": [
+   "15/2",
+   "17/2"
+  ]
+ },
+ "f18": {
+  "k": 18,
+  "eps": -1,
+  "a_1_10": [
+   1,
+   -528,
+   -4284,
+   147712,
+   -1025850,
+   2261952,
+   3225992,
+   -8785920,
+   -110787507,
+   541648800
+  ],
+  "a2_hand": -528,
+  "a2_ok": true,
+  "eisenstein_c1": -504,
+  "direct_eisenstein_mismatches": 0,
+  "hecke_mismatches": 0,
+  "hecke_nmax": 2000,
+  "deligne_ok": true,
+  "bernoulli_numerator": 43867,
+  "congruence_primes": [
+   43867
+  ],
+  "congruence_failures": {
+   "43867": 0
+  },
+  "cong_nmax": 1000,
+  "logderiv_dev_primepowers": "2.22e-31",
+  "logderiv_max_off_primepowers": "7.01e-30",
+  "mus": [
+   "17/2",
+   "19/2"
+  ]
+ },
+ "f20": {
+  "k": 20,
+  "eps": 1,
+  "a_1_10": [
+   1,
+   456,
+   50652,
+   -316352,
+   -2377410,
+   23097312,
+   -16917544,
+   -383331840,
+   1403363637,
+   -1084098960
+  ],
+  "a2_hand": 456,
+  "a2_ok": true,
+  "eisenstein_c1": 480,
+  "direct_eisenstein_mismatches": 0,
+  "hecke_mismatches": 0,
+  "hecke_nmax": 2000,
+  "deligne_ok": true,
+  "bernoulli_numerator": 174611,
+  "congruence_primes": [
+   283,
+   617
+  ],
+  "congruence_failures": {
+   "283": 0,
+   "617": 0
+  },
+  "cong_nmax": 1000,
+  "logderiv_dev_primepowers": "9.86e-32",
+  "logderiv_max_off_primepowers": "4.73e-30",
+  "mus": [
+   "19/2",
+   "21/2"
+  ]
+ },
+ "f22": {
+  "k": 22,
+  "eps": -1,
+  "a_1_10": [
+   1,
+   -288,
+   -128844,
+   -2014208,
+   21640950,
+   37107072,
+   -768078808,
+   1184071680,
+   6140423133,
+   -6232593600
+  ],
+  "a2_hand": -288,
+  "a2_ok": true,
+  "eisenstein_c1": -264,
+  "direct_eisenstein_mismatches": 0,
+  "hecke_mismatches": 0,
+  "hecke_nmax": 2000,
+  "deligne_ok": true,
+  "bernoulli_numerator": 77683,
+  "congruence_primes": [
+   131,
+   593
+  ],
+  "congruence_failures": {
+   "131": 0,
+   "593": 0
+  },
+  "cong_nmax": 1000,
+  "logderiv_dev_primepowers": "8.01e-32",
+  "logderiv_max_off_primepowers": "3.94e-30",
+  "mus": [
+   "21/2",
+   "23/2"
+  ]
+ },
+ "f26": {
+  "k": 26,
+  "eps": -1,
+  "a_1_10": [
+   1,
+   -48,
+   -195804,
+   -33552128,
+   -741989850,
+   9398592,
+   39080597192,
+   3221114880,
+   -808949403027,
+   35615512800
+  ],
+  "a2_hand": -48,
+  "a2_ok": true,
+  "eisenstein_c1": -24,
+  "direct_eisenstein_mismatches": 0,
+  "hecke_mismatches": 0,
+  "hecke_nmax": 2000,
+  "deligne_ok": true,
+  "bernoulli_numerator": 657931,
+  "congruence_primes": [
+   657931
+  ],
+  "congruence_failures": {
+   "657931": 0
+  },
+  "cong_nmax": 1000,
+  "logderiv_dev_primepowers": "1.17e-31",
+  "logderiv_max_off_primepowers": "5.22e-30",
+  "mus": [
+   "25/2",
+   "27/2"
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+2026-10-02 01:59:39 | gl2 check | START  pid=51381 total=None log=logs/gl2-check-20261002-015939.log args={'cmd': 'check', 'curves': 'delta', 'x': '13,4,16', 'gate': True, 'json': 'data/connes/gl2/check6_delta.json'}
+2026-10-02 02:00:03 | gl2 check | RESULT delta x=13 odd c=[0, 1, 0, 0, 0, 0]: cᵀQc = 0.0233578165934;  2Σ_{γ≤120.0} F(γ)² = 0.0233438223959;  Q − Σ = 1.4e-5 (rel 0.000599);  expected tail 1.51e-5;  rel after tail 4.78e-5
+2026-10-02 02:00:28 | gl2 check | RESULT delta x=13 odd c=[0, 0, 0, 1, 0, 0]: cᵀQc = 2.31453693479;  2Σ_{γ≤120.0} F(γ)² = 2.31448064115;  Q − Σ = 5.63e-5 (rel 2.43e-5);  expected tail 6.08e-5;  rel after tail 1.94e-6
+2026-10-02 02:00:59 | gl2 check | RESULT delta x=13 odd c=[0, 1, -1, 0, 0, 0]: cᵀQc = 0.323342063752;  2Σ_{γ≤120.0} F(γ)² = 0.323254476658;  Q − Σ = 8.76e-5 (rel 0.000271);  expected tail 9.46e-5;  rel after tail 2.16e-5
+2026-10-02 02:01:38 | gl2 check | RESULT delta x=13 even c=[0, 1, 1, 0, 0, 0, 0]: cᵀQc = 0.00365607391888;  2Σ_{γ≤120.0} F(γ)² = 0.00365606653535;  Q − Σ = 7.38e-9 (rel 2.02e-6);  expected tail 8.16e-9;  rel after tail 2.12e-7
+2026-10-02 02:02:18 | gl2 check | RESULT delta x=13 even c=[0, 0, 1, 0, -1, 0, 0]: cᵀQc = 2.80491927953;  2Σ_{γ≤120.0} F(γ)² = 2.80491916038;  Q − Σ = 1.19e-7 (rel 4.25e-8);  expected tail 1.32e-7;  rel after tail 4.47e-9
+2026-10-02 02:02:33 | gl2 check | RESULT delta x=4 odd c=[0, 1, 0, 0, 0, 0]: cᵀQc = 1.38004947871;  2Σ_{γ≤120.0} F(γ)² = 1.37996610984;  Q − Σ = 8.34e-5 (rel 6.04e-5);  expected tail 9.65e-5;  rel after tail 9.51e-6
+2026-10-02 02:02:48 | gl2 check | RESULT delta x=4 odd c=[0, 0, 0, 1, 0, 0]: cᵀQc = 2.28519471944;  2Σ_{γ≤120.0} F(γ)² = 2.28485479095;  Q − Σ = 0.00034 (rel 0.000149);  expected tail 0.000394;  rel after tail 2.36e-5
+2026-10-02 02:03:06 | gl2 check | RESULT delta x=4 odd c=[0, 1, -1, 0, 0, 0]: cᵀQc = 2.91481549418;  2Σ_{γ≤120.0} F(γ)² = 2.91429194625;  Q − Σ = 0.000524 (rel 0.00018);  expected tail 0.000606;  rel after tail 2.83e-5
+2026-10-02 02:03:27 | gl2 check | RESULT delta x=4 even c=[0, 1, 1, 0, 0, 0, 0]: cᵀQc = 1.28515532122;  2Σ_{γ≤120.0} F(γ)² = 1.28515517289;  Q − Σ = 1.48e-7 (rel 1.15e-7);  expected tail 1.79e-7;  rel after tail 2.41e-8
+2026-10-02 02:03:50 | gl2 check | RESULT delta x=4 even c=[0, 0, 1, 0, -1, 0, 0]: cᵀQc = 3.67978030198;  2Σ_{γ≤120.0} F(γ)² = 3.6797778585;  Q − Σ = 2.44e-6 (rel 6.64e-7);  expected tail 2.96e-6;  rel after tail 1.4e-7
+2026-10-02 02:04:15 | gl2 check | RESULT delta x=16 odd c=[0, 1, 0, 0, 0, 0]: cᵀQc = 0.00457078476003;  2Σ_{γ≤120.0} F(γ)² = 0.00455869636986;  Q − Σ = 1.21e-5 (rel 0.00264);  expected tail 1.19e-5;  rel after tail 3.24e-5
+2026-10-02 02:04:40 | gl2 check | RESULT delta x=16 odd c=[0, 0, 0, 1, 0, 0]: cᵀQc = 2.70284709527;  2Σ_{γ≤120.0} F(γ)² = 2.7027985079;  Q − Σ = 4.86e-5 (rel 1.8e-5);  expected tail 4.8e-5;  rel after tail 2.18e-7
+2026-10-02 02:05:11 | gl2 check | RESULT delta x=16 odd c=[0, 1, -1, 0, 0, 0]: cᵀQc = 0.0387879897738;  2Σ_{γ≤120.0} F(γ)² = 0.0387123462603;  Q − Σ = 7.56e-5 (rel 0.00195);  expected tail 7.47e-5;  rel after tail 2.39e-5
+2026-10-02 02:05:53 | gl2 check | RESULT delta x=16 even c=[0, 1, 1, 0, 0, 0, 0]: cᵀQc = 0.000318352833187;  2Σ_{γ≤120.0} F(γ)² = 0.000318347379957;  Q − Σ = 5.45e-9 (rel 1.71e-5);  expected tail 5.51e-9;  rel after tail 1.78e-7
+2026-10-02 02:06:32 | gl2 check | RESULT delta x=16 even c=[0, 0, 1, 0, -1, 0, 0]: cᵀQc = 2.53720303505;  2Σ_{γ≤120.0} F(γ)² = 2.53720294716;  Q − Σ = 8.79e-8 (rel 3.46e-8);  expected tail 8.88e-8;  rel after tail 3.68e-10
+2026-10-02 02:06:32 | gl2 check | RESULT P-DL6 zero-sum gate delta (x = 13): max rel 0.000599, (Q − Σ)/tail = ['0.926', '0.926', '0.926', '0.905', '0.905'] → FAIL
+2026-10-02 02:06:32 | gl2 check | DONE   0/0 in 6m53s

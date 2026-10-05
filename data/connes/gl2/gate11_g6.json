@@ -1,0 +1,56 @@
+{
+ "obj": "g6",
+ "tests": [
+  {
+   "test": "odd c=[0, 1, 0, 0, 0, 0]",
+   "T": "240.0",
+   "diff": "2.822e-6",
+   "tail": "2.6e-6",
+   "ratio": "1.085",
+   "pass": true
+  },
+  {
+   "test": "odd c=[0, 0, 0, 1, 0, 0]",
+   "T": "240.0",
+   "diff": "1.13e-5",
+   "tail": "1.041e-5",
+   "ratio": "1.085",
+   "pass": true
+  },
+  {
+   "test": "odd c=[0, 1, -1, 0, 0, 0]",
+   "T": "240.0",
+   "diff": "1.764e-5",
+   "tail": "1.625e-5",
+   "ratio": "1.086",
+   "pass": true
+  },
+  {
+   "test": "even c=[0, 1, 1, 0, 0, 0, 0]",
+   "T": "240.0",
+   "diff": "3.869e-10",
+   "tail": "3.547e-10",
+   "ratio": "1.091",
+   "pass": true
+  },
+  {
+   "test": "even c=[0, 0, 1, 0, -1, 0, 0]",
+   "T": "240.0",
+   "diff": "6.203e-9",
+   "tail": "5.688e-9",
+   "ratio": "1.091",
+   "pass": true
+  },
+  {
+   "test": "even c=(1, 1/\u221a2, 0\u2026) with the central zero",
+   "T": null,
+   "diff": "2.148e-11",
+   "tail": "1.97e-11",
+   "F0_sq": "2.564949357",
+   "diff_without_central": "2.14795e-11",
+   "ratio": "1.09",
+   "pass": true
+  }
+ ],
+ "pass": true
+}

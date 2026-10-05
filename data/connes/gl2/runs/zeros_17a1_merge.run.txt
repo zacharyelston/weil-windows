@@ -1,0 +1,10 @@
+2026-10-02 07:49:28 | gl2 zeros-merge 17a1 | START  pid=12501 total=None log=logs/gl2-zeros-merge-17a1-20261002-074928.log args={'cmd': 'zeros-merge', 'curve': '17a1', 'parts': '<repo>/.claude/worktrees/agent-a6f1432289c541306/data/connes/gl2/zeros_17a1_chunk_0_182.json,<repo>/.claude/worktrees/agent-a6f1432289c541306/data/connes/gl2/zeros_17a1_chunk_182_240.json', 'count_at': '40,80,120,160,200,240', 'json': '<repo>/.claude/worktrees/agent-a6f1432289c541306/data/connes/gl2/zeros_17a1.json'}
+2026-10-02 07:49:28 | gl2 zeros-merge 17a1 | INFO   removed 1 duplicate zero(s) at chunk boundaries
+2026-10-02 07:49:28 | gl2 zeros-merge 17a1 | RESULT 17a1: merged 2 chunks → 310 zeros in (0, 240.0]; first ['4.741993155', '7.819103955', '8.695686712', '10.717341']
+2026-10-02 07:49:38 | gl2 zeros-merge 17a1 | RESULT 17a1: (θ + arg L)/π at T = 39.919968: 29.0; found 29 zeros in (0, T] → OK (max |Δarg| per step 0.024)
+2026-10-02 07:49:55 | gl2 zeros-merge 17a1 | RESULT 17a1: (θ + arg L)/π at T = 80.427529: 76.0; found 76 zeros in (0, T] → OK (max |Δarg| per step 0.04)
+2026-10-02 07:50:22 | gl2 zeros-merge 17a1 | RESULT 17a1: (θ + arg L)/π at T = 120.11516: 129.0; found 129 zeros in (0, T] → OK (max |Δarg| per step 0.017)
+2026-10-02 07:51:02 | gl2 zeros-merge 17a1 | RESULT 17a1: (θ + arg L)/π at T = 159.78958: 186.0; found 186 zeros in (0, T] → OK (max |Δarg| per step 0.014)
+2026-10-02 07:52:08 | gl2 zeros-merge 17a1 | RESULT 17a1: (θ + arg L)/π at T = 199.86528: 247.0; found 247 zeros in (0, T] → OK (max |Δarg| per step 0.026)
+2026-10-02 07:54:00 | gl2 zeros-merge 17a1 | RESULT 17a1: (θ + arg L)/π at T = 240.0: 310.0; found 310 zeros in (0, T] → OK (max |Δarg| per step 0.17)
+2026-10-02 07:54:00 | gl2 zeros-merge 17a1 | DONE   0/0 in 4m32s

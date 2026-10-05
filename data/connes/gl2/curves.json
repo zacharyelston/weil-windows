@@ -1,0 +1,77 @@
+{
+ "11a1": {
+  "ainv": [
+   0,
+   -1,
+   1,
+   -10,
+   -20
+  ],
+  "N": 11,
+  "disc": -161051,
+  "disc_exponent": 5,
+  "c4": 496,
+  "conductor_ok": true,
+  "torsion_congruence_mod": 5,
+  "torsion_ok": true,
+  "hasse_ok": true,
+  "a_p_upto_50": {
+   "2": -2,
+   "3": -1,
+   "5": 1,
+   "7": -2,
+   "11": 1,
+   "13": 4,
+   "17": -2,
+   "19": 0,
+   "23": -1,
+   "29": 0,
+   "31": 7,
+   "37": 3,
+   "41": -8,
+   "43": -6,
+   "47": 8
+  },
+  "known_ap_ok": true,
+  "eta_mismatches": 0,
+  "eta_nmax": 2000,
+  "logderiv_dev_primepowers": "2.35e-31",
+  "logderiv_max_off_primepowers": "5.39e-30"
+ },
+ "37b1": {
+  "ainv": [
+   0,
+   1,
+   1,
+   -23,
+   -50
+  ],
+  "N": 37,
+  "disc": 50653,
+  "disc_exponent": 3,
+  "c4": 1120,
+  "conductor_ok": true,
+  "torsion_congruence_mod": 3,
+  "torsion_ok": true,
+  "hasse_ok": true,
+  "a_p_upto_50": {
+   "2": 0,
+   "3": 1,
+   "5": 0,
+   "7": -1,
+   "11": 3,
+   "13": -4,
+   "17": 6,
+   "19": 2,
+   "23": 6,
+   "29": -6,
+   "31": -4,
+   "37": 1,
+   "41": -9,
+   "43": 8,
+   "47": 3
+  },
+  "logderiv_dev_primepowers": "1.14e-31",
+  "logderiv_max_off_primepowers": "2.37e-30"
+ }
+}

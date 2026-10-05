@@ -1,0 +1,8 @@
+  zeta x=5: ε₀=1.005e-17 QW(k)=1.197e-17 sin²=1.978e-7 [41s]
+  zeta x=7: ε₀=7.731e-28 QW(k)=1.101e-27 sin²=4.248e-8 [49s]
+  zeta x=10: ε₀=1.784e-43 QW(k)=2.64e-43 sin²=2.018e-8 [67s]
+  zeta x=13: ε₀=3.721e-59 QW(k)=5.121e-59 sin²=5.308e-9 [94s]
+  dh x=13: ε₀=8.589e-11 QW(k)=9.077e-11 sin²=4.187e-8 [36s]
+  dh x=30: ε₀=1.292e-28 QW(k)=1.614e-28 sin²=3.831e-9 [86s]
+  dh x=34: ε₀=-1.284e-18 QW(k)=8.084e-33 sin²=1.0 [101s]
+wrote <repo>/scripts/../data/connes/viz_connes.json (289 KB)

@@ -1,0 +1,30 @@
+2026-10-01 21:59:56 | antiperiodic sweep | START  pid=48892 total=24 log=logs/antiperiodic-sweep-20261001-215956.log args={'cmd': 'sweep', 'a': '0.8', 'n': '16,32,48,64,100,140', 'dps': 120, 'dps_high': 220, 'json': 'data/connes/antiperiodic/sweep_a0.8.json'}
+2026-10-01 21:59:56 | antiperiodic sweep | STATUS 1/24 (4.2%)  elapsed 0s  eta 4s  | a=0.8 even periodic N=16 λ=2.76829e-17 (0s)
+2026-10-01 21:59:56 | antiperiodic sweep | STATUS 2/24 (8.3%)  elapsed 0s  eta 7s  | a=0.8 even periodic N=32 λ=1.96066e-17 (0s)
+2026-10-01 21:59:57 | antiperiodic sweep | STATUS 3/24 (12.5%)  elapsed 1s  eta 10s  | a=0.8 even periodic N=48 λ=1.91235e-17 (1s)
+2026-10-01 21:59:58 | antiperiodic sweep | STATUS 4/24 (16.7%)  elapsed 2s  eta 14s  | a=0.8 even periodic N=64 λ=1.84762e-17 (1s)
+2026-10-01 22:00:01 | antiperiodic sweep | STATUS 5/24 (20.8%)  elapsed 5s  eta 21s  | a=0.8 even periodic N=100 λ=1.73574e-17 (3s)
+2026-10-01 22:00:07 | antiperiodic sweep | STATUS 6/24 (25.0%)  elapsed 11s  eta 35s  | a=0.8 even periodic N=140 λ=1.68553e-17 (6s)
+2026-10-01 22:00:07 | antiperiodic sweep | RESULT a=0.8 even periodic     N=16:2.76829e-17  N=32:1.96066e-17  N=48:1.91235e-17  N=64:1.84762e-17  N=100:1.73574e-17  N=140:1.68553e-17
+2026-10-01 22:00:08 | antiperiodic sweep | STATUS 7/24 (29.2%)  elapsed 12s  eta 29s  | a=0.8 even antiperiodic N=16 λ=2.53206e-17 (0s)
+2026-10-01 22:00:08 | antiperiodic sweep | STATUS 8/24 (33.3%)  elapsed 12s  eta 25s  | a=0.8 even antiperiodic N=32 λ=2.01482e-17 (0s)
+2026-10-01 22:00:09 | antiperiodic sweep | STATUS 9/24 (37.5%)  elapsed 13s  eta 22s  | a=0.8 even antiperiodic N=48 λ=1.7946e-17 (1s)
+2026-10-01 22:00:10 | antiperiodic sweep | STATUS 10/24 (41.7%)  elapsed 14s  eta 20s  | a=0.8 even antiperiodic N=64 λ=1.7675e-17 (1s)
+2026-10-01 22:00:13 | antiperiodic sweep | STATUS 11/24 (45.8%)  elapsed 17s  eta 21s  | a=0.8 even antiperiodic N=100 λ=1.7594e-17 (3s)
+2026-10-01 22:00:20 | antiperiodic sweep | STATUS 12/24 (50.0%)  elapsed 24s  eta 24s  | a=0.8 even antiperiodic N=140 λ=1.74602e-17 (6s)
+2026-10-01 22:00:20 | antiperiodic sweep | RESULT a=0.8 even antiperiodic N=16:2.53206e-17  N=32:2.01482e-17  N=48:1.7946e-17  N=64:1.7675e-17  N=100:1.7594e-17  N=140:1.74602e-17
+2026-10-01 22:00:20 | antiperiodic sweep | STATUS 13/24 (54.2%)  elapsed 24s  eta 20s  | a=0.8 odd periodic N=16 λ=2.58649e-14 (0s)
+2026-10-01 22:00:21 | antiperiodic sweep | STATUS 14/24 (58.3%)  elapsed 25s  eta 17s  | a=0.8 odd periodic N=32 λ=1.9195e-14 (0s)
+2026-10-01 22:00:21 | antiperiodic sweep | STATUS 15/24 (62.5%)  elapsed 25s  eta 15s  | a=0.8 odd periodic N=48 λ=1.70337e-14 (1s)
+2026-10-01 22:00:23 | antiperiodic sweep | STATUS 16/24 (66.7%)  elapsed 27s  eta 13s  | a=0.8 odd periodic N=64 λ=1.6765e-14 (1s)
+2026-10-01 22:00:26 | antiperiodic sweep | STATUS 17/24 (70.8%)  elapsed 30s  eta 12s  | a=0.8 odd periodic N=100 λ=1.66607e-14 (3s)
+2026-10-01 22:00:32 | antiperiodic sweep | STATUS 18/24 (75.0%)  elapsed 36s  eta 12s  | a=0.8 odd periodic N=140 λ=1.65165e-14 (6s)
+2026-10-01 22:00:32 | antiperiodic sweep | RESULT a=0.8 odd  periodic     N=16:2.58649e-14  N=32:1.9195e-14  N=48:1.70337e-14  N=64:1.6765e-14  N=100:1.66607e-14  N=140:1.65165e-14
+2026-10-01 22:00:32 | antiperiodic sweep | STATUS 19/24 (79.2%)  elapsed 36s  eta 9s  | a=0.8 odd antiperiodic N=16 λ=2.57601e-14 (0s)
+2026-10-01 22:00:33 | antiperiodic sweep | STATUS 20/24 (83.3%)  elapsed 37s  eta 7s  | a=0.8 odd antiperiodic N=32 λ=2.08136e-14 (0s)
+2026-10-01 22:00:34 | antiperiodic sweep | STATUS 21/24 (87.5%)  elapsed 38s  eta 5s  | a=0.8 odd antiperiodic N=48 λ=1.91457e-14 (1s)
+2026-10-01 22:00:35 | antiperiodic sweep | STATUS 22/24 (91.7%)  elapsed 39s  eta 3s  | a=0.8 odd antiperiodic N=64 λ=1.77302e-14 (1s)
+2026-10-01 22:00:38 | antiperiodic sweep | STATUS 23/24 (95.8%)  elapsed 42s  eta 1s  | a=0.8 odd antiperiodic N=100 λ=1.6383e-14 (3s)
+2026-10-01 22:00:43 | antiperiodic sweep | STATUS 24/24 (100.0%)  elapsed 47s  eta 0s  | a=0.8 odd antiperiodic N=140 λ=1.59002e-14 (5s)
+2026-10-01 22:00:43 | antiperiodic sweep | RESULT a=0.8 odd  antiperiodic N=16:2.57601e-14  N=32:2.08136e-14  N=48:1.91457e-14  N=64:1.77302e-14  N=100:1.6383e-14  N=140:1.59002e-14
+2026-10-01 22:00:43 | antiperiodic sweep | DONE   24/24 in 47s

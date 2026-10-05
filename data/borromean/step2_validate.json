@@ -1,0 +1,46 @@
+{
+ "V1": true,
+ "V1_bad": [],
+ "V2": true,
+ "V2_rows": [
+  {
+   "x": 13,
+   "parity": "even",
+   "max_diff": "1.55e-120",
+   "pass": true
+  },
+  {
+   "x": 13,
+   "parity": "odd",
+   "max_diff": "1.55e-120",
+   "pass": true
+  },
+  {
+   "x": 1000,
+   "parity": "even",
+   "max_diff": "3.1e-120",
+   "pass": true
+  },
+  {
+   "x": 1000,
+   "parity": "odd",
+   "max_diff": "2.71e-120",
+   "pass": true
+  },
+  {
+   "x": 14500,
+   "parity": "even",
+   "max_diff": "3.1e-120",
+   "pass": true
+  },
+  {
+   "x": 14500,
+   "parity": "odd",
+   "max_diff": "1.55e-120",
+   "pass": true
+  }
+ ],
+ "positive_control_diff": "4.57e-16",
+ "positive_control_fired": true,
+ "pass": true
+}

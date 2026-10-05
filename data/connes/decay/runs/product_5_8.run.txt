@@ -1,0 +1,10 @@
+2026-10-02 00:40:23 | product 5,8 | START  pid=56487 total=8 log=logs/product-5-8-20261002-004023.log args={'cmd': 'product', 'factors': '5,8', 'xq': '2,4,6,8', 'f1': 5, 'f2': 9, 'nmin': 24, 'json': 'data/connes/decay/product_5_8.json'}
+2026-10-02 00:40:25 | product 5,8 | STATUS 1/8 (12.5%)  elapsed 1s  eta 12s  | x/q_max=2 x=16.0 even: N=57 λ(product)=4.04568e-5 λ(L(χ8))=2.3487e-9  ρ=17225.0  (N=35: ρ=16105.0; dps {'product': 56, 'worst': 56})
+2026-10-02 00:40:26 | product 5,8 | STATUS 2/8 (25.0%)  elapsed 3s  eta 10s  | x/q_max=2 x=16.0 odd: N=57 λ(product)=0.00516198 λ(L(χ8))=2.32519e-6  ρ=2220.0  (N=35: ρ=2200.4; dps {'product': 56, 'worst': 56})
+2026-10-02 00:40:33 | product 5,8 | STATUS 3/8 (37.5%)  elapsed 10s  eta 17s  | x/q_max=4 x=32.0 even: N=132 λ(product)=3.19287e-8 λ(L(χ8))=4.87776e-20  ρ=6.5458e+11  (N=77: ρ=5.9968e+11; dps {'product': 72, 'worst': 72})
+2026-10-02 00:40:39 | product 5,8 | STATUS 4/8 (50.0%)  elapsed 16s  eta 16s  | x/q_max=4 x=32.0 odd: N=132 λ(product)=1.36287e-5 λ(L(χ8))=2.16958e-16  ρ=6.2817e+10  (N=77: ρ=6.1111e+10; dps {'product': 72, 'worst': 72})
+2026-10-02 00:40:57 | product 5,8 | STATUS 5/8 (62.5%)  elapsed 33s  eta 20s  | x/q_max=6 x=48.0 even: N=217 λ(product)=4.24772e-10 λ(L(χ8))=7.32107e-31  ρ=5.8021e+20  (N=124: ρ=5.4574e+20; dps {'product': 89, 'worst': 89})
+2026-10-02 00:41:14 | product 5,8 | STATUS 6/8 (75.0%)  elapsed 50s  eta 16s  | x/q_max=6 x=48.0 odd: N=217 λ(product)=1.87058e-7 λ(L(χ8))=8.13494e-27  ρ=2.2994e+19  (N=124: ρ=2.0256e+19; dps {'product': 89, 'worst': 89})
+2026-10-02 00:41:48 | product 5,8 | STATUS 7/8 (87.5%)  elapsed 1m25s  eta 12s  | x/q_max=8 x=64.0 even: N=307 λ(product)=4.41067e-12 λ(L(χ8))=1.0866e-41  ρ=4.0591e+29  (N=174: ρ=3.7e+29; dps {'product': 105, 'worst': 105})
+2026-10-02 00:42:23 | product 5,8 | STATUS 8/8 (100.0%)  elapsed 2m00s  eta 0s  | x/q_max=8 x=64.0 odd: N=307 λ(product)=4.20216e-9 λ(L(χ8))=2.1292e-37  ρ=1.9736e+28  (N=174: ρ=1.8126e+28; dps {'product': 105, 'worst': 105})
+2026-10-02 00:42:23 | product 5,8 | DONE   8/8 in 2m00s

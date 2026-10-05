@@ -1,0 +1,12 @@
+2026-10-02 00:50:38 | product-v -3,-4 | START  pid=57038 total=10 log=logs/product-v-3-4-20261002-005038.log args={'cmd': 'product-v', 'factors': '-3,-4', 'v': '1.5,2,2.5,3,3.5', 'f1': 5, 'f2': 9, 'nmin': 24, 'json': 'data/connes/decay/productv_-3_-4.json'}
+2026-10-02 00:50:52 | product-v -3,-4 | STATUS 1/10 (10.0%)  elapsed 14s  eta 2m06s  | v=1.5 x=27.0 even: N=32:1.045858e-11  N=52:9.0976791e-12  (dps 64)
+2026-10-02 00:51:06 | product-v -3,-4 | STATUS 2/10 (20.0%)  elapsed 27s  eta 1m51s  | v=1.5 x=27.0 odd: N=32:8.2101685e-9  N=52:8.0629116e-9  (dps 64)
+2026-10-02 00:51:34 | product-v -3,-4 | STATUS 3/10 (30.0%)  elapsed 56s  eta 2m10s  | v=2 x=48.0 even: N=46:1.9580534e-16  N=77:1.8357765e-16  (dps 72)
+2026-10-02 00:52:02 | product-v -3,-4 | STATUS 4/10 (40.0%)  elapsed 1m24s  eta 2m06s  | v=2 x=48.0 odd: N=46:7.3535166e-14  N=77:7.1739202e-14  (dps 72)
+2026-10-02 00:52:52 | product-v -3,-4 | STATUS 5/10 (50.0%)  elapsed 2m14s  eta 2m14s  | v=2.5 x=75.0 even: N=61:7.942517e-22  N=105:7.4046495e-22  (dps 80)
+2026-10-02 00:53:41 | product-v -3,-4 | STATUS 6/10 (60.0%)  elapsed 3m03s  eta 2m02s  | v=2.5 x=75.0 odd: N=61:9.1973909e-19  N=105:8.6065901e-19  (dps 80)
+2026-10-02 00:54:52 | product-v -3,-4 | STATUS 7/10 (70.0%)  elapsed 4m13s  eta 1m48s  | v=3 x=108.0 even: N=78:7.5649567e-27  N=134:7.0750817e-27  (dps 89)
+2026-10-02 00:56:02 | product-v -3,-4 | STATUS 8/10 (80.0%)  elapsed 5m23s  eta 1m20s  | v=3 x=108.0 odd: N=78:1.5179284e-23  N=134:1.3068108e-23  (dps 89)
+2026-10-02 00:57:31 | product-v -3,-4 | STATUS 9/10 (90.0%)  elapsed 6m53s  eta 45s  | v=3.5 x=147.0 even: N=95:2.8332379e-32  N=165:2.4974996e-32  (dps 97)
+2026-10-02 00:59:09 | product-v -3,-4 | STATUS 10/10 (100.0%)  elapsed 8m31s  eta 0s  | v=3.5 x=147.0 odd: N=95:1.226129e-28  N=165:1.0857953e-28  (dps 97)
+2026-10-02 00:59:09 | product-v -3,-4 | DONE   10/10 in 8m31s

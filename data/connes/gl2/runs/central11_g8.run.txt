@@ -1,0 +1,3 @@
+2026-10-02 06:10:19 | gl2 central7 | START  pid=96876 total=None log=logs/gl2-central7-20261002-061019.log args={'cmd': 'central7', 'objects': 'g8', 'x': '13', 'json': 'data/connes/gl2/central11_g8.json'}
+2026-10-02 06:11:35 | gl2 central7 | RESULT g8 (ε = +1, m0 = 0) x = 13, c = (1, 1/√2, 0…): Q = 0.000409582248916;  F(0)² = 2.5649494;  Q − (Σ_γ>0 + m0F(0)²) = 1.9e-11 (tail 1.88e-11, ratio 1.01);  without the central term: Q − Σ_γ>0 = 1.90322e-11
+2026-10-02 06:11:35 | gl2 central7 | DONE   0/0 in 1m15s

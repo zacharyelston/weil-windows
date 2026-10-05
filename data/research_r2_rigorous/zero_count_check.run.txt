@@ -1,0 +1,36 @@
+zeta: N+(t) >= N(t) at 400 heights up to 396.38185: failures 0, min slack 5.364
+chi_5: 27 zeros to height 60, failures 0, min slack 1.019
+chi_8: 32 zeros to height 60, failures 0, min slack 1.349
+chi_12: 36 zeros to height 60, failures 0, min slack 1.439
+chi_13: 36 zeros to height 60, failures 0, min slack 1.069
+chi_17: 39 zeros to height 60, failures 0, min slack 1.456
+      zeta T=  14: closed 0.0400093741929  quad 0.0399921385405  ok=True
+      zeta T=  20: closed 0.0292392143524  quad 0.0292324741714  ok=True
+      zeta T=  40: closed 0.0174950577562  quad 0.0174938998569  ok=True
+      zeta T= 100: closed 0.00926371899643  quad 0.00926359556235  ok=True
+      zeta T= 400: closed 0.00333492422658  quad 0.00333491949571  ok=True
+     chi_5 T=  10: closed 0.0785034339419  quad 0.078351286691  ok=True
+     chi_5 T=  30: closed 0.0354466747736  quad 0.0354348000759  ok=True
+     chi_5 T= 100: closed 0.0141273783162  quad 0.0141266614804  ok=True
+     chi_5 T= 400: closed 0.00460059007620  quad 0.00460056029248  ok=True
+    chi_-4 T=  10: closed 0.0730368730719  quad 0.0728639417407  ok=True
+    chi_-4 T=  30: closed 0.0332755088843  quad 0.0332623961111  ok=True
+    chi_-4 T= 100: closed 0.0134357250472  quad 0.0134349496448  ok=True
+    chi_-4 T= 400: closed 0.00442422818178  quad 0.00442419645781  ok=True
+   chi_-20 T=  10: closed 0.129847982958  quad 0.129768500481  ok=True
+   chi_-20 T=  30: closed 0.0508921466340  quad 0.0508851176363  ok=True
+   chi_-20 T= 100: closed 0.0186018453618  quad 0.0186013782947  ok=True
+   chi_-20 T= 400: closed 0.00570740196259  quad 0.0057073810291  ok=True
+    chi_13 T=  10: closed 0.112269592927  quad 0.112174456339  ok=True
+    chi_13 T=  30: closed 0.0459085026328  quad 0.0459003480868  ok=True
+    chi_13 T= 100: closed 0.0171946550230  quad 0.0171941265785  ok=True
+    chi_13 T= 400: closed 0.00536240930749  quad 0.0053623861025  ok=True
+  T=   14.2: R2 (Tru14) N+ = 7.0732447   BW N+ = 7.5533686
+  T=     20: R2 (Tru14) N+ = 9.0566816   BW N+ = 9.5000889
+  T=     30: R2 (Tru14) N+ = 13.592238   BW N+ = 13.997193
+  T=     50: R2 (Tru14) N+ = 25.500536   BW N+ = 25.863038
+  T=    100: R2 (Tru14) N+ = 64.90549   BW N+ = 65.218427
+  T=    300: R2 (Tru14) N+ = 282.68957   BW N+ = 282.93741
+  T=   1000: R2 (Tru14) N+ = 1304.8744   BW N+ = 1305.0639
+  T=   2000: R2 (Tru14) N+ = 3041.8365   BW N+ = 3041.9969
+DONE exit=0

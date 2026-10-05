@@ -1,0 +1,16 @@
+[
+ {
+  "obj": "f26",
+  "x": "13",
+  "eps": -1,
+  "m0": 1,
+  "Q": "2.57493202648033",
+  "F0_sq": "2.564949357",
+  "sum_pos": "0.00998266900305091",
+  "sum_with_central": "2.57493202646459",
+  "expected_tail": "1.724e-11",
+  "diff_with_central": "1.574e-11",
+  "ratio_with_central": "0.9134",
+  "diff_without_central": "2.56495"
+ }
+]

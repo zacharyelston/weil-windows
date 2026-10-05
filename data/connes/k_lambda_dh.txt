@@ -1,0 +1,33 @@
+x = 5: ε₀ = 0.00598094;  ‖k_odd‖/‖k‖ = 0.01182;  sin²∠(k_even, θ_x) = 0.000131227  (within basis: 0.00012611; outside span: 5.118e-6)
+    QW(P k)/‖P k‖² = 0.00634193   (nodes 1840, 15s)
+    |zero(k̂_λ) − γ_j|: 
+x = 10: ε₀ = 8.30258e-8;  ‖k_odd‖/‖k‖ = 6.134e-5;  sin²∠(k_even, θ_x) = 5.80997e-7  (within basis: 5.80449e-7; outside span: 5.486e-10)
+    QW(P k)/‖P k‖² = 9.49468e-8   (nodes 2600, 22s)
+    |zero(k̂_λ) − γ_j|: 
+x = 13: ε₀ = 8.58852e-11;  ‖k_odd‖/‖k‖ = 1.681e-6;  sin²∠(k_even, θ_x) = 4.18701e-8  (within basis: 4.18689e-8; outside span: 1.222e-12)
+    QW(P k)/‖P k‖² = 9.07705e-11   (nodes 3120, 28s)
+    |zero(k̂_λ) − γ_j|: 
+x = 20: ε₀ = 4.46197e-18;  ‖k_odd‖/‖k‖ = 4.892e-10;  sin²∠(k_even, θ_x) = 2.67846e-8  (within basis: 2.67846e-8; outside span: 3.459e-19)
+    QW(P k)/‖P k‖² = 5.53026e-18   (nodes 3840, 45s)
+    |zero(k̂_λ) − γ_j|: 
+x = 25: ε₀ = 1.59377e-23;  ‖k_odd‖/‖k‖ = 1.127e-12;  sin²∠(k_even, θ_x) = 4.91351e-9  (within basis: 4.91351e-9; outside span: 1.8e-24)
+    QW(P k)/‖P k‖² = 2.86724e-23   (nodes 4320, 59s)
+    |zero(k̂_λ) − γ_j|: 
+x = 28: ε₀ = 8.3577e-27;  ‖k_odd‖/‖k‖ = 3.079e-14;  sin²∠(k_even, θ_x) = 9.17636e-9  (within basis: 9.17636e-9; outside span: 1.476e-27)
+    QW(P k)/‖P k‖² = 1.89724e-26   (nodes 4440, 66s)
+    |zero(k̂_λ) − γ_j|: 
+x = 30: ε₀ = 1.29229e-28;  ‖k_odd‖/‖k‖ = 2.222e-15;  sin²∠(k_even, θ_x) = 3.83124e-9  (within basis: 3.83124e-9; outside span: 1.313e-29)
+    QW(P k)/‖P k‖² = 1.61355e-28   (nodes 4520, 71s)
+    |zero(k̂_λ) − γ_j|: 
+x = 32: ε₀ = -1.07727e-29;  ‖k_odd‖/‖k‖ = 2.234e-16;  sin²∠(k_even, θ_x) = 4.22439e-7  (within basis: 4.22439e-7; outside span: 9.73e-32)
+    QW(P k)/‖P k‖² = 1.04131e-30   (nodes 4680, 79s)
+    |zero(k̂_λ) − γ_j|: 
+x = 34: ε₀ = -1.28397e-18;  ‖k_odd‖/‖k‖ = 1.858e-17;  sin²∠(k_even, θ_x) = 1.0  (within basis: 1.0; outside span: 7.802e-34)
+    QW(P k)/‖P k‖² = 8.08422e-33   (nodes 4800, 87s)
+    |zero(k̂_λ) − γ_j|: 
+x = 36: ε₀ = -2.77283e-11;  ‖k_odd‖/‖k‖ = 1.48e-18;  sin²∠(k_even, θ_x) = 1.0  (within basis: 1.0; outside span: 7.164e-36)
+    QW(P k)/‖P k‖² = 6.11542e-35   (nodes 4800, 90s)
+    |zero(k̂_λ) − γ_j|: 
+x = 40: ε₀ = -0.010989;  ‖k_odd‖/‖k‖ = 1.076e-20;  sin²∠(k_even, θ_x) = 1.0  (within basis: 1.0; outside span: 4.158e-40)
+    QW(P k)/‖P k‖² = 3.67726e-39   (nodes 5160, 109s)
+    |zero(k̂_λ) − γ_j|: 

@@ -1,0 +1,44 @@
+{
+ "389a1": {
+  "known_ap_ok": null,
+  "ainv": [
+   0,
+   1,
+   1,
+   -2,
+   0
+  ],
+  "N": 389,
+  "disc": 389,
+  "disc_factor": {
+   "389": 1
+  },
+  "c4": 112,
+  "conductor_ok": true,
+  "bad_ap": {
+   "389": 1
+  },
+  "gcd_points": 1,
+  "gcd_points_odd_p": 1,
+  "hasse_ok": true,
+  "a_p_upto_50": {
+   "2": -2,
+   "3": -2,
+   "5": -3,
+   "7": -5,
+   "11": -4,
+   "13": -3,
+   "17": -6,
+   "19": 5,
+   "23": -4,
+   "29": -6,
+   "31": 4,
+   "37": -8,
+   "41": -3,
+   "43": 12,
+   "47": -2
+  },
+  "logderiv_dev_primepowers": "3.45e-31",
+  "logderiv_max_off_primepowers": "1.82e-29"
+ }
+}

@@ -1,0 +1,12 @@
+2026-10-02 03:48:46 | gl2 precision f16 | START  pid=71855 total=10 log=logs/gl2-precision-f16-20261002-034846.log args={'cmd': 'precision', 'curve': 'f16', 'extra': 80, 'file': 'data/connes/gl2/scan7_f16.json', 'out': 'data/connes/gl2/precision7_f16.json'}
+2026-10-02 03:48:47 | gl2 precision f16 | STATUS 1/10 (10.0%)  elapsed 1s  eta 13s  | f16 v=2.0 even N=57: dps 72 → 152: 0.0035181357012 → 0.0035181357012  rel 9.69e-16
+2026-10-02 03:48:49 | gl2 precision f16 | STATUS 2/10 (20.0%)  elapsed 3s  eta 12s  | f16 v=2.0 odd N=57: dps 72 → 152: 0.188316259833 → 0.188316259833  rel 5.28e-16
+2026-10-02 03:48:52 | gl2 precision f16 | STATUS 3/10 (30.0%)  elapsed 5s  eta 13s  | f16 v=2.5 even N=90: dps 80 → 160: 8.16655560638e-7 → 8.16655560638e-7  rel 1.6e-16
+2026-10-02 03:48:54 | gl2 precision f16 | STATUS 4/10 (40.0%)  elapsed 8s  eta 12s  | f16 v=2.5 odd N=90: dps 80 → 160: 0.000350358324906 → 0.000350358324906  rel 1.2e-15
+2026-10-02 03:48:57 | gl2 precision f16 | STATUS 5/10 (50.0%)  elapsed 11s  eta 11s  | f16 v=3.0 even N=126: dps 89 → 169: 1.47491366822e-10 → 1.47491366822e-10  rel 2.05e-16
+2026-10-02 03:49:01 | gl2 precision f16 | STATUS 6/10 (60.0%)  elapsed 15s  eta 10s  | f16 v=3.0 odd N=126: dps 89 → 169: 1.37089140878e-7 → 1.37089140878e-7  rel 5.81e-16
+2026-10-02 03:49:06 | gl2 precision f16 | STATUS 7/10 (70.0%)  elapsed 20s  eta 8s  | f16 v=3.5 even N=165: dps 97 → 177: 1.04038396814e-14 → 1.04038396814e-14  rel 2.4e-16
+2026-10-02 03:49:11 | gl2 precision f16 | STATUS 8/10 (80.0%)  elapsed 25s  eta 6s  | f16 v=3.5 odd N=165: dps 97 → 177: 1.43507364908e-11 → 1.43507364908e-11  rel 2.84e-15
+2026-10-02 03:49:18 | gl2 precision f16 | STATUS 9/10 (90.0%)  elapsed 32s  eta 3s  | f16 v=4.0 even N=207: dps 105 → 185: 2.96849811043e-19 → 2.96849811043e-19  rel 3.85e-16
+2026-10-02 03:49:25 | gl2 precision f16 | STATUS 10/10 (100.0%)  elapsed 39s  eta 0s  | f16 v=4.0 odd N=207: dps 105 → 185: 5.14969852131e-16 → 5.14969852131e-16  rel 5.76e-16
+2026-10-02 03:49:25 | gl2 precision f16 | DONE   10/10 in 39s

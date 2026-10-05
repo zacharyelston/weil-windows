@@ -1,0 +1,13 @@
+2026-10-02 04:05:37 | gl2 precision f22 | START  pid=74989 total=10 log=logs/gl2-precision-f22-20261002-040537.log args={'cmd': 'precision', 'curve': 'f22', 'extra': 80, 'file': 'data/connes/gl2/scan7_f22.json', 'out': 'data/connes/gl2/precision7_f22.json'}
+WARN inverse iteration not converged in 40 steps (n = 58, dps 152); returning NaN
+2026-10-02 04:05:39 | gl2 precision f22 | STATUS 1/10 (10.0%)  elapsed 2s  eta 23s  | f22 v=2.0 even N=57: dps 72 → 152: 1.09020980179 → 1.09020980179  rel 3.48e-15
+2026-10-02 04:05:42 | gl2 precision f22 | STATUS 2/10 (20.0%)  elapsed 5s  eta 20s  | f22 v=2.0 odd N=57: dps 72 → 152: 0.576168803777 → 0.576168803777  rel 7.37e-16
+2026-10-02 04:05:45 | gl2 precision f22 | STATUS 3/10 (30.0%)  elapsed 8s  eta 19s  | f22 v=2.5 even N=90: dps 80 → 160: 0.245946019583 → 0.245946019583  rel 1.32e-15
+2026-10-02 04:05:48 | gl2 precision f22 | STATUS 4/10 (40.0%)  elapsed 11s  eta 17s  | f22 v=2.5 odd N=90: dps 80 → 160: 0.00622097057108 → 0.00622097057108  rel 4.02e-16
+2026-10-02 04:05:52 | gl2 precision f22 | STATUS 5/10 (50.0%)  elapsed 15s  eta 15s  | f22 v=3.0 even N=126: dps 89 → 169: 0.000960654418443 → 0.000960654418443  rel 4.08e-16
+2026-10-02 04:05:57 | gl2 precision f22 | STATUS 6/10 (60.0%)  elapsed 20s  eta 13s  | f22 v=3.0 odd N=126: dps 89 → 169: 4.93181162001e-6 → 4.93181162001e-6  rel 3.12e-16
+2026-10-02 04:06:03 | gl2 precision f22 | STATUS 7/10 (70.0%)  elapsed 26s  eta 11s  | f22 v=3.5 even N=165: dps 97 → 177: 4.05152226714e-7 → 4.05152226714e-7  rel 7.19e-17
+2026-10-02 04:06:09 | gl2 precision f22 | STATUS 8/10 (80.0%)  elapsed 32s  eta 8s  | f22 v=3.5 odd N=165: dps 97 → 177: 1.14537398246e-9 → 1.14537398246e-9  rel 4.2e-15
+2026-10-02 04:06:18 | gl2 precision f22 | STATUS 9/10 (90.0%)  elapsed 41s  eta 4s  | f22 v=4.0 even N=207: dps 105 → 185: 7.40382645676e-11 → 7.40382645676e-11  rel 2.16e-16
+2026-10-02 04:06:26 | gl2 precision f22 | STATUS 10/10 (100.0%)  elapsed 49s  eta 0s  | f22 v=4.0 odd N=207: dps 105 → 185: 1.46053364991e-13 → 1.46053364991e-13  rel 8.57e-16
+2026-10-02 04:06:26 | gl2 precision f22 | DONE   10/10 in 49s

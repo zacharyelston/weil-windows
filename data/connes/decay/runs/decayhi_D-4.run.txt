@@ -1,0 +1,18 @@
+2026-10-01 22:21:42 | decay law scan | START  pid=49869 total=16 log=logs/decay-law-scan-20261001-222142.log args={'cmd': 'scan', 'd': '-4', 'xq': '2,3,4,5,6,7,8,10', 'f1': 5.0, 'f2': 9.0, 'nmin': 24, 'inv': True, 'json': 'data/connes/decay/scanhi_D-4.json'}
+2026-10-01 22:21:46 | decay law scan | STATUS 1/16 (6.2%)  elapsed 3s  eta 49s  | D=-4 x/q=2.0 x=8.0 even N=28:1.0958175e-7 N=45:1.0276871e-7 (2s, dps 56)
+2026-10-01 22:21:49 | decay law scan | STATUS 2/16 (12.5%)  elapsed 6s  eta 45s  | D=-4 x/q=2.0 x=8.0 odd N=28:7.4396373e-5 N=45:7.0498999e-5 (2s, dps 56)
+2026-10-01 22:21:55 | decay law scan | STATUS 3/16 (18.8%)  elapsed 12s  eta 52s  | D=-4 x/q=3.0 x=12.0 even N=45:9.6260982e-13 N=75:8.3196914e-13 (4s, dps 64)
+2026-10-01 22:22:00 | decay law scan | STATUS 4/16 (25.0%)  elapsed 17s  eta 53s  | D=-4 x/q=3.0 x=12.0 odd N=45:1.5142226e-9 N=75:1.4734995e-9 (4s, dps 64)
+2026-10-01 22:22:09 | decay law scan | STATUS 5/16 (31.2%)  elapsed 26s  eta 58s  | D=-4 x/q=4.0 x=16.0 even N=63:5.6899009e-18 N=107:5.1363056e-18 (6s, dps 72)
+2026-10-01 22:22:18 | decay law scan | STATUS 6/16 (37.5%)  elapsed 35s  eta 58s  | D=-4 x/q=4.0 x=16.0 odd N=63:1.3664865e-14 N=107:1.3378451e-14 (6s, dps 72)
+2026-10-01 22:22:34 | decay law scan | STATUS 7/16 (43.8%)  elapsed 51s  eta 1m06s  | D=-4 x/q=5.0 x=20.0 even N=82:2.3981721e-23 N=142:2.2587181e-23 (10s, dps 80)
+2026-10-01 22:22:50 | decay law scan | STATUS 8/16 (50.0%)  elapsed 1m07s  eta 1m07s  | D=-4 x/q=5.0 x=20.0 odd N=82:1.2190692e-19 N=142:1.12199e-19 (10s, dps 80)
+2026-10-01 22:23:13 | decay law scan | STATUS 9/16 (56.2%)  elapsed 1m30s  eta 1m10s  | D=-4 x/q=6.0 x=24.0 even N=103:1.2127682e-28 N=179:1.156031e-28 (14s, dps 89)
+2026-10-01 22:23:35 | decay law scan | STATUS 10/16 (62.5%)  elapsed 1m52s  eta 1m07s  | D=-4 x/q=6.0 x=24.0 odd N=103:9.4823851e-25 N=179:8.3504613e-25 (13s, dps 89)
+2026-10-01 22:24:02 | decay law scan | STATUS 11/16 (68.8%)  elapsed 2m19s  eta 1m03s  | D=-4 x/q=7.0 x=28.0 even N=124:5.7543966e-34 N=217:5.3248728e-34 (16s, dps 97)
+2026-10-01 22:24:28 | decay law scan | STATUS 12/16 (75.0%)  elapsed 2m45s  eta 55s  | D=-4 x/q=7.0 x=28.0 odd N=124:5.2874639e-30 N=217:4.7318315e-30 (16s, dps 97)
+2026-10-01 22:25:01 | decay law scan | STATUS 13/16 (81.2%)  elapsed 3m18s  eta 45s  | D=-4 x/q=8.0 x=32.0 even N=146:2.398942e-39 N=257:2.1647523e-39 (21s, dps 105)
+2026-10-01 22:25:35 | decay law scan | STATUS 14/16 (87.5%)  elapsed 3m52s  eta 33s  | D=-4 x/q=8.0 x=32.0 odd N=146:3.0333004e-35 N=257:2.7332717e-35 (21s, dps 105)
+2026-10-01 22:26:40 | decay law scan | STATUS 15/16 (93.8%)  elapsed 4m57s  eta 19s  | D=-4 x/q=10.0 x=40.0 even N=192:4.0670374e-50 N=339:3.6988835e-50 (41s, dps 121)
+2026-10-01 22:27:39 | decay law scan | STATUS 16/16 (100.0%)  elapsed 5m56s  eta 0s  | D=-4 x/q=10.0 x=40.0 odd N=192:7.8857748e-46 N=339:7.2483169e-46 (36s, dps 121)
+2026-10-01 22:27:39 | decay law scan | DONE   16/16 in 5m56s

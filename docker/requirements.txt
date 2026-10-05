@@ -1,0 +1,5 @@
+# Pinned numerical environment (cypari2 bundles PARI 2.17.2; needed only by scripts/borromean).
+mpmath==1.4.1
+gmpy2==2.3.1
+python-flint==0.9.0
+cypari2==2.2.4

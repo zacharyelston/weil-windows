@@ -1,0 +1,8 @@
+2026-10-01 23:53:46 | decay law scan | START  pid=53598 total=6 log=logs/decay-law-scan-20261001-235346.log args={'cmd': 'scan', 'd': '5', 'xq': '12,14,16', 'f1': 5.0, 'f2': 9.0, 'nmin': 24, 'inv': True, 'acb': False, 'json': 'data/connes/decay/scanext_D5.json'}
+2026-10-01 23:54:11 | decay law scan | STATUS 1/6 (16.7%)  elapsed 25s  eta 2m06s  | D=5 x/q=12.0 x=60.0 even N=253:3.6838593e-63 N=450:3.2913493e-63 (19s, dps 138)
+2026-10-01 23:54:37 | decay law scan | STATUS 2/6 (33.3%)  elapsed 51s  eta 1m42s  | D=5 x/q=12.0 x=60.0 odd N=253:1.1863662e-58 N=450:1.0593828e-58 (20s, dps 138)
+2026-10-01 23:55:19 | decay law scan | STATUS 3/6 (50.0%)  elapsed 1m33s  eta 1m33s  | D=5 x/q=14.0 x=70.0 even N=305:5.083773e-74 N=543:4.5383808e-74 (33s, dps 154)
+2026-10-01 23:56:01 | decay law scan | STATUS 4/6 (66.7%)  elapsed 2m15s  eta 1m07s  | D=5 x/q=14.0 x=70.0 odd N=305:2.3614493e-69 N=543:2.0845356e-69 (33s, dps 154)
+2026-10-01 23:57:07 | decay law scan | STATUS 5/6 (83.3%)  elapsed 3m20s  eta 40s  | D=5 x/q=16.0 x=80.0 even N=358:6.4508934e-85 N=639:5.7943125e-85 (51s, dps 170)
+2026-10-01 23:58:13 | decay law scan | STATUS 6/6 (100.0%)  elapsed 4m26s  eta 0s  | D=5 x/q=16.0 x=80.0 odd N=358:3.4806409e-80 N=639:3.0783703e-80 (52s, dps 170)
+2026-10-01 23:58:13 | decay law scan | DONE   6/6 in 4m26s

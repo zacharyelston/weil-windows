@@ -1,0 +1,77 @@
+2026-10-01 20:01:03 | control cert zetak even a=1.495 T1000 N1162 | START  pid=89767 total=None log=logs/control-cert-zetak-even-a-1-495-t1000-n1162-20261001-200103.log args={'function': 'zetak', 'sector': 'even', 'a': '1.495', 'tsharp': 1000, 'nmodes': 1162, 'panels': None, 'gl': 32, 'rho': '4.2360679774997896964091736687', 'prec': 256, 'chol_prec': 256, 'mu': 'auto', 'workers': 4, 'tasks': None, 'blocks': '', 'json': 'data/controls/certs/cert_zetak_even_a1.495_T1000.json'}
+2026-10-01 20:01:03 | control cert zetak even a=1.495 T1000 N1162 | INFO   zetak kappas=['1/4', '3/4'] K=[0.706272501855191 +/- 3.55e-16] pole=True; a=1.495, x=e^(2a)=[19.8856824915647 +/- 2.69e-14]
+2026-10-01 20:01:03 | control cert zetak even a=1.495 T1000 N1162 | INFO   comb n = [2, 3, 4, 5, 7, 8, 9, 16]; 2c_n/sqrt(n) = ['[0.98025814 +/- 3.47e-9]', '[2.5371364 +/- 2.40e-9]', '[0.69314718 +/- 5.61e-10]', '[1.4395250 +/- 3.12e-8]', '[2.9419396 +/- 1.61e-8]', '[0.49012907 +/- 1.74e-9]', '[1.4648164 +/- 1.52e-8]', '[0.34657359 +/- 2.81e-10]']
+2026-10-01 20:01:03 | control cert zetak even a=1.495 T1000 N1162 | INFO   A = [10.893525420475001750 +/- 6.66e-20]; beta* = [2.2399632782245723805 +/- 1.17e-20]; beta~ = [2.239963278224572380488348 +/- 4.70e-25]
+2026-10-01 20:01:03 | control cert zetak even a=1.495 T1000 N1162 | INFO   GL32 exact rule; ellipse rho=4.236067, b=[0.250000 +/- 3e-11]; |Psi-beta| <= G = [40.8744 +/- 1.58e-5]; M = [3.81587e+5 +/- 0.166]; eps_Q = [6.053e-32 +/- 4.85e-36]; c_err = N*eps_Q = [7.034e-29 +/- 1.49e-33]
+2026-10-01 20:01:03 | control cert zetak even a=1.495 T1000 N1162 | INFO   pole p_0 = [1.8947507694590600336 +/- 1.97e-20]; |p| = [1.90066934895543 +/- 3.44e-15]
+2026-10-01 20:01:03 | control cert zetak even a=1.495 T1000 N1162 | INFO   coupling: n0 = 2324, d_n0 = [4.940e-138 +/- 3.66e-142], eps_B = [2.226e-130 +/- 2.02e-134], eps_D = [3.540e-271 +/- 4.16e-275]
+2026-10-01 20:01:39 | control cert zetak even a=1.495 T1000 N1162 | STATUS 1/64 (1.6%)  elapsed 36s  eta 38m06s  | 62 panels
+2026-10-01 20:01:42 | control cert zetak even a=1.495 T1000 N1162 | STATUS 2/64 (3.1%)  elapsed 38s  eta 19m59s  | 63 panels
+2026-10-01 20:01:49 | control cert zetak even a=1.495 T1000 N1162 | STATUS 3/64 (4.7%)  elapsed 45s  eta 15m25s  | 63 panels
+2026-10-01 20:02:05 | control cert zetak even a=1.495 T1000 N1162 | STATUS 4/64 (6.2%)  elapsed 1m01s  eta 15m24s  | 62 panels
+2026-10-01 20:02:18 | control cert zetak even a=1.495 T1000 N1162 | STATUS 5/64 (7.8%)  elapsed 1m14s  eta 14m36s  | 62 panels
+2026-10-01 20:02:21 | control cert zetak even a=1.495 T1000 N1162 | STATUS 6/64 (9.4%)  elapsed 1m17s  eta 12m33s  | 63 panels
+2026-10-01 20:02:28 | control cert zetak even a=1.495 T1000 N1162 | STATUS 7/64 (10.9%)  elapsed 1m24s  eta 11m29s  | 63 panels
+2026-10-01 20:02:42 | control cert zetak even a=1.495 T1000 N1162 | STATUS 8/64 (12.5%)  elapsed 1m38s  eta 11m32s  | 62 panels
+2026-10-01 20:02:56 | control cert zetak even a=1.495 T1000 N1162 | STATUS 9/64 (14.1%)  elapsed 1m52s  eta 11m27s  | 62 panels
+2026-10-01 20:03:02 | control cert zetak even a=1.495 T1000 N1162 | STATUS 10/64 (15.6%)  elapsed 1m58s  eta 10m41s  | 63 panels
+2026-10-01 20:03:10 | control cert zetak even a=1.495 T1000 N1162 | STATUS 11/64 (17.2%)  elapsed 2m06s  eta 10m11s  | 63 panels
+2026-10-01 20:03:22 | control cert zetak even a=1.495 T1000 N1162 | STATUS 12/64 (18.8%)  elapsed 2m18s  eta 10m01s  | 62 panels
+2026-10-01 20:03:36 | control cert zetak even a=1.495 T1000 N1162 | STATUS 13/64 (20.3%)  elapsed 2m32s  eta 9m58s  | 62 panels
+2026-10-01 20:03:45 | control cert zetak even a=1.495 T1000 N1162 | STATUS 14/64 (21.9%)  elapsed 2m42s  eta 9m38s  | 63 panels
+2026-10-01 20:03:56 | control cert zetak even a=1.495 T1000 N1162 | STATUS 15/64 (23.4%)  elapsed 2m53s  eta 9m25s  | 63 panels
+2026-10-01 20:04:07 | control cert zetak even a=1.495 T1000 N1162 | STATUS 16/64 (25.0%)  elapsed 3m03s  eta 9m11s  | 62 panels
+2026-10-01 20:04:23 | control cert zetak even a=1.495 T1000 N1162 | STATUS 17/64 (26.6%)  elapsed 3m20s  eta 9m13s  | 62 panels
+2026-10-01 20:04:36 | control cert zetak even a=1.495 T1000 N1162 | STATUS 18/64 (28.1%)  elapsed 3m33s  eta 9m04s  | 63 panels
+2026-10-01 20:04:49 | control cert zetak even a=1.495 T1000 N1162 | STATUS 19/64 (29.7%)  elapsed 3m45s  eta 8m54s  | 63 panels
+2026-10-01 20:04:55 | control cert zetak even a=1.495 T1000 N1162 | STATUS 20/64 (31.2%)  elapsed 3m51s  eta 8m30s  | 62 panels
+2026-10-01 20:05:12 | control cert zetak even a=1.495 T1000 N1162 | STATUS 21/64 (32.8%)  elapsed 4m08s  eta 8m28s  | 62 panels
+2026-10-01 20:05:30 | control cert zetak even a=1.495 T1000 N1162 | STATUS 22/64 (34.4%)  elapsed 4m26s  eta 8m28s  | 63 panels
+2026-10-01 20:05:39 | control cert zetak even a=1.495 T1000 N1162 | STATUS 23/64 (35.9%)  elapsed 4m35s  eta 8m11s  | 63 panels
+2026-10-01 20:05:40 | control cert zetak even a=1.495 T1000 N1162 | STATUS 24/64 (37.5%)  elapsed 4m37s  eta 7m41s  | 62 panels
+2026-10-01 20:05:57 | control cert zetak even a=1.495 T1000 N1162 | STATUS 25/64 (39.1%)  elapsed 4m53s  eta 7m37s  | 62 panels
+2026-10-01 20:06:17 | control cert zetak even a=1.495 T1000 N1162 | STATUS 26/64 (40.6%)  elapsed 5m13s  eta 7m38s  | 63 panels
+2026-10-01 20:06:25 | control cert zetak even a=1.495 T1000 N1162 | STATUS 27/64 (42.2%)  elapsed 5m21s  eta 7m21s  | 62 panels
+2026-10-01 20:06:28 | control cert zetak even a=1.495 T1000 N1162 | STATUS 28/64 (43.8%)  elapsed 5m24s  eta 6m57s  | 63 panels
+2026-10-01 20:06:41 | control cert zetak even a=1.495 T1000 N1162 | STATUS 29/64 (45.3%)  elapsed 5m37s  eta 6m47s  | 62 panels
+2026-10-01 20:07:04 | control cert zetak even a=1.495 T1000 N1162 | STATUS 30/64 (46.9%)  elapsed 6m00s  eta 6m48s  | 63 panels
+2026-10-01 20:07:09 | control cert zetak even a=1.495 T1000 N1162 | STATUS 31/64 (48.4%)  elapsed 6m05s  eta 6m29s  | 63 panels
+2026-10-01 20:07:15 | control cert zetak even a=1.495 T1000 N1162 | STATUS 32/64 (50.0%)  elapsed 6m11s  eta 6m11s  | 62 panels
+2026-10-01 20:07:27 | control cert zetak even a=1.495 T1000 N1162 | STATUS 33/64 (51.6%)  elapsed 6m24s  eta 6m00s  | 62 panels
+2026-10-01 20:07:48 | control cert zetak even a=1.495 T1000 N1162 | STATUS 34/64 (53.1%)  elapsed 6m44s  eta 5m57s  | 63 panels
+2026-10-01 20:07:50 | control cert zetak even a=1.495 T1000 N1162 | STATUS 35/64 (54.7%)  elapsed 6m47s  eta 5m37s  | 63 panels
+2026-10-01 20:07:57 | control cert zetak even a=1.495 T1000 N1162 | STATUS 36/64 (56.2%)  elapsed 6m53s  eta 5m21s  | 62 panels
+2026-10-01 20:08:04 | control cert zetak even a=1.495 T1000 N1162 | STATUS 37/64 (57.8%)  elapsed 7m01s  eta 5m07s  | 62 panels
+2026-10-01 20:08:27 | control cert zetak even a=1.495 T1000 N1162 | STATUS 38/64 (59.4%)  elapsed 7m23s  eta 5m03s  | 63 panels
+2026-10-01 20:08:30 | control cert zetak even a=1.495 T1000 N1162 | STATUS 39/64 (60.9%)  elapsed 7m26s  eta 4m46s  | 63 panels
+2026-10-01 20:08:37 | control cert zetak even a=1.495 T1000 N1162 | STATUS 40/64 (62.5%)  elapsed 7m34s  eta 4m32s  | 62 panels
+2026-10-01 20:08:44 | control cert zetak even a=1.495 T1000 N1162 | STATUS 41/64 (64.1%)  elapsed 7m40s  eta 4m18s  | 62 panels
+2026-10-01 20:09:15 | control cert zetak even a=1.495 T1000 N1162 | STATUS 42/64 (65.6%)  elapsed 8m11s  eta 4m17s  | 63 panels
+2026-10-01 20:09:19 | control cert zetak even a=1.495 T1000 N1162 | STATUS 43/64 (67.2%)  elapsed 8m15s  eta 4m01s  | 63 panels
+2026-10-01 20:09:27 | control cert zetak even a=1.495 T1000 N1162 | STATUS 44/64 (68.8%)  elapsed 8m24s  eta 3m49s  | 62 panels
+2026-10-01 20:09:31 | control cert zetak even a=1.495 T1000 N1162 | STATUS 45/64 (70.3%)  elapsed 8m27s  eta 3m34s  | 62 panels
+2026-10-01 20:10:09 | control cert zetak even a=1.495 T1000 N1162 | STATUS 46/64 (71.9%)  elapsed 9m06s  eta 3m33s  | 63 panels
+2026-10-01 20:10:11 | control cert zetak even a=1.495 T1000 N1162 | STATUS 47/64 (73.4%)  elapsed 9m08s  eta 3m18s  | 63 panels
+2026-10-01 20:10:19 | control cert zetak even a=1.495 T1000 N1162 | STATUS 48/64 (75.0%)  elapsed 9m15s  eta 3m05s  | 62 panels
+2026-10-01 20:10:20 | control cert zetak even a=1.495 T1000 N1162 | STATUS 49/64 (76.6%)  elapsed 9m16s  eta 2m50s  | 62 panels
+2026-10-01 20:10:56 | control cert zetak even a=1.495 T1000 N1162 | STATUS 50/64 (78.1%)  elapsed 9m52s  eta 2m45s  | 63 panels
+2026-10-01 20:10:59 | control cert zetak even a=1.495 T1000 N1162 | STATUS 51/64 (79.7%)  elapsed 9m56s  eta 2m31s  | 63 panels
+2026-10-01 20:11:05 | control cert zetak even a=1.495 T1000 N1162 | STATUS 52/64 (81.2%)  elapsed 10m02s  eta 2m18s  | 62 panels
+2026-10-01 20:11:10 | control cert zetak even a=1.495 T1000 N1162 | STATUS 53/64 (82.8%)  elapsed 10m06s  eta 2m05s  | 62 panels
+2026-10-01 20:11:50 | control cert zetak even a=1.495 T1000 N1162 | STATUS 54/64 (84.4%)  elapsed 10m46s  eta 1m59s  | 63 panels
+2026-10-01 20:11:53 | control cert zetak even a=1.495 T1000 N1162 | STATUS 55/64 (85.9%)  elapsed 10m49s  eta 1m46s  | 63 panels
+2026-10-01 20:11:55 | control cert zetak even a=1.495 T1000 N1162 | STATUS 56/64 (87.5%)  elapsed 10m51s  eta 1m33s  | 62 panels
+2026-10-01 20:12:03 | control cert zetak even a=1.495 T1000 N1162 | STATUS 57/64 (89.1%)  elapsed 10m59s  eta 1m20s  | 62 panels
+2026-10-01 20:12:39 | control cert zetak even a=1.495 T1000 N1162 | STATUS 58/64 (90.6%)  elapsed 11m36s  eta 1m12s  | 63 panels
+2026-10-01 20:12:40 | control cert zetak even a=1.495 T1000 N1162 | STATUS 59/64 (92.2%)  elapsed 11m37s  eta 59s  | 62 panels
+2026-10-01 20:12:42 | control cert zetak even a=1.495 T1000 N1162 | STATUS 60/64 (93.8%)  elapsed 11m38s  eta 46s  | 63 panels
+2026-10-01 20:12:52 | control cert zetak even a=1.495 T1000 N1162 | STATUS 61/64 (95.3%)  elapsed 11m48s  eta 34s  | 62 panels
+2026-10-01 20:13:18 | control cert zetak even a=1.495 T1000 N1162 | STATUS 62/64 (96.9%)  elapsed 12m14s  eta 23s  | 63 panels
+2026-10-01 20:13:19 | control cert zetak even a=1.495 T1000 N1162 | STATUS 63/64 (98.4%)  elapsed 12m15s  eta 11s  | 63 panels
+2026-10-01 20:13:20 | control cert zetak even a=1.495 T1000 N1162 | STATUS 64/64 (100.0%)  elapsed 12m16s  eta 0s  | 62 panels
+2026-10-01 20:13:20 | control cert zetak even a=1.495 T1000 N1162 | INFO   nodes done in 736s; Psi on nodes in [-15.500564, 19.730521]
+2026-10-01 20:13:20 | control cert zetak even a=1.495 T1000 N1162 | INFO   A assembled; max entry radius 1.795e-73
+2026-10-01 20:14:24 | control cert zetak even a=1.495 T1000 N1162 | RESULT lambda_1(A_mid) = 0.00474884875654498 (residual 8.8e-20; 62s)
+2026-10-01 20:16:33 | control cert zetak even a=1.495 T1000 N1162 | RESULT Cholesky at mu = 0.00474884875180: residual_inf <= [5.195e-71 +/- 2.34e-75]; lambda_min(A) >= [0.00474884875180000 +/- 3e-22]; certified Q >= [0.00474884875180000 +/- 3e-22] ||f||^2  (POSITIVE)
+2026-10-01 20:16:33 | control cert zetak even a=1.495 T1000 N1162 | RESULT elapsed 930s
+2026-10-01 20:16:33 | control cert zetak even a=1.495 T1000 N1162 | DONE   64/64 in 15m29s

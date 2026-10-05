@@ -1,0 +1,36 @@
+2026-10-02 04:00:17 | gl2 scan6 f20 | START  pid=73892 total=10 log=logs/gl2-scan6-f20-20261002-040017.log args={'cmd': 'scan6', 'obj': 'f20', 'v': '2,2.5,3,3.5,4', 'f1': 5.0, 'f2': 9.0, 'nmin': 24, 'acb_max': 120, 'resume': False, 'method': 'inv+full', 'json': 'data/connes/gl2/scan7_f20.json'}
+2026-10-02 04:00:19 | gl2 scan6 f20 | INFO   v=2.0 x=4.0 even N_basis=35: λ = 0.130937825013 stable at dps 72 (1s); acb 0.130937825013 (rel 7.5e-18)
+2026-10-02 04:00:22 | gl2 scan6 f20 | INFO   v=2.0 x=4.0 even N_basis=57: λ = 0.130504936871 stable at dps 72 (2s); acb 0.130504936871 (rel 7.1e-18)
+2026-10-02 04:00:22 | gl2 scan6 f20 | STATUS 1/10 (10.0%)  elapsed 5s  eta 47s  | v=2.0 x=4.0 even: N=35: 0.13093783  N=57: 0.13050494  ln(λ1/λ2) = 0.00331  (dps 72, 72)
+WARN inverse iteration not converged in 40 steps (n = 35, dps 72); returning NaN
+WARN inverse iteration not converged in 40 steps (n = 35, dps 112); returning NaN
+2026-10-02 04:00:24 | gl2 scan6 f20 | INFO   v=2.0 x=4.0 odd N_basis=35: λ = 1.15550241005 stable at dps 72 (2s); acb 1.15550241005 (rel 0.0)
+WARN inverse iteration not converged in 40 steps (n = 57, dps 72); returning NaN
+WARN inverse iteration not converged in 40 steps (n = 57, dps 112); returning NaN
+2026-10-02 04:00:29 | gl2 scan6 f20 | INFO   v=2.0 x=4.0 odd N_basis=57: λ = 1.14959450234 stable at dps 72 (4s); acb 1.14959450234 (rel 0.0)
+2026-10-02 04:00:29 | gl2 scan6 f20 | STATUS 2/10 (20.0%)  elapsed 12s  eta 48s  | v=2.0 x=4.0 odd: N=35: 1.1555024  N=57: 1.1495945  ln(λ1/λ2) = 0.00513  (dps 72, 72)
+2026-10-02 04:00:32 | gl2 scan6 f20 | INFO   v=2.5 x=6.25 even N_basis=53: λ = 0.000508446009032 stable at dps 80 (2s); acb 0.000508446009032 (rel 5.1e-22)
+2026-10-02 04:00:39 | gl2 scan6 f20 | INFO   v=2.5 x=6.25 even N_basis=90: λ = 0.00050473987585 stable at dps 80 (4s); acb 0.00050473987585 (rel 4.8e-22)
+2026-10-02 04:00:39 | gl2 scan6 f20 | STATUS 3/10 (30.0%)  elapsed 21s  eta 51s  | v=2.5 x=6.25 even: N=53: 0.00050844601  N=90: 0.00050473988  ln(λ1/λ2) = 0.00732  (dps 80, 80)
+2026-10-02 04:00:42 | gl2 scan6 f20 | INFO   v=2.5 x=6.25 odd N_basis=53: λ = 0.0623282063808 stable at dps 80 (2s); acb 0.0623282063808 (rel 1.2e-17)
+2026-10-02 04:00:49 | gl2 scan6 f20 | INFO   v=2.5 x=6.25 odd N_basis=90: λ = 0.060855785884 stable at dps 80 (4s); acb 0.060855785884 (rel 8.9e-18)
+2026-10-02 04:00:49 | gl2 scan6 f20 | STATUS 4/10 (40.0%)  elapsed 32s  eta 48s  | v=2.5 x=6.25 odd: N=53: 0.062328206  N=90: 0.060855786  ln(λ1/λ2) = 0.0239  (dps 80, 80)
+2026-10-02 04:00:54 | gl2 scan6 f20 | INFO   v=3.0 x=9.0 even N_basis=73: λ = 2.0690295868e-7 stable at dps 89 (3s); acb 2.0690295868e-7 (rel 6.8e-32)
+2026-10-02 04:01:00 | gl2 scan6 f20 | INFO   v=3.0 x=9.0 even N_basis=126: λ = 2.03210428443e-7 stable at dps 89 (6s)
+2026-10-02 04:01:00 | gl2 scan6 f20 | STATUS 5/10 (50.0%)  elapsed 43s  eta 43s  | v=3.0 x=9.0 even: N=73: 2.0690296e-7  N=126: 2.0321043e-7  ln(λ1/λ2) = 0.018  (dps 89, 89)
+2026-10-02 04:01:06 | gl2 scan6 f20 | INFO   v=3.0 x=9.0 odd N_basis=73: λ = 0.000101971039984 stable at dps 89 (3s); acb 0.000101971039984 (rel 2.2e-22)
+2026-10-02 04:01:13 | gl2 scan6 f20 | INFO   v=3.0 x=9.0 odd N_basis=126: λ = 9.86020819369e-5 stable at dps 89 (7s)
+2026-10-02 04:01:13 | gl2 scan6 f20 | STATUS 6/10 (60.0%)  elapsed 55s  eta 37s  | v=3.0 x=9.0 odd: N=73: 0.00010197104  N=126: 9.8602082e-5  ln(λ1/λ2) = 0.0336  (dps 89, 89)
+2026-10-02 04:01:19 | gl2 scan6 f20 | INFO   v=3.5 x=12.25 even N_basis=95: λ = 2.15050331024e-11 stable at dps 97 (5s); acb 2.15050331024e-11 (rel 8.0e-26)
+2026-10-02 04:01:26 | gl2 scan6 f20 | INFO   v=3.5 x=12.25 even N_basis=165: λ = 2.08696007485e-11 stable at dps 97 (7s)
+2026-10-02 04:01:26 | gl2 scan6 f20 | STATUS 7/10 (70.0%)  elapsed 1m09s  eta 29s  | v=3.5 x=12.25 even: N=95: 2.1505033e-11  N=165: 2.0869601e-11  ln(λ1/λ2) = 0.03  (dps 97, 97)
+2026-10-02 04:01:33 | gl2 scan6 f20 | INFO   v=3.5 x=12.25 odd N_basis=95: λ = 1.88858112085e-8 stable at dps 97 (4s); acb 1.88858112085e-8 (rel 2.2e-30)
+2026-10-02 04:01:41 | gl2 scan6 f20 | INFO   v=3.5 x=12.25 odd N_basis=165: λ = 1.83434590257e-8 stable at dps 97 (8s)
+2026-10-02 04:01:41 | gl2 scan6 f20 | STATUS 8/10 (80.0%)  elapsed 1m24s  eta 21s  | v=3.5 x=12.25 odd: N=95: 1.8885811e-8  N=165: 1.8343459e-8  ln(λ1/λ2) = 0.0291  (dps 97, 97)
+2026-10-02 04:01:50 | gl2 scan6 f20 | INFO   v=4.0 x=16.0 even N_basis=118: λ = 1.8651369499e-15 stable at dps 105 (5s); acb 1.8651369499e-15 (rel 7.3e-29)
+2026-10-02 04:02:00 | gl2 scan6 f20 | INFO   v=4.0 x=16.0 even N_basis=207: λ = 1.76633487465e-15 stable at dps 105 (10s)
+2026-10-02 04:02:00 | gl2 scan6 f20 | STATUS 9/10 (90.0%)  elapsed 1m43s  eta 11s  | v=4.0 x=16.0 even: N=118: 1.8651369e-15  N=207: 1.7663349e-15  ln(λ1/λ2) = 0.0544  (dps 105, 105)
+2026-10-02 04:02:08 | gl2 scan6 f20 | INFO   v=4.0 x=16.0 odd N_basis=118: λ = 3.33918448494e-12 stable at dps 105 (5s); acb 3.33918448494e-12 (rel 2.1e-25)
+2026-10-02 04:02:18 | gl2 scan6 f20 | INFO   v=4.0 x=16.0 odd N_basis=207: λ = 3.26050042687e-12 stable at dps 105 (10s)
+2026-10-02 04:02:18 | gl2 scan6 f20 | STATUS 10/10 (100.0%)  elapsed 2m01s  eta 0s  | v=4.0 x=16.0 odd: N=118: 3.3391845e-12  N=207: 3.2605004e-12  ln(λ1/λ2) = 0.0238  (dps 105, 105)
+2026-10-02 04:02:18 | gl2 scan6 f20 | DONE   10/10 in 2m01s

@@ -1,0 +1,16 @@
+[
+ {
+  "obj": "g4",
+  "x": "13",
+  "eps": 1,
+  "m0": 0,
+  "Q": "0.000270059880355596",
+  "F0_sq": "2.564949357",
+  "sum_pos": "0.000270059860952083",
+  "sum_with_central": "0.000270059860952083",
+  "expected_tail": "2.084e-11",
+  "diff_with_central": "1.94e-11",
+  "ratio_with_central": "0.931",
+  "diff_without_central": "1.94035e-11"
+ }
+]

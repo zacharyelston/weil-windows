@@ -1,0 +1,64 @@
+2026-10-02 08:52:46 | gl2 zeros 43a1 | START  pid=32971 total=None log=logs/gl2-zeros-43a1-20261002-085246.log args={'cmd': 'zeros', 'curve': '43a1', 'tmax': 214.0, 'step': '0.05', 'count_at': '20,40,60,80,100,120', 'json': '<repo>/.claude/worktrees/agent-a6f1432289c541306/data/connes/gl2/zeros_43a1_chunk_182_214.json', 'tmin': 182.0, 'chunk': True}
+2026-10-02 08:53:08 | gl2 zeros 43a1 | INFO   zero 1: 182.043623732261
+2026-10-02 08:53:42 | gl2 zeros 43a1 | INFO   zero 2: 182.356473139837
+2026-10-02 08:54:36 | gl2 zeros 43a1 | INFO   zero 3: 183.157193439346
+2026-10-02 08:55:01 | gl2 zeros 43a1 | INFO   zero 4: 183.283564984523
+2026-10-02 08:55:50 | gl2 zeros 43a1 | INFO   zero 5: 183.982837945091
+2026-10-02 08:56:34 | gl2 zeros 43a1 | INFO   zero 6: 184.202024921736
+2026-10-02 08:57:06 | gl2 zeros 43a1 | STATUS   inner 185/214 (86.4%)  elapsed 4m19s  | zeros of L(43a1)
+2026-10-02 08:57:39 | gl2 zeros 43a1 | INFO   zero 7: 185.334731588809
+2026-10-02 08:58:48 | gl2 zeros 43a1 | INFO   zero 8: 186.295929499752
+2026-10-02 08:59:33 | gl2 zeros 43a1 | INFO   zero 9: 186.792011540305
+2026-10-02 09:00:23 | gl2 zeros 43a1 | INFO   zero 10: 187.542227670827
+2026-10-02 09:01:06 | gl2 zeros 43a1 | INFO   zero 11: 188.131828671719
+2026-10-02 09:01:50 | gl2 zeros 43a1 | INFO   zero 12: 188.450094018752
+2026-10-02 09:02:41 | gl2 zeros 43a1 | INFO   zero 13: 188.870927438657
+2026-10-02 09:03:39 | gl2 zeros 43a1 | INFO   zero 14: 189.713182742939
+2026-10-02 09:03:51 | gl2 zeros 43a1 | STATUS   inner 190/214 (88.8%)  elapsed 11m05s  | zeros of L(43a1)
+2026-10-02 09:04:20 | gl2 zeros 43a1 | INFO   zero 15: 190.282169775979
+2026-10-02 09:04:54 | gl2 zeros 43a1 | INFO   zero 16: 190.646918710605
+2026-10-02 09:05:39 | gl2 zeros 43a1 | INFO   zero 17: 191.30287052823
+2026-10-02 09:06:13 | gl2 zeros 43a1 | INFO   zero 18: 191.702917791531
+2026-10-02 09:06:58 | gl2 zeros 43a1 | INFO   zero 19: 192.354642396654
+2026-10-02 09:07:41 | gl2 zeros 43a1 | INFO   zero 20: 192.95023686074
+2026-10-02 09:08:37 | gl2 zeros 43a1 | INFO   zero 21: 193.9452005943
+2026-10-02 09:09:12 | gl2 zeros 43a1 | INFO   zero 22: 194.281675407687
+2026-10-02 09:09:44 | gl2 zeros 43a1 | STATUS   inner 195/214 (91.1%)  elapsed 16m57s  | zeros of L(43a1)
+2026-10-02 09:10:09 | gl2 zeros 43a1 | INFO   zero 23: 195.074984042832
+2026-10-02 09:10:48 | gl2 zeros 43a1 | INFO   zero 24: 195.426863579099
+2026-10-02 09:11:29 | gl2 zeros 43a1 | INFO   zero 25: 195.79559615498
+2026-10-02 09:12:48 | gl2 zeros 43a1 | INFO   zero 26: 196.76946179658
+2026-10-02 09:14:07 | gl2 zeros 43a1 | INFO   zero 27: 197.728543949637
+2026-10-02 09:14:47 | gl2 zeros 43a1 | INFO   zero 28: 198.122716188249
+2026-10-02 09:15:44 | gl2 zeros 43a1 | INFO   zero 29: 198.835589816206
+2026-10-02 09:16:14 | gl2 zeros 43a1 | INFO   zero 30: 198.984461704167
+2026-10-02 09:17:09 | gl2 zeros 43a1 | INFO   zero 31: 199.713925852121
+2026-10-02 09:17:22 | gl2 zeros 43a1 | STATUS   inner 200/214 (93.5%)  elapsed 24m35s  | zeros of L(43a1)
+2026-10-02 09:17:53 | gl2 zeros 43a1 | INFO   zero 32: 200.185681548863
+2026-10-02 09:18:24 | gl2 zeros 43a1 | INFO   zero 33: 200.38319312713
+2026-10-02 09:19:20 | gl2 zeros 43a1 | INFO   zero 34: 201.181880486813
+2026-10-02 09:19:58 | gl2 zeros 43a1 | INFO   zero 35: 201.682080564556
+2026-10-02 09:20:52 | gl2 zeros 43a1 | INFO   zero 36: 202.565534292112
+2026-10-02 09:21:33 | gl2 zeros 43a1 | INFO   zero 37: 203.184602101762
+2026-10-02 09:22:05 | gl2 zeros 43a1 | INFO   zero 38: 203.527528464001
+2026-10-02 09:22:52 | gl2 zeros 43a1 | INFO   zero 39: 204.309701642017
+2026-10-02 09:23:18 | gl2 zeros 43a1 | STATUS   inner 205/214 (95.8%)  elapsed 30m31s  | zeros of L(43a1)
+2026-10-02 09:23:55 | gl2 zeros 43a1 | INFO   zero 40: 205.436349200722
+2026-10-02 09:24:22 | gl2 zeros 43a1 | INFO   zero 41: 205.736403922763
+2026-10-02 09:24:53 | gl2 zeros 43a1 | INFO   zero 42: 206.29283768183
+2026-10-02 09:25:25 | gl2 zeros 43a1 | INFO   zero 43: 206.849566977688
+2026-10-02 09:25:47 | gl2 zeros 43a1 | INFO   zero 44: 207.043729356526
+2026-10-02 09:26:29 | gl2 zeros 43a1 | INFO   zero 45: 207.894982639046
+2026-10-02 09:26:58 | gl2 zeros 43a1 | INFO   zero 46: 208.28695829714
+2026-10-02 09:27:28 | gl2 zeros 43a1 | INFO   zero 47: 208.84250336259
+2026-10-02 09:28:07 | gl2 zeros 43a1 | INFO   zero 48: 209.750925668305
+2026-10-02 09:28:14 | gl2 zeros 43a1 | STATUS   inner 210/214 (98.1%)  elapsed 35m28s  | zeros of L(43a1)
+2026-10-02 09:28:40 | gl2 zeros 43a1 | INFO   zero 49: 210.401707966919
+2026-10-02 09:29:02 | gl2 zeros 43a1 | INFO   zero 50: 210.696574146011
+2026-10-02 09:29:29 | gl2 zeros 43a1 | INFO   zero 51: 211.141133740606
+2026-10-02 09:29:52 | gl2 zeros 43a1 | INFO   zero 52: 211.385888907536
+2026-10-02 09:30:38 | gl2 zeros 43a1 | INFO   zero 53: 212.488967817392
+2026-10-02 09:31:16 | gl2 zeros 43a1 | INFO   zero 54: 212.967609549622
+2026-10-02 09:31:59 | gl2 zeros 43a1 | INFO   zero 55: 213.757487677283
+2026-10-02 09:32:08 | gl2 zeros 43a1 | RESULT 43a1: 55 zeros in (182.0, 214.0] with step 0.05; first ['182.0436237', '182.3564731', '183.1571934', '183.283565']
+2026-10-02 09:32:08 | gl2 zeros 43a1 | DONE   0/0 in 39m21s

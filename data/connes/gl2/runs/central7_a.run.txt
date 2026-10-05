@@ -1,0 +1,6 @@
+2026-10-02 03:44:44 | gl2 central7 | START  pid=71265 total=None log=logs/gl2-central7-20261002-034444.log args={'cmd': 'central7', 'objects': 'f16,f18,f20,f22', 'x': '13', 'json': 'data/connes/gl2/central7_a.json'}
+2026-10-02 03:45:42 | gl2 central7 | RESULT f16 (ε = +1, m0 = 0) x = 13, c = (1, 1/√2, 0…): Q = 0.00177163389439;  F(0)² = 2.5649494;  Q − (Σ_γ>0 + m0F(0)²) = 1.58e-11 (tail 1.72e-11, ratio 0.92);  without the central term: Q − Σ_γ>0 = 1.58486e-11
+2026-10-02 03:46:31 | gl2 central7 | RESULT f18 (ε = -1, m0 = 1) x = 13, c = (1, 1/√2, 0…): Q = 2.56536208559;  F(0)² = 2.5649494;  Q − (Σ_γ>0 + m0F(0)²) = 1.88e-11 (tail 1.72e-11, ratio 1.09);  without the central term: Q − Σ_γ>0 = 2.56495
+2026-10-02 03:47:20 | gl2 central7 | RESULT f20 (ε = +1, m0 = 0) x = 13, c = (1, 1/√2, 0…): Q = 0.174616049225;  F(0)² = 2.5649494;  Q − (Σ_γ>0 + m0F(0)²) = 1.94e-11 (tail 1.72e-11, ratio 1.12);  without the central term: Q − Σ_γ>0 = 1.93577e-11
+2026-10-02 03:48:08 | gl2 central7 | RESULT f22 (ε = -1, m0 = 1) x = 13, c = (1, 1/√2, 0…): Q = 2.568446768;  F(0)² = 2.5649494;  Q − (Σ_γ>0 + m0F(0)²) = 1.71e-11 (tail 1.72e-11, ratio 0.99);  without the central term: Q − Σ_γ>0 = 2.56495
+2026-10-02 03:48:08 | gl2 central7 | DONE   0/0 in 3m23s

@@ -1,0 +1,102 @@
+[
+ {
+  "function": "ftstar",
+  "sector": "even",
+  "x": "3.0",
+  "n": 48,
+  "dps": 40,
+  "lam_min_Q": "1.37199430646",
+  "lam_min_P_all": "0.0458693308814",
+  "lam_min_P1": "0.0458693308814",
+  "naive_min_pair1": "0.0",
+  "reverse_R2_even_realpair": "44.15080506",
+  "sigma1": "0.0",
+  "ln_sigma1": null,
+  "on_minimiser": {
+   "Q": "1.3719943",
+   "T_pair1": "0.36414123",
+   "T_all_pairs": "0.36414123",
+   "P_all": "1.0078531"
+  }
+ },
+ {
+  "function": "ftstar",
+  "sector": "even",
+  "x": "5.0",
+  "n": 48,
+  "dps": 40,
+  "lam_min_Q": "0.568872389632",
+  "lam_min_P_all": "0.000716708424263",
+  "lam_min_P1": "0.000716708424263",
+  "naive_min_pair1": "0.0",
+  "reverse_R2_even_realpair": "3464.618622",
+  "sigma1": "0.0",
+  "ln_sigma1": null,
+  "on_minimiser": {
+   "Q": "0.56887239",
+   "T_pair1": "0.041992036",
+   "T_all_pairs": "0.041992036",
+   "P_all": "0.52688035"
+  }
+ },
+ {
+  "function": "ftstar",
+  "sector": "even",
+  "x": "7.0",
+  "n": 48,
+  "dps": 40,
+  "lam_min_Q": "0.0813282141659",
+  "lam_min_P_all": "5.37182339518e-6",
+  "lam_min_P1": "5.37182339518e-6",
+  "naive_min_pair1": "0.0",
+  "reverse_R2_even_realpair": "489293.1606",
+  "sigma1": "0.0",
+  "ln_sigma1": null,
+  "on_minimiser": {
+   "Q": "0.081328214",
+   "T_pair1": "0.00086090438",
+   "T_all_pairs": "0.00086090438",
+   "P_all": "0.08046731"
+  }
+ },
+ {
+  "function": "ftstar",
+  "sector": "even",
+  "x": "8.84631",
+  "n": 48,
+  "dps": 40,
+  "lam_min_Q": "0.0040064288303",
+  "lam_min_P_all": "7.8634441747e-8",
+  "lam_min_P1": "7.8634441747e-8",
+  "naive_min_pair1": "0.0",
+  "reverse_R2_even_realpair": "34322796.56",
+  "sigma1": "0.0",
+  "ln_sigma1": null,
+  "on_minimiser": {
+   "Q": "0.0040064288",
+   "T_pair1": "2.1107833e-6",
+   "T_all_pairs": "2.1107833e-6",
+   "P_all": "0.004004318"
+  }
+ },
+ {
+  "function": "ftstar",
+  "sector": "even",
+  "x": "10.0",
+  "n": 48,
+  "dps": 40,
+  "lam_min_Q": "0.000617547615588",
+  "lam_min_P_all": "3.73590036756e-9",
+  "lam_min_P1": "3.73590036756e-9",
+  "naive_min_pair1": "0.0",
+  "reverse_R2_even_realpair": "729095861.3",
+  "sigma1": "0.0",
+  "ln_sigma1": null,
+  "on_minimiser": {
+   "Q": "0.00061754762",
+   "T_pair1": "5.0573902e-8",
+   "T_all_pairs": "5.0573902e-8",
+   "P_all": "0.00061749704"
+  }
+ }
+]

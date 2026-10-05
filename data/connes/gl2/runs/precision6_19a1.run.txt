@@ -1,0 +1,12 @@
+2026-10-02 02:18:32 | gl2 precision 19a1 | START  pid=54683 total=10 log=logs/gl2-precision-19a1-20261002-021832.log args={'cmd': 'precision', 'curve': '19a1', 'extra': 80, 'file': 'data/connes/gl2/scan6_19a1.json', 'out': 'data/connes/gl2/precision6_19a1.json'}
+2026-10-02 02:18:34 | gl2 precision 19a1 | STATUS 1/10 (10.0%)  elapsed 2s  eta 20s  | 19a1 v=1.5 even N=109: dps 64 → 144: 1.39492766141e-11 → 1.39492766141e-11  rel 3.39e-15
+2026-10-02 02:18:36 | gl2 precision 19a1 | STATUS 2/10 (20.0%)  elapsed 4s  eta 18s  | 19a1 v=1.5 odd N=109: dps 64 → 144: 7.30090983779e-9 → 7.30090983779e-9  rel 2.6e-16
+2026-10-02 02:18:41 | gl2 precision 19a1 | STATUS 3/10 (30.0%)  elapsed 8s  eta 20s  | 19a1 v=2.0 even N=163: dps 72 → 152: 1.24324588403e-16 → 1.24324588403e-16  rel 8.56e-16
+2026-10-02 02:18:45 | gl2 precision 19a1 | STATUS 4/10 (40.0%)  elapsed 13s  eta 19s  | 19a1 v=2.0 odd N=163: dps 72 → 152: 1.4942986726e-13 → 1.4942986726e-13  rel 2.12e-15
+2026-10-02 02:18:52 | gl2 precision 19a1 | STATUS 5/10 (50.0%)  elapsed 20s  eta 20s  | 19a1 v=2.5 even N=222: dps 80 → 160: 6.74474911751e-22 → 6.74474911751e-22  rel 6.96e-16
+2026-10-02 02:18:59 | gl2 precision 19a1 | STATUS 6/10 (60.0%)  elapsed 27s  eta 18s  | 19a1 v=2.5 odd N=222: dps 80 → 160: 1.50871288225e-18 → 1.50871288225e-18  rel 1.03e-15
+2026-10-02 02:19:10 | gl2 precision 19a1 | STATUS 7/10 (70.0%)  elapsed 37s  eta 16s  | 19a1 v=3.0 even N=285: dps 89 → 169: 2.5931625706e-27 → 2.5931625706e-27  rel 9.86e-16
+2026-10-02 02:19:20 | gl2 precision 19a1 | STATUS 8/10 (80.0%)  elapsed 48s  eta 12s  | 19a1 v=3.0 odd N=285: dps 89 → 169: 1.23719963839e-23 → 1.23719963839e-23  rel 3.02e-15
+2026-10-02 02:19:37 | gl2 precision 19a1 | STATUS 9/10 (90.0%)  elapsed 1m04s  eta 7s  | 19a1 v=3.5 even N=351: dps 97 → 177: 1.14543293544e-32 → 1.14543293544e-32  rel 3.21e-15
+2026-10-02 02:19:53 | gl2 precision 19a1 | STATUS 10/10 (100.0%)  elapsed 1m21s  eta 0s  | 19a1 v=3.5 odd N=351: dps 97 → 177: 6.46346474524e-29 → 6.46346474524e-29  rel 1.65e-16
+2026-10-02 02:19:53 | gl2 precision 19a1 | DONE   10/10 in 1m21s
