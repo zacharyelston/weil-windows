@@ -34,7 +34,7 @@ The labels are:
 ## Layout
 
 - `docs/`: the report, and one document per result, each with its registrations, results and audits.
-- `docs/viz/zero_torus.html`: an interactive page of ζ's zeros on the prime torus, the window bounds and the Borromean readout. Open it in a browser.
+- `docs/viz/zero_torus.html`: an interactive page of ζ's zeros on the prime torus, the window bounds and the Borromean readout. It is live at **https://zacharyelston.github.io/weil-windows/viz/zero_torus.html**.
 - `scripts/`: the code, Python with mpmath, python-flint (Arb) and cypari2 (PARI).
 - `data/`: every committed result the documents quote.
 - `docker/`: the pinned environment.
@@ -65,7 +65,7 @@ Each document names the commands that produced its data. Some runs are long. The
 - the registered tests that failed or were killed are reported alongside the ones that held;
 - one void run is kept with its explanation (`data/borromean/void_float_lambda/`).
 
-**History.** This repository is a curated snapshot of a larger private research repository. Its history starts at the snapshot.
+**History.** This repository is a curated snapshot of a larger private research repository. Its history starts at the snapshot. References in `docs/` to `zacharyelston/rh2` issues or commit hashes point into that private repository. The relevant registrations, reviews and results are reproduced in the documents here.
 
 ## AI assistance and responsibility
 
