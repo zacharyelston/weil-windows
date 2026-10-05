@@ -14,6 +14,9 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.23163864
     description: "Version 1.0.0"
+  - type: doi
+    value: 10.5281/zenodo.23164450
+    description: "Version 1.0.1"
   - type: url
     value: "https://zacharyelston.github.io/weil-windows/"
 repository-code: "https://github.com/zacharyelston/weil-windows"

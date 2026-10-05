@@ -4,6 +4,8 @@ Each release on GitHub is archived on Zenodo with its own DOI. The concept DOI [
 
 ## 1.0.1 (2026-10-05)
 
+DOI [10.5281/zenodo.23164450](https://doi.org/10.5281/zenodo.23164450).
+
 - Visual (`docs/viz/zero_torus.html`): the layer guide now says the natural candidate for a positive lower bound is a *tempered* Euler product, one whose local factors obey the Ramanujan bound. An Euler product alone is not enough: the octonion lattice's zeta, ζ(s)ζ(s−3), has one, yet none of its zeros lie on its center line.
 - Citation metadata points to the concept DOI.
 - The report is unchanged from 1.0.0.
