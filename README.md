@@ -39,6 +39,13 @@ The labels are:
 - `data/`: every committed result the documents quote.
 - `docker/`: the pinned environment.
 
+## Website
+
+GitHub Pages serves `docs/` through `.github/workflows/pages.yml`:
+- the landing page at https://zacharyelston.github.io/weil-windows/;
+- the interactive visual at https://zacharyelston.github.io/weil-windows/viz/zero_torus.html;
+- the report at https://zacharyelston.github.io/weil-windows/report/weil_windows_report_v1.pdf.
+
 ## Reproduce
 
 ```bash
