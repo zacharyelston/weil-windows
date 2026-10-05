@@ -2,6 +2,10 @@
 
 Each release on GitHub is archived on Zenodo with its own DOI. The concept DOI [10.5281/zenodo.23163863](https://doi.org/10.5281/zenodo.23163863) always resolves to the latest version.
 
+## Unreleased
+
+- `docs/DECAY_LAW.md`, P-R389: withdrew the statement that 389a1's larger sector gap is "consistent with the weight m₀|F(0)|² = 2|F(0)|²". The central term saturates: once λ is small, any m₀ ≥ 1 acts as the constraint F(0) = 0. So the gap must come from the other terms. The sector-order conjecture is unaffected, but it can only concern m₀ = 0 against m₀ > 0.
+
 ## 1.0.1 (2026-10-05)
 
 DOI [10.5281/zenodo.23164450](https://doi.org/10.5281/zenodo.23164450).
