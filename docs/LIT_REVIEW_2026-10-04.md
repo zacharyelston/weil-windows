@@ -1,5 +1,11 @@
 # Literature review for publishability (2026-10-04)
 
+> **Correction (2026-10-05).** A second review found earlier work this one missed. The verdicts below on the decay law (E1, "novel beyond ζ"), on the exclusion term (C4) and on the ζ comparison with Zhu out to x = 54.6 are superseded. What remains novel is stated in report version 1.1, §9 (Related work).
+> - **D. Joubert,** github.com/darreal44/riemann-weil-phenomenology (Zenodo 22557789, 6 Sep 2026): a depth law −ln λ ≈ 11·D_max for ζ, real characters and elliptic curves. It uses the same counting heuristic, and its fitted slopes imply the x/q collapse. It also has zero deletion and certified sub-Euler-product violations.
+> - **S. Elder,** Zenodo 23113186 (3 Oct 2026): the ζ prolate ladder, and the comparison with Zhu out to x = 54.6.
+> - **reescalder/rh-lab and Kramarenko-Byrd** (Zenodo 22885925): the rank-2 quadruple term and the negative index.
+> - **Senke,** Zenodo 22871384 (restricted): a claimed certificate at support 2.406 in both sectors.
+
 Three independent read-only reviewers covered three clusters: the certificates and R1, the R2 bound, and the decay law. The orchestrator spot-checked their key claims, as noted below. Labels: [R] read full text or the relevant sections, [A] abstract or metadata only, [S] secondhand, [V] verified by the orchestrator against the primary record.
 
 ## Verdict

@@ -2,7 +2,7 @@
   "title": "Weil positivity on finite windows across L-functions: certified windows, a pre-registered decay law, and an unconditional bound for Dirichlet L-functions",
   "upload_type": "publication",
   "publication_type": "report",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "creators": [
     {
       "name": "Elston, Zac"
@@ -31,5 +31,5 @@
       "scheme": "url"
     }
   ],
-  "notes": "Version 1.0.1 changes only the interactive visual (docs/viz/zero_torus.html): its layer guide now says the natural candidate for a positive lower bound is a tempered Euler product, one whose local factors obey the Ramanujan bound, and gives the octonion lattice zeta zeta(s)zeta(s-3) as an Euler product with no zeros on its center line. The report is unchanged from 1.0.0. Code (scripts/, docker/) is under the MIT License; text, report and data (docs/, data/) under CC BY 4.0. AI assistance: computation, derivations, code and drafting were carried out with AI assistance (Claude Opus 5.5, with some work by Claude Fable 5.1, Anthropic). Independent review and audit were done by GPT Astra and GPT Sol 6.1 and by separate Claude agents. The author is responsible for all content. Unrefereed."
+  "notes": "Version 1.1.0: report version 1.1. Citations and priority statements were corrected after a second literature review (5 October 2026), adding Joubert, Elder, Lee, Kastoris, Kim et al., Senke, reescalder, Kramarenko-Byrd and Alpöge–Furman, and updating Mori's revised papers. No number, table or claim of fact changed. Code (scripts/, docker/) is under the MIT License; text, report and data (docs/, data/) under CC BY 4.0. AI assistance: computation, derivations, code and drafting were carried out with AI assistance (Claude Opus 5.5, with some work by Claude Fable 5.1, Anthropic). Independent review and audit were done by GPT Astra and GPT Sol 6.1 and by separate Claude agents. The author is responsible for all content. Unrefereed."
 }
