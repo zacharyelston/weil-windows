@@ -1,5 +1,7 @@
 # Weil positivity on finite windows across L-functions
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23163864.svg)](https://doi.org/10.5281/zenodo.23163864)
+
 Code, data and documentation for the technical report **"Weil positivity on finite windows across L-functions: certified windows, a pre-registered decay law, and an unconditional bound for Dirichlet L-functions"** (Zac Elston, version 1, October 2026). The report is in [`docs/report/weil_windows_report_v1.pdf`](docs/report/weil_windows_report_v1.pdf), with its LaTeX source alongside.
 
 For an L-function and x > 1, let λ_s(x) be the smallest value of Weil's quadratic form on unit-norm test functions supported in a window of length log x, in the even (s = 0) or odd (s = 1) sector. The Riemann hypothesis for that L-function is equivalent to λ_s(x) ≥ 0 for every x. Nothing here proves or disproves it. Upper bounds on λ also hold for functions with off-line zeros, and certificates exist only for finitely many windows.
@@ -84,4 +86,6 @@ Code (`scripts/`, `docker/`) is under the MIT License. Text, report and data (`d
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff).
+Zac Elston, *Weil positivity on finite windows across L-functions: certified windows, a pre-registered decay law, and an unconditional bound for Dirichlet L-functions*, technical report v1.0.0, Zenodo (2026), [doi:10.5281/zenodo.23163864](https://doi.org/10.5281/zenodo.23163864).
+
+To cite whichever version is latest, use the concept DOI [10.5281/zenodo.23163863](https://doi.org/10.5281/zenodo.23163863). See also [`CITATION.cff`](CITATION.cff).

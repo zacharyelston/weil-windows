@@ -5,7 +5,15 @@ type: report
 authors:
   - family-names: Elston
     given-names: Zac
-version: "1.0"
+version: "1.0.0"
+doi: 10.5281/zenodo.23163864
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23163863
+    description: "Concept DOI (all versions)"
+  - type: url
+    value: "https://zacharyelston.github.io/weil-windows/"
+repository-code: "https://github.com/zacharyelston/weil-windows"
 date-released: 2026-10-05
 license: [MIT, CC-BY-4.0]
 keywords: [Riemann hypothesis, Weil positivity, explicit formula, L-functions, interval arithmetic, Dirichlet L-functions]
