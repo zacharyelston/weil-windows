@@ -7,7 +7,7 @@ For L(s, chi_D) (D = 1: zeta) and sector s, with lam = sqrt(x/q), c = 2 pi lam^2
     phi = beta0(n+4) xi_n - beta0(n) xi_{n+4}  (vanishing integral)        (zeta, n = 2s)
     G(w) = w^{1/2} sum_{n <= lam sqrt(q)/w} chi(n) phi(n w / sqrt q),  f(u) = G(e^u),  u in [-L/2, L/2]
     f_s = (f(u) + sigma f(-u))/2  (sector projection; f is in the sector up to leakage).
-The Rayleigh quotient of f_s in rh2's N-mode basis (N = the scan's n2), with rh2's explicit-formula matrix
+The Rayleigh quotient of f_s in our N-mode basis (N = the scan's n2), with our explicit-formula matrix
 (decay_law_mp.zeros_side), is an unconditional upper bound for the window minimum; it is compared with the scan's
 lambda at the same N and with the Fuchs-Slepian leakage l_n(c).
 

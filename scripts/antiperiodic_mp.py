@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """The "720°" basis: Weil's form on half-integer (antiperiodic) frequencies.
 
-rh2's bases on the window [−L/2, L/2] use the periodic frequencies ω_k = 2πk/L: cos(ω_k u), with zero
+our bases on the window [−L/2, L/2] use the periodic frequencies ω_k = 2πk/L: cos(ω_k u), with zero
 slope at the ends, and sin(ω_k u), which vanishes there. The antiperiodic frequencies
 ω_k = 2π(k + ½)/L close only after two trips across the window:
   - even sector: cos(ω_k u) vanishes at u = ±L/2 (Dirichlet), like ζ's near-minimiser;

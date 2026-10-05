@@ -1,5 +1,5 @@
-"""R1 helpers: the contribution of a zero quadruple ½ ± δ ± iγ₀ to Weil's form on rh2's window
-[−L/2, L/2] (L = 2a = log x), in rh2's orthonormal bases, and the Sherman–Morrison tests.
+"""R1 helpers: the contribution of a zero quadruple ½ ± δ ± iγ₀ to Weil's form on our window
+[−L/2, L/2] (L = 2a = log x), in our orthonormal bases, and the Sherman–Morrison tests.
 
 Zeros side: Q(f) = Σ_ρ F(ρ)F(1−ρ), F(s) = ∫ f(u) e^{(s−½)u} du. For real f and the quadruple
 {ρ, ρ̄, 1−ρ, 1−ρ̄}, ρ = ½ + δ + iγ₀ (δ ≠ 0, γ₀ ≠ 0):
@@ -32,7 +32,7 @@ def I_ss(nu, d, L):
 
 
 def pair_vectors(delta, gamma, L, n, parity):
-    """(c, s) as mp column vectors in rh2's basis of the given parity."""
+    """(c, s) as mp column vectors in our basis of the given parity."""
     d, g = mp.mpf(delta), mp.mpf(gamma)
     r = mp.sqrt(2 / L)
     om = lambda k: 2 * mp.pi * k / L

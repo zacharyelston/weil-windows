@@ -1,4 +1,4 @@
-"""Issue zacharyelston/rh2#7, step 1: pipeline gates for the Rédei L-function L(s, ρ) of (p1, p2) = (5, 29).
+"""Issue the private research log (issue 7), step 1: pipeline gates for the Rédei L-function L(s, ρ) of (p1, p2) = (5, 29).
 
 Pre-registered in docs/BORROMEAN.md (the review's step 1). Gates only; there is no scientific kill in this step.
 Stages, in the registered order:
@@ -375,7 +375,7 @@ def main():
     args = ap_.parse_args()
     stages = args.stages.split(",")
     xs = [2 * 500 ** (j / 1999) for j in range(2000)]
-    out = {"issue": "zacharyelston/rh2#7", "step": 1, "pair": [P1, P2], "T": T, "chunk": CHUNK, "M_prime": M_PRIME,
+    out = {"issue": "the private research log (issue 7)", "step": 1, "pair": [P1, P2], "T": T, "chunk": CHUNK, "M_prime": M_PRIME,
            "pari": [int(v) for v in pari("version()")][:3], "stages_run": stages}
     t_all = time.time()
     if "g0" in stages:

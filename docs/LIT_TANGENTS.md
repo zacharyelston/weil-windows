@@ -25,7 +25,7 @@ Quotes are at most one per source and under 15 words. Everything else is paraphr
 - **The closest statement is Connes 2026, §6.4.** It gives the e^{−4πx} law, with exponent 9/2 on x, for the prolate quantity 1 − χ₂. It compares the Weil minimum ε(λ) with 1 − χ₂ only through a figure.
 - **Zhu conjectures a different law.** His Landau–Widom form is −ln λ* ≈ 2π² N(T*)/ln N(T*). Asymptotically it is steeper than 4πx, by a factor of π/2.
 - **No source states the x/q collapse for Weil's form.**
-- **The Fuchs–Slepian prefactor is c^{n+½}.** That gives 9/2 for h₄ and 13/2 for h₆, and no integer index gives exactly 5 or 7. rh2's certified minima track h₄ in the even sector and h₆ in the odd sector, each with a slowly growing ratio (table below). That accounts for both fitted exponents, γ ≈ 9/2 + ½ and γ ≈ 13/2 + ½.
+- **The Fuchs–Slepian prefactor is c^{n+½}.** That gives 9/2 for h₄ and 13/2 for h₆, and no integer index gives exactly 5 or 7. Our certified minima track h₄ in the even sector and h₆ in the odd sector, each with a slowly growing ratio (table below). That accounts for both fitted exponents, γ ≈ 9/2 + ½ and γ ≈ 13/2 + ½.
 
 ### What each source states
 
@@ -44,16 +44,16 @@ Quotes are at most one per source and under 15 words. Everything else is paraphr
 | **H. Yoshida**, *On Hermitian forms attached to zeta functions*, Adv. Stud. Pure Math. 21 (1992) 281–325 [S: Suzuki §1.1] | No | (1) Positivity for small a (Lemma 2). (2) RH ⇔ non-degeneracy on a completed space (Thm. 2). (3) Prop. 1: Q ≥ 0 on all odd v implies RH; on all even v, RH except possibly real zeros. (4) Works on K(a), restrictions of 2a-periodic functions. |
 | **E. Bombieri**, Rend. Lincei 11 (2000) 183–233 [S: `docs/LITERATURE_PASS.md`] | No (small support only) | (1) Thm. 12: for support length b < log 2, Q ≥ (log(1/b) − log log(1/b) − O(1))‖F‖². (2) Thm. 3: the minimum is attained. |
 | **J.-F. Burnol**: C. R. 333 (2001) 201–206, [arXiv:math/0105120](https://arxiv.org/abs/math/0105120); C. R. 335 (2002) 689–692; JTNB 16 (2004) 65–94 [A; as cited by CCM 2024] | No | Sonine and de Branges spaces from the Fourier transform, and vectors attached to the zeros. Nothing on the minimum versus support in the abstracts. |
-| **V. Liu**, *Certified Weil Positivity Beyond the Unit Window*, [alphaxiv](https://www.alphaxiv.org/abs/2609.weil-positivity-riemann-zeta-bounds) [A] | No | (1) Certified constants 2⁻¹⁵¹ at half-width 1 and 2⁻⁴⁹¹⁶² at half-width 17/16. (2) A −1/8 "threshold" beyond log 8/2 belongs to one localisation strategy. [D] 2⁻¹⁵¹ ≈ 3.5·10⁻⁴⁶ is about 16 orders below rh2's 4.6·10⁻³⁰ at a = 1 (`docs/GRID_NORM.md`), so these constants say nothing about the true decay. |
+| **V. Liu**, *Certified Weil Positivity Beyond the Unit Window*, [alphaxiv](https://www.alphaxiv.org/abs/2609.weil-positivity-riemann-zeta-bounds) [A] | No | (1) Certified constants 2⁻¹⁵¹ at half-width 1 and 2⁻⁴⁹¹⁶² at half-width 17/16. (2) A −1/8 "threshold" beyond log 8/2 belongs to one localisation strategy. [D] 2⁻¹⁵¹ ≈ 3.5·10⁻⁴⁶ is about 16 orders below our 4.6·10⁻³⁰ at a = 1 (`docs/GRID_NORM.md`), so these constants say nothing about the true decay. |
 
 **Conductor scaling.** No paper found states λ_χ(x) ≈ F(x/q) for Weil's window form.
 - **Literature mechanism consistent with it.** For primitive χ mod q, the twisted theta and Poisson formula behind the functional equation, with factor (q/π)^{s/2}, puts the self-dual point at 1/√q. That is standard (e.g. Davenport, *Multiplicative Number Theory*, Ch. 9; [U]: not re-read here).
 - [D] So the prolate bandwidth becomes c = 2πλ²/q.
-- rh2 already found the DH floor at c = 2πx/5 (`docs/CONNES_LETTER.md`).
+- This work already found the DH floor at c = 2πx/5 (`docs/CONNES_LETTER.md`).
 - Kim et al.'s B₀ = log q − 2 log 2 is a different regime: small a, additive in log q.
 - [D] Consistency check. `docs/EPSTEIN.md` reports ζ_K's ε₀ ∼ e^{−0.5x} for x ∈ [20, 40]. The conductor-20 rate is 4π/20 = 0.628, and a prefactor x^{γ} lowers the local slope to 0.628 − γ/x. That is ≈ 0.51 at x = 30 for γ ≈ 3.5. So ζ_K's minimum decays at its conductor-20 factor's floor rate (see Test 1).
 
-### rh2's certified minima against the Fuchs–Slepian leakages [D]
+### Our certified minima against the Fuchs–Slepian leakages [D]
 
 The table uses the leakage ℓ_n(x) := ½·4√π 8ⁿ c^{n+½} e^{−2c}/n!, with c = 2πx. Certified lower bounds ("cert") and finite-basis upper bounds ("ub") come from `docs/AUDIT_ZHU.md`, `docs/CERTIFICATE_238.md` and commit 108d678.
 
@@ -80,8 +80,8 @@ The table uses the leakage ℓ_n(x) := ½·4√π 8ⁿ c^{n+½} e^{−2c}/n!, wi
 **Metaplectic link [D, from CCM Prop. 5.1 and eq. (64)].**
 - **The rate is the coefficient of the rotation generator.** e^{−2c} = e^{−4πλ²}, and 4πλ² is the coefficient of the compact (rotation) generator k in the prolate operator.
 - **k has half-integer spectrum n + ½.** So the metaplectic lift of a 360° rotation acts as −1, and only the 720° lift is the identity.
-- **rh2's sector split is the n mod 4 class of the Fourier transform.** In Connes–Consani, n ≡ 0 for the even sector and n ≡ 2 for the odd sector, both inside the weight-½ piece L²(ℝ)_ev. Odd Dirichlet characters (Γ_ℝ(s+1)) use the weight-3/2 piece L²(ℝ)_odd.
-- **Connection to the user's idea.** This is the one place in the literature where a genuine spin-½ (metaplectic) structure governs rh2's window minimum.
+- **Our sector split is the n mod 4 class of the Fourier transform.** In Connes–Consani, n ≡ 0 for the even sector and n ≡ 2 for the odd sector, both inside the weight-½ piece L²(ℝ)_ev. Odd Dirichlet characters (Γ_ℝ(s+1)) use the weight-3/2 piece L²(ℝ)_odd.
+- **Connection to the user's idea.** This is the one place in the literature where a genuine spin-½ (metaplectic) structure governs our window minimum.
 
 ---
 
@@ -108,14 +108,14 @@ The table uses the leakage ℓ_n(x) := ½·4√π 8ⁿ c^{n+½} e^{−2c}/n!, wi
   - Thm. 1: for ≥ 20% of odd squarefree d, L(σ, χ₋₈d) > 0 on [0, 1].
   - They stress that before this, nothing excluded every large-conductor L(s, χ) having a real zero.
 - **Shankar–Södergren–Templier**, *Central values of zeta functions of non-Galois cubic fields*, [arXiv:2107.10900](https://arxiv.org/abs/2107.10900) (Invent. Math., 2025) [A]. Infinitely many non-Galois cubic K have ζ_K(½) < 0. [D] Since ζ(½) ≈ −1.4604 < 0, those fields have L(½, ρ_K) = ζ_K(½)/ζ(½) > 0. A negative Dedekind value at the centre is the GRH-expected sign when there is a pole.
-- **Connes–Consani–Moscovici 2024**, Prop. 5.1 (see the priority section) [R]. The prolate operator, whose leakage sets rh2's floor, is an element of U(sl₂) acting through the metaplectic representation. Their abstract announces a forthcoming adelic Weil-representation candidate for the semilocal prolate operator.
+- **Connes–Consani–Moscovici 2024**, Prop. 5.1 (see the priority section) [R]. The prolate operator, whose leakage sets our floor, is an element of U(sl₂) acting through the metaplectic representation. Their abstract announces a forthcoming adelic Weil-representation candidate for the semilocal prolate operator.
 
-**Bearing on rh2.**
+**Bearing on this work.**
 - **Squares give unconditional nonnegativity at one point.** The double-cover "square" mechanism (Waldspurger, Kohnen–Zagier, Rallis) does this at a single point per L-function, the centre of each twist, and Kohnen–Zagier say it is what GRH predicts.
 - **Its known payoffs are not explicit-formula positivity.** They are subconvexity (Iwaniec, Conrey–Iwaniec), nonvanishing proportions, and the 50% barrier tied to Siegel zeros (Iwaniec–Sarnak).
 - **No route found from a square to Weil positivity.** I found no source that turns a squared coefficient into positivity of Weil's explicit-formula functional, which sums over all zeros, or into anything beyond GRH's consequences.
 - **The GL(1) shadow is weak.** Central positivity for quadratic L(½, χ) is open (Lapid–Rallis, Conrey–Soundararajan). So the "spinor" half of ζ_K = ζ·L(χ) has no known square formula.
-- **Where the metaplectic double cover does reach rh2.** It enters through the archimedean prolate operator (CCM Prop. 5.1). That fixes the e^{−4πx} floor, but it is a statement about the archimedean place, not about primes.
+- **Where the metaplectic double cover does reach this work.** It enters through the archimedean prolate operator (CCM Prop. 5.1). That fixes the e^{−4πx} floor, but it is a statement about the archimedean place, not about primes.
 
 ## B. Positivity from squares and tensor powers; the ceiling of "twice around"
 
@@ -146,17 +146,17 @@ The table uses the leakage ℓ_n(x) := ½·4√π 8ⁿ c^{n+½} e^{−2c}/n!, wi
 - **Mossinghoff–Trudgian–Yang**, Research in Number Theory 10 (2024), [arXiv:2212.06867](https://arxiv.org/abs/2212.06867) [A]: R₀ = 5.558691. **Bellotti–Trudgian–Yang**, [arXiv:2603.21490](https://arxiv.org/abs/2603.21490) [A]: 4.896, building on Heath-Brown's Linnik-constant work. **H. S. Tan**, [arXiv:2411.01385](https://arxiv.org/abs/2411.01385) [A]: optimal cosine polynomials at degrees 7–8, extending Arestov's degree ≤ 6. **Kadiri**, Acta Arith. 117 (2005) 303–339 [S: MT].
 - **Lu–Zaman–Zhao**, *Numerical Computations Concerning Landau–Siegel Zeros*, [arXiv:2602.03626](https://arxiv.org/abs/2602.03626) [A]. No real zero with σ ≥ 1 − 1/(5 log q) for every quadratic χ mod q ≤ 10¹⁰.
 
-**Bearing on rh2.**
+**Bearing on this work.**
 - **The squares are Rankin–Selberg squares.** [D, elementary] 3 + 4cos θ + cos 2θ = 2(1 + cos θ)² = ½|1 + e^{iθ}|⁴. Sarnak's 3 + 4cos θ + 2cos 2θ = |1 + 2cos θ|². So "going around twice" is the cross term of a Rankin–Selberg square.
 - **The ceiling has two parts.**
   1. **Shape.** Positivity plus Landau's lemma gives only zero-free regions of width ∝ 1/log t at Re s = 1. Better shapes (Korobov–Vinogradov) need exponential-sum bounds (Sarnak §1; MT intro).
   2. **Constant.** The pure trig-polynomial main term is capped by V > 34.468: about V/2 ≈ 17.2 (Landau), or (V/2)(1 − 1/√5) ≈ 9.53 (Stechkin) [D, arithmetic]. Kadiri-type error analysis reaches 4.9–5.6.
 - **Neither part touches the critical line.**
 - **The method works on the opposite side from Weil's form.** de la Vallée Poussin's positivity is on the prime side, Σ c_n n^{−σ}P(t log n) ≥ 0, and holds for any Dirichlet series with c_n ≥ 0, with no RH content. Weil positivity is on the zeros side.
-- **Coherence is used in opposite directions.** On a window, rh2's comb bound uses the opposite of the de la Vallée Poussin trick: |cos| ≤ 1 caps the Kronecker coherence that the trick exploits. The quarter law (`docs/QUARTER_LAW.md`) says a window sees about ¼ of it.
+- **Coherence is used in opposite directions.** On a window, our comb bound uses the opposite of the de la Vallée Poussin trick: |cos| ≤ 1 caps the Kronecker coherence that the trick exploits. The quarter law (`docs/QUARTER_LAW.md`) says a window sees about ¼ of it.
 - **Deligne's tensor-power trick has no number-field analogue for zeros.** Over ℚ it becomes Ramanujan via functoriality (Langlands, Milne). Deligne could bound zeros because over 𝔽_q every zero is a Frobenius eigenvalue on a finite H^i.
 - **For reading (2).** "Twice around" is a known technique with a known ceiling (log-width regions at Re s = 1). In the quadratic case ζ·L(χ) it is exactly where the method stalls on Siegel zeros.
-- **Unrelated coincidence.** rh2's normalisation test function (1 + cos θ)², θ = 2πu/L (`docs/CONTROL_CERTIFICATES.md` §2), is de la Vallée Poussin's polynomial in a different variable.
+- **Unrelated coincidence.** Our normalisation test function (1 + cos θ)², θ = 2πu/L (`docs/CONTROL_CERTIFICATES.md` §2), is de la Vallée Poussin's polynomial in a different variable.
 
 ## C. Hodge index and coverings in function fields; descent to number fields
 
@@ -190,8 +190,8 @@ The table uses the leakage ℓ_n(x) := ½·4√π 8ⁿ c^{n+½} e^{−2c}/n!, wi
    - Each non-principal class gives u/(1 − qu).
    - Summing over the h = q + 1 − a classes recovers ζ_R = P_E(u)/(1 − qu).
    - Checked directly for y² = x³ + 2x over 𝔽₅ (#E = 2): degree-2 coefficients 5 and 5, matching (counted by explicit 𝔽₂₅ point enumeration).
-   - **The numerator of rh2's closed-seam "fake", 1 − 5u + 5u² (`docs/CLOSED_SEAM.md`), is exactly this partial zeta's numerator at q = 5.** The partial zeta is one sheet of the class-group cover. Its numerator is self-reciprocal (qu²·P(1/(qu)) = P(u)), although its denominator has only the pole at u = 1/q. It has S₁ = √q > 2 for every q ≥ 5, and its zeros are real, the function-field analogue of a Siegel pair. On the zeros side, the failing eigenvector of T₂ = ℓ[[2, S₁], [S₁, 2]] is (1, −1), the antisymmetric direction on the two-point orbit.
-2. **ℚ(√−5) genus decomposition.** With rh2's Z₁ normalisation a_n = r₁(n)/2:
+   - **The numerator of our closed-seam "fake", 1 − 5u + 5u² (`docs/CLOSED_SEAM.md`), is exactly this partial zeta's numerator at q = 5.** The partial zeta is one sheet of the class-group cover. Its numerator is self-reciprocal (qu²·P(1/(qu)) = P(u)), although its denominator has only the pole at u = 1/q. It has S₁ = √q > 2 for every q ≥ 5, and its zeros are real, the function-field analogue of a Siegel pair. On the zeros side, the failing eigenvector of T₂ = ℓ[[2, S₁], [S₁, 2]] is (1, −1), the antisymmetric direction on the two-point orbit.
+2. **ℚ(√−5) genus decomposition.** With our Z₁ normalisation a_n = r₁(n)/2:
    - **Z₁ = ½[ζ·L(χ₋₂₀) + L(χ₋₄)·L(χ₅)] = ½[ζ_K + L_K(ψ)]**, verified coefficientwise for n ≤ 5000. ψ is the class-group character, and H = ℚ(i, √5) is the Hilbert class field, since h(−20) = 2.
    - So ζ_H = ζ_K·L_K(ψ) is the unramified double cover of K.
    - **Z₁ is one sheet of it, the twin of fact 1.** All three share the same Γ_ℝ(s)Γ_ℝ(s+1) and conductor 20.
@@ -202,11 +202,11 @@ The table uses the leakage ℓ_n(x) := ½·4√π 8ⁿ c^{n+½} e^{−2c}/n!, wi
    - Certifying the cover and subtracting can therefore never beat certifying ζ directly.
 4. **Inert primes as antiperiodic orbits.** (1 − p^{−2s})^{−1} = (1 − p^{−s})^{−1}(1 + p^{−s})^{−1}, which is L²(ℝ/2ℓℤ) = periodic ⊕ antiperiodic on ℝ/ℓℤ, with ℓ = log p. The orbit of an inert prime "closes after two loops", and its doubled-orbit spectrum is the scalar factor plus the χ(p) = −1 factor.
 
-**Bearing on rh2.**
+**Bearing on this work.**
 - **In function fields, positivity descends because the cover's positivity covers twisted test functions too.** Rosati or Hodge-index positivity holds for Y as a whole. The deck involution splits H¹(Y) orthogonally, so restricting to ±-isotypic test functions (f and f·χ) gives positivity of each factor.
 - **The number-field version of "twisted test functions" is Weil's Hecke-character explicit formula** (Weil 1952; Connes 1999). Positivity for ζ_K over all characters of K is GRH for each character's L-function separately.
 - **No number-field theorem found that descends positivity from a cover to its base.** Fact 3 shows the subtraction route fails for certificates. The Connes–Consani and Deninger programmes aim at a Hodge/Riemann–Roch positivity on the base object itself, not at descent.
-- **Fact 1 is an exact, fully finite model of rh2's Euler versus non-Euler separation.** The covering curve passes, and its partial-zeta sheet fails on the first two-point window, in the antisymmetric direction. That failure is forced by Riemann–Roch alone.
+- **Fact 1 is an exact, fully finite model of our Euler versus non-Euler separation.** The covering curve passes, and its partial-zeta sheet fails on the first two-point window, in the antisymmetric direction. That failure is forced by Riemann–Roch alone.
 
 ## D. Weil positivity on finite windows: extremal problems and records
 
@@ -227,13 +227,13 @@ The table uses the leakage ℓ_n(x) := ½·4√π 8ⁿ c^{n+½} e^{−2c}/n!, wi
 |---|---|---|
 | Zhu, arXiv:2608.24827v2 | 1.6 (8.9e-18); the 2.38 claim was retracted | Preprint; audited in `docs/AUDIT_ZHU.md` |
 | Liu, alphaxiv 2609 | 2.125, with constant 2⁻⁴⁹¹⁶² | Preprint [A] |
-| rh2 | 2.38 (6.81e-48, audited); 2.6 (5.76e-62, commit 108d678); 2.99 running | Internal |
+| This work | 2.38 (6.81e-48, audited); 2.6 (5.76e-62, commit 108d678); 2.99 running | Internal |
 
 I found nothing beyond 2.125 in the literature. The decay laws are in the priority section.
 
-**Bearing on rh2.**
-- **The Carneiro-type extremal problems use rh2's function class but assume RH.** Their test functions have Fourier support in [−Δ, Δ], exactly rh2's class with 2a = 2πΔ. With RH assumed, their zeros side is a sum of |F|²: they optimise bounds and never certify positivity. Their extremal majorants could serve as structured trial vectors for upper bounds.
-- **rh2's certificates are close to the true minimum; the published ones are not.** rh2's lower bounds sit within a factor of 2 of finite-basis upper bounds. Liu's are about 10¹⁶ (at a = 1) or more below.
+**Bearing on this work.**
+- **The Carneiro-type extremal problems use our function class but assume RH.** Their test functions have Fourier support in [−Δ, Δ], exactly our class with 2a = 2πΔ. With RH assumed, their zeros side is a sum of |F|²: they optimise bounds and never certify positivity. Their extremal majorants could serve as structured trial vectors for upper bounds.
+- **Our certificates are close to the true minimum; the published ones are not.** Our lower bounds sit within a factor of 2 of finite-basis upper bounds. Liu's are about 10¹⁶ (at a = 1) or more below.
 
 ## E. Spin structures and theta characteristics in arithmetic
 
@@ -253,21 +253,21 @@ I found nothing beyond 2.125 in the literature. The decay laws are in the priori
   - **Andrianov**, *Euler products corresponding to Siegel modular forms of genus 2*, Russian Math. Surveys 29 (1974) 45–116 [A].
   - **Furusawa–Morimoto**, *On the Gross–Prasad conjecture with its refinement for (SO(5), SO(2)) and the generalized Böcherer conjecture*, Compositio Math. 160 (2024) 2115–2202 [A]: weighted averages of Fourier coefficients of degree-2 Siegel eigenforms relate to central values of twisted spinor L-functions through squared-modulus periods, which forces nonnegativity.
 
-**Bearing on rh2.**
+**Bearing on this work.**
 - **No source found uses a theta characteristic or arithmetic spin structure in a positivity argument for RH or the Weil conjectures.** Weil's positivity (Castelnuovo, Rosati, Hodge index) uses a polarisation, not a square root of K.
 - **Where spin does enter arithmetic, it controls signs, not positivity:**
   - Deligne's w² gives root numbers.
   - Fröhlich–Queyrut gives W = +1 for orthogonal representations. The quadratic χ in ζ_K is orthogonal and one-dimensional, so its central order is even.
   - Symplectic pieces can force ζ_K(½) = 0 (Armitage).
-- **Spin-½ positivity relevant to rh2 is metaplectic, at the archimedean place.**
+- **Spin-½ positivity relevant to this work is metaplectic, at the archimedean place.**
   - CCM's prolate operator has the half-integer Hermite spectrum n + ½.
-  - rh2's sectors are Fourier classes n ≡ 0 and n ≡ 2 (mod 4) inside the weight-½ piece.
+  - Our sectors are Fourier classes n ≡ 0 and n ≡ 2 (mod 4) inside the weight-½ piece.
   - [D] Imaginary quadratic K uses both metaplectic pieces, since Γ_ℂ(s) = Γ_ℝ(s)Γ_ℝ(s+1): an even and an odd archimedean factor.
-- **Yoshida's Prop. 1 [S: Suzuki] is the natural "antisymmetric sector" theorem.** Odd-sector positivity for all a already implies RH. The even sector cannot see real zeros. [D] A real zero pair at ½ ± δ adds +2(∫f cosh δu)² to the even form and −2(∫f sinh δu)² to the odd form, like rh2's pole term with δ in place of ½ and the opposite sign.
+- **Yoshida's Prop. 1 [S: Suzuki] is the natural "antisymmetric sector" theorem.** Odd-sector positivity for all a already implies RH. The even sector cannot see real zeros. [D] A real zero pair at ½ ± δ adds +2(∫f cosh δu)² to the even form and −2(∫f sinh δu)² to the odd form, like our pole term with δ in place of ½ and the opposite sign.
 
 ---
 
-## Candidate fail-fast tests for rh2
+## Candidate fail-fast tests for this work
 
 Each test has a pre-registered prediction and a kill criterion. "λ" means the window minimum in a stated sector, certified lower bound or finite-basis upper bound as stated.
 
@@ -351,7 +351,7 @@ Each test has a pre-registered prediction and a kill criterion. "λ" means the w
 
 ### Test 4. Real zeros are odd-sector only (Yoshida Prop. 1; Stark; Conrey–Soundararajan)
 
-**Run.** Take rh2's matrices for a GRH-verified spinor factor, L(χ₋₄) or L(χ₋₂₀), at a ∈ {0.5, 0.8, 1.0}. Add a planted real zero pair at ½ ± δ, δ ∈ {0.1, 0.3}: the rank-one terms +2ccᵀ (even), c_k = ∫b_k cosh δu, and −2ssᵀ (odd), s_k = ∫b_k sinh δu.
+**Run.** Take our matrices for a GRH-verified spinor factor, L(χ₋₄) or L(χ₋₂₀), at a ∈ {0.5, 0.8, 1.0}. Add a planted real zero pair at ½ ± δ, δ ∈ {0.1, 0.3}: the rank-one terms +2ccᵀ (even), c_k = ∫b_k cosh δu, and −2ssᵀ (odd), s_k = ∫b_k sinh δu.
 
 **Prediction.**
 - λ_even does not decrease (PSD update).

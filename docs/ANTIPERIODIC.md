@@ -1,6 +1,6 @@
 # Twice Around: the Antiperiodic Basis
 
-**Question.** rh2's finite bases on the window [−L/2, L/2] (L = log x) use periodic frequencies ω_k = 2πk/L, which close after one trip across the window. The half-integer frequencies ω_k = 2π(k + ½)/L close only after two trips (the "720°" lattice). Does the antiperiodic basis approximate Weil's minimiser better?
+**Question.** Our finite bases on the window [−L/2, L/2] (L = log x) use periodic frequencies ω_k = 2πk/L, which close after one trip across the window. The half-integer frequencies ω_k = 2π(k + ½)/L close only after two trips (the "720°" lattice). Does the antiperiodic basis approximate Weil's minimiser better?
 
 The two lattices impose opposite boundary behaviour:
 

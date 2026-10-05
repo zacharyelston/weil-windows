@@ -3,7 +3,7 @@
 
 Generalises scripts/zhu_certificate_iv.py (ζ, mpmath.iv) to
   Ψ(t) = Σ_κ Re ψ(κ + it/2) + K − Σ_{log n < 2a} (2c_n/√n) cos(t log n)        (control_cert_lib.Control)
-on f supported in [−a, a] (rh2's x = e^{2a}). With A = Σ 2|c_n|/√n and the Binet envelope
+on f supported in [−a, a] (our x = e^{2a}). With A = Σ 2|c_n|/√n and the Binet envelope
   Re ψ(κ + it/2) ≥ log(t/2) − 2κ/t² − 1/(12κt) ≥ log(t/2) − 1/t      (t ≥ 24κ²/(12κ − 1)),
 Ψ ≥ β* := Σ_κ [log(T♯/2) − 1/T♯] + K − A on [T♯, ∞), so (Theorem 1.1)
   Q(f) ≥ R(f) = pole + (1/π)∫_0^{T♯} (Ψ − β)|F|² + β ‖f‖²     (β ≤ β*).

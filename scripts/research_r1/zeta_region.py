@@ -1,5 +1,5 @@
 """ζ: the reverse (consistency) region at a certified support.
-For each (a, sector, N): eigendecompose rh2's full zeros-side matrix Q_a; then
+For each (a, sector, N): eigendecompose our full zeros-side matrix Q_a; then
   (1) comb check: R2(γ_k) = 2 cᵀQ⁻¹c at the true zeros γ_k (δ = 0, simple pair) must be ≤ 1; between zeros it is huge;
   (2) for δ in a list: the profile R4(δ, γ₀) = 4 cᵀ(Q + 4ssᵀ)⁻¹c on a γ₀ grid and the last crossing T_excl(δ) of R4 = 1;
   (3) even sector: the real-pair test R2(δ, 0) = 2 cᵀQ⁻¹c (c_k = ∫ b_k cosh δu).
@@ -11,7 +11,7 @@ sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(os.getcwd(), "scripts"))
 import mpmath as mp
 import r1lib as R
-from control_normalisation import rh2_matrix
+from control_normalisation import native_matrix
 from progress import Job
 
 
@@ -26,7 +26,7 @@ def run_job(a_s, sector, n, dps, job, zeros_cache):
     L = 2 * a
     Tstar = 2 * mp.pi * x
     t0 = time.time()
-    Q = rh2_matrix("zeta", x, n, sector)
+    Q = native_matrix("zeta", x, n, sector)
     spec = R.Spectral(Q)
     job.log(f"a={a_s} {sector} N={n} dps={dps}: built+eig in {time.time()-t0:.1f}s; λ_min = {mp.nstr(spec.lam_min, 8)}; T* = {mp.nstr(Tstar, 6)}")
     out = {"a": a_s, "x": mp.nstr(x, 15), "sector": sector, "n": n, "dps": dps, "lam_min": mp.nstr(spec.lam_min, 15), "Tstar": mp.nstr(Tstar, 10)}

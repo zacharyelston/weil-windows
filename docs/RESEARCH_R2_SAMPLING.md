@@ -2,22 +2,22 @@
 
 Date: 2026-10-03. Branch `feat/weil-gram-instrument` (worktree), base `fbac9a8`. Brief: `docs/BRIEF_RESEARCH_HANDOFF.md` §5, question R2. New code in `scripts/research_r2/`, data in `data/research_r2/`; no existing script or document was modified. Every table below is printed by `scripts/research_r2/summarize.py` from the committed JSON.
 
-**Labels.** [R] read in the source; [A] abstract or search summary only; [S] second-hand (another paper's or an rh2 document's account); [D] derived here (a proof, or a sketch where marked); [N] computed here (multiprecision floating point: finite-basis Rayleigh quotients are upper bounds, nothing is certified); [E] rh2's registered empirical laws; [U] unverified.
+**Labels.** [R] read in the source; [A] abstract or search summary only; [S] second-hand (another paper's or a repository document's account); [D] derived here (a proof, or a sketch where marked); [N] computed here (multiprecision floating point: finite-basis Rayleigh quotients are upper bounds, nothing is certified); [E] our registered empirical laws; [U] unverified.
 
 ## 0. Six lines
 
 1. **One construction explains the upper half of the law.** Truncate the Poisson (theta) image E(ψ)(w) = w^{1/2} Σ χ(n) ψ(nw/√q) of a Fourier eigenfunction ψ to the window. Then the Weil form of the truncation is **exactly** σ Σ_ρ F_out(γ_ρ)², the out-of-window tail's transform summed over *all* nontrivial zeros, on or off the line (Theorem 1 [D]). This is Connes' "near-radical" k_λ (arXiv:2602.04022 §6.4 [R]) made into an identity. It uses no Euler product.
 2. **Unconditional theorems.** Bounding that sum with only 0 < Re ρ < 1 and an explicit zero count gives λ_min ≤ (2A²/‖f‖²) ∫_{A/B}^∞ N(t) t⁻³ dt (Theorem 2 [D]). With Hermite ψ (for ζ's even sector this is Riemann's own k, whose transform is Ξ) the bound is fully explicit and decays like e^{−c} (Corollary 3). With Kaiser–Bessel ψ it decays at the **conjectured rate e^{−2c}**, c = 2πx/q, with a polynomial loss c^{3.5–12} (Theorem 4). Measured/bound ≤ 1 at all 244 (Hermite) and 82 (Kaiser–Bessel) degree-1 grid points. The KB ratio lies in [6.3e-8, 4.8e-3].
-3. **The sharp construction is near-optimal.** With time-limited prolates of index n = κ + 2s + 4·pole, the E-map trial function's Rayleigh quotient (rh2's explicit-formula matrices, so an unconditional upper bound) lies within a factor 1.05–2.48 of the measured minimum at all 106 tested points: median 1.28, 92 of 106 below 1.5 [N]. The degree-1 index rule is therefore the index of the optimal E-map trial: parity from the Γ-factor, Fourier class from the sector, one class member removed by the pole (§5).
+3. **The sharp construction is near-optimal.** With time-limited prolates of index n = κ + 2s + 4·pole, the E-map trial function's Rayleigh quotient (our explicit-formula matrices, so an unconditional upper bound) lies within a factor 1.05–2.48 of the measured minimum at all 106 tested points: median 1.28, 92 of 106 below 1.5 [N]. The degree-1 index rule is therefore the index of the optimal E-map trial: parity from the Γ-factor, Fourier class from the sector, one class member removed by the pole (§5).
 4. **GL(2) is the same construction with Voronoi in place of Poisson.** The self-reciprocal transform is the Hankel transform of order k − 1, so the leakage is that of Slepian's generalised prolates at c = 4π√(x/N) = d·T*. The exact generalised-prolate leakage reproduces the measured continuous index of all 15 GL(2) objects within ±0.6 (|shift| ≤ 0.59), and the root-number rule: the ground state sits in the sector (−1)^s = ε (15/15 signs, gap within 2 in ln λ) [N]. Two thirds of the "level-1 offset" (~1.3) is a finite-c weight effect; ~0.4 remains [N].
-5. **The lower bound is the whole open content.** rh2's numbers are upper bounds, so they can refute but never confirm it. It implies RH (Yoshida), and it cannot follow from the functional equation plus the smooth zero density: Davenport–Heilbronn satisfies the same upper-bound theorem and goes negative. Under RH it is a lower sampling inequality for the zeros in PW_{L/2}. RH plus a local sampling hypothesis above T* would give only the weaker rate e^{−L·T*} [D, sketch]. The sharp rate needs a "zero-constrained uncertainty principle", equivalent to the near-optimality in item 3: open (Connes' §6.6 "remaining step"). Pair correlation does not enter the rate (products superpose independent zero sets and obey it).
+5. **The lower bound is the whole open content.** Our numbers are upper bounds, so they can refute but never confirm it. It implies RH (Yoshida), and it cannot follow from the functional equation plus the smooth zero density: Davenport–Heilbronn satisfies the same upper-bound theorem and goes negative. Under RH it is a lower sampling inequality for the zeros in PW_{L/2}. RH plus a local sampling hypothesis above T* would give only the weaker rate e^{−L·T*} [D, sketch]. The sharp rate needs a "zero-constrained uncertainty principle", equivalent to the near-optimality in item 3: open (Connes' §6.6 "remaining step"). Pair correlation does not enter the rate (products superpose independent zero sets and obey it).
 6. **ζ's drift is mostly the Fuchs approximation.** Against the exact prolate eigenvalue 1 − λ_n(c), ζ's index excess drops from +0.60/+0.89 to +0.32/+0.26 (even/odd). That is inside the characters' range [−0.01, +0.32] [N].
 
 ## 1. Setting and notation
 
 - **Window.** L = log x, W = [−L/2, L/2]. Real f ∈ L²(W) of sector s ∈ {0, 1} means f(−u) = (−1)^s f(u). F(z) = ∫ f(u) e^{izu} du.
-- **Weil's form.** 𝓛 = L(s, χ) for a real primitive character χ mod q of parity κ (χ(−1) = (−1)^κ), or ζ (q = 1, κ = 0, a pole r = 1). Write the nontrivial zeros as ρ = ½ + iγ_ρ, γ_ρ ∈ ℂ, |Im γ_ρ| < ½. For f compactly supported and of bounded variation, the explicit formula gives, with no hypothesis on the zeros, Q(f) = Σ_ρ F(γ_ρ) F(−γ_ρ) [S: Weil 1952; `docs/RESEARCH_R1_EXCLUSION.md` §1]. rh2's matrices E ± 2vvᵀ evaluate the other side of the explicit formula (archimedean + primes + pole) and were validated against zero sums (`docs/DECAY_LAW.md`). λ_s(x) is the infimum of Q(f)/‖f‖² in sector s.
-- **Decay-law variables.** T* = 2π(x/Q)^{1/d}; c = d·T* (c = 2πx/q in degree 1). Fuchs–Slepian leakage ℓ_n(c) = ½·4√π 8ⁿ c^{n+½} e^{−2c}/n! (rh2's convention, `decay_law_mp._ell`). Exact leakage ℓ^ex_n(c) = ½(1 − λ_n(c)), λ_n(c) the n-th eigenvalue of the time- and band-limiting operator.
+- **Weil's form.** 𝓛 = L(s, χ) for a real primitive character χ mod q of parity κ (χ(−1) = (−1)^κ), or ζ (q = 1, κ = 0, a pole r = 1). Write the nontrivial zeros as ρ = ½ + iγ_ρ, γ_ρ ∈ ℂ, |Im γ_ρ| < ½. For f compactly supported and of bounded variation, the explicit formula gives, with no hypothesis on the zeros, Q(f) = Σ_ρ F(γ_ρ) F(−γ_ρ) [S: Weil 1952; `docs/RESEARCH_R1_EXCLUSION.md` §1]. Our matrices E ± 2vvᵀ evaluate the other side of the explicit formula (archimedean + primes + pole) and were validated against zero sums (`docs/DECAY_LAW.md`). λ_s(x) is the infimum of Q(f)/‖f‖² in sector s.
+- **Decay-law variables.** T* = 2π(x/Q)^{1/d}; c = d·T* (c = 2πx/q in degree 1). Fuchs–Slepian leakage ℓ_n(c) = ½·4√π 8ⁿ c^{n+½} e^{−2c}/n! (our convention, `decay_law_mp._ell`). Exact leakage ℓ^ex_n(c) = ½(1 − λ_n(c)), λ_n(c) the n-th eigenvalue of the time- and band-limiting operator.
 - **Fourier on the line.** ψ̂(y) = ∫ ψ(t) e^{−2πity} dt. Hermite functions h_k(y) = H_k(√(2π) y) e^{−πy²} satisfy ĥ_k = (−i)^k h_k. A time-limited prolate ξ_n on [−λ, λ] (c = 2πλ²) satisfies ξ̂_n = μ_n ξ_n on [−λ, λ] with μ_n = (−i)^n √λ_n(c) [S: Connes 2602.04022 §6.3 [R] for the even case].
 - **Generalised prolates.** The finite Hankel transform of order ν, (Hφ)(r) = ∫₀¹ J_ν(crρ)√(crρ) φ(ρ) dρ, has eigenvalues γ_{ν,m}, with concentrations λ_{ν,m}(c) = c γ²_{ν,m} [S: Slepian 1964, PSWF IV, not read: U]. ν = −½ and +½ are the even and odd 1D prolates, with n = 2m and 2m + 1. `scripts/research_r2/hankel_prolate.py` computes them from the commuting differential operator, which is tridiagonal in a Jacobi basis. Its values equal Bouwkamp's 1D values to all printed digits (`--check`) [N].
 
@@ -32,7 +32,7 @@ Let 𝓛 be a degree-1 L-function above, or a holomorphic newform of weight k an
 | L(s, χ), χ real of parity κ (ε = 1) | Γ_ℝ(s + κ) | κ − ½ | s + 2r (r = 1 for ζ's pole, else 0) |
 | weight-k newform | Γ_ℂ(s + (k−1)/2) | k − 1 | 0 if (−1)^s = ε, else 1 |
 
-The equivalent 1D index is n = 2m + ν + ½. That gives n = κ + 2s + 4r in degree 1 (rh2's rule) and n = k − ½ + 2m for GL(2). The leakage is ℓ^ex_{ν,m}(c) = ½(1 − λ_{ν,m}(c)), with c = d·T*.
+The equivalent 1D index is n = 2m + ν + ½. That gives n = κ + 2s + 4r in degree 1 (our rule) and n = k − ½ + 2m for GL(2). The leakage is ℓ^ex_{ν,m}(c) = ½(1 − λ_{ν,m}(c)), with c = d·T*.
 
 **Conjecture D (window decay law).** For x/Q beyond the transition (§2.3), in each sector:
 
@@ -50,7 +50,7 @@ D3 ⇒ D2 ⇒ D1. **Status:**
 - **The upper halves of D2–D3** are supported numerically, with R ≤ R_trial (§3.6). They are not proved.
 - **The lower halves** are open (§4). For ζ they imply RH.
 
-**What "≈" means in rh2's tables.** rh2's measured R is λ_N/ℓ_n, with λ_N a finite-basis upper bound. So a bounded R in the data is consistent with D3 but supports only its upper half. The lower half has direct evidence only at the four certified supports, where R_ex(cert) ≥ 4.59 (even) and ≥ 2.67 (odd) for ζ (§5.3).
+**What "≈" means in our tables.** Our measured R is λ_N/ℓ_n, with λ_N a finite-basis upper bound. So a bounded R in the data is consistent with D3 but supports only its upper half. The lower half has direct evidence only at the four certified supports, where R_ex(cert) ≥ 4.59 (even) and ≥ 2.67 (odd) for ζ (§5.3).
 
 ### 2.2 Sampling-theory reformulation (under RH)
 
@@ -79,7 +79,7 @@ Using the *exact* generalised-prolate leakage, rather than its large-c asymptoti
 - **D1 (lower half):** a sustained local slope −d ln λ/dc > 2, for example a drift toward Zhu's π (Zhu's Conj. 12.1 gives −ln λ ≈ 2π² x = π c asymptotically [S: `docs/LIT_TANGENTS.md`]). Detectable by upper bounds alone: a converged finite-basis λ_N whose ratio to ℓ^ex falls exponentially in c refutes it.
 - **D2:** the continuous index n* moving away from 2m + ν + ½ as c grows. Concretely, for level-1 forms on v ∈ [14, 18] it must move toward the exact-Hankel values of §6.3 (registered in §7).
 - **D3:** R_ex leaving every fixed band, e.g. a registered extension with R_ex(x/q = 32)/R_ex(16) outside [¼, 4]. Or any trial function with Q/‖f‖² < r₁·ℓ^ex, with r₁ fixed in advance from the certified points.
-- **Any of D1–D3 for a function with an Euler product and RH-verified zeros** (all rh2 objects): a negative λ_N. That would be a witness against RH.
+- **Any of D1–D3 for a function with an Euler product and RH-verified zeros** (all our objects): a negative λ_N. That would be a witness against RH.
 
 ## 3. (b) The upper bound
 
@@ -154,7 +154,7 @@ Take ψ = h_n with n = κ + 2s. For ζ, take ψ = H_{n+4}(0) h_n − H_n(0) h_{n
 - (A1)–(A4) and Theorem 2's hypotheses hold, because of the Gaussian decay. A, B and ‖f_win‖² are one-dimensional integrals of explicit functions (`hermite_bound.py`).
 - The tails decay like e^{−πy²}, so the bound decays like c^p e^{−c} with c = 2πx/q, which is half the conjectured rate.
 
-**Table 3.4** (`data/research_r2/hermite_bound.json`; measured values are rh2's best finite-basis minima, from scanhi, scanext and scan8):
+**Table 3.4** (`data/research_r2/hermite_bound.json`; measured values are our best finite-basis minima, from scanhi, scanext and scan8):
 
 | object | sector | n | x/q | measured/bound (min .. max) | p in bound ≈ C c^p e^{−c} |
 |---|---|---|---|---|---|
@@ -167,7 +167,7 @@ Take ψ = h_n with n = κ + 2s. For ζ, take ψ = H_{n+4}(0) h_n − H_n(0) h_{n
 
 All 244 points: measured/bound ∈ [1.8e-43, 2.9e-2], every ratio ≤ 1. The ratio falls like e^{−c}, because the bound's rate is half the measured one.
 
-**Theorem 1 + 2 check.** At eight points (ζ and χ₅, x/q = 2, 4, both sectors) the trial functions' Rayleigh quotients in rh2's basis lie below the bound by factors 12–28 (`hermite_bound.py --matrix` → `data/research_r2/hermite_matrix_check.json`) [N].
+**Theorem 1 + 2 check.** At eight points (ζ and χ₅, x/q = 2, 4, both sectors) the trial functions' Rayleigh quotients in our basis lie below the bound by factors 12–28 (`hermite_bound.py --matrix` → `data/research_r2/hermite_matrix_check.json`) [N].
 
 For every x this is an explicit, unconditional bound. Its shape is λ_s(x) ≤ C c^p e^{−2πx/q}, with fitted p ≈ n + ¼ for the characters (4.45 and 6.75 for ζ) [N, and an elementary Gaussian-tail sketch]. It is much stronger than Zhu's RH-conditional bound λ* ≤ exp(−L e^L), where Zhu's L is the half-width a = ½ log x, so the bound is exp(−a√x) [S: `docs/LIT_TANGENTS.md`]: e^{−2πx} against e^{−(√x log x)/2}, and it needs no hypothesis. The e^{−c} barrier is the same one Bonami–Jaming–Karoui meet for 1 − λ_n(c) itself. Their explicit non-asymptotic bound λ_n(c) ≥ 1 − (7/√c)(2c)ⁿe^{−c}/n! (n ≤ c/2.7, Thm 3.2) also comes from Hermite trial functions [R].
 
@@ -214,7 +214,7 @@ All 82 points: measured/bound ∈ [6.3e-8, 4.8e-3], every ratio ≤ 1.
 
 ### 3.6 The sharp construction: time-limited prolates [N, with a sketch [D]]
 
-Replace φ by the time-limited prolate ξ_n on [−λ, λ] (c = 2πλ²), with n = κ + 2s. For ζ, use Connes' combination β₀^{(n+4)} ξ_n − β₀^{(n)} ξ_{n+4}, which has ∫φ = 0. Project the E-map window function onto the sector and evaluate its Rayleigh quotient with rh2's explicit-formula matrix in the scan's own N-mode basis (`prolate_trial.py`). This is an unconditional upper bound for λ_s(x): no zeros enter.
+Replace φ by the time-limited prolate ξ_n on [−λ, λ] (c = 2πλ²), with n = κ + 2s. For ζ, use Connes' combination β₀^{(n+4)} ξ_n − β₀^{(n)} ξ_{n+4}, which has ∫φ = 0. Project the E-map window function onto the sector and evaluate its Rayleigh quotient with our explicit-formula matrix in the scan's own N-mode basis (`prolate_trial.py`). This is an unconditional upper bound for λ_s(x): no zeros enter.
 
 **Table 3.6** (`data/research_r2/prolate_trial_{a,b,c}.json`; R = λ/ℓ_n(c) with Fuchs' ℓ_n):
 
@@ -235,7 +235,7 @@ All 106 points: trial/measured ∈ [1.05, 2.48], median 1.28, 92 of 106 below 1.
 
 **Reading.**
 
-- The E-map prolate trial of the predicted index is within a factor of 1.05–2.5 of the minimum rh2 measured in the same basis.
+- The E-map prolate trial of the predicted index is within a factor of 1.05–2.5 of the minimum this work measured in the same basis.
 - So the near-minimiser is, to that accuracy, E(ξ_n) truncated. This is the twisted, two-sector generalisation of `docs/CONNES_LETTER.md`'s k_λ result for ζ even (1.19–1.48).
 - The larger ratios (up to 2.48, χ₋₇ at x/q = 4) are not monotone in x/q. They come from the quadrature of the projection: any coefficient vector is a legitimate trial, so these remain valid upper bounds, merely less sharp.
 
@@ -250,7 +250,7 @@ The sharp upper bound λ_s ≤ C·L^a·ℓ^ex_n(c) is therefore [D, sketch only,
 
 ### 4.1 Necessary conditions [D]
 
-1. **It implies RH.** If λ_odd(x) > 0 for every x, then Q ≥ 0 on all odd test functions, and Yoshida's Prop. 1 gives RH [S: Suzuki arXiv:2606.09096 §1.1, via `docs/LIT_TANGENTS.md`]. So the lower half of D1 for ζ, for all x, is at least as strong as RH. For a single x it is a finite-window positivity statement; rh2 has certified those at four supports (§5.3).
+1. **It implies RH.** If λ_odd(x) > 0 for every x, then Q ≥ 0 on all odd test functions, and Yoshida's Prop. 1 gives RH [S: Suzuki arXiv:2606.09096 §1.1, via `docs/LIT_TANGENTS.md`]. So the lower half of D1 for ζ, for all x, is at least as strong as RH. For a single x it is a finite-window positivity statement; this work has certified those at four supports (§5.3).
 2. **The functional equation plus the smooth zero density are not enough.** DH has conductor 5, Γ_ℝ(s+1), a functional equation and the smooth zero density of an odd character mod 5.
    - By Theorem 1's remark, its E-map vectors satisfy the *same* upper bound.
    - Yet λ_DH changes sign at x ≈ 30.8 (certified bracket [10.805, 30.745) for the first failure, `docs/CONTROL_CERTIFICATES.md` [S]), through its quadruple at height 85.7 (R1's mirror test σ₁ = 1.0002 at 30.745 [S]).
@@ -366,7 +366,7 @@ Characters: n*_F − n ∈ [0.01, 0.45], n*_ex − n ∈ [−0.01, 0.32].
 - **The drift shrinks against the exact leakage.** ζ's even ratio to ℓ₄ drifts by 2.3× over x = 5 → 20 when measured against the Fuchs asymptotic (5.55 → 12.8). Against the exact 1 − λ₄(c) it drifts 1.86× (7.3 → 13.6, upper bounds), or 1.66× (4.59 → 7.61) using the certified lower bounds. The odd sector goes from 3.6× to 2.3× (cert 2.2×). On the scanhi grid (x = 2–10) the continuous index drops from n*_F = 4.60/6.89 to n*_ex = 4.32/6.26.
 - **The cause** is that Fuchs' formula is accurate for n = 4, 6 only at large c: (1 − λ₄)/Fuchs is 0.32 at c = 10 and 0.71 at c = 25 (`hankel_prolate.py --check`).
 - **The residual excess** (+0.3) is the same size as the characters', and the E-map trial reproduces it (R_trial/R_meas 1.07–1.49 for ζ). So it is a property of the leakage-to-Q map (the zero sum weighting the edge tail), not a different minimiser.
-- **Certified points.** The certified lower bounds give R_ex(cert) ∈ [4.59, 7.61] (even) and [2.67, 5.77] (odd). These are the only *lower*-bound evidence for D3 in rh2. They are consistent with r₁ ≈ 4.5 (even) and 2.6 (odd) for ζ over x ∈ [4.95, 19.9].
+- **Certified points.** The certified lower bounds give R_ex(cert) ∈ [4.59, 7.61] (even) and [2.67, 5.77] (odd). These are the only *lower*-bound evidence for D3 in this work. They are consistent with r₁ ≈ 4.5 (even) and 2.6 (odd) for ζ over x ∈ [4.95, 19.9].
 
 ## 6. (e) GL(2): Voronoi, Hankel prolates, root number, level offset
 
@@ -384,7 +384,7 @@ So the GL(2) law is the generalised-prolate leakage of order k − 1 at c = dT*,
 
 > **Note added 2026-10-03 (main session, P-R389).** The rank-2 curve 389a1 (ε = +1, m₀ = 2) orders its sectors like the ε = −1 curves (odd below even, 5/5 points). The rule below holds for m₀ ≤ 1; in general the ground state moves to the odd sector whenever m₀ > 0, so "(−1)^s = ε" should read "s = 1 iff m₀ > 0". See `docs/DECAY_LAW.md`, P-R389.
 
-The ground state (m = 0, the 𝓗-eigenvalue +1 member with the least leakage) lands in the sector (−1)^s = ε. The other sector starts at m = 1. Hence λ_{−ε}/λ_ε ≈ (1 − λ_{ν,1})/(1 − λ_{ν,0}) > 1, and **sign ln(λ_odd/λ_even) = ε**. This is rh2's rule (80/80 points), now derived at the level of the near-optimal trial.
+The ground state (m = 0, the 𝓗-eigenvalue +1 member with the least leakage) lands in the sector (−1)^s = ε. The other sector starts at m = 1. Hence λ_{−ε}/λ_ε ≈ (1 − λ_{ν,1})/(1 − λ_{ν,0}) > 1, and **sign ln(λ_odd/λ_even) = ε**. This is our rule (80/80 points), now derived at the level of the near-optimal trial.
 
 **Table 6.2** (`data/research_r2/root_number_gap.json`; v = 10, c = 40π):
 

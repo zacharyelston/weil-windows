@@ -29,16 +29,16 @@ presented by the author and an independently verified certificate is explicit.
 
 ## Classification of C1–C8
 
-| Claim | Status | Source and evidence | Consequence for rh2 |
+| Claim | Status | Source and evidence | Consequence for this work |
 |---|---|---|---|
-| C1: form, table reproduction, entry 48 | **Partly known**; literal unconditional modulus-square wording needs correction | [B], (1.1), (2.8), Proposition 2.1: **proved** explicit-formula identity. [A], §5, p.25: **numerical** table, described as upper bounds. Reproduction and the smaller entry 48 are rh2 numerics. | The zeros form is defined on the full test-function space, but becomes a sum of absolute squares only under RH. “Pole-free” names the zeros side, not omission of the geometric pole correction. No published correction to entry 48 was found. |
+| C1: form, table reproduction, entry 48 | **Partly known**; literal unconditional modulus-square wording needs correction | [B], (1.1), (2.8), Proposition 2.1: **proved** explicit-formula identity. [A], §5, p.25: **numerical** table, described as upper bounds. Reproduction and the smaller entry 48 are our numerics. | The zeros form is defined on the full test-function space, but becomes a sum of absolute squares only under RH. “Pole-free” names the zeros side, not omission of the geometric pole correction. No published correction to entry 48 was found. |
 | C2: own gamma/conductor leakage and factors 1.5–15 | **Partly known** | [A], §6.4, Figure 1: **numerical** comparison for ζ. [B], §3: near-radical construction. The DH conductor rescaling and quantitative factors were **not found** in [A]–[D], [G]–[I]. | These finite-range ratios remain numerical observations, not universal constants or an asymptotic comparison theorem. |
 | C3: whole low spectrum in a Fourier class | **Partly known** | [B], §3, (3.4), Definition 3.1 and Figures 26–36: **numerical** reconstruction of several even and odd eigenfunctions by orthogonalized E-images. [C], §3.6, (29): **proved** construction of the Fourier-class vectors. | Multi-vector reconstruction is already documented. Neither the stated DH sequence nor a theorem identifying the entire eigenvalue sequence with leakages was found there. |
 | C4: k, angles, Rayleigh ratios, zero-error equality | **Partly known** | [A], §6.4, (17): construction; §6.5, Fact 6.4: stated convergence result. [B], §3: **numerical** reconstruction. The DH angles and the three-way error comparison were **not found** in those sources. | A convergent candidate is known; its quantitative identification with the ground state is not established. The proposed equalities of error scales are empirical and root-dependent. |
-| C5: DH positivity up to 30 and continuum crossover | **Partly known**, with unproved upgrades | [E], Theorem 6.1: **proved, conditional** real-zero theorem; it does not require positivity of the minimum. [J], pp.747–748 and [K], §§1–2: **numerical** DH zeros. rh2 supplies the support scan. | Finite-dimensional positivity cannot certify the full-space lower endpoint 30. Simplicity and evenness must be checked before applying the continuum real-zero theorem to DH. |
+| C5: DH positivity up to 30 and continuum crossover | **Partly known**, with unproved upgrades | [E], Theorem 6.1: **proved, conditional** real-zero theorem; it does not require positivity of the minimum. [J], pp.747–748 and [K], §§1–2: **numerical** DH zeros. This work supplies the support scan. | Finite-dimensional positivity cannot certify the full-space lower endpoint 30. Simplicity and evenness must be checked before applying the continuum real-zero theorem to DH. |
 | C6: leakage-relative margins decay comparably | **Not found** | No corresponding metric comparison in inspected [A]–[D], [F]–[I]. Evidence is the numerical one-shot and review in this repository. | Raw near-radical eigenvalues and generalized margins are different quantities. No inference that the relative margin tends to zero follows just from the raw floor tending to zero. |
-| C7: positive diagonal blocks, negative coupling Schur complement | **Not found** as this specific numerical claim | rh2 `SCHUR_BLOCKS.md`: **numerical**. Schur positivity equivalence is an exact algebraic fact, not an RH-specific result of the cited papers. | The diagnosis is valid for the chosen finite decomposition if its reported blocks are accurate. It does not isolate an invariant arithmetic cause; see the lower-bound correction below. |
-| C8: grid attribution is ill-posed | **Contradicted as stated**; conditioning claim supported numerically | rh2 explicitly verifies the additive split. [B], (2.11)–(2.12), defines individual local contributions. No impossibility theorem for stable attribution was found. | A specified finite split is well-defined. Recovering its small residual is ill-conditioned, and interpreting an artificial mask causally needs a genuine functional-equation control. |
+| C7: positive diagonal blocks, negative coupling Schur complement | **Not found** as this specific numerical claim | This work `SCHUR_BLOCKS.md`: **numerical**. Schur positivity equivalence is an exact algebraic fact, not an RH-specific result of the cited papers. | The diagnosis is valid for the chosen finite decomposition if its reported blocks are accurate. It does not isolate an invariant arithmetic cause; see the lower-bound correction below. |
+| C8: grid attribution is ill-posed | **Contradicted as stated**; conditioning claim supported numerically | This work explicitly verifies the additive split. [B], (2.11)–(2.12), defines individual local contributions. No impossibility theorem for stable attribution was found. | A specified finite split is well-defined. Recovering its small residual is ill-conditioned, and interpreting an artificial mask causally needs a genuine functional-equation control. |
 
 ## Q1. Positive-operator inequalities with primes
 
@@ -185,7 +185,7 @@ supply the missing sign or cross bound.
 forms on the upper-half-plane Hardy space by a positive measure μ with
 `dρ=dμ/(1+t²)`, `ρ((0,r))=O(r)` and `ρ((r⁻¹,∞))=O(r)` as r→0.
 Theorem 4.1 constructs a bounded symbol. These results require identifying
-a positive Hankel form first. No identification of the rh2 B block, or its
+a positive Hankel form first. No identification of our B block, or its
 ℓj-weighted norm, with such a form was found; replacing that missing step
 with assumed positivity would not advance the argument.
 
@@ -212,7 +212,7 @@ computes four off-line zeros below height 200. [K], §2, computes additional
 ones through deformation of periodic Dirichlet series. Its Theorem 1 proves
 local persistence of zeros under a continuous coefficient deformation,
 not their complete enumeration or a support threshold for Weil negativity.
-Neither paper computes the rh2 window crossover.
+Neither paper computes our window crossover.
 
 [O2], Bombieri–Ghosh, is a directly relevant 50-page survey, especially its
 sections on zeros and the coefficients of `1/f`. Its full text could not be
@@ -243,7 +243,7 @@ the first compact support where failure is visible. Positive truncations do
 not give such a threshold. Real off-line zeros additionally expose a parity
 issue: an even-only test space need not detect them (see Q5).
 
-**Takeaway:** zero-based controls are well established, but no published rh2-style
+**Takeaway:** zero-based controls are well established, but no published this work-style
 support threshold was found in the accessible sources; Bombieri–Ghosh remains unread.
 
 ## Q5. Genuine functional-equation-preserving families
@@ -344,7 +344,7 @@ The following is a **published numerical list**, not an argument-principle
 certificate of completeness. Reflection gives the left-half-strip partners;
 complex conjugation gives negative heights.
 
-| Right-half-strip value in rh2 | Published value | Source |
+| Right-half-strip value in this work | Published value | Source |
 |---|---|---|
 | 0.808517 + 85.699348i | same six decimals | [J], p.747; repeated [K], p.2045 |
 | 0.650830 + 114.163343i | same six decimals | [J], p.747 |
@@ -354,14 +354,14 @@ complex conjugation gives negative heights.
 | 0.819550 + 320.876490i | 0.81955 + 320.8764i | [K], p.2046 |
 
 The last two agree at the precision printed, apparently truncated in height;
-their additional rh2 digits are not verified by this publication. The next
+their additional our digits are not verified by this publication. The next
 listed height in [K] is 331.0502, beyond the requested cutoff 330.
 
 ### Entry 48
 
 The arXiv record for [A] still lists only v1, dated 2026-02-03, and its §5
 table still prints `0.0209081`. No erratum addressing that entry was found
-in the arXiv record or targeted title/identifier searches. rh2 reports
+in the arXiv record or targeted title/identifier searches. This work reports
 `0.00209081` for its N=100 reconstruction. Because the source describes the
 entries as **upper bounds**, a smaller reproduced discrepancy does not
 logically falsify the printed value. A decimal-place typo is plausible,

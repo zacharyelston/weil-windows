@@ -1,5 +1,5 @@
 {
- "note": "R2 upper bounds B at the four certified supports, against rh2's certified lower bounds (docs/CERTIFICATE_238.md). B >= cert is the check that can fail; computed 2026-10-03 after external review of the R2 brief.",
+ "note": "R2 upper bounds B at the four certified supports, against our certified lower bounds (docs/CERTIFICATE_238.md). B >= cert is the check that can fail; computed 2026-10-03 after external review of the R2 brief.",
  "rows": [
   {
    "construction": "hermite",

@@ -15,7 +15,7 @@ Source: A. Connes, *The Riemann Hypothesis: Past, Present and a Letter Through T
 - **Precedents.**
   - Reconstructing several low eigenvectors from E-mapped prolates is already documented: Connes–Consani, arXiv:2106.01715, §3; Connes–Consani–Moscovici, arXiv:2310.18423, §3.6.
   - A "Landau–Widom decay law" for the minimum is conjectured by Zhu, arXiv:2608.24827, Conjecture 12.1.
-  - Zhu also states a certified, prime-inclusive positive lower bound at x = e^{1.6} ≈ 4.953 (Corollary 6.3), in an unrefereed preprint. `docs/AUDIT_ZHU.md` re-executes it in interval arithmetic: verified with corrections, and the even constant improves to 1.0277e-17. rh2's upper bound then brackets the minimum: 1.0277e-17 ≤ λ*(e^{1.6}) ≤ 1.6356e-17.
+  - Zhu also states a certified, prime-inclusive positive lower bound at x = e^{1.6} ≈ 4.953 (Corollary 6.3), in an unrefereed preprint. `docs/AUDIT_ZHU.md` re-executes it in interval arithmetic: verified with corrections, and the even constant improves to 1.0277e-17. Our upper bound then brackets the minimum: 1.0277e-17 ≤ λ*(e^{1.6}) ≤ 1.6356e-17.
 
   Our DH extension and the numerical constants are separate from these.
 - **After DH's crossover:** the minimiser is still close to k_λ at x = 32 (sin² ≈ 4.2e-7) and becomes orthogonal only by x ≈ 34.
@@ -35,7 +35,7 @@ The archimedean integrals are computed as exact accelerated series, using K(w) =
 
 At λ² = 13, N = 100 and 130 digits, the computed differences match the letter's table to the six digits printed:
 
-| k | Paper | rh2 |
+| k | Paper | This work |
 |---|---|---|
 | 1 | 2.60179e-55 | 2.60179e-55 |
 | 2 | 4.80071e-52 | 4.80071e-52 |

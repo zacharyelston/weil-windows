@@ -114,8 +114,8 @@ Z₁ and its Euler partner ζ_K = ζ·L(s, χ₋₂₀) share the completed func
 
 **ζ_K certificate.** Zhu's reduction with T♯ = 1000 and 1162 modes, in Arb, using `scripts/control_certificate.py --function zetak`.
 - **Comb:** exactly Λ(n)(1 + χ₋₂₀(n)) on n ∈ {2, 3, 4, 5, 7, 8, 9, 16}. The primes 11, 13, 17 and 19 have χ₋₂₀ = −1 and drop out.
-- **Normalisation:** agrees with rh2's ζ_K matrices to 1e-39 in both sectors.
+- **Normalisation:** agrees with our ζ_K matrices to 1e-39 in both sectors.
 - **Runs:** the even sector ran on the M3 (930 s) and the odd sector on the M4 (516 s). The exact Cholesky residual is ≤ 5.2·10⁻⁷¹ in each.
-- **Consistency:** rh2's finite-basis upper bounds at the same x are 4.866e-3, 4.845e-3 and 4.834e-3 at N = 48, 64 and 80. So **4.749·10⁻³ ≤ λ*_even(ζ_K) ≤ 4.834·10⁻³**.
+- **Consistency:** Our finite-basis upper bounds at the same x are 4.866e-3, 4.845e-3 and 4.834e-3 at N = 48, 64 and 80. So **4.749·10⁻³ ≤ λ*_even(ζ_K) ≤ 4.834·10⁻³**.
 
 This is the pre-registered prediction of this document (Z₁'s form turns negative while ζ_K's stays positive), now as a pair of certificates at the same support. It is the cleanest Euler-versus-non-Euler separation in the repository: identical archimedean data, opposite outcomes. The separation is exhibited, not explained; why the Euler product protects ζ_K is the open question.

@@ -9,7 +9,7 @@ like 1/y, (A2) fails and Theorem 2's B diverges. Here phi = P(t) tau(t), t = y/l
       (the prolate's own edge scale: near t = 1 it behaves like I_0(c sqrt(2(1-t))), which varies on 1 - t ~ 1/c^2).
 phi is C^2 with phi''' of bounded variation, so psi = O(y^-4), (A1)-(A4) hold and Theorem 2 applies (section 9 of
 docs/R2_THEOREMS.md). This script computes, in floating point only:
-  - the trial's Rayleigh quotient in rh2's basis (zeros_side), as in rq_check.py;
+  - the trial's Rayleigh quotient in our basis (zeros_side), as in rq_check.py;
   - a floating estimate of Theorem 2's bound: B, A from sampled |Phi(omega)| (Lemma H form), edge sum, norm, zero
     integral (Bellotti-Wong closed form). Not certified: sampling on a grid, extrapolated omega^-4 tail.
 Phi(omega) = int_{-1}^{1} phi(t) cos(omega t) dt is evaluated as the Legendre-Bessel series of P minus the transform of
@@ -221,7 +221,7 @@ def run_point(sup, s, kappa, h_om=None):
     norm2 = 2 * nrm
     Z, Tc, TL = C.zero_sum_bound(arb(mp.nstr(A, 30)), arb(mp.nstr(B, 30)), 1)
     bound = mp.mpf(Z.mid().str(30, radius=False)) / norm2
-    # Rayleigh quotient in rh2's basis
+    # Rayleigh quotient in our basis
     N = SUPPORT_N[sup]
     hmode = L / (2 * N + 8)
     nodes, vals = [], []

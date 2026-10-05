@@ -1,4 +1,4 @@
-"""Issue zacharyelston/rh2#7, step 2: the matched-pair decay-law test.
+"""Issue the private research log (issue 7), step 2: the matched-pair decay-law test.
 
 A = L(s, ρ) for the Rédei field of (5, 29), primitive, degree 2, Maass type (Γ_R(s)², N = 145, ε = +1, m₀ = 0).
 B = L(s, χ₅)L(s, χ₂₉), a product with the same N, gamma factor, root number and m₀.

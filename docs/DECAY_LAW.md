@@ -33,7 +33,7 @@ All values are finite-basis Rayleigh–Ritz upper bounds, in multiprecision floa
 The sections below are in chronological order.
 
 
-**Observation (ζ).** Let λ(x) be the smallest eigenvalue of ζ's zeros-side Weil form on test functions supported in a window of length L = log x (rh2's normalisation, x = e^{2a}). The best committed upper bound in each sector, at five points (x = 4.95 to 19.9, λ from 1.6e-17 down to 6.3e-96), fits
+**Observation (ζ).** Let λ(x) be the smallest eigenvalue of ζ's zeros-side Weil form on test functions supported in a window of length L = log x (our normalisation, x = e^{2a}). The best committed upper bound in each sector, at five points (x = 4.95 to 19.9, λ from 1.6e-17 down to 6.3e-96), fits
 
   ln λ_even(x) = −α x + γ ln x + β,  α = 12.5556 (α/4π = 0.99915), γ = 4.99, β = 15.55, max residual 0.035;
   ln λ_odd(x):  α = 12.549 (α/4π = 0.99859), γ = 7.20, β = 18.85, max residual 0.040.
@@ -42,7 +42,7 @@ The ratio λ_odd/λ_even grows like x^{2.29}. These are found after the fact: th
 
 **Scope.** This is a fit of one model over x ≤ 20; it does not determine the asymptotic rate.
 - Zhu's conjecture (arXiv:2608.24827v2, Conj. 12.1) is −ln λ* = C·N(T*)/ln N(T*)·(1 + o(1)), with C ≈ 2π². Its local slope over this range is about 11–12.
-- At x = e^{2.99}, rh2's N = 180 upper bound differs from Zhu's literal leading term by 0.59% in −ln λ.
+- At x = e^{2.99}, our N = 180 upper bound differs from Zhu's literal leading term by 0.59% in −ln λ.
 - That is a disagreement with the leading-term prediction at one finite point, not an exclusion of an asymptotic statement. Equally, the fit here does not show that the rate stays 4π as x → ∞.
 
 The rate e^{−4πx} is Slepian's prolate concentration rate e^{−2c} at c = 2πx = 2πλ², with x = λ² in Connes' notation. That is the time–band product of Connes' Sonin picture, where the support is [−λ, λ] in the additive variable and the Fourier transform is also confined to [−λ, λ]. A zero-counting heuristic gives the same rate. F has exponential type L/2, so it can vanish on the zeros only up to the height T* where their density (1/2π)log(T/2π) reaches L/2π, which gives T* = 2πx. The minimum then costs e^{−2T*}.
@@ -121,7 +121,7 @@ Within a class the conductors collapse to within about ±0.7 in ln λ, over a ra
 
 ### Prolate index: n = κ + 2·(sector) + 4·(pole) (empirical hypothesis)
 
-The literature review (`docs/LIT_TANGENTS.md`, decay section) found that Connes (arXiv:2602.04022 §6.4, citing Fuchs 1964) gives 1 − χ₂ ∼ (2¹⁴/3)√2 π⁵ e^{−4πx + (9/2) ln x} for the prolate h₄. It also found that rh2's certified ζ minima track the Fuchs–Slepian leakage
+The literature review (`docs/LIT_TANGENTS.md`, decay section) found that Connes (arXiv:2602.04022 §6.4, citing Fuchs 1964) gives 1 − χ₂ ∼ (2¹⁴/3)√2 π⁵ e^{−4πx + (9/2) ln x} for the prolate h₄. It also found that our certified ζ minima track the Fuchs–Slepian leakage
 
   ℓ_n(c) = ½·4√π 8ⁿ c^{n+½} e^{−2c}/n!,  c = 2πx,
 
@@ -730,7 +730,7 @@ With R1 answered (exclusion is a witness computation, and under the stated hypot
 
 **Question (user's).** Are the zeros on the critical line the zeros a torus produces? The spectral zeta of a flat torus is the Epstein zeta of its lattice form. Two tori with the same seam (functional equation) but different arithmetic:
 - **Z_sq**, the torus of x² + y² (class number 1): Z_sq(s) = 4ζ(s)L(s, χ₋₄), an Euler product; zeros-side window form = ζ's form + L(χ₋₄)'s form (forms add over factors; the constant 4 is irrelevant). Degree 2, conductor 4.
-- **Z₁**, the torus of x² + 5y² (class number 2): ½[ζ_K + L(χ₋₄)L(χ₅)], no Euler product, off-line zeros (Davenport–Heilbronn 1936; rh2's census in `docs/EPSTEIN.md`). Degree 2, conductor 20. Measured first positivity failure: x ∈ [15.800, 19.844), i.e. 2a ∈ [2.760, 2.988) [variable corrected after review; the registration originally wrote 2a for x].
+- **Z₁**, the torus of x² + 5y² (class number 2): ½[ζ_K + L(χ₋₄)L(χ₅)], no Euler product, off-line zeros (Davenport–Heilbronn 1936; our census in `docs/EPSTEIN.md`). Degree 2, conductor 20. Measured first positivity failure: x ∈ [15.800, 19.844), i.e. 2a ∈ [2.760, 2.988) [variable corrected after review; the registration originally wrote 2a for x].
 
 **Run.** λ_min of the zeros-side form, both sectors, at x = e^{2a} for 2a ∈ {1.6, 2.0, 2.38, 2.6, 2.99, 3.2, 3.5}, at N = 64 and N = 96 (full eigensolver with fallback; precision-stable). `scripts/square_torus_mp.py` → `data/connes/decay/square_torus.json`.
 
@@ -759,7 +759,7 @@ With R1 answered (exclusion is a witness computation, and under the stated hypot
 - **P-ST2 holds.** With v = √(x/4): α/4π = 2.061 (even, γ = 7.2) and 2.133 (odd, γ = 11.6); linear slopes 1.76 and 1.64 (the small-x points are pre-asymptotic at this conductor).
 - **P-ST3 holds.** λ_odd > λ_even at every support.
 
-**Reading (corrected after review).** Both tori share the reflection symmetry s ↔ 1 − s; they differ in lattice shape, in conductor (4 against 20, so their completed functional equations differ), and in class number, i.e. in whether the spectral zeta is an Euler product. The positive values for Z_sq are Rayleigh–Ritz upper bounds in the tested matrices: they are consistent with RH for ζ·L(χ₋₄), which remains conjectural, and they do not establish that its zeros lie on the line. Z₁'s negative values are witnesses: it has zeros off the line (Davenport–Heilbronn), as its census shows. So the result is: two tori with the same symmetry behave differently, and the symmetry alone does not keep zeros on the seam. It does **not** isolate the Euler product as the sole cause, because the conductors differ. The equal-conductor isolation in rh2 is ζ_K against Z₁ (`docs/EPSTEIN.md`): same degree, gamma factor and conductor 20, and ζ_K = Z₁ + Z₂ is the spectral zeta of the union of the two discriminant-−20 tori; it is certified positive at x = e^{2.99} where Z₁ is certified negative. A single-torus version of that comparison would need Z₂ (2x² + 2xy + 3y²) in the window instrument, which `docs/EPSTEIN.md` notes is blocked by a₁ = 0.
+**Reading (corrected after review).** Both tori share the reflection symmetry s ↔ 1 − s; they differ in lattice shape, in conductor (4 against 20, so their completed functional equations differ), and in class number, i.e. in whether the spectral zeta is an Euler product. The positive values for Z_sq are Rayleigh–Ritz upper bounds in the tested matrices: they are consistent with RH for ζ·L(χ₋₄), which remains conjectural, and they do not establish that its zeros lie on the line. Z₁'s negative values are witnesses: it has zeros off the line (Davenport–Heilbronn), as its census shows. So the result is: two tori with the same symmetry behave differently, and the symmetry alone does not keep zeros on the seam. It does **not** isolate the Euler product as the sole cause, because the conductors differ. The equal-conductor isolation in this work is ζ_K against Z₁ (`docs/EPSTEIN.md`): same degree, gamma factor and conductor 20, and ζ_K = Z₁ + Z₂ is the spectral zeta of the union of the two discriminant-−20 tori; it is certified positive at x = e^{2.99} where Z₁ is certified negative. A single-torus version of that comparison would need Z₂ (2x² + 2xy + 3y²) in the window instrument, which `docs/EPSTEIN.md` notes is blocked by a₁ = 0.
 
 **External review of 0a83c93 (three findings, all accepted).** (1) Positive finite matrices are upper bounds and cannot establish critical-line zeros: the reading now says "consistent with RH", not "keeps its zeros on the line". (2) The comparison does not isolate the Euler product, since the conductors are 4 and 20: the reading now states this and points to ζ_K vs Z₁ for the isolation. (3) The failure bracket was labelled 2a but is in x: corrected in the registration with a marker. The reviewer independently recomputed twelve eigenvalues at 120 digits (agreement 5e-15) and checked the square-lattice coefficient identity exactly.
 

@@ -8,7 +8,7 @@ f = E-map window function, and
     B = 2 int_{L/2}^inf |f| e^{u/2} du
     A = 2 (|f(L/2)| e^{L/4} + int_{L/2}^inf |f'| e^{u/2} du)
     bound = zero_sum_bound(A, B) / ||f_win||^2         (>= lambda_min in that sector, unconditionally)
-Also reported: the trial function's Rayleigh quotient in rh2's basis (matrix from the explicit formula; also an
+Also reported: the trial function's Rayleigh quotient in our basis (matrix from the explicit formula; also an
 unconditional upper bound) as a consistency check that Q(f_win) is as small as the bound says.
 
 Usage: .venv/bin/python scripts/research_r2/hermite_bound.py --d 1,5,-4 --xq 2,3,4,6 --json data/research_r2/hermite_bound.json
@@ -38,7 +38,7 @@ def measured(D, xq, parity):
 
 
 def project(win, L, n, parity, nodes):
-    """Coefficients of f_win in rh2's orthonormal basis by Gauss-Legendre on [-L/2, L/2] (nodes on [-1,1])."""
+    """Coefficients of f_win in our orthonormal basis by Gauss-Legendre on [-L/2, L/2] (nodes on [-1,1])."""
     panels = n // 3 + 6                      # composite Gauss-Legendre, >= 3 nodes per oscillation of the top mode
     width = L / panels
     vals = []
@@ -66,7 +66,7 @@ def main():
     ap.add_argument("--d", default="1,5,8,-3,-4,-7,-20")
     ap.add_argument("--xq", default="2,3,4,5,6,7,8,10")
     ap.add_argument("--dps", type=int, default=40)
-    ap.add_argument("--matrix", action="store_true", help="also the Rayleigh quotient in rh2's basis (slow)")
+    ap.add_argument("--matrix", action="store_true", help="also the Rayleigh quotient in our basis (slow)")
     ap.add_argument("--json")
     args = ap.parse_args()
     mp.mp.dps = args.dps

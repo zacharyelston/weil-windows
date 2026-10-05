@@ -8,7 +8,7 @@ sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(os.getcwd(), "scripts"))
 import mpmath as mp
 import r1lib as R
-from control_normalisation import rh2_matrix
+from control_normalisation import native_matrix
 from progress import Job
 
 # census off-line zeros (β > ½ representatives); docs/DAVENPORT_HEILBRONN.md, docs/EPSTEIN.md, docs/CONDUCTOR5_FAMILY.md
@@ -39,7 +39,7 @@ def main():
         t0 = time.time()
         x = mp.exp(mp.mpf(xs_[2:])) if xs_.startswith("e^") else mp.mpf(xs_)
         L = mp.log(x)
-        Q = rh2_matrix(args.function, x, args.n, args.sector)
+        Q = native_matrix(args.function, x, args.n, args.sector)
         n = args.n
         Ts, cs, ss, ms = [], [], [], []
         for b_s, g_s in PAIRS[args.function]:

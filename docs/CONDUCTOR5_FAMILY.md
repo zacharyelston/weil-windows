@@ -24,7 +24,7 @@ For a real test function φ, a real pair at γ = ±iδ contributes:
 - **+2φ̂(iδ)² ≥ 0** if φ is even;
 - **−2φ̂(iδ)² ≤ 0** if φ is odd.
 
-So only the odd sector can detect a real off-line pair, and every earlier rh2 instrument was even-only. The odd sector uses the basis √(2/L)·sin(2πku/L) on [−L/2, L/2]. Its zeros-side form is E − 2wwᵀ, where w_k = ∫ b_k(u) e^{u/2} du; the pole correction has the opposite sign from the even sector.
+So only the odd sector can detect a real off-line pair, and every earlier our instrument was even-only. The odd sector uses the basis √(2/L)·sin(2πku/L) on [−L/2, L/2]. Its zeros-side form is E − 2wwᵀ, where w_k = ∫ b_k(u) e^{u/2} du; the pole correction has the opposite sign from the even sector.
 
 ## Checks
 

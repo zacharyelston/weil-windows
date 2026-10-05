@@ -5,7 +5,7 @@ Date: 2026-10-03. Branch `r2-rigorous` (from `feat/weil-gram-instrument` at 8c5e
 **Labels.**
 - [R] read in the source (at most one short quotation per source);
 - [A] abstract only;
-- [S] second-hand (another paper's or an rh2 document's account);
+- [S] second-hand (another paper's or a repository document's account);
 - [D] derived here (proof; "sketch" where marked);
 - [N] computed in floating point (multiprecision, not certified);
 - [C] certified: an Arb ball enclosure (python-flint 0.9.0) whose relevant endpoint is the stated bound.
@@ -44,7 +44,7 @@ Date: 2026-10-03. Branch `r2-rigorous` (from `feat/weil-gram-instrument` at 8c5e
 6. **R2's "rate e^{−2c}" for Theorem 4** is a conjecture (Conjecture R), not a theorem. R2's rate e^{−c} for Corollary 3 is now a theorem (Proposition H).
 
 **Validation** (§8):
-- (a) the trial's own Rayleigh quotient in rh2's basis is ≤ B_cert: **386/386** (84 + 8 Kaiser–Bessel, 286 + 8 Hermite; all precision-stable);
+- (a) the trial's own Rayleigh quotient in our basis is ≤ B_cert: **386/386** (84 + 8 Kaiser–Bessel, 286 + 8 Hermite; all precision-stable);
 - (b) B_cert ≥ the certified lower bound at the four supports: **16/16**;
 - (c) the trial's Rayleigh quotient ≥ the certified lower bound: **16/16**;
 - (d) Theorem 1's symmetry ball encloses 0 at all 386 certified points;
@@ -52,7 +52,7 @@ Date: 2026-10-03. Branch `r2-rigorous` (from `feat/weil-gram-instrument` at 8c5e
 
 **The sharp prolate (Step 4, §9).**
 - A C¹ edge restores finite A and B (Proposition P, proved).
-- A taper on the prolate's own edge scale gives a trial whose RQ is close to rh2's minima.
+- A taper on the prolate's own edge scale gives a trial whose RQ is close to our minima.
 - Its Theorem-2 bound is **worse** than Kaiser–Bessel's at every tested point: 5–40× at the best taper width ([N], Table P). The taper pushes out-of-band mass to ω ≈ c²/κ and inflates A.
 - At large x, Kaiser–Bessel's distance from the truth is mostly the trial's (§8). A sharper certified bound needs a better closed-form C¹ trial, not the prolate.
 
@@ -63,12 +63,12 @@ Date: 2026-10-03. Branch `r2-rigorous` (from `feat/weil-gram-instrument` at 8c5e
 - **Window.** x > 1, L = log x, W = [−L/2, L/2]. For real f ∈ L²(W) the sector is s ∈ {0, 1}, with f(−u) = (−1)^s f(u). The transform is F(z) = ∫ f(u) e^{izu} du.
 - **L-functions.** 𝓛 is either ζ (q = 1, parity κ = 0, a pole), or L(s, χ) for a real primitive Dirichlet character χ of conductor q > 1 and parity κ (χ(−1) = (−1)^κ). The characters used are those of the fundamental discriminants D ∈ {5, 8, 12, 13, 17, −3, −4, −7, −8, −11, −15, −20}, with χ(n) = (D/n) the Kronecker symbol (`decay_law_mp.kronecker`) and q = |D|.
 - **Zeros.** Nontrivial zeros are written ρ = ½ + iγ_ρ, so γ_ρ = −i(ρ − ½) ∈ ℂ and |Im γ_ρ| < ½. They are counted **with multiplicity**, the central zero included (m₀ = its multiplicity, any value).
-- **The form.** Q(f) is Weil's quadratic form: the archimedean, prime and pole terms evaluated on the autocorrelation of f, which is exactly what rh2's matrices compute (`decay_law_mp.zeros_side`). λ_s(x) = inf Q(f)/‖f‖² over real f ∈ L²(W) of sector s.
+- **The form.** Q(f) is Weil's quadratic form: the archimedean, prime and pole terms evaluated on the autocorrelation of f, which is exactly what our matrices compute (`decay_law_mp.zeros_side`). λ_s(x) = inf Q(f)/‖f‖² over real f ∈ L²(W) of sector s.
 - **Explicit formula** (assumed, standard [S]: Weil 1952; `docs/RESEARCH_R1_EXCLUSION.md` §1). For real f supported in W and of bounded variation (in particular for f with finitely many jumps),
 
   Q(f) = Σ_ρ F(γ_ρ) F(−γ_ρ),
 
-  with the sum over all nontrivial zeros, with multiplicity, absolutely convergent. rh2's matrices were validated against this zero sum in `docs/DECAY_LAW.md` (gates), and Zhu's normalisation of Q agrees with rh2's with factor 1 (`docs/AUDIT_ZHU.md` §1) [S]. Apart from textbook facts (Poisson summation, Gauss sums, DLMF Bessel identities), this is the only analytic input taken without proof. The rigorous certificates (`docs/CERTIFICATE_238.md`) assume it too.
+  with the sum over all nontrivial zeros, with multiplicity, absolutely convergent. Our matrices were validated against this zero sum in `docs/DECAY_LAW.md` (gates), and Zhu's normalisation of Q agrees with our with factor 1 (`docs/AUDIT_ZHU.md` §1) [S]. Apart from textbook facts (Poisson summation, Gauss sums, DLMF Bessel identities), this is the only analytic input taken without proof. The rigorous certificates (`docs/CERTIFICATE_238.md`) assume it too.
 - **Decay-law variables.** c = 2πx/q, λ = √(x/q) (so c = 2πλ²).
 - **Fourier on the line.** ψ̂(ξ) = ∫ ψ(y) e^{−2πiyξ} dy.
 
@@ -412,7 +412,7 @@ With M1 and M2, Theorem 2 gives Conjecture R with p = 2p₁ + p₂ immediately. 
 
 **Theorem C (finite).** For every (𝓛, x, s) listed in Tables S, Hermite and KB below, λ_s(x) ≤ B_cert(x). This is a statement about those x only.
 
-Every B_cert below is the upper endpoint of an Arb ball (256-bit working precision), rounded up in the last printed digit. The data are `data/research_r2_rigorous/{hermite,kb}_cert{,_supports}.json`, printed by `summarize.py`. "cert" is rh2's certified lower bound at the same x (`docs/CERTIFICATE_238.md`, re-read from `data/connes/*certificate*.json` as the lower endpoint of the stored ball).
+Every B_cert below is the upper endpoint of an Arb ball (256-bit working precision), rounded up in the last printed digit. The data are `data/research_r2_rigorous/{hermite,kb}_cert{,_supports}.json`, printed by `summarize.py`. "cert" is our certified lower bound at the same x (`docs/CERTIFICATE_238.md`, re-read from `data/connes/*certificate*.json` as the lower endpoint of the stored ball).
 
 **Table S.** ζ at the four certified supports (B_cert = certified upper bound; cert = certified lower bound)
 
@@ -504,12 +504,12 @@ The full balls (A, B, ‖f_win‖², T_c, T_L, the zero integral and B_cert) are
 
 ## 8. Validation: the checks that can fail
 
-The rule: an upper bound is never compared with another upper bound. B_cert, the trial's Rayleigh quotient RQ and rh2's Ritz minima are all upper bounds for λ_s(x), so B_cert/Ritz validates nothing. The checks below compare an upper bound with a lower bound, or a quantity with the bound that a theorem says must exceed it.
+The rule: an upper bound is never compared with another upper bound. B_cert, the trial's Rayleigh quotient RQ and our Ritz minima are all upper bounds for λ_s(x), so B_cert/Ritz validates nothing. The checks below compare an upper bound with a lower bound, or a quantity with the bound that a theorem says must exceed it.
 
 **(a) RQ(trial) ≤ B_cert.**
 - **The theorem behind it.** Theorems 1–2 give Q(f_win)/‖f_win‖² ≤ B_cert for the very trial function f_win. That is a statement that can fail: a sign error in σ, a wrong Gauss sum or an error in the transforms would make Q(f_win) O(‖f_win‖²) instead of e^{−2c}-small.
 - **The computation** (`rq_check.py`) [N].
-  - f_win is projected on rh2's N-mode basis of the sector, with N = min(scan's N, 240), and N = 60, 100, 120, 180 at the supports.
+  - f_win is projected on our N-mode basis of the sector, with N = min(scan's N, 240), and N = 60, 100, 120, 180 at the supports.
   - RQ = cᵀMc/cᵀc is computed with M = `decay_law_mp.zeros_side` (archimedean + primes + pole; no zeros enter).
   - Everything is redone at dps and dps + 20, with dps = ⌈2c/ln 10⌉ + 40; agreement < 10⁻⁶ is required ("precision-stable").
   - **No eigensolver is involved** (RQ is a quadratic form of a fixed vector), so the inv+full protocol of the scans is replaced by this two-precision check.
@@ -594,7 +594,7 @@ So a smoothed edge does give finite A and B. The Kaiser–Bessel trial (m = 2) i
 - **The trade-off in κ.** A wider taper (larger κ) lowers A but lets the taper reach into the region where ξ is larger (ξ(1 − κ/c²) ≈ e₀I₀(√(2κ))), which raises the leakage. §9.4 measures it.
 
 **9.4 Evaluation** [N, floating point; `prolate_taper.py` → `data/research_r2_rigorous/prolate_taper.json`].
-- **What is computed.** ζ at supports 1.6 and 2.38 (both sectors, taper widths κ ∈ {2, 8, 32, 128}) and at supports 2.6 and 2.99 (both sectors, κ = 8, the best width at the first two). For each: the trial's RQ in rh2's basis (as in (a)), and a floating estimate of Theorem 2's bound.
+- **What is computed.** ζ at supports 1.6 and 2.38 (both sectors, taper widths κ ∈ {2, 8, 32, 128}) and at supports 2.6 and 2.99 (both sectors, κ = 8, the best width at the first two). For each: the trial's RQ in our basis (as in (a)), and a floating estimate of Theorem 2's bound.
 - **How the estimate is made.**
   - Φ(ω) is evaluated as the Legendre–Bessel series of the prolate minus the edge-taper transform, at dps ≈ c/ln 10 + 40.
   - B and A are trapezoid integrals of |Φ| and ω|Φ′| on [c, 20/ε + 10c] (8 samples per 2π), plus an extrapolated ω⁻⁴ tail.
@@ -626,7 +626,7 @@ So a smoothed edge does give finite A and B. The Kaiser–Bessel trial (m = 2) i
 | 2.99 | odd | 8 | 2.07e-91 | 1.4 | 3.7e-84 | 1.26e-85 | 29.5 | 1.79e+7 | 2.7e+2 | 8153.4 |
 
 **Reading.**
-1. **Smoothing works for the trial.** The tapered trial's RQ is 1.4–1.9 × rh2's Ritz minimum at κ ≤ 8 (3.8 at 2.99 even). It is 10–7·10³ × better than the Kaiser–Bessel trial's RQ (6.6·10³ at 2.99 even): Table D gives KB's RQ/Ritz as 18–33 at x = 4.95 and up to 2.5·10⁴ at x = 19.9. The C² taper on the edge scale 1/c² costs almost nothing in the trial's quality, which confirms R2's near-optimality of the prolate.
+1. **Smoothing works for the trial.** The tapered trial's RQ is 1.4–1.9 × our Ritz minimum at κ ≤ 8 (3.8 at 2.99 even). It is 10–7·10³ × better than the Kaiser–Bessel trial's RQ (6.6·10³ at 2.99 even): Table D gives KB's RQ/Ritz as 18–33 at x = 4.95 and up to 2.5·10⁴ at x = 19.9. The C² taper on the edge scale 1/c² costs almost nothing in the trial's quality, which confirms R2's near-optimality of the prolate.
 2. **It does not work for Theorem 2.** The taper's Theorem-2 slack (estimate/RQ) is 10⁵–10⁷, against Kaiser–Bessel's 2–5·10². The reason is A: the out-of-band mass reaches ω ≈ c²/κ, so A/B = T_c ≈ 500–8000. The zero sum then charges B² to every zero below T_c, with the worst-case strip weight e^{u/2}.
 3. **Net effect: the tapered prolate bound is worse at every tested point.**
    - Best κ = 8 in every case.
@@ -665,7 +665,7 @@ So a smoothed edge does give finite A and B. The Kaiser–Bessel trial (m = 2) i
 | item | status |
 |---|---|
 | Theorem 1 (E-map identity), Theorem 2 (zero-sum bound), Lemmas Z, G, K, E, H, T, Proposition P | [D], proofs above; unconditional |
-| explicit formula Q(f) = Σ_ρ F(γ_ρ)F(−γ_ρ) for compactly supported BV f, and rh2's matrices computing its arithmetic side | assumed [S] (as for the certificates) |
+| explicit formula Q(f) = Σ_ρ F(γ_ρ)F(−γ_ρ) for compactly supported BV f, and our matrices computing its arithmetic side | assumed [S] (as for the certificates) |
 | zero counts: Bellotti–Wong Thm 1.1 (ζ; for T ≤ 3.06·10¹⁰ it rests on Platt's computed bound 2.5167 for the absolute value of S(T) [S]), BMOR Thm 1.1 (L(s, χ)) | [R], literature theorems |
 | DLMF 10.14.4, 10.49.1–2 | [R] |
 | B_cert at the listed x (Theorem C: 286 + 84 grid points, 16 support cases, and Table V) | [C], finite statements only; given Arb's correctness and this code's (`cert_lib.py`, ≈ 600 lines, unaudited) |

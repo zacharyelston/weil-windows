@@ -28,7 +28,7 @@ reviewed by a second person.
 λ_min(A) ≥ 1.02768955902·10⁻¹⁷ for the even block. Cholesky also succeeds at Zhu's shift 9·10⁻¹⁸. The
 odd block reproduces Zhu's λ_min = 9.1183·10⁻¹⁵ to all five printed digits, and certifies Q ≥ 9.118·10⁻¹⁵
 on odd f. So **Q(f) ≥ 1.0276·10⁻¹⁷ ‖f‖₂² ≥ 8.9·10⁻¹⁸ ‖f‖₂² for every complex f supported in [−0.8, 0.8]**
-[R]. rh2's upper bounds, now extended to N = 800, stay above it: 1.6356·10⁻¹⁷ at N = 800 [N].
+[R]. Our upper bounds, now extended to N = 800, stay above it: 1.6356·10⁻¹⁷ at N = 800 [N].
 
 The corrections concern the paper's rigour claims and one internal inconsistency. None changes the
 constant:
@@ -51,9 +51,9 @@ odd-sector match. "With corrections" refers only to items 1–4.
 
 ## 1. Normalisation map
 
-| | Zhu (v2, §§1–2) [P] | rh2 (`docs/CONNES_LETTER.md`, `scripts/connes_letter_mp.py`) |
+| | Zhu (v2, §§1–2) [P] | This work (`docs/CONNES_LETTER.md`, `scripts/connes_letter_mp.py`) |
 |---|---|---|
-| Variable | additive u; f on [−L, L], **L = a = 0.8** | additive u = log v of Connes' multiplicative variable; window [−L/2, L/2], **L = log x** (rh2's L is the full width) |
+| Variable | additive u; f on [−L, L], **L = a = 0.8** | additive u = log v of Connes' multiplicative variable; window [−L/2, L/2], **L = log x** (our L is the full width) |
 | Window ↔ x | a = 0.8 | x = e^{2a} = e^{1.6} = 4.953032424395115 |
 | Prime powers | log n < 2a: n = 2, 3, 4 | n ≤ x: 2, 3, 4 (e^{1.6} < 5 [R]) |
 | Fourier | F(r) = ∫ f e^{iru} du | φ̂(z) = ∫ φ e^{−izu} du (t ↦ −t; irrelevant, since \|F(t)\|² is even for real f) |
@@ -63,7 +63,7 @@ odd-sector match. "With corrections" refers only to items 1–4.
 | Which side | zeros side (Σ_ρ \|F(γ)\|² under RH) | zeros side |
 | Complex f | Q(f) = Q(Re f) + Q(Im f), and each splits into even + odd | two sectors computed separately |
 
-**The map is the identity.** rh2's QW at x = e^{2a} is Zhu's Q on [−a, a], with the same norm. The
+**The map is the identity.** Our QW at x = e^{2a} is Zhu's Q on [−a, a], with the same norm. The
 minimum over complex f is the minimum over the two real sectors.
 
 *Why complex f reduces to the two real sectors [R, algebraic].* The kernel of Q is real and symmetric,
@@ -75,10 +75,10 @@ inf_complex Q/‖f‖² = min(inf_even, inf_odd).
 **Numerical confirmation** (`scripts/zhu_normalisation_check.py`, `data/connes/zhu_normalisation.json`,
 40 digits, 300 zeta zeros) [N]. The test functions are f = (1 − u²/a²)⁴ (even) and
 g = (u/a)(1 − u²/a²)⁴ (odd). Q was computed three ways: on the zeros side (Σ over zeros, which are on
-the line), with Zhu's frequency formula, and with rh2's matrix applied to the test function's cosine or
+the line), with Zhu's frequency formula, and with our matrix applied to the test function's cosine or
 sine coefficients:
 
-| | Zeros side, 300 zeros (γ ≤ 541.85, tail ≤ 1.2·10⁻¹⁸) | Zhu's frequency side | rh2 matrix, N = 60 | rh2 matrix, N = 120 |
+| | Zeros side, 300 zeros (γ ≤ 541.85, tail ≤ 1.2·10⁻¹⁸) | Zhu's frequency side | Our matrix, N = 60 | Our matrix, N = 120 |
 |---|---|---|---|---|
 | Q(f), even | 3.58899889612999·10⁻⁶ | 3.58899889613007·10⁻⁶ | 3.58899890315083·10⁻⁶ | 3.58899889618617·10⁻⁶ |
 | Q(g), odd | 2.50814981521881·10⁻⁵ | 2.50814981521882·10⁻⁵ | 2.50814935005184·10⁻⁵ | 2.50814980038527·10⁻⁵ |
@@ -86,14 +86,14 @@ sine coefficients:
 | Q(T₀), T₀ = 1/√(2a) | independent u-space quadrature: 0.0802740549593 | 0.08027403 (neglected tail ≤ 3.5·10⁻⁷) | (E + 2vvᵀ)₀₀ = 0.0802740549593 | — |
 
 Zhu's formula and the zeros sum agree to 2·10⁻¹⁴ relative in the even sector, which is within the
-zeros-tail bound, and to 2·10⁻¹⁸ in the odd sector. rh2's matrix agrees to within its truncation error:
-it converges from N = 60 to N = 120 towards the same value, and Σc_k² equals ‖f‖² to 20 digits. For the constant function T₀ = 1/√(2a), which is both rh2's b₀ and Zhu's first
-Legendre mode, an independent u-space evaluation gives Q(T₀) = 0.0802740549593. That equals rh2's
+zeros-tail bound, and to 2·10⁻¹⁸ in the odd sector. Our matrix agrees to within its truncation error:
+it converges from N = 60 to N = 120 towards the same value, and Σc_k² equals ‖f‖² to 20 digits. For the constant function T₀ = 1/√(2a), which is both our b₀ and Zhu's first
+Legendre mode, an independent u-space evaluation gives Q(T₀) = 0.0802740549593. That equals our
 (E + 2vvᵀ)₀₀ to all printed digits, and also matches Zhu's frequency formula (row T₀ in the table). A
 first run of that frequency-side check gave 0.07669 because `mpmath.quadosc` mis-summed the 1/t² tail;
 the corrected script integrates the tail directly.
 
-**Conversion of rh2's table: multiply by 1.** The table in the brief is already in Zhu's normalisation.
+**Conversion of our table: multiply by 1.** The table in the brief is already in Zhu's normalisation.
 
 ## 2. Re-execution of the certificate (Theorem 1.1 at a = 0.8)
 
@@ -228,7 +228,7 @@ Each gap below is closed by this audit's re-execution, so none affects the theor
   L² f, Q has to be defined by the frequency integral; the proof of Theorem 1.1 then goes through
   unchanged.
 - **Theorem 6.2** quotes λ₁^even ≤ 2.523·10⁻¹⁶, against 2.27·10⁻¹⁷ in §11 and the abstract [P].
-  Zhu's certified upper bounds were not re-executed [U]. rh2's uncertified 1.6356·10⁻¹⁷ is below both.
+  Zhu's certified upper bounds were not re-executed [U]. Our uncertified 1.6356·10⁻¹⁷ is below both.
 
 ### Steps that remain [P] or [U]
 
@@ -236,9 +236,9 @@ Each gap below is closed by this audit's re-execution, so none affects the theor
   standard [P], and confirmed numerically on smooth test functions against 300 zeros (§1) [N].
 - `mpmath.iv` (not Arb) is trusted for outward rounding of +, ×, ÷, exp, log, sin, cos and √.
 - The new scripts were checked against Zhu's odd eigenvalue, against `mpmath.besselj` and
-  `mpmath.digamma`, and against rh2's T₀ entry, but have not been reviewed.
+  `mpmath.digamma`, and against our T₀ entry, but have not been reviewed.
 
-## 3. Cross-check against rh2's upper bounds
+## 3. Cross-check against our upper bounds
 
 Each value is an upper bound on λ*(0.8) in its sector, if the arithmetic is accurate [N]. The values
 are in Zhu's normalisation, with conversion factor 1.
@@ -287,7 +287,7 @@ This computes Q itself, not R, on the Legendre basis:
 - The remainder ε(t) = Re ψ(¼ + it/2) − log(t/2) is integrated numerically up to T_E = 4000. Beyond T_E
   it is negative and is dropped, so the computed form U satisfies U ≥ Q, and each λ_min(U_N) is again an
   upper bound on λ*. For the minimiser, the overshoot is at most sup_{t≥T_E}\|ε\| × (tail mass) ≤ 5·10⁻²⁹.
-- Check: U₀₀ = 0.080274054959356, against rh2's (E + 2vvᵀ)₀₀ = 0.080274054959270. The difference,
+- Check: U₀₀ = 0.080274054959356, against our (E + 2vvᵀ)₀₀ = 0.080274054959270. The difference,
   8.6·10⁻¹⁴, is within the dropped-tail bound of 2.6·10⁻¹³.
 
 | Legendre modes (max degree even/odd) | even λ_min(U) | odd λ_min(U) |
@@ -308,7 +308,7 @@ This computes Q itself, not R, on the Legendre basis:
 
 **Resulting bracket for ζ at a = 0.8** (even sector, which is the ground state):
 
-  1.0276·10⁻¹⁷ [R, this audit] ≤ λ*(0.8) ≤ 1.635586·10⁻¹⁷ [N, rh2 cosine N = 800]
+  1.0276·10⁻¹⁷ [R, this audit] ≤ λ*(0.8) ≤ 1.635586·10⁻¹⁷ [N, our cosine N = 800]
 
 The extrapolated value is about 1.634·10⁻¹⁷ [N]. This bracket lies inside Zhu's
 [8.9·10⁻¹⁸, 2.27·10⁻¹⁷]. In the odd sector the bracket is 9.1183·10⁻¹⁵ ≤ λ*_odd ≤ 1.549161·10⁻¹⁴
@@ -363,9 +363,9 @@ Logs go to `logs/` through `scripts/progress.py`.
 
 ## Five-line summary
 
-1. Normalisation: rh2's zeros-side QW at x = e^{1.6} is exactly Zhu's Q on [−0.8, 0.8] (same L² norm, pole included, both parities), so the conversion factor is 1. Confirmed three ways to ≤ 2·10⁻¹⁴ [N].
+1. Normalisation: our zeros-side QW at x = e^{1.6} is exactly Zhu's Q on [−0.8, 0.8] (same L² norm, pole included, both parities), so the conversion factor is 1. Confirmed three ways to ≤ 2·10⁻¹⁴ [N].
 2. Certificate: an interval re-execution of Theorem 1.1 at Zhu's parameters certifies λ_min ≥ 1.0277·10⁻¹⁷ (even) and 9.118·10⁻¹⁵ (odd, matching Zhu's 9.1183·10⁻¹⁵), so Q ≥ 1.0276·10⁻¹⁷ ‖f‖² ≥ 8.9·10⁻¹⁸ ‖f‖² for complex f [R; mpmath.iv, unreviewed code].
-3. Upper bounds: rh2's cosine minima, extended to N = 800, and a new Legendre basis keep falling (≈ N⁻², limit ≈ 1.634·10⁻¹⁷) but stay ≥ 1.6356·10⁻¹⁷, which brackets λ*(0.8) in [1.0276, 1.6356]·10⁻¹⁷ [R / N].
+3. Upper bounds: our cosine minima, extended to N = 800, and a new Legendre basis keep falling (≈ N⁻², limit ≈ 1.634·10⁻¹⁷) but stay ≥ 1.6356·10⁻¹⁷, which brackets λ*(0.8) in [1.0276, 1.6356]·10⁻¹⁷ [R / N].
 4. Retraction: the support-2.38 draft used a lower bound for the prime comb (A_eff = 4.69) where an upper bound (A_L = 7.08) is needed, and the envelope fails at t ≈ 898 [N]. The a = 0.8 certificate uses A_L, so it is unaffected [R].
 5. Verdict: verified with corrections. The paper leaves its integrand values unenclosed and asserts the ellipse constant 20 without proof, and its Theorem 6.2 upper bound is inconsistent with §11. None of this changes 8.9·10⁻¹⁸.
 
@@ -376,12 +376,12 @@ Every check below passed. The audit is accepted into `feat/weil-gram-instrument`
 | Check | Method | Result |
 |---|---|---|
 | **Paper numbers** | Second, independent WebFetch read of the v2 HTML (also model-mediated; the PDF was not downloaded) | Matches the audit on 8.9·10⁻¹⁸, λ₀ = 9·10⁻¹⁸ (r = 1.06·10⁻⁵⁰), λ_min(M_odd) = 9.1183·10⁻¹⁵, the odd shift 8.2065·10⁻¹⁵, T♯ = 200/150, ρ = 6.55, \|Ψ_L − β*\| ≤ 20, β* = 0.5134667…, A_L = 2.9419735…, A_eff = 4.6948 against 7.0750, and 2.27·10⁻¹⁷. Theorem 6.2's bound reads 2.5223·10⁻¹⁶ (the audit rounds to 2.523). The paper assembles the odd sector with 160-point Gauss; the audit uses 32-point Gauss with its own enclosed error, and the eigenvalue still matches. |
-| **Normalisation, factor 1** | Own code, not the audit's: Q(T₀) for T₀ = 1/√(1.6) on [−0.8, 0.8], from Zhu's frequency formula, integrated to t = 20000 plus an averaged tail | 0.0802740550566, against rh2's (E + 2vvᵀ)₀₀ = 0.0802740549593. The difference, 1·10⁻¹⁰, is within the neglected oscillatory tail. |
+| **Normalisation, factor 1** | Own code, not the audit's: Q(T₀) for T₀ = 1/√(1.6) on [−0.8, 0.8], from Zhu's frequency formula, integrated to t = 20000 plus an averaged tail | 0.0802740550566, against our (E + 2vvᵀ)₀₀ = 0.0802740549593. The difference, 1·10⁻¹⁰, is within the neglected oscillatory tail. |
 | **Certificate reproduces** | Reran `zhu_certificate_iv.py` for both sectors with 4 workers | Even: λ₁ = 1.02768956005196·10⁻¹⁷; Cholesky at 1.02768955902·10⁻¹⁷ succeeds, residual 1.15·10⁻⁸⁰. Odd: 9.11833845450086·10⁻¹⁵; both shifts succeed. Identical to the committed JSON. |
 | **Bound assembly** | Read the code | λ_A ≥ μ − ‖residual‖_∞ − N·(entry radius) − N·ε_Q, then min(λ_A, β̃ − ε_D) − ε_B. That is the correct Schur-type split, and ‖R‖₂ ≤ ‖R‖_∞ holds for the symmetric residual. |
 | **Ellipse constant G = 19.41** | Re-derived each step | It is a uniform analytic bound over the whole ellipse, not a sample: ψ(w) = ψ(1 + w) − 1/w with Re w ≥ ⅛; \|log v\| ≤ log\|v\| + π/2; Binet remainder ≤ 1/(12(Re v)²) from \|s² + v²\| ≥ (Re v)²; \|j_n(z)\| ≤ e^{\|Im z\|} from j_n = ½(−i)ⁿ∫e^{izx}P_n(x)dx. |
 | **Envelope (t ≥ ¾)** | Re-derived | Correct: remainder ≤ 1/(3t), Re(1/2z) ≤ 1/(2t²), and 1/(2t²) + 1/(3t) ≤ 1/t exactly when t ≥ ¾. |
-| **rh2 extension** | `scripts/zhu_window_mp.py` (full `mp.eigsy`, not the audit's inverse iteration) at N = 200, 60 digits | Even 1.65801850225·10⁻¹⁷, odd 1.63174134563·10⁻¹⁴; identical to `zhu_window_ext.json`. |
+| **Our extension** | `scripts/zhu_window_mp.py` (full `mp.eigsy`, not the audit's inverse iteration) at N = 200, 60 digits | Even 1.65801850225·10⁻¹⁷, odd 1.63174134563·10⁻¹⁴; identical to `zhu_window_ext.json`. |
 | **Legendre upper bound** | Reran the committed script at 20 modes | 2.04655644·10⁻¹⁷, as tabulated. The first even run in the audit's logs (15:20) was broken: λ_min ≈ −10⁴⁴ and a negative tail mass. It was fixed before the committed run at 15:24, but the doc does not mention it. |
 
 **Remaining trust assumptions.**
@@ -389,7 +389,7 @@ Every check below passed. The audit is accepted into `feat/weil-gram-instrument`
 - The paper was read only through model-mediated extractions.
 - No one has reviewed `zhu_certificate_iv.py` line by line beyond the parts above: the Bessel ratio enclosure, the fixed-point conversion and the defect sums were not re-derived here.
 
-**Consequence for rh2.** Zhu's window is the first support at which rh2 has a two-sided bracket of the Weil minimum: 1.0277·10⁻¹⁷ ≤ λ*(0.8) ≤ 1.6356·10⁻¹⁷.
-- rh2's N = 100 value of 1.736·10⁻¹⁷ is only about 6% above the extrapolated limit of 1.634·10⁻¹⁷.
-- That is a calibration point for how far rh2's finite-basis upper bounds sit above the truth.
+**Consequence for this work.** Zhu's window is the first support at which this work has a two-sided bracket of the Weil minimum: 1.0277·10⁻¹⁷ ≤ λ*(0.8) ≤ 1.6356·10⁻¹⁷.
+- Our N = 100 value of 1.736·10⁻¹⁷ is only about 6% above the extrapolated limit of 1.634·10⁻¹⁷.
+- That is a calibration point for how far our finite-basis upper bounds sit above the truth.
 - It also corrects the 9bd1805 brief's remark that the trigonometric basis "converges slowly" here: past N ≈ 400 the even values converge like N⁻².

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Measured window minima against the exact prolate leakage instead of the Fuchs asymptotic.
 
-Degree 1 (scanhi/scanext/scan8): R_F = lambda / l_n(c) (l_n = Fuchs/2, rh2's convention) and
+Degree 1 (scanhi/scanext/scan8): R_F = lambda / l_n(c) (l_n = Fuchs/2, our convention) and
 R_ex = lambda / ((1 - lambda_n(c))/2) with the exact 1D eigenvalue (hankel_prolate.leakage at nu = -1/2, +1/2), c = 2 pi x/q.
 GL(2) (scan9, scan11, scan12): R_ex = lambda / ((1 - lambda_{nu,m}(c))/2) with nu = k - 1, c = 4 pi v, m = 0 in the sector
 (-1)^s = epsilon and m = 1 in the other; the continuous index n* (P-DL11 metric) from the exact leakage is also reported

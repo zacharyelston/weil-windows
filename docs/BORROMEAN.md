@@ -1,4 +1,4 @@
-# Borromean primes and the Rédei L-function (issue zacharyelston/rh2#7)
+# Borromean primes and the Rédei L-function (issue the private research log (issue 7))
 
 **Status:** step 1 pre-registered (c595803) and run: **all gates pass**. Step 2 pre-registered (e94635f), first scan void (float64 inputs, fixed in 8422f34), rerun: **R-a, R-b and R-c all hold**.
 
@@ -108,7 +108,7 @@ No zero of L(s, ρ), L(χ₅) or L(χ₂₉) had been computed.
 **Code.** `scripts/borromean/step2_matched.py`. The `prep` stage uses PARI and writes the Λ(p^k) tables and the zero files from step 1. The `check`, `scan` and `fit` stages use only mpmath and FLINT.
 
 **Validation already done.** These are not outcomes; no eigenvalue was computed.
-- B's degree-2 form (`gl2_form_mp.form` with μ = (0, 0), log 145 and the product's prime terms) equals the sum of rh2's established degree-1 forms for χ₅ and χ₂₉ to 1e-40, at working precision, at x = 13, 60 and 300 in both sectors.
+- B's degree-2 form (`gl2_form_mp.form` with μ = (0, 0), log 145 and the product's prime terms) equals the sum of our established degree-1 forms for χ₅ and χ₂₉ to 1e-40, at working precision, at x = 13, 60 and 300 in both sectors.
 - A's form differs from B's only in its prime terms. Those come from PARI's a_n by the prime-power recursion, which step 1's G2 tested.
 
 **Gate (before any scan).** `check` compares Q(c) = cᵀMc with 2Σ_{0<γ≤1000} F_c(γ)² plus the Maass-type tail, for the five edge-vanishing test functions of `gl2_form_mp check`.

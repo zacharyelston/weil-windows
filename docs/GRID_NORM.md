@@ -74,12 +74,12 @@ For t ≥ T♯, where m ≈ 1, this gives Φ ≥ H − μ − |w|(A + μ). So Zh
 
 **Version 2: windowed-sinc kernel, Kaiser window** (`--mode kaiser`). The code reproduces the audited a = 0.8 block (`--mode zhu`) exactly, λ₁ = 1.02768956005196e-17. Results:
 
-| a | δ | μ(a+δ) used | β_K | T♯ | modes | λ₁(R′) | rh2 upper bound (N = 100) | Zhu's T♯ would need |
+| a | δ | μ(a+δ) used | β_K | T♯ | modes | λ₁(R′) | Our upper bound (N = 100) | Zhu's T♯ would need |
 |---|---|---|---|---|---|---|---|---|
 | 1.0 | 0.25 | 2.98 (Galerkin 2.959) | 40 | 465 | 280 | **4.574e-30** | 6.498e-30 | ≈ 2,300 |
 | 1.19 | 0.30 | 4.26 (Galerkin 4.230) | 62 | 900 | 600 | **6.805e-48** (λ₂ = 1.234e-40) | 1.139e-47 (ε₁ = 2.1e-40) | ≈ 7,800 |
 
-Both blocks are positive and lie below rh2's upper bounds, as lower bounds must: the ratios are 0.70 at a = 1.0 and 0.60 at a = 1.19. The cutoffs are 5× smaller (a = 1.0) and 9× smaller (a = 1.19) than Zhu's reduction needs. At a = 1.19, Zhu's retracted support of 2.38, the run took 7m48s on the M3.
+Both blocks are positive and lie below our upper bounds, as lower bounds must: the ratios are 0.70 at a = 1.0 and 0.60 at a = 1.19. The cutoffs are 5× smaller (a = 1.0) and 9× smaller (a = 1.19) than Zhu's reduction needs. At a = 1.19, Zhu's retracted support of 2.38, the run took 7m48s on the M3.
 
 **Open check: mode convergence.** At 600 modes the top degree is 1198, only about 130 above a·T♯ = 1071. A run with 760 modes and leading-block λ₁ values is in progress.
 

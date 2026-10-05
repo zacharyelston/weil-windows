@@ -62,7 +62,7 @@ The tail branch β′ − ε_D = 1.2426 is not active.
 
 **Run history.** The first even-sector run gave the same Cholesky success at 6.8131e-48, but a max entry radius of 3.5e+97. The cause was the Bessel recurrence amplifying the 400-bit radius of its input x = L·t by about e^{0.47x}. The recurrence now runs at the exact dyadic midpoint, and the node radius is added afterwards using |j_n′| ≤ ½ (DLMF 10.54.2). The Schur window was also rounded up from the float 1.19 + 0.3, which lies below 1.49, to 1.490000001. μ̄ was unchanged to 12 digits.
 
-**rh2's upper bounds at a = 1.19** (`scripts/zhu_window_mp.py`, N = 100, 160 digits): even 1.139e-47, odd 6.37e-44. Each certified lower bound must lie below the corresponding upper bound.
+**Our upper bounds at a = 1.19** (`scripts/zhu_window_mp.py`, N = 100, 160 digits): even 1.139e-47, odd 6.37e-44. Each certified lower bound must lie below the corresponding upper bound.
 
 ## Trust assumptions and limits
 
@@ -110,7 +110,7 @@ See "Post-audit code changes" below.
 - 1250 modes, 64-point Gauss (317,440 nodes);
 - c_err ≤ 9.2·10⁻⁶⁸, ε_B ≤ 4.2·10⁻¹³⁸.
 
-| Sector | Certified lower bound | rh2 upper bound (cosine basis, N = 100) |
+| Sector | Certified lower bound | Our upper bound (cosine basis, N = 100) |
 |---|---|---|
 | even | **5.76344479222·10⁻⁶²** | 1.04·10⁻⁶¹ |
 | odd | 5.36011304048·10⁻⁵⁸ | 9.74·10⁻⁵⁸ |
@@ -136,7 +136,7 @@ Same method, same post-audit code (686e1f1) and same Docker environment, at 600-
 - 3200 modes (max degree 6398), 96-point Gauss (1,102,080 nodes);
 - c_err ≤ 1.84·10⁻¹⁰⁶, ε_B ≤ 1.29·10⁻²⁵², ε_D ≤ 4.7·10⁻⁵¹⁷.
 
-| Sector | Certified lower bound | Floating λ₁ | rh2 upper bound |
+| Sector | Certified lower bound | Floating λ₁ | Our upper bound |
 |---|---|---|---|
 | even | **3.50114217641·10⁻⁹⁶** | 3.52079517811·10⁻⁹⁶ | 6.27·10⁻⁹⁶ (cosine N = 180) |
 | odd | 8.25626494001·10⁻⁹² | 8.25627515668·10⁻⁹² | 1.48·10⁻⁹¹ (N = 180) |

@@ -1,6 +1,6 @@
 # Weil positivity on finite windows across L-functions
 
-Code, data and documentation for the technical report **"Weil positivity on finite windows across L-functions: certified windows, a pre-registered decay law, and an unconditional bound for Dirichlet L-functions"** (Zac Elston, version 1, October 2026). The report is in [`docs/report/rh2_report_v1.pdf`](docs/report/rh2_report_v1.pdf), with its LaTeX source alongside.
+Code, data and documentation for the technical report **"Weil positivity on finite windows across L-functions: certified windows, a pre-registered decay law, and an unconditional bound for Dirichlet L-functions"** (Zac Elston, version 1, October 2026). The report is in [`docs/report/weil_windows_report_v1.pdf`](docs/report/weil_windows_report_v1.pdf), with its LaTeX source alongside.
 
 For an L-function and x > 1, let λ_s(x) be the smallest value of Weil's quadratic form on unit-norm test functions supported in a window of length log x, in the even (s = 0) or odd (s = 1) sector. The Riemann hypothesis for that L-function is equivalent to λ_s(x) ≥ 0 for every x. Nothing here proves or disproves it. Upper bounds on λ also hold for functions with off-line zeros, and certificates exist only for finitely many windows.
 
@@ -65,7 +65,7 @@ Each document names the commands that produced its data. Some runs are long. The
 - the registered tests that failed or were killed are reported alongside the ones that held;
 - one void run is kept with its explanation (`data/borromean/void_float_lambda/`).
 
-**History.** This repository is a curated snapshot of a larger private research repository. Its history starts at the snapshot. References in `docs/` to `zacharyelston/rh2` issues or commit hashes point into that private repository. The relevant registrations, reviews and results are reproduced in the documents here.
+**History.** This repository is a curated snapshot of a larger private research repository. Its history starts at the snapshot. References in `docs/` to `the private research repository` issues or commit hashes point into that private repository. The relevant registrations, reviews and results are reproduced in the documents here.
 
 ## AI assistance and responsibility
 

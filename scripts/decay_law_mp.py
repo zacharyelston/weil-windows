@@ -56,7 +56,7 @@ def kronecker(D, n):
 
 
 def zeros_side(D, x, n, parity):
-    """rh2's zeros-side matrix for L(s, χ_D) (D = 1: ζ) on the periodic basis (even: k = 0..n, odd: k = 1..n)."""
+    """our zeros-side matrix for L(s, χ_D) (D = 1: ζ) on the periodic basis (even: k = 0..n, odd: k = 1..n)."""
     x = mp.mpf(x)
     L = mp.log(x)
     if D == "dh":           # Davenport–Heilbronn: conductor 5, Γ_R(s+1), no Euler product, off-line zeros
@@ -259,7 +259,7 @@ def cmd_tower(args):
     Zeros-side forms add over Euler factors, so every member is a sum of the four degree-1 blocks. Every saved
     eigenvalue is precision-stable (`stable_lams`): ζ alone needs ~130+ digits at a = 1.495 (λ ~ 1e-74 at N = 48)."""
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-    from control_normalisation import rh2_matrix
+    from control_normalisation import native_matrix
     rows = []
     job = Job("tower test", args=vars(args))
     for a_s in args.a.split(","):
@@ -273,7 +273,7 @@ def cmd_tower(args):
                 lam, at = stable_lams(build, args.dps)
                 mp.mp.dps = max(at.values()) + 40
                 x = mp.exp(2 * mp.mpf(a_s))
-                ref = rh2_matrix("zetak", x, n, parity)
+                ref = native_matrix("zetak", x, n, parity)
                 zk = zeros_side(1, x, n, parity) + zeros_side(-20, x, n, parity)
                 d = max(abs(zk[i, j] - ref[i, j]) for i in range(ref.rows) for j in range(ref.cols))
                 r1, r2 = lam["zeta_K"] / lam["L(chi-20)"], lam["zeta_H"] / lam["zeta_K"]

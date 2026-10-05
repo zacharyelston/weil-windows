@@ -1,6 +1,6 @@
 # Weil's Form for a Degree-2 L-Function: P-DL4
 
-This note executes P-DL4, pre-registered at the end of `docs/DECAY_LAW.md`. It extends rh2's zeros-side Weil form from degree 1 to L(E, s) for an elliptic curve E/ℚ, and scans the window minimum λ(x).
+This note executes P-DL4, pre-registered at the end of `docs/DECAY_LAW.md`. It extends our zeros-side Weil form from degree 1 to L(E, s) for an elliptic curve E/ℚ, and scans the window minimum λ(x).
 
 Labels used throughout:
 - *validated*: checked against an independent computation.
@@ -21,22 +21,22 @@ For one factor Γ_ℝ(s + μ), with μ ≥ 0 real, put σ = ¼ + μ/2. In the re
 
 where K_σ(w) = 2Σ_m e^{−a_m w} and a_m = 2m + ½ + μ.
 
-This is the μ = 0 kernel 2K(w) = 2e^{w/2}/(e^w − e^{−w}), with every exponent shifted by μ. rh2 subtracts 2L e^{−w/2} inside J_k, and that subtraction is kept. Using ∫₀^∞ K_σ(1 − e^{−w/2})dw = ψ(σ + ¼) − ψ(σ), the ω-independent part collects into
+This is the μ = 0 kernel 2K(w) = 2e^{w/2}/(e^w − e^{−w}), with every exponent shifted by μ. This work subtracts 2L e^{−w/2} inside J_k, and that subtraction is kept. Using ∫₀^∞ K_σ(1 − e^{−w/2})dw = ψ(σ + ¼) − ψ(σ), the ω-independent part collects into
 
   diag_const(μ) = log π − ψ((1 + μ)/2) − Σ_m 2e^{−(2m+1+μ)L}/(2m + 1 + μ).
 
-- **μ = 0:** this is log 4π + γ + log tanh(L/2), rh2's constant. The tail sums to 2 artanh(e^{−L}) = −log tanh(L/2).
+- **μ = 0:** this is log 4π + γ + log tanh(L/2), our constant. The tail sums to 2 artanh(e^{−L}) = −log tanh(L/2).
 - **μ = 1:** it is γ + log π + log(1 − e^{−2L}).
 
 The closed forms carry over with z_μ = (½ + μ)/2 + iω/2:
 - I_k = ½ Im ψ(z_μ) − Σ_m ω e^{−aL}/(a² + ω²);
 - J_k = L(ψ((1 + μ)/2) − Re ψ(z_μ)) − ½ Re ψ′(z_μ) + Σ_m [exact − E-free].
 
-The bracketed tail decays like e^{−2mL}, as in rh2.
+The bracketed tail decays like e^{−2mL}, as in this work.
 
 **The L(E, s) form.** Use the analytic normalisation L(E, s) = Σ a_n n^{−1/2} n^{−s}. Then Λ(s) = N^{s/2}Γ_ℂ(s + ½)L(E, s) = εΛ(1 − s). By duplication, Γ_ℂ(s + ½) = 2(2π)^{−s−½}Γ(s + ½) = Γ_ℝ(s + ½)Γ_ℝ(s + 3/2) exactly. So:
 - the zeros-side form is block(½) + block(3/2) + log N·I − (prime terms);
-- the prime terms are (log p^k, (α_p^k + β_p^k) log p/p^{k/2}) for p^k ≤ x, in rh2's convention;
+- the prime terms are (log p^k, (α_p^k + β_p^k) log p/p^{k/2}) for p^k ≤ x, in our convention;
 - at good p, α_p + β_p = a_p/√p and α_pβ_p = 1;
 - at p | N, α_p = a_p/√p and β_p = 0;
 - there is no pole.
@@ -212,7 +212,7 @@ A test that would make (2) and (3) predictions would use fresh curves and an ext
 
 ## 7. Limits
 
-- **Upper bounds only.** These are Rayleigh–Ritz upper bounds on rh2's periodic bases; nothing is certified. The basis size is tied to A′'s crossover k* = xL/N, which is generous for the observed rate: the 5k* and 9k* values differ by at most e^{0.07}. That does not exclude a basis-dependent factor; for ζ, antiperiodic bases sometimes gave lower values.
+- **Upper bounds only.** These are Rayleigh–Ritz upper bounds on our periodic bases; nothing is certified. The basis size is tied to A′'s crossover k* = xL/N, which is generous for the observed rate: the 5k* and 9k* values differ by at most e^{0.07}. That does not exclude a basis-dependent factor; for ζ, antiperiodic bases sometimes gave lower values.
 - **Not asymptotic.** x/N ≤ 12 means √(x/N) ≤ 3.46 and T* ≤ 22. Five points per (curve, sector) leave 2 degrees of freedom in each fit.
 - **Two curves.** Both are rank 0 with ε = +1, and both have split multiplicative reduction at a prime conductor. Nothing here tests additive reduction, higher rank or ε = −1.
 - **Large-k coverage.** The zero-sum validation exercises only low modes (k ≤ 6). The large-k entries of the μ = ½ and 3/2 blocks share their closed-form code path with μ = 0 and 1, which are exact against `build_form` up to n = 30 at x up to 444. They are not otherwise independently tested at k in the hundreds.

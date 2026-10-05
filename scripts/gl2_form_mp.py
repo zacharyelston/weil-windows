@@ -8,21 +8,21 @@ G(w) = ∫ F(v + w) F(v) dv (support [−L, L]), h = |F̂|². With ψ(z) = −γ
   (1/2π)∫ h(t) [Re ψ(σ + it/2) − log π] dt
       = [ψ(σ) − log π] G(0) + ∫_0^L K_σ(w) (G(0) − G(w)) dw + G(0) ∫_L^∞ K_σ,   K_σ(w) = 2 Σ_m e^{−a_m w},
 
-a_m = 2m + ½ + μ: the μ = 0 kernel 2K(w) of connes_letter_mp with every exponent shifted by μ. Keeping rh2's
+a_m = 2m + ½ + μ: the μ = 0 kernel 2K(w) of connes_letter_mp with every exponent shifted by μ. Keeping our
 subtraction 2L e^{−w/2} inside J_k (J_k = ∫_0^L [2(L − w)cos(ωw) − 2L e^{−w/2}] K_μ(w) dw, K_μ = K_σ/2), the
 ω-independent part collects into
 
   −diag_const(μ) = ψ(σ) − log π + ∫_0^∞ K_σ (1 − e^{−w/2}) + ∫_L^∞ K_σ e^{−w/2}
                  = ψ((1 + μ)/2) − log π + Σ_m 2 e^{−(2m+1+μ)L}/(2m + 1 + μ),
 
-using ∫_0^∞ K_σ(1 − e^{−w/2}) dw = ψ(σ + ¼) − ψ(σ). At μ = 0 this is −(log 4π + γ + log tanh(L/2)), rh2's diag_const.
+using ∫_0^∞ K_σ(1 − e^{−w/2}) dw = ψ(σ + ¼) − ψ(σ). At μ = 0 this is −(log 4π + γ + log tanh(L/2)), our diag_const.
 The closed forms of I_k, J_k carry over with z_μ = (½ + μ)/2 + iω/2:
   I_k = ½ Im ψ(z_μ) − Σ_m ω e^{−aL}/(a² + ω²),
   J_k = L(ψ((1 + μ)/2) − Re ψ(z_μ)) − ½ Re ψ'(z_μ) + Σ_m [exact − E-free] (decays like e^{−2mL}).
 
 L(E, s) (analytic normalisation, L(E, s) = Σ a_n n^{−1/2} n^{−s}): Λ(s) = N^{s/2} Γ_C(s + ½) L(E, s) = εΛ(1 − s),
 Γ_C(s + ½) = Γ_R(s + ½) Γ_R(s + 3/2). Zeros-side form = block(½) + block(3/2) + log N · I − Σ_{p^k ≤ x} prime terms,
-with prime terms (log p^k, (α_p^k + β_p^k) log p / p^{k/2}) in rh2's convention; no pole.
+with prime terms (log p^k, (α_p^k + β_p^k) log p / p^{k/2}) in our convention; no pole.
 
 Commands:
   validate   hard validations 1, 2 (block vs build_form at μ = 0 and μ = 1 + log 5) and assembly cross-checks
@@ -53,7 +53,7 @@ OUT = os.path.join(HERE, "..", "data", "connes", "gl2")
 
 
 # ---------------------------------------------------------------------------------------------------------------
-# Archimedean block for Γ_R(s + μ) and assembly on rh2's bases
+# Archimedean block for Γ_R(s + μ) and assembly on our bases
 # ---------------------------------------------------------------------------------------------------------------
 
 def arch_vectors(L, n, mu):
@@ -499,7 +499,7 @@ def hecke_table(label, nmax):
 
 
 def euler_terms(label, x):
-    """Prime terms [(log p^k, (α_p^k + β_p^k) log p / p^{k/2})] for p^k ≤ x (rh2's convention; analytic normalisation:
+    """Prime terms [(log p^k, (α_p^k + β_p^k) log p / p^{k/2})] for p^k ≤ x (our convention; analytic normalisation:
     α_p + β_p = a_p/p^{(w−1)/2}, α_p β_p = 1 at good p; α_p = a_p/√p, β_p = 0 at p | N; w = weight)."""
     N = N_of(label)
     x = int(mp.floor(x))
@@ -636,7 +636,7 @@ def _factor(n):
 def _logderiv_check(label, nmax):
     c = log_derivative_coeffs(label, nmax)
     et = {int(mp.nint(mp.exp(ln))): v for ln, v in euler_terms(label, nmax)}
-    # Euler terms are rh2 entries Λ(n)/√n; the recursion gives Λ(n) itself.
+    # Euler terms are native entries Λ(n)/√n; the recursion gives Λ(n) itself.
     dev_pp = max(abs(c[n] / mp.sqrt(n) - et[n]) for n in et)
     dev_other = max(abs(c[n]) for n in range(2, nmax + 1) if n not in et)
     return dev_pp, dev_other

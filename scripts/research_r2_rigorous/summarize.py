@@ -21,7 +21,7 @@ import mpmath as mp
 mp.mp.dps = 40
 D = "data/research_r2_rigorous"
 
-# certified LOWER bounds (rh2 certificates; docs/CERTIFICATE_238.md, data/connes/*certificate*.json)
+# certified LOWER bounds (native certificates; docs/CERTIFICATE_238.md, data/connes/*certificate*.json)
 CERT = {
     "1.6": {"even": ("1.0276895590199815698e-17", "data/connes/zhu_certificate_even.json"),
             "odd": ("9.1183384453799998655e-15", "data/connes/zhu_certificate_odd.json")},
@@ -32,7 +32,7 @@ CERT = {
     "2.99": {"even": ("3.5011421764109500236e-96", "data/connes/grid_certificate_a1495_even.json"),
              "odd": ("8.2562649400193819720e-92", "data/connes/grid_certificate_a1495_odd.json")},
 }
-# rh2's best finite-basis UPPER bounds at the supports (data/connes/decay/fit_zeta.json) -- orientation only
+# our best finite-basis UPPER bounds at the supports (data/connes/decay/fit_zeta.json) -- orientation only
 RITZ = {("1.6", "even"): "1.63558583932233e-17", ("1.6", "odd"): "1.54916134936799e-14",
         ("2.38", "even"): "1.01419882049612e-47", ("2.38", "odd"): "5.64114073526898e-44",
         ("2.6", "even"): "9.12455269172982e-62", ("2.6", "odd"): "8.42951149251576e-58",

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Job logging with status lines, shared by the rh2 scripts.
+"""Job logging with status lines, shared by the native scripts.
 
 Every long-running job writes timestamped lines to logs/<job>.log (and to stdout):
 

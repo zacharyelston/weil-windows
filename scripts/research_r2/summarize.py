@@ -53,7 +53,7 @@ def bound_table(rows, label, rate):
 
 
 def trial_table(rows):
-    print("\n### Sharp E-map prolate trial functions (Rayleigh quotient in rh2's basis, same N as the scan)\n")
+    print("\n### Sharp E-map prolate trial functions (Rayleigh quotient in our basis, same N as the scan)\n")
     print("| object | sector | n | x/q | trial/measured | R_trial | R_measured |")
     print("|---|---|---|---|---|---|---|")
     keys = []

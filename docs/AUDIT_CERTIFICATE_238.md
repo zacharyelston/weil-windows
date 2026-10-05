@@ -1,4 +1,4 @@
-# Independent audit of rh2's support-2.38 certificate
+# Independent audit of our support-2.38 certificate
 
 Date: 2026-10-01. Claim commit: `6a1bccd`. Audit base: `2d3310d`, whose
 certificate code and data are unchanged from that claim. Worktree:

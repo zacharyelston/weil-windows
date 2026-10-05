@@ -8,7 +8,7 @@ import argparse, json, os, sys
 import mpmath as mp
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import decay_law_mp as dl                      # noqa: E402
-from control_normalisation import rh2_matrix   # noqa: E402
+from control_normalisation import native_matrix   # noqa: E402
 from progress import Job                        # noqa: E402
 
 
@@ -27,7 +27,7 @@ def main():
             for n in [int(v) for v in args.n.split(",")]:
                 def build(n=n):
                     return {"Zsq": dl.zeros_side(1, x, n, parity) + dl.zeros_side(-4, x, n, parity),
-                            "Z1": rh2_matrix("z1", x, n, parity)}
+                            "Z1": native_matrix("z1", x, n, parity)}
                 lam, at = dl.stable_lams(build, int(40 + 1.5 * 8 * float(mp.pi) * float(mp.sqrt(x / 4)) / 2.303), method=dl.lam_min_acb)
                 out[n] = {k: (mp.nstr(v, 15), at[k]) for k, v in lam.items()}
             job.step(f"2a={a2} x={mp.nstr(x, 6)} {parity}: " + "  ".join(f"N={n}: Zsq={out[n]['Zsq'][0]} Z1={out[n]['Z1'][0]}" for n in out))

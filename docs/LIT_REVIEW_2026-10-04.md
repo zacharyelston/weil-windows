@@ -43,7 +43,7 @@ Post to arXiv soon, because priority risk is high.
   - 23092454 (2 Oct): the prolate defect;
   - 23119609 (3 Oct): μ^{9/2}(log μ)⁴;
   - 23134085 (4 Oct): a conditional lower bound under RH plus a local-pairs hypothesis, e^{−Cμ log log μ}.
-- rh2's first R2 commit was 3 Oct.
+- Our first R2 commit was 3 Oct.
 
 | Claim | Verdict | Note |
 |---|---|---|

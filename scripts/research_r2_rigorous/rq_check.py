@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Validation (a): the trial function's own Rayleigh quotient in rh2's basis must lie below the certified bound.
+"""Validation (a): the trial function's own Rayleigh quotient in our basis must lie below the certified bound.
 
 For each point, the E-map window function f_win of the trial (Hermite, and Kaiser-Bessel with the dbeta that gave the
-best certified bound) is projected onto rh2's N-mode basis of the sector (even: 1/sqrt L, sqrt(2/L) cos(2 pi k u/L),
-k = 0..N; odd: sqrt(2/L) sin(2 pi k u/L), k = 1..N), and RQ = c^T M c / c^T c is evaluated with rh2's explicit-formula
+best certified bound) is projected onto our N-mode basis of the sector (even: 1/sqrt L, sqrt(2/L) cos(2 pi k u/L),
+k = 0..N; odd: sqrt(2/L) sin(2 pi k u/L), k = 1..N), and RQ = c^T M c / c^T c is evaluated with our explicit-formula
 matrix M = decay_law_mp.zeros_side(D, x, N, parity) (archimedean + primes + pole; no zeros enter). RQ is a Rayleigh
 quotient of an explicit vector, hence itself an upper bound for the basis minimum; it is NOT certified [N].
 Precision-stable: everything is recomputed at dps and dps + 20 and must agree to 1e-6 (relative).
@@ -68,7 +68,7 @@ def panels(a, b, hmax):
 
 
 def project(nodes, vals, L, N, parity):
-    """2 int_0^{L/2} f b_k = sum over nodes of weight * f * b_k (b_k as in rh2)."""
+    """2 int_0^{L/2} f b_k = sum over nodes of weight * f * b_k (b_k as in native)."""
     pi2L = 2 * arb.pi() / L
     sL, s2L = 1 / L.sqrt(), (2 / L).sqrt()
     if parity == "even":

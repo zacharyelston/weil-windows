@@ -1,7 +1,7 @@
 """R2 helpers: Poisson (E-map) trial functions for the window form and the unconditional bound of
 docs/RESEARCH_R2_SAMPLING.md (Theorems 1-2).
 
-Conventions (rh2's): window u in [-L/2, L/2], L = log x; F(t) = int f(u) e^{itu} du; the zeros-side form is
+Conventions (our): window u in [-L/2, L/2], L = log x; F(t) = int f(u) e^{itu} du; the zeros-side form is
 Q(f) = sum_rho F(gamma_rho) F(-gamma_rho), gamma_rho = -i(rho - 1/2) (= 2 sum_{gamma>0} |F(gamma)|^2 under RH).
 Fourier on the line: psi_hat(y) = int psi(x) e^{-2 pi i x y} dx. Hermite functions h_k(y) = H_k(sqrt(2 pi) y) e^{-pi y^2}
 satisfy h_k_hat = (-i)^k h_k.

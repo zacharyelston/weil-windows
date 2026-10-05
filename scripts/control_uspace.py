@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Rigorous (Arb) evaluation of Q(f) for a trigonometric polynomial f on [−ℓ/2, ℓ/2], in u-space.
 
-f = Σ x_k b_k in rh2's orthonormal bases on [−ℓ/2, ℓ/2], ℓ = log x, ω_k = 2πk/ℓ:
+f = Σ x_k b_k in our orthonormal bases on [−ℓ/2, ℓ/2], ℓ = log x, ω_k = 2πk/ℓ:
   even: b_0 = 1/√ℓ, b_k = √(2/ℓ) cos(ω_k u)       (connes_letter_mp / epstein_connes_mp / conductor5 even)
   odd:  b_k = √(2/ℓ) sin(ω_k u), k = 1 … n          (conductor5 odd)
 
@@ -37,7 +37,7 @@ from control_cert_lib import Control, q  # noqa: E402
 
 def amplitudes(ell, parity, xs):
     """Unnormalised amplitudes: even f = A_0 + Σ_{k≥1} A_k cos ω_k u; odd f = Σ_{k≥1} A_k sin ω_k u.
-    xs: rh2 coefficients (even: x_0 … x_n; odd: x_1 … x_n). Returns A with A[0] (0 for odd)."""
+    xs: native coefficients (even: x_0 … x_n; odd: x_1 … x_n). Returns A with A[0] (0 for odd)."""
     r2 = (2 / ell).sqrt()
     if parity == "even":
         return [xs[0] / ell.sqrt()] + [x * r2 for x in xs[1:]]

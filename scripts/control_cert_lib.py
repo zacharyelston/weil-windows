@@ -3,7 +3,7 @@
 
 Every function F here has real Dirichlet coefficients a_n (a_1 = 1), a completed form
   Λ(s) = (archimedean factor) F(s) = Λ(1 − s),
-and −F'/F = Σ c_n n^{−s}. With f supported in [−a, a] (rh2's window [−ℓ/2, ℓ/2], ℓ = 2a = log x),
+and −F'/F = Σ c_n n^{−s}. With f supported in [−a, a] (our window [−ℓ/2, ℓ/2], ℓ = 2a = log x),
 F(t) = ∫ f e^{itu} du and g = f ⋆ f̃ (g(y) = ∫ f(v) f(v + y) dv, supported in [−ℓ, ℓ]):
 
   Q(f) = pole(f) + (1/π) ∫_0^∞ Ψ(t) |F(t)|² dt,

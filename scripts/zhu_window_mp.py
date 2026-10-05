@@ -2,7 +2,7 @@
 """ζ's finite-basis minimum of the zeros-side Weil form at Zhu's window, x = e^{2a}.
 
 Zhu (arXiv:2608.24827 v2) claims Q(f) ≥ 8.9·10⁻¹⁸ ‖f‖² for f supported in
-[−0.8, 0.8], i.e. a = 0.8 and rh2's x = e^{1.6} ≈ 4.953. Finite trigonometric
+[−0.8, 0.8], i.e. a = 0.8 and our x = e^{1.6} ≈ 4.953. Finite trigonometric
 minima decrease to the full-space infimum (Connes–Consani, Cor. 2.4), so each
 value printed here is an upper bound on that infimum in its parity sector:
 
@@ -10,7 +10,7 @@ value printed here is an upper bound on that infimum in its parity sector:
   odd sector:  QW = E − 2wwᵀ   (w_k = ĝ_k(i/2), sine basis, k = 1..N)
 
 Whether these match Zhu's Q depends on the normalisation map
-(docs/BRIEF_ZHU_AUDIT.md, task 1); the numbers are reported as rh2's own.
+(docs/BRIEF_ZHU_AUDIT.md, task 1); the numbers are reported as our own.
 
 Usage: .venv/bin/python scripts/zhu_window_mp.py --a 0.8 --n 64,80,100 --dps 130 --json data/connes/zhu_window.json
 """

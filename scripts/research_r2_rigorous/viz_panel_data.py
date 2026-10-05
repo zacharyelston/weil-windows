@@ -7,7 +7,7 @@ Writes data/viz/r2_panel.json. rh_zero_torus substitutes it for __R2__ in the pa
 Per object and sector (degree 1, c = 2*pi*x/q):
   kb    certified Kaiser-Bessel upper bound (Theorem C; better of beta = c, c - 2)   [C]
   herm  certified Hermite upper bound (Theorem C)                                  [C]
-  ritz  finite-basis minimum from rh2's scans (an upper bound, numerical)          [N]
+  ritz  finite-basis minimum from our scans (an upper bound, numerical)          [N]
   norm  ln ||f_win||^2 - 2*beta for the beta = c - 2 trial (certified lower bound;  [C]
         GPT's upper enclosure agrees to 1.5e-4 relative), with the power-law fit   [N]
 ζ supports: certified lower bound (certificates), KB and Hermite bounds, KB trial RQ, and the KB cutoff

@@ -11,17 +11,17 @@ python-flint are correct and that the new scripts are correct; the scripts have 
 second person.
 
 **What "positive at a" means.** Q(f) ≥ c‖f‖₂² with c > 0 for every complex f ∈ L² supported in [−a, a],
-i.e. rh2's window at x = e^{2a}. This needs both parity sectors (§1.1), so every function was certified in
+i.e. Our window at x = e^{2a}. This needs both parity sectors (§1.1), so every function was certified in
 both, including DH and Z₁, for which the brief lists only the even sector. Positivity at a implies
 positivity, with the same c, at every smaller support.
 
 ## Result
 
-| Function | Certified positive [R] (both sectors) | Certified negative [R] (explicit witness) | rh2 finite-basis crossover [N] |
+| Function | Certified positive [R] (both sectors) | Certified negative [R] (explicit witness) | Our finite-basis crossover [N] |
 |---|---|---|---|
 | F_{t*} | x = e^{1.67} = 5.31217, Q ≥ 1.1666·10⁻³‖f‖² | x = 5.36250 (Q/‖f‖² ≤ −9.889·10⁻⁷); x = 7 (≤ −0.045280) | N = 32: (5.366, 5.474); N = 64: (5.36248, 5.36250] |
-| DH | x = e^{2.38} = 10.80490, Q ≥ 1.0441·10⁻⁸‖f‖² | x = 30.74497 (≤ −2.292·10⁻³²); x = 32 (≤ −1.3999·10⁻²⁹) | N = 64: ≈ 30.83 (rh2); N = 80: (30.74404, 30.74497] |
-| Z₁ | x = e^{2.76} = 15.79984, Q ≥ 0.049235‖f‖² (T♯ = 1000); at T♯ = 400, x = e^{2.62} = 13.7357, Q ≥ 0.11169‖f‖² | x = 19.84390 (≤ −1.5342·10⁻⁷); x = 20 (≤ −1.3261·10⁻⁴) | N = 48–80: (17.5, 20] (rh2); N = 80: (19.84375, 19.84390] |
+| DH | x = e^{2.38} = 10.80490, Q ≥ 1.0441·10⁻⁸‖f‖² | x = 30.74497 (≤ −2.292·10⁻³²); x = 32 (≤ −1.3999·10⁻²⁹) | N = 64: ≈ 30.83 (this work); N = 80: (30.74404, 30.74497] |
+| Z₁ | x = e^{2.76} = 15.79984, Q ≥ 0.049235‖f‖² (T♯ = 1000); at T♯ = 400, x = e^{2.62} = 13.7357, Q ≥ 0.11169‖f‖² | x = 19.84390 (≤ −1.5342·10⁻⁷); x = 20 (≤ −1.3261·10⁻⁴) | N = 48–80: (17.5, 20] (this work); N = 80: (19.84375, 19.84390] |
 
 So the first full-space failure x_c of each function (the infimum of the x at which Q is not ≥ 0) lies,
 rigorously, in
@@ -38,7 +38,7 @@ by T♯ (the size of the comb A), as Zhu's Theorem 1.4 predicts, not by the marg
 ### 1.1 Setting and the form
 
 Each control F has real Dirichlet coefficients a_n with a_1 = 1, and −F′/F = Σ c_n n^{−s}, with c_n from
-a_n log n = Σ_{d|n} c_d a_{n/d}. For f supported in [−a, a] (rh2's window [−L/2, L/2], L = 2a = log x),
+a_n log n = Σ_{d|n} c_d a_{n/d}. For f supported in [−a, a] (our window [−L/2, L/2], L = 2a = log x),
 F̂(t) = ∫ f e^{itu} du and g(y) = ∫ f(v) f(v + y) dv. For real f:
 
   Q(f) = pole(f) + (1/π) ∫_0^∞ Ψ(t) |F̂(t)|² dt,
@@ -58,7 +58,7 @@ exact zeros (DH: n ≡ 0 mod 5; Z₁: most n) drop out of the comb.
 
 That this Q is Weil's functional, equal to the zeros sum Σ_ρ ĝ(γ_ρ) with real and off-line zeros
 included, is the explicit formula for Λ with these gamma factors [P: standard; for ζ it is the formula Zhu's reduction starts from, `docs/AUDIT_ZHU.md` §1].
-Every certificate below is a statement about this Q, and §2 shows that it is the form rh2 computes.
+Every certificate below is a statement about this Q, and §2 shows that it is the form this work computes.
 
 Two facts hold for every function [R, algebraic, as in `docs/AUDIT_ZHU.md` §1]. The kernel is real and
 symmetric, so Q(a + ib) = Q(a) + Q(b) for real a, b. For real f = e + o (even plus odd) there is no cross
@@ -167,16 +167,16 @@ the same numbers:
 - the u-space formula of §1.3 in Arb (192 bits) [R];
 - the frequency side (1/π)∫_0^{2000} Ψ|F̂|² by `acb.integral`, plus pole, plus a rigorous tail bound from
   |F̂(t)| ≤ ‖f⁗‖₁/t⁴ (≤ 10⁻¹⁵ here) [R];
-- rh2's own matrix, `conductor5_family_mp.forms`, `connes_letter_mp.build_form(…, "dh")` and
+- Our own matrix, `conductor5_family_mp.forms`, `connes_letter_mp.build_form(…, "dh")` and
   `epstein_connes_mp.forms("Z1", …)`, at 40 digits [N].
 
 The test function is (1 + cos θ)² = 3/2 + 2cos θ + ½cos 2θ (even) or sin θ(1 + cos θ)² = 5/4 sin θ + sin 2θ +
-¼ sin 3θ (odd), θ = 2πu/L. Both vanish to 4th order at ±L/2 and are exact in rh2's basis, so rh2's value
+¼ sin 3θ (odd), θ = 2πu/L. Both vanish to 4th order at ±L/2 and are exact in our basis, so our value
 has no truncation error. The entry is T₀ = 1/√(2a) (even) or b₁ = √(2/L) sin(2πu/L) (odd). For Z₁'s odd
-sector rh2 has no routine; it was assembled from `build_form(…, parity="odd")` pieces exactly as
+sector this work has no routine; it was assembled from `build_form(…, parity="odd")` pieces exactly as
 `epstein_connes_mp.forms` does, with −2wwᵀ.
 
-| Function | Sector | x | Entry, u-space [R] | Entry, rh2 [N] | Test fn, u-space [R] | Test fn, frequency side [R] | Test fn, rh2 [N] | \|u-space − rh2\| |
+| Function | Sector | x | Entry, u-space [R] | Entry, this work [N] | Test fn, u-space [R] | Test fn, frequency side [R] | Test fn, this work [N] | \|u-space − this work\| |
 |---|---|---|---|---|---|---|---|---|
 | ζ | even | e^{1.6} | 0.0802740549592696 | 0.0802740549592696 | 1.15222457863408·10⁻⁴ | [1.152224578634·10⁻⁴ ± 8·10⁻¹⁷] | 1.15222457863408·10⁻⁴ | 8.9·10⁻⁴⁰ |
 | ζ | odd | e^{1.6} | 0.00560377065319998 | 0.00560377065319998 | 0.00235976564834408 | [0.00235976564834 ± 5·10⁻¹⁵] | 0.00235976564834408 | 9.4·10⁻⁴¹ |
@@ -192,13 +192,13 @@ sector rh2 has no routine; it was assembled from `build_form(…, parity="odd")`
 | Z₁ | odd | e^{2.4} | 2.00160350285505 | 2.00160350285505 | 5.32937848319338 | [5.329378483193379 ± 3·10⁻¹⁶] | 5.32937848319338 | 2.3·10⁻³⁹ |
 
 **Reading.**
-- **No mismatch.** For every function and sector, rh2's zeros-side matrix equals the Q of §1.1, with
-  factor 1, to rh2's 40-digit working precision.
+- **No mismatch.** For every function and sector, our zeros-side matrix equals the Q of §1.1, with
+  factor 1, to our 40-digit working precision.
 - **The rigorous checks overlap.** The frequency-side enclosure (built from the same κ, K, comb and pole
   data as the positive-side code) contains the u-space value in every row. That checks the generalised Ψ
-  independently of the u-space derivation, and the derivation independently of rh2.
+  independently of the u-space derivation, and the derivation independently of this work.
 - **ζ.** The T₀ entry 0.0802740549592696 is the audit's (E + 2vvᵀ)₀₀ = 0.0802740549593.
-- **The witnesses** (§4) are a third check: the u-space value of each stored witness equals rh2's Rayleigh
+- **The witnesses** (§4) are a third check: the u-space value of each stored witness equals our Rayleigh
   quotient to all 20 printed digits.
 - **The positive-side assembly.** `scripts/control_entry_check.py` recomputes one entry of the certificate
   matrix, A₀₀ = R(T₀) or R(T₁), with `acb.integral` instead of the Gauss panels and Bessel recurrences.
@@ -242,13 +242,13 @@ in the 14th digit only because the quadrature bound is computed differently.
 ### 3.2 Grids
 
 The columns are: support a and x = e^{2a}; T♯; Legendre modes (degrees); A; β̃; the ellipse bounds G and M;
-the error terms ε_Q, c_err = Nε_Q, ε_B, ε_D; λ₁ of the midpoint block [N]; the certified c [R]; and rh2's
+the error terms ε_Q, c_err = Nε_Q, ε_B, ε_D; λ₁ of the midpoint block [N]; the certified c [R]; and our
 finite-basis minimum at the same x, N = 32 / 64 (an upper bound on the true minimum) [N]; and the run time
 in seconds (s).
 
 **F_{t*}, odd sector** (`data/controls/grid_ftstar_odd.json`)
 
-| a | x = e^{2a} | T♯ | modes (degrees) | A | β̃ | G | M | ε_Q | c_err | ε_B | ε_D | λ₁(mid A) [N] | certified c [R] | rh2 N = 32 / 64 [N] | s |
+| a | x = e^{2a} | T♯ | modes (degrees) | A | β̃ | G | M | ε_Q | c_err | ε_B | ε_D | λ₁(mid A) [N] | certified c [R] | Our N = 32 / 64 [N] | s |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 0.6 | 3.32012 | 400 | 221 (1–441) | 2.00014 | 3.76038 | 21.67 | 9.87e+03 | 6.3e-34 | 1.4e-31 | 3.8e-55 | 3.4e-118 | 0.54648626 | 0.54648626 | 0.562832 / 0.556132 | 39 |
 | 0.7 | 4.0552 | 400 | 251 (1–501) | 2.83811 | 2.92241 | 21.72 | 1.38e+04 | 8.7e-34 | 2.2e-31 | 4.3e-57 | 2.8e-122 | 0.17066476 | 0.17066476 | 0.180371 / 0.176419 | 44 |
@@ -263,7 +263,7 @@ in seconds (s).
 
 **F_{t*}, even sector** (`data/controls/grid_ftstar_even.json`)
 
-| a | x = e^{2a} | T♯ | modes (degrees) | A | β̃ | G | M | ε_Q | c_err | ε_B | ε_D | λ₁(mid A) [N] | certified c [R] | rh2 N = 32 / 64 [N] | s |
+| a | x = e^{2a} | T♯ | modes (degrees) | A | β̃ | G | M | ε_Q | c_err | ε_B | ε_D | λ₁(mid A) [N] | certified c [R] | Our N = 32 / 64 [N] | s |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 0.8 | 4.95303 | 400 | 281 (0–560) | 2.83811 | 2.92241 | 21.72 | 1.85e+04 | 1.2e-33 | 3.3e-31 | 1.2e-58 | 1.6e-125 | 0.58241833 | 0.58241833 | 0.586135 / 0.585495 | 34 |
 | 0.9 | 6.04965 | 400 | 311 (0–620) | 3.40136 | 2.35917 | 21.77 | 2.43e+04 | 1.5e-33 | 4.8e-31 | 7.9e-61 | 4.9e-130 | 0.27863023 | 0.27863023 | 0.281733 / 0.281431 | 54 |
@@ -273,7 +273,7 @@ in seconds (s).
 
 **DH, even sector** (`data/controls/grid_dh_even.json`)
 
-| a | x = e^{2a} | T♯ | modes (degrees) | A | β̃ | G | M | ε_Q | c_err | ε_B | ε_D | λ₁(mid A) [N] | certified c [R] | rh2 N = 32 / 64 [N] | s |
+| a | x = e^{2a} | T♯ | modes (degrees) | A | β̃ | G | M | ε_Q | c_err | ε_B | ε_D | λ₁(mid A) [N] | certified c [R] | Our N = 32 / 64 [N] | s |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 0.8 | 4.95303 | 400 | 281 (0–560) | 2.08108 | 3.67945 | 15.15 | 1.29e+04 | 8.2e-34 | 2.3e-31 | 8.5e-59 | 1.1e-125 | 0.0065246949 | 0.0065246949 | 0.00662227 / 0.00659947 | 46 |
 | 0.9 | 6.04965 | 400 | 311 (0–620) | 3.6621 | 2.09842 | 15.31 | 1.71e+04 | 1.1e-33 | 3.4e-31 | 5.5e-61 | 3.4e-130 | 0.00064519287 | 0.00064519287 | 0.000661581 / 0.000660192 | 47 |
@@ -285,7 +285,7 @@ in seconds (s).
 
 **DH, odd sector** (`data/controls/grid_dh_odd.json`)
 
-| a | x = e^{2a} | T♯ | modes (degrees) | A | β̃ | G | M | ε_Q | c_err | ε_B | ε_D | λ₁(mid A) [N] | certified c [R] | rh2 N = 32 / 64 [N] | s |
+| a | x = e^{2a} | T♯ | modes (degrees) | A | β̃ | G | M | ε_Q | c_err | ε_B | ε_D | λ₁(mid A) [N] | certified c [R] | Our N = 32 / 64 [N] | s |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 0.8 | 4.95303 | 400 | 281 (1–561) | 2.08108 | 3.67945 | 15.15 | 1.29e+04 | 8.2e-34 | 2.3e-31 | 2.4e-59 | 9e-127 | 0.44593877 | 0.44593877 | 0.467712 / 0.458208 | 54 |
 | 0.9 | 6.04965 | 400 | 311 (1–621) | 3.6621 | 2.09842 | 15.31 | 1.71e+04 | 1.1e-33 | 3.4e-31 | 1.6e-61 | 2.8e-131 | 0.09539845 | 0.09539845 | 0.107394 / 0.101351 | 64 |
@@ -297,7 +297,7 @@ in seconds (s).
 
 **Z₁, even sector** (`data/controls/grid_z1_even.json`)
 
-| a | x = e^{2a} | T♯ | modes (degrees) | A | β̃ | G | M | ε_Q | c_err | ε_B | ε_D | λ₁(mid A) [N] | certified c [R] | rh2 N = 32 / 64 [N] | s |
+| a | x = e^{2a} | T♯ | modes (degrees) | A | β̃ | G | M | ε_Q | c_err | ε_B | ε_D | λ₁(mid A) [N] | certified c [R] | Our N = 32 / 64 [N] | s |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 0.8 | 4.95303 | 400 | 281 (0–560) | 1.38629 | 9.91161 | 36.29 | 3.09e+04 | 2e-33 | 5.5e-31 | 2e-58 | 2.7e-125 | 1.8497693 | 1.8497693 | 1.8502 / 1.85008 | 104 |
 | 1.0 | 7.38906 | 400 | 341 (0–680) | 5.75175 | 5.54616 | 36.71 | 5.24e+04 | 3.3e-33 | 1.1e-30 | 7.4e-63 | 1.9e-134 | 1.0486282 | 1.0486282 | 1.05464 / 1.05319 | 219 |
@@ -309,7 +309,7 @@ in seconds (s).
 
 **Z₁, odd sector** (`data/controls/grid_z1_odd.json`)
 
-| a | x = e^{2a} | T♯ | modes (degrees) | A | β̃ | G | M | ε_Q | c_err | ε_B | ε_D | λ₁(mid A) [N] | certified c [R] | rh2 N = 32 / 64 [N] | s |
+| a | x = e^{2a} | T♯ | modes (degrees) | A | β̃ | G | M | ε_Q | c_err | ε_B | ε_D | λ₁(mid A) [N] | certified c [R] | Our N = 32 / 64 [N] | s |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 0.8 | 4.95303 | 400 | 281 (1–561) | 1.38629 | 9.91161 | 36.29 | 3.1e+04 | 2e-33 | 5.5e-31 | 5.8e-59 | 2.2e-126 | 1.4874271 | 1.4874271 | 1.49259 / 1.49029 | 74 |
 | 1.0 | 7.38906 | 400 | 341 (1–681) | 5.75175 | 5.54616 | 36.71 | 5.25e+04 | 3.3e-33 | 1.1e-30 | 2.2e-63 | 1.6e-135 | 1.4275906 | 1.4275906 | 1.42949 / 1.42872 | 143 |
@@ -336,13 +336,13 @@ the step-down of §1.2. For a = 1.1, 1.2 and 1.38, λ₁(mid A) is that stalled 
 | Z₁ odd | 1.38 (15.79984) | 1000 | 0.16601 (β-limited, β̃ = 0.166018) | not run | As Z₁ even. At T♯ = 400: a = 1.31, c = 0.69227. |
 
 **The gap between R and Q.** Zhu's R charges the frequencies above T♯ only β̃, so λ_min(R) ≤ λ*.
-- In the even sectors (F_{t*}, DH, Z₁) the certified c is within 0.5–20% of rh2's N = 64 upper bound at
+- In the even sectors (F_{t*}, DH, Z₁) the certified c is within 0.5–20% of our N = 64 upper bound at
   every support, so the brackets on the minimum itself are tight. For example, DH even at a = 1.0 has
   3.2966·10⁻⁵ ≤ λ* ≤ 3.4576·10⁻⁵. DH odd is within 21% at a = 1.15.
 - In F_{t*}'s odd sector the gap is about 0.002–0.003 in absolute terms and does not shrink with the
   minimum. That is why the last certified support, a = 0.835, is still 0.005 below the crossover in a.
 - When λ* > β̃, R is β-limited, and c is just below β̃. This happens for Z₁ odd at a = 1.1 and 1.2, where
-  rh2's N = 64 minimum (1.31, 1.19) exceeds β̃ = 1.152; there inverse iteration stalls on the eigenvalue
+  our N = 64 minimum (1.31, 1.19) exceeds β̃ = 1.152; there inverse iteration stalls on the eigenvalue
   cluster at β̃, and μ is stepped down (§1.2).
 
 
@@ -353,7 +353,7 @@ frequency cut-off and no tail, so the smoothness class of a witness enters no er
 function whose coefficients are exactly the decimal strings in its JSON file; Arb encloses those decimals,
 so each certificate is about that function and does not depend on how the function was found.
 
-| Function | x | Witness (source) | Q(f_w)/‖f_w‖², Arb enclosure [R] | rh2 Rayleigh quotient [N] |
+| Function | x | Witness (source) | Q(f_w)/‖f_w‖², Arb enclosure [R] | Our Rayleigh quotient [N] |
 |---|---|---|---|---|
 | F_{t*} | 7 | `data/conductor5/witness_tstar_x7_odd.json`, odd, 32 sine modes | −0.0452795658351271862957293947 ± 4·10⁻⁴² | −0.045279565835127186296 |
 | DH | 32 | `data/controls/witness_dh_x32_n80.json`, even, N = 80 minimiser of `build_form(32, 80, "dh")` | −1.39985114183258896882769888·10⁻²⁹ ± 9·10⁻⁷⁰ | −1.3998511418325889688·10⁻²⁹ |
@@ -366,7 +366,7 @@ Outputs are in `data/controls/witness_cert_*.json`. Each run takes under 2 s. Th
 10⁻³², is tiny against the O(1) pieces (pole 0, constant term −0.614, integral +0.584, primes −0.029), and
 the enclosures are still 40 orders narrower than the margin.
 
-**The three new witnesses** come from bisecting rh2's finite-basis minimum in x (`scripts/control_upper.py
+**The three new witnesses** come from bisecting our finite-basis minimum in x (`scripts/control_upper.py
 crossover`: F_{t*} odd at N = 64 between 5.1552 and 5.4739; Z₁ at N = 80 between 17.5 and 20; DH at N = 80
 between 30 and 30.95). Each is the minimiser at the smallest negative bisection point. They tighten the
 negative side from x = 7 to 5.3625 (F_{t*}), from 32 to 30.745 (DH) and from 20 to 19.844 (Z₁).
@@ -399,38 +399,38 @@ x_pos is the largest certified support with both sectors positive; x_neg is the 
 Both are [R]. The first full-space failure x_c lies in [x_pos, x_neg): x_c ≥ x_pos by positivity, and
 x_c < x_neg because Q(f_w) < 0 survives a small dilation of f_w (the continuity argument of §4).
 
-| Function | x_pos [R] | c at x_pos [R] | x_neg [R] | Q(f_w)/‖f_w‖² at x_neg [R] | Brief's witness, certified [R] | rh2 numerical crossover [N] |
+| Function | x_pos [R] | c at x_pos [R] | x_neg [R] | Q(f_w)/‖f_w‖² at x_neg [R] | Brief's witness, certified [R] | Our numerical crossover [N] |
 |---|---|---|---|---|---|---|
-| F_{t*} | e^{1.67} = 5.31217 (odd limits; even certified to e^{2.18} = 8.84631) | 1.1666·10⁻³ | 5.36249966 | −9.889·10⁻⁷ | x = 7: −0.045280 | (5, 7] at N = 32 (rh2); (5.36248, 5.36250] at N = 64 |
-| DH | e^{2.38} = 10.80490 (even limits; odd c = 1.0931·10⁻⁵) | 1.0441·10⁻⁸ | 30.74497 | −2.292·10⁻³² | x = 32: −1.3999·10⁻²⁹ | ≤ 30.95, x_c ≈ 30.83 at N = 64 (rh2); (30.74404, 30.74497] at N = 80 |
-| Z₁ | e^{2.76} = 15.79984 (T♯ = 1000; even limits; odd c = 0.16601, β-limited) | 0.049235 | 19.84390 | −1.534·10⁻⁷ | x = 20: −1.3261·10⁻⁴ | (17.5, 20] at N = 48–80 (rh2); (19.84375, 19.84390] at N = 80 |
+| F_{t*} | e^{1.67} = 5.31217 (odd limits; even certified to e^{2.18} = 8.84631) | 1.1666·10⁻³ | 5.36249966 | −9.889·10⁻⁷ | x = 7: −0.045280 | (5, 7] at N = 32 (this work); (5.36248, 5.36250] at N = 64 |
+| DH | e^{2.38} = 10.80490 (even limits; odd c = 1.0931·10⁻⁵) | 1.0441·10⁻⁸ | 30.74497 | −2.292·10⁻³² | x = 32: −1.3999·10⁻²⁹ | ≤ 30.95, x_c ≈ 30.83 at N = 64 (this work); (30.74404, 30.74497] at N = 80 |
+| Z₁ | e^{2.76} = 15.79984 (T♯ = 1000; even limits; odd c = 0.16601, β-limited) | 0.049235 | 19.84390 | −1.534·10⁻⁷ | x = 20: −1.3261·10⁻⁴ | (17.5, 20] at N = 48–80 (this work); (19.84375, 19.84390] at N = 80 |
 | ζ (reference) | e^{1.6} = 4.95303 (Zhu, audit, regression above) | 1.0277·10⁻¹⁷ | none | — | — | no failure |
 
 **Reading.**
 1. **F_{t*}.** The odd sector's first failure is pinned to 1%: positive for every f supported in
    [−0.835, 0.835], negative at x = 5.3625. The bracket on the minimum itself at a = 0.835 is
-   1.1666·10⁻³ ≤ λ*_odd ≤ 3.205·10⁻³ (rh2's sine basis, N = 64). The even sector is far from failure where
+   1.1666·10⁻³ ≤ λ*_odd ≤ 3.205·10⁻³ (our sine basis, N = 64). The even sector is far from failure where
    the odd one fails: at a = 0.835 it is above 0.2786, the value certified at a = 0.9. This is what the
    real off-line pair predicts (`docs/CONDUCTOR5_FAMILY.md`): only odd test functions see it.
 2. **DH.** The positive side stops at x ≈ 11 because A grows, not because the minimum is near zero. At
-   a = 1.15 the certified minimum 7.59·10⁻⁸ is within 13% of rh2's N = 64 value 8.73·10⁻⁸. The comb is
+   a = 1.15 the certified minimum 7.59·10⁻⁸ is within 13% of our N = 64 value 8.73·10⁻⁸. The comb is
    constant on 10 < x < 11 (c₁₀ = 0), which is why a = 1.19 still certifies at T♯ = 400. Beyond x = 11,
    β* > 0 needs T♯ > T₁ = 2e^{A − K}: 1466 for 11 < x < 12, and 3.8·10⁷ at the numerical crossover
    (A = 17.23 at x = 30.74). That is Zhu's doubly exponential barrier (Theorem 1.4). So for DH the rigorous
    bracket stays wide, and the first failure is pinned well only from above.
 3. **Z₁.** Degree 2 halves the exponent (T₁ ≈ 2e^{(A − K)/2}), so the positive side reaches x ≈ 13.7 at
    T♯ = 400 and x ≈ 15.8 at T♯ = 1000 (28 and 46 minutes for the two sectors). The negative side is at 19.844.
-4. **rh2's numerical crossovers** all lie inside the rigorous brackets, as they must, since a finite-basis
+4. **Our numerical crossovers** all lie inside the rigorous brackets, as they must, since a finite-basis
    minimum is an upper bound on the full one.
 
 ## 6. What is not rigorous, and the exact missing pieces
 
 | Item | Status | Exact missing piece |
 |---|---|---|
-| Q is Weil's functional, Q(f) = Σ_ρ ĝ(γ_ρ) | [P] | The explicit formula for these gamma factors, for F without an Euler product (F_{t*}, DH, Z₁). It needs only the functional equation, finite order and a half-plane where −F′/F converges absolutely; it is standard but was not re-derived here. rh2 checks it numerically against census zeros (`docs/CONDUCTOR5_FAMILY.md`, `docs/DAVENPORT_HEILBRONN.md`, `docs/EPSTEIN.md`) [N]. Every certificate here is a statement about Q as defined in §1.1. |
+| Q is Weil's functional, Q(f) = Σ_ρ ĝ(γ_ρ) | [P] | The explicit formula for these gamma factors, for F without an Euler product (F_{t*}, DH, Z₁). It needs only the functional equation, finite order and a half-plane where −F′/F converges absolutely; it is standard but was not re-derived here. This work checks it numerically against census zeros (`docs/CONDUCTOR5_FAMILY.md`, `docs/DAVENPORT_HEILBRONN.md`, `docs/EPSTEIN.md`) [N]. Every certificate here is a statement about Q as defined in §1.1. |
 | Starting enclosure of the Bessel ratios | [R, given a theorem] | Pincherle's theorem (a minimal solution has a convergent continued fraction) is cited, not proved. `scripts/control_bessel_check.py` compares the recurrence enclosures with Arb's own `bessel_j` at 20 arguments x ∈ [10⁻³, 600], n up to 1.5x + 80: 168 comparisons, all overlapping (`data/controls/bessel_check.json`) [R]. |
 | Arb and python-flint 0.9.0 | trusted | Outward rounding, and the correctness of `acb.digamma`, `acb.integral`, `arb.legendre_p_root`, `arb.bessel_i` and `arb_mat` products. Not audited. gmpy2 is used only for the floating Cholesky factor, whose residual is verified in Arb, so it needs no trust. |
-| The new scripts | unreviewed | `control_cert_lib.py`, `control_certificate.py` and `control_uspace.py` reproduce the audited ζ numbers exactly, agree with rh2's matrices to 10⁻³⁹ and with an independent frequency-side Arb integral, but have not been read line by line by a second person. |
+| The new scripts | unreviewed | `control_cert_lib.py`, `control_certificate.py` and `control_uspace.py` reproduce the audited ζ numbers exactly, agree with our matrices to 10⁻³⁹ and with an independent frequency-side Arb integral, but have not been read line by line by a second person. |
 | L² test functions | wording | As in the audit (item 4), Q is defined on L² by the frequency integral, with values in (−∞, +∞]. Theorem 1.1 is pointwise in frequency and the u-space identity is Tonelli, so both hold on L². §4 passes from the witnesses to C_c^∞. |
 | DH positive side beyond x = 11 | not attempted | The next comb step needs T♯ > 1466 (n = 11 enters at x = 11), i.e. about 1300 Legendre modes and 190 000 nodes; estimated well over 30 minutes at 2 processes. |
 | Z₁ positive side beyond x = 16 | not attempted | The T♯ = 1000 odd run at a = 1.38 took 46 minutes, over the 30-minute guideline, because another session loaded the machine; it was already running when that became clear, and it was the last extension. n = 16 enters at x = 16, and T₁ = 1300. A run at T♯ ≈ 1500 needs about 1700 Legendre modes and 190 000 nodes. The T♯ = 1000 runs already took 28 and 46 minutes on the loaded machine, so this would exceed the 30-minute limit several times over. |
@@ -454,7 +454,7 @@ $PY scripts/control_cert_grid.py --function z1 --sector even --a 0.8,1.0,1.1,1.2
 $PY scripts/control_cert_grid.py --function z1 --sector odd  --a 0.8,1.0,1.1,1.2,1.3,1.31 --tsharps 400 --stop --workers 2 --summary data/controls/grid_z1_odd.json
 $PY scripts/control_cert_grid.py --function z1 --sector even --a 1.38 --tsharps 1000 --workers 2 --max-minutes 45 --summary data/controls/grid_z1_even.json
 $PY scripts/control_cert_grid.py --function z1 --sector odd  --a 1.38 --tsharps 1000 --workers 2 --max-minutes 45 --summary data/controls/grid_z1_odd.json
-# witnesses: find with rh2's matrices, certify in u-space
+# witnesses: find with our matrices, certify in u-space
 $PY scripts/control_witnesses.py --function dh --x 32 --n 80 --dps 60 --json data/controls/witness_dh_x32_n80.json
 $PY scripts/control_witnesses.py --function z1 --x 20 --n 48 --dps 40 --json data/controls/witness_z1_x20_n48.json
 $PY scripts/control_upper.py crossover --function ftstar --sector odd --lo 5.1551695 --hi 5.4739474 --n 64 --dps 30 --steps 14 --json data/controls/crossover_ftstar_odd_n64.json --witness data/controls/witness_ftstar_odd_crossover_n64.json
@@ -466,7 +466,7 @@ $PY scripts/control_uspace.py witness --function z1 --json data/controls/witness
 $PY scripts/control_uspace.py witness --function ftstar --json data/controls/witness_ftstar_odd_crossover_n64.json --parity odd --x 5.3624996576171875 --prec 256 --out data/controls/witness_cert_ftstar_crossover.json
 $PY scripts/control_uspace.py witness --function z1 --json data/controls/witness_z1_even_crossover_n80.json --parity even --x 19.843902587890625 --prec 256 --out data/controls/witness_cert_z1_crossover.json
 $PY scripts/control_uspace.py witness --function dh --json data/controls/witness_dh_even_crossover_n80.json --parity even --x 30.744970703125 --prec 384 --out data/controls/witness_cert_dh_crossover.json
-# rh2 upper bounds at the grid supports, entry and Bessel checks, tables
+# Our upper bounds at the grid supports, entry and Bessel checks, tables
 $PY scripts/control_upper.py points --function ftstar --sector odd --a 0.6,0.7,0.8,0.81,0.82,0.83,0.835,0.84 --n 32,64 --dps 30 --json data/controls/upper_ftstar_odd.json   # likewise for the other five sectors
 $PY scripts/control_entry_check.py data/controls/certs/*.json
 $PY scripts/control_bessel_check.py --json data/controls/bessel_check.json
@@ -475,7 +475,7 @@ python3 scripts/control_report_tables.py
 
 Logs go to `logs/` through `scripts/progress.py`.
 
-## 8. Numbers that differ from rh2's existing results or the audited ζ values
+## 8. Numbers that differ from our existing results or the audited ζ values
 
 No computed value disagrees. Every comparison either matches or is a refinement in the direction the
 variational principle requires (a larger basis gives a lower finite minimum and an earlier crossover).
@@ -495,7 +495,7 @@ variational principle requires (a larger basis gives a lower finite minimum and 
 ## Five-line summary
 
 1. **Reduction:** Zhu's Theorem 1.1 carries over unchanged to Ψ = Σ_κ Re ψ(κ + it/2) + K − Σ (2c_n/√n) cos(t log n), with A = Σ 2|c_n|/√n and Binet envelopes re-derived for κ = ¾ and for degree 2. The Arb code reproduces the audited ζ certificates exactly (1.02768955902·10⁻¹⁷ even, 9.11833845·10⁻¹⁵ odd) [R].
-2. **Normalisation:** rh2's zeros-side matrices for F_{t*} (both sectors), DH and Z₁ are this Q with factor 1, to 10⁻³⁹ against a rigorous u-space evaluation, and inside independent frequency-side Arb enclosures. There is no mismatch [R/N].
+2. **Normalisation:** Our zeros-side matrices for F_{t*} (both sectors), DH and Z₁ are this Q with factor 1, to 10⁻³⁹ against a rigorous u-space evaluation, and inside independent frequency-side Arb enclosures. There is no mismatch [R/N].
 3. **Positive:** Q ≥ c‖f‖² for every f supported in [−a, a]: F_{t*} at x = 5.31217 (c = 1.1666·10⁻³), DH at x = 10.80490 (c = 1.0441·10⁻⁸), Z₁ at x = 15.79984 (c = 0.049235, T♯ = 1000; x = 13.7357 at T♯ = 400) [R].
 4. **Negative:** all three given witnesses are certified negative by an exact u-space formula in Arb (−0.0452796 at x = 7, −1.39985·10⁻²⁹ at x = 32, −1.32613·10⁻⁴ at x = 20), and so are new witnesses at x = 5.36250, 30.74497 and 19.84390 [R].
 5. **Brackets:** first full-space failure in [5.312, 5.3625) for F_{t*} (1% wide), [10.80, 30.745) for DH and [15.80, 19.844) for Z₁. DH and Z₁ are stopped on the positive side by T♯ ≈ 2e^{(A−K)/n_κ} (DH would need T♯ ≈ 4·10⁷ at its crossover). The remaining trust points are the explicit formula for non-Euler-product F [P], Pincherle's theorem [P] and Arb.
